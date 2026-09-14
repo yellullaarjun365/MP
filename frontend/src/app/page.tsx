@@ -33,11 +33,22 @@ type ChatMessage = {
   content: string;
 };
 
+type ChatResponse = {
+  answer: string;
+  model: string;
+  mode: string;
+  conversation_id: string;
+};
+
 export default function HomePage() {
   const [user, setUser] = useState<User | null>(null);
   const [checkingAuth, setCheckingAuth] = useState(true);
 
   const [input, setInput] = useState("");
+  const [conversationId, setConversationId] = useState<
+    string | null
+  >(null);
+
   const [messages, setMessages] = useState<ChatMessage[]>([
     {
       role: "assistant",
@@ -45,6 +56,7 @@ export default function HomePage() {
         "Hi, I'm Aqua AI. You can ask me anything about aquaculture. You do not need to create a farm or provide farm details to start.",
     },
   ]);
+
   const [chatLoading, setChatLoading] = useState(false);
 
   useEffect(() => {
@@ -110,36 +122,64 @@ export default function HomePage() {
           headers: {
             "Content-Type": "application/json",
           },
+          credentials: "include",
           body: JSON.stringify({
             message: text,
+            conversation_id: conversationId,
           }),
         },
       );
 
-      const data = await response.json();
+      const data =
+        (await response.json()) as
+          | ChatResponse
+          | { detail?: string };
+
+      if (!response.ok) {
+        throw new Error(
+          "detail" in data && data.detail
+            ? data.detail
+            : "Aqua AI request failed.",
+        );
+      }
+
+      const chat = data as ChatResponse;
+
+      setConversationId(chat.conversation_id);
 
       setMessages((current) => [
         ...current,
         {
           role: "assistant",
-          content:
-            data.answer ??
-            data.detail ??
-            "I could not answer that right now.",
+          content: chat.answer,
         },
       ]);
-    } catch {
+    } catch (error) {
       setMessages((current) => [
         ...current,
         {
           role: "assistant",
           content:
-            "Aqua AI is temporarily unavailable. Please try again.",
+            error instanceof Error
+              ? error.message
+              : "Aqua AI is temporarily unavailable. Please try again.",
         },
       ]);
     } finally {
       setChatLoading(false);
     }
+  }
+
+  function startNewConversation() {
+    setConversationId(null);
+
+    setMessages([
+      {
+        role: "assistant",
+        content:
+          "New Aqua AI conversation started. What would you like to know?",
+      },
+    ]);
   }
 
   function signIn() {
@@ -293,7 +333,7 @@ export default function HomePage() {
 
               <span className="flex items-center gap-2">
                 <CheckCircle2 className="h-3.5 w-3.5" />
-                Google sign-in
+                Conversation memory
               </span>
             </div>
           </div>
@@ -321,7 +361,13 @@ export default function HomePage() {
                 </div>
               </div>
 
-              <Sparkles className="h-4 w-4 text-muted-foreground" />
+              <button
+                type="button"
+                onClick={startNewConversation}
+                className="text-[10px] font-semibold text-muted-foreground underline underline-offset-4"
+              >
+                New chat
+              </button>
             </div>
 
             <div className="flex min-h-[420px] flex-col">
@@ -369,6 +415,12 @@ export default function HomePage() {
               </div>
 
               <div className="border-t border-border pt-4">
+                {conversationId && (
+                  <p className="mb-3 text-[9px] text-muted-foreground">
+                    Conversation memory active
+                  </p>
+                )}
+
                 <div className="mb-3 flex flex-wrap gap-2">
                   {[
                     "What is good dissolved oxygen for shrimp?",
@@ -447,8 +499,8 @@ export default function HomePage() {
 
             <PlatformCard
               icon={Droplets}
-              title="Go deeper"
-              text="Once configured, connect water quality, feeding, growth, health and harvest data."
+              title="Remember conversations"
+              text="Aqua AI can continue an existing conversation instead of forgetting previous messages."
             />
           </div>
         </div>

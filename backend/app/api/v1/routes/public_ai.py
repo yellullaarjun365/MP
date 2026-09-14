@@ -1,16 +1,18 @@
-﻿from fastapi import APIRouter, HTTPException, status
+﻿from uuid import UUID
 
-from app.ai.service import (
-    OllamaError,
-    ai_status,
-    answer_guest_question,
-)
-from app.ai.ollama import provider
+from fastapi import APIRouter, Depends, HTTPException, status
+from sqlalchemy.orm import Session
+
+from app.ai.ollama import OllamaError, provider
+from app.ai.service import ai_status
+from app.api.deps import get_optional_user_id
+from app.db.session import get_db
 from app.schemas.public_ai import (
     PublicAiChatRequest,
     PublicAiChatResponse,
     PublicAiStatusResponse,
 )
+from app.services.conversation_service import chat_with_memory
 
 
 router = APIRouter(
@@ -33,17 +35,29 @@ def public_ai_status():
 )
 def public_ai_chat(
     data: PublicAiChatRequest,
+    db: Session = Depends(get_db),
+    user_id: UUID | None = Depends(get_optional_user_id),
 ):
     try:
-        answer = answer_guest_question(
-            data.message
+        conversation, answer = chat_with_memory(
+            db=db,
+            user_id=user_id,
+            message=data.message,
+            conversation_id=data.conversation_id,
         )
 
         return PublicAiChatResponse(
             answer=answer,
             model=provider.model,
-            mode="guest",
+            mode="authenticated" if user_id else "guest",
+            conversation_id=conversation.id,
         )
+
+    except ValueError as exc:
+        raise HTTPException(
+            status_code=status.HTTP_403_FORBIDDEN,
+            detail=str(exc),
+        ) from exc
 
     except OllamaError as exc:
         raise HTTPException(

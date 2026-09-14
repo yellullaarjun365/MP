@@ -1,4 +1,4 @@
-from app.models.user import User
+﻿from app.models.user import User
 from app.models.farm import Farm
 from app.models.pond import Pond
 from app.models.species import Species
@@ -8,6 +8,8 @@ from app.models.stocking import StockingRecord
 from app.models.growth import GrowthRecord
 from app.models.health import HealthEvent
 from app.models.harvest import HarvestRecord
+from app.models.conversation import Conversation
+from app.models.message import Message
 
 __all__ = [
     "User",
@@ -20,4 +22,6 @@ __all__ = [
     "GrowthRecord",
     "HealthEvent",
     "HarvestRecord",
+    "Conversation",
+    "Message",
 ]

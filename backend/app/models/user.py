@@ -1,4 +1,4 @@
-import uuid
+﻿import uuid
 
 from sqlalchemy import Index, String
 from sqlalchemy.orm import Mapped, mapped_column, relationship
@@ -46,6 +46,12 @@ class User(Base):
     farms: Mapped[list["Farm"]] = relationship(
         "Farm",
         back_populates="owner",
+    )
+
+    conversations: Mapped[list["Conversation"]] = relationship(
+        "Conversation",
+        back_populates="user",
+        cascade="all, delete-orphan",
     )
 
     __table_args__ = (

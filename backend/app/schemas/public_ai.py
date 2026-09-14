@@ -1,4 +1,6 @@
-﻿from pydantic import BaseModel, Field
+﻿from uuid import UUID
+
+from pydantic import BaseModel, Field
 
 
 class PublicAiChatRequest(BaseModel):
@@ -7,11 +9,14 @@ class PublicAiChatRequest(BaseModel):
         max_length=4000,
     )
 
+    conversation_id: UUID | None = None
+
 
 class PublicAiChatResponse(BaseModel):
     answer: str
     model: str
     mode: str
+    conversation_id: UUID
 
 
 class PublicAiStatusResponse(BaseModel):

@@ -1,4 +1,4 @@
-from uuid import UUID
+﻿from uuid import UUID
 
 from fastapi import Header, HTTPException
 from starlette.requests import Request
@@ -19,10 +19,6 @@ def get_current_user_id(
     ),
 ) -> UUID:
 
-    # --------------------------------------------------------
-    # Production/session authentication
-    # --------------------------------------------------------
-
     session_user_id = request.session.get("user_id")
 
     if session_user_id:
@@ -35,16 +31,33 @@ def get_current_user_id(
                 detail="Invalid authentication session.",
             )
 
-
-    # --------------------------------------------------------
-    # Development authentication
-    # --------------------------------------------------------
-
     if settings.debug and x_dev_user_id is not None:
         return x_dev_user_id
-
 
     raise HTTPException(
         status_code=401,
         detail="Authentication required.",
     )
+
+
+def get_optional_user_id(
+    request: Request,
+    x_dev_user_id: UUID | None = Header(
+        default=None,
+        alias="X-Dev-User-ID",
+    ),
+) -> UUID | None:
+
+    session_user_id = request.session.get("user_id")
+
+    if session_user_id:
+        try:
+            return UUID(str(session_user_id))
+        except ValueError:
+            request.session.clear()
+            return None
+
+    if settings.debug and x_dev_user_id is not None:
+        return x_dev_user_id
+
+    return None
