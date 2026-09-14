@@ -1,6 +1,7 @@
 ﻿from fastapi import APIRouter
 
 from app.api.v1.routes import (
+    auth,
     farms,
     onboarding,
     onboarding_status,
@@ -8,12 +9,9 @@ from app.api.v1.routes import (
     ponds,
     public_ai,
     species,
-    auth,
 )
 
-api_router = APIRouter(
-    prefix="/api/v1",
-)
+api_router = APIRouter(prefix="/api/v1")
 
 api_router.include_router(farms.router)
 api_router.include_router(ponds.router)

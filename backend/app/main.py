@@ -7,24 +7,21 @@ from app.api.v1.router import api_router
 from app.core.config import settings
 from app.db.session import engine
 
-
 app = FastAPI(
     title=settings.app_name,
     version=settings.app_version,
 )
 
-
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
-        "http://localhost:3000",
         "http://127.0.0.1:3000",
+        "http://localhost:3000",
     ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
-
 
 app.add_middleware(
     SessionMiddleware,
@@ -35,9 +32,7 @@ app.add_middleware(
     https_only=False,
 )
 
-
 app.include_router(api_router)
-
 
 @app.get("/")
 def root():
@@ -47,13 +42,9 @@ def root():
         "status": "running",
     }
 
-
 @app.get("/health")
 def health():
-    return {
-        "status": "healthy",
-    }
-
+    return {"status": "healthy"}
 
 @app.get("/health/db")
 def database_health():
