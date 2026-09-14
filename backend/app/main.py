@@ -1,5 +1,6 @@
 from fastapi import FastAPI
 from sqlalchemy import text
+from starlette.middleware.sessions import SessionMiddleware
 
 from app.api.v1.router import api_router
 from app.core.config import settings
@@ -10,6 +11,17 @@ app = FastAPI(
     title=settings.app_name,
     version=settings.app_version,
 )
+
+
+app.add_middleware(
+    SessionMiddleware,
+    secret_key=settings.session_secret_key,
+    session_cookie="aqualife_session",
+    max_age=60 * 60 * 24 * 7,
+    same_site="lax",
+    https_only=False,
+)
+
 
 app.include_router(api_router)
 
