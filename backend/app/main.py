@@ -1,21 +1,24 @@
 from fastapi import FastAPI
 from sqlalchemy import text
 
+from app.api.v1.router import api_router
 from app.core.config import settings
 from app.db.session import engine
 
 
 app = FastAPI(
-    title="AquaLife API",
-    version="0.1.0",
+    title=settings.app_name,
+    version=settings.app_version,
 )
+
+app.include_router(api_router)
 
 
 @app.get("/")
 def root():
     return {
-        "name": "AquaLife API",
-        "version": "0.1.0",
+        "name": settings.app_name,
+        "version": settings.app_version,
         "status": "running",
     }
 
