@@ -1,7 +1,7 @@
 import uuid
 
 from sqlalchemy import Boolean, Index, String
-from sqlalchemy.orm import Mapped, mapped_column
+from sqlalchemy.orm import Mapped, mapped_column, relationship
 
 from app.db.session import Base
 
@@ -33,6 +33,12 @@ class Species(Base):
         Boolean,
         nullable=False,
         default=True,
+    )
+
+    ponds: Mapped[list["Pond"]] = relationship(
+        "Pond",
+        back_populates="species",
+        foreign_keys="Pond.species_id",
     )
 
     __table_args__ = (

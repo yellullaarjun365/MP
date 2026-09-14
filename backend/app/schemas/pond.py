@@ -22,6 +22,16 @@ class PondUpdate(BaseModel):
     water_source: str | None = Field(default=None, max_length=100)
 
 
+class PondSpeciesRead(BaseModel):
+    model_config = ConfigDict(from_attributes=True)
+
+    id: UUID
+    common_name: str
+    scientific_name: str | None
+    category: str | None
+    is_active: bool
+
+
 class PondRead(BaseModel):
     model_config = ConfigDict(from_attributes=True)
 
@@ -33,3 +43,4 @@ class PondRead(BaseModel):
     depth_m: float | None
     culture_type: str | None
     water_source: str | None
+    species: PondSpeciesRead | None = None

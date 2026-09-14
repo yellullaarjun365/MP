@@ -1,7 +1,7 @@
 import uuid
 
 from sqlalchemy import Float, ForeignKey, Index, String
-from sqlalchemy.orm import Mapped, mapped_column
+from sqlalchemy.orm import Mapped, mapped_column, relationship
 
 from app.db.session import Base
 
@@ -45,6 +45,18 @@ class Farm(Base):
     water_source: Mapped[str | None] = mapped_column(
         String(100),
         nullable=True,
+    )
+
+    owner: Mapped["User"] = relationship(
+        "User",
+        back_populates="farms",
+        foreign_keys=[owner_id],
+    )
+
+    ponds: Mapped[list["Pond"]] = relationship(
+        "Pond",
+        back_populates="farm",
+        cascade="all, delete-orphan",
     )
 
     __table_args__ = (
