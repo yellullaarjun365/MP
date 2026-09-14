@@ -1,3 +1,5 @@
+﻿from urllib.parse import urlparse
+
 from fastapi import APIRouter, Depends, HTTPException, status
 from fastapi.responses import RedirectResponse
 from sqlalchemy.orm import Session
@@ -16,31 +18,7 @@ router = APIRouter(
 
 
 @router.get("/google")
-async def google_login(
-    request: Request,
-):
-    if not settings.google_client_id or not settings.google_client_secret:
-        raise HTTPException(
-            status_code=status.HTTP_503_SERVICE_UNAVAILABLE,
-            detail=(
-                "Google OAuth is not configured. "
-                "Set GOOGLE_CLIENT_ID and GOOGLE_CLIENT_SECRET."
-            ),
-        )
-
-    google = oauth.create_client("google")
-
-    return await google.authorize_redirect(
-        request,
-        settings.google_redirect_uri,
-    )
-
-
-@router.get("/google/callback")
-async def google_callback(
-    request: Request,
-    db: Session = Depends(get_db),
-):
+async def google_login(request: Request):
     if not settings.google_client_id or not settings.google_client_secret:
         raise HTTPException(
             status_code=status.HTTP_503_SERVICE_UNAVAILABLE,
@@ -49,33 +27,46 @@ async def google_callback(
 
     google = oauth.create_client("google")
 
+    return await google.authorize_redirect(
+        request,
+        settings.google_redirect_uri,
+        prompt="select_account",
+    )
+
+
+@router.get("/google/callback")
+async def google_callback(
+    request: Request,
+    db: Session = Depends(get_db),
+):
+    google = oauth.create_client("google")
+
     try:
+        print("OAuth callback reached")
+        print("Callback URL:", str(request.url))
+
         token = await google.authorize_access_token(request)
 
-        print(
-            "Google token received:",
-            bool(token),
-            "userinfo:",
-            bool(token.get("userinfo")),
-        )
+        print("OAuth token received:", bool(token))
+        print("Token keys:", list(token.keys()))
 
         userinfo = token.get("userinfo")
 
         if not userinfo:
             raise HTTPException(
                 status_code=401,
-                detail="Google user information was not returned.",
+                detail="Google userinfo missing.",
             )
 
         subject = userinfo.get("sub")
         email = userinfo.get("email")
-        email_verified = userinfo.get("email_verified", False)
+        email_verified = userinfo.get("email_verified")
         full_name = userinfo.get("name")
 
         print(
             "Google identity:",
             {
-                "has_subject": bool(subject),
+                "has_sub": bool(subject),
                 "email": email,
                 "email_verified": email_verified,
                 "has_name": bool(full_name),
@@ -85,13 +76,13 @@ async def google_callback(
         if not subject:
             raise HTTPException(
                 status_code=401,
-                detail="Google account subject is missing.",
+                detail="Google subject missing.",
             )
 
         if not email:
             raise HTTPException(
                 status_code=401,
-                detail="Google account email is missing.",
+                detail="Google email missing.",
             )
 
         if not email_verified:
@@ -109,6 +100,9 @@ async def google_callback(
 
         request.session["user_id"] = str(user.id)
 
+        print("AquaLife user ID:", user.id)
+        print("Session user_id set:", request.session.get("user_id"))
+
         return RedirectResponse(
             url=settings.auth_success_redirect_url,
             status_code=303,
@@ -119,7 +113,7 @@ async def google_callback(
 
     except Exception as exc:
         print(
-            "GOOGLE OAUTH CALLBACK ERROR:",
+            "GOOGLE OAUTH ERROR:",
             type(exc).__name__,
             str(exc),
         )
@@ -127,7 +121,7 @@ async def google_callback(
         if settings.debug:
             raise HTTPException(
                 status_code=500,
-                detail=f"Google OAuth callback error: {type(exc).__name__}: {exc}",
+                detail=f"{type(exc).__name__}: {exc}",
             ) from exc
 
         raise HTTPException(
@@ -137,32 +131,20 @@ async def google_callback(
 
 
 @router.post("/logout")
-async def logout(
-    request: Request,
-):
+async def logout(request: Request):
     request.session.clear()
-
-    return {
-        "status": "logged_out",
-    }
+    return {"status": "logged_out"}
 
 
 @router.get("/config-status")
 def auth_config_status():
+    parsed = urlparse(settings.google_redirect_uri)
+
     return {
         "google_configured": bool(
             settings.google_client_id
             and settings.google_client_secret
         ),
         "redirect_uri": settings.google_redirect_uri,
-        "redirect_host": request_host(settings.google_redirect_uri),
+        "redirect_host": parsed.hostname,
     }
-
-
-def request_host(url: str) -> str | None:
-    try:
-        from urllib.parse import urlparse
-
-        return urlparse(url).hostname
-    except Exception:
-        return None
