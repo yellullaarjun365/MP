@@ -43,9 +43,24 @@ DOMAIN_CORRECTIONS = [
 
 def normalize_voice_transcript(
     text: str,
+    language: str | None = None,
 ) -> str:
 
-    normalized = text
+    normalized = re.sub(
+        r"\s+",
+        " ",
+        text,
+    ).strip()
+
+    # Only apply the English aquaculture correction
+    # dictionary to English transcripts.
+    #
+    # Telugu must pass through unchanged.
+    if (
+        language is not None
+        and not language.lower().startswith("en")
+    ):
+        return normalized
 
     for pattern, replacement in DOMAIN_CORRECTIONS:
         normalized = re.sub(
@@ -55,13 +70,11 @@ def normalize_voice_transcript(
             flags=re.IGNORECASE,
         )
 
-    normalized = re.sub(
+    return re.sub(
         r"\s+",
         " ",
         normalized,
     ).strip()
-
-    return normalized
 
 
 __all__ = [

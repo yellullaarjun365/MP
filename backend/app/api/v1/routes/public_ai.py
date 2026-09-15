@@ -306,8 +306,23 @@ def public_ai_chat_stream(
             conversation_id=conversation.id,
         )
 
-        # Instant context answer: stream it as one small event.
+        result = None
+        sources = []
+        intent = None
+        extraction = None
+        prediction = None
+
+        # -------------------------------------------------
+        # Context lookup
+        # -------------------------------------------------
+
         if is_context_question(data.message):
+
+            intent = "context_lookup"
+
+            extraction = (
+                conversation.context_data or {}
+            )
 
             answer = get_context_answer(
                 conversation.context_data or {},
@@ -315,9 +330,12 @@ def public_ai_chat_stream(
             )
 
             iterator = iter([answer])
-            sources = []
 
         else:
+
+            # -------------------------------------------------
+            # Intent + extraction + normalization + validation
+            # -------------------------------------------------
 
             result = process_structured_context(
                 conversation,
@@ -325,32 +343,111 @@ def public_ai_chat_stream(
                 history,
             )
 
-            if result["intent"] == "knowledge":
+            intent = result.get("intent")
 
-                iterator, sources = stream_rag_answer(
-                    data.message,
-                    limit=3,
+            extraction = (
+                result.get("parameters")
+                or {}
+            )
+
+            # -------------------------------------------------
+            # Knowledge / RAG
+            # -------------------------------------------------
+
+            if intent == "knowledge":
+
+                iterator, sources = (
+                    stream_rag_answer(
+                        data.message,
+                        limit=3,
+                    )
                 )
 
-            elif result["intent"] in {
+            # -------------------------------------------------
+            # Farm data / parameter update
+            # -------------------------------------------------
+
+            elif intent in {
                 "farm_data",
                 "parameter_update",
             }:
 
                 iterator = iter([
                     build_parameter_response(
-                        result["intent"],
-                        result["parameters"] or {},
+                        intent,
+                        result.get(
+                            "parameters"
+                        ) or {},
                     )
                 ])
 
-                sources = []
+            # -------------------------------------------------
+            # Prediction
+            # -------------------------------------------------
 
-            else:
+            elif intent == "prediction":
 
+                context = (
+                    conversation.context_data
+                    or {}
+                )
+
+                stocking_count = context.get(
+                    "stocking_count"
+                )
+
+                survival = context.get(
+                    "survival_rate_percent"
+                )
+
+                average_weight = context.get(
+                    "average_weight_g"
+                )
+
+                current_biomass_kg = None
+
+                if (
+                    stocking_count is not None
+                    and survival is not None
+                    and average_weight is not None
+                ):
+                    current_biomass_kg = round(
+                        float(stocking_count)
+                        * (
+                            float(survival)
+                            / 100.0
+                        )
+                        * float(average_weight)
+                        / 1000.0,
+                        2,
+                    )
+
+                prediction = {
+                    "status":
+                        "forecast_model_not_connected",
+
+                    "current_biomass_kg":
+                        current_biomass_kg,
+
+                    "missing_for_forecast": [
+                        "culture_duration_days",
+                        "growth_history",
+                        "target_harvest_weight_g",
+                    ],
+
+                    "message":
+                        "Standing biomass can be "
+                        "calculated from the stored "
+                        "farm parameters. The future "
+                        "production model is not "
+                        "connected yet.",
+                }
+
+                # Keep a useful explanation while V0.7
+                # prediction model is not connected.
                 iterator = provider.chat_stream(
                     normal_chat_messages(
-                        conversation.context_data or {},
+                        context,
                         history,
                         data.message,
                     ),
@@ -358,85 +455,157 @@ def public_ai_chat_stream(
                     think=False,
                 )
 
-                sources = []
+            # -------------------------------------------------
+            # Other / general chat
+            # -------------------------------------------------
+
+            else:
+
+                iterator = provider.chat_stream(
+                    normal_chat_messages(
+                        conversation.context_data
+                        or {},
+                        history,
+                        data.message,
+                    ),
+                    temperature=0.1,
+                    think=False,
+                )
 
         def event_stream() -> Iterator[str]:
+
+            # -------------------------------------------------
+            # META
+            # -------------------------------------------------
 
             yield (
                 "data: "
                 + json.dumps(
                     {
                         "type": "meta",
-                        "conversation_id": str(
-                            conversation.id
-                        ),
-                        "model": provider.model,
-                        "mode": (
-                            "authenticated"
-                            if user_id
-                            else "guest"
-                        ),
-                    }
+
+                        "conversation_id":
+                            str(conversation.id),
+
+                        "model":
+                            provider.model,
+
+                        "mode":
+                            (
+                                "authenticated"
+                                if user_id
+                                else "guest"
+                            ),
+
+                        "intent":
+                            intent,
+
+                        "extraction":
+                            extraction,
+
+                        "prediction":
+                            prediction,
+                    },
+                    ensure_ascii=False,
                 )
                 + "\n\n"
             )
 
-            full_answer: list[str] = []
+            full_answer = []
 
             try:
+
+                # -------------------------------------------------
+                # TOKENS
+                # -------------------------------------------------
+
                 for token in iterator:
 
-                    full_answer.append(token)
+                    full_answer.append(
+                        token
+                    )
 
                     yield (
                         "data: "
                         + json.dumps(
                             {
-                                "type": "token",
-                                "content": token,
+                                "type":
+                                    "token",
+
+                                "content":
+                                    token,
                             },
                             ensure_ascii=False,
                         )
                         + "\n\n"
                     )
 
-                answer = "".join(full_answer).strip()
+                answer = "".join(
+                    full_answer
+                ).strip()
+
+                # -------------------------------------------------
+                # SOURCES
+                # -------------------------------------------------
+
+                if sources:
+
+                    yield (
+                        "data: "
+                        + json.dumps(
+                            {
+                                "type":
+                                    "sources",
+
+                                "sources":
+                                    sources,
+                            },
+                            ensure_ascii=False,
+                        )
+                        + "\n\n"
+                    )
+
+                # -------------------------------------------------
+                # SAVE MESSAGES
+                # -------------------------------------------------
 
                 db.add(
                     Message(
-                        conversation_id=conversation.id,
+                        conversation_id=
+                            conversation.id,
+
                         role="user",
-                        content=data.message,
+
+                        content=
+                            data.message,
                     )
                 )
 
                 db.add(
                     Message(
-                        conversation_id=conversation.id,
+                        conversation_id=
+                            conversation.id,
+
                         role="assistant",
-                        content=answer,
+
+                        content=
+                            answer,
                     )
                 )
 
                 db.commit()
 
-                if sources:
-                    yield (
-                        "data: "
-                        + json.dumps(
-                            {
-                                "type": "sources",
-                                "sources": sources,
-                            },
-                            ensure_ascii=False,
-                        )
-                        + "\n\n"
-                    )
+                # -------------------------------------------------
+                # DONE
+                # -------------------------------------------------
 
                 yield (
                     "data: "
                     + json.dumps(
-                        {"type": "done"}
+                        {
+                            "type":
+                                "done"
+                        }
                     )
                     + "\n\n"
                 )
@@ -449,8 +618,11 @@ def public_ai_chat_stream(
                     "data: "
                     + json.dumps(
                         {
-                            "type": "error",
-                            "detail": str(exc),
+                            "type":
+                                "error",
+
+                            "detail":
+                                str(exc),
                         }
                     )
                     + "\n\n"
@@ -460,22 +632,48 @@ def public_ai_chat_stream(
             event_stream(),
             media_type="text/event-stream",
             headers={
-                "Cache-Control": "no-cache",
-                "Connection": "keep-alive",
-                "X-Accel-Buffering": "no",
+                "Cache-Control":
+                    "no-cache, no-transform",
+
+                "Connection":
+                    "keep-alive",
+
+                "X-Accel-Buffering":
+                    "no",
             },
         )
 
     except ValueError as exc:
+
         db.rollback()
+
         raise HTTPException(
-            status_code=status.HTTP_403_FORBIDDEN,
+            status_code=
+                status.HTTP_403_FORBIDDEN,
+
+            detail=str(exc),
+        ) from exc
+
+    except OllamaError as exc:
+
+        db.rollback()
+
+        raise HTTPException(
+            status_code=
+                status.HTTP_503_SERVICE_UNAVAILABLE,
+
             detail=str(exc),
         ) from exc
 
     except Exception as exc:
+
         db.rollback()
+
         raise HTTPException(
-            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
-            detail=f"Aqua AI stream error: {exc}",
+            status_code=
+                status.HTTP_500_INTERNAL_SERVER_ERROR,
+
+            detail=
+                f"Aqua AI error: {exc}",
         ) from exc
+
