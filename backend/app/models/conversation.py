@@ -1,7 +1,7 @@
-﻿from uuid import UUID, uuid4
-
-from sqlalchemy import ForeignKey, String, DateTime, func
+﻿from sqlalchemy import JSON, DateTime, ForeignKey, String, func
+from sqlalchemy.dialects.postgresql import JSONB
 from sqlalchemy.orm import Mapped, mapped_column, relationship
+from uuid import UUID, uuid4
 
 from app.db.session import Base
 
@@ -32,6 +32,13 @@ class Conversation(Base):
         DateTime(timezone=True),
         server_default=func.now(),
         nullable=False,
+    )
+
+    context_data: Mapped[dict] = mapped_column(
+        JSONB,
+        nullable=False,
+        default=dict,
+        server_default="{}",
     )
 
     user = relationship(

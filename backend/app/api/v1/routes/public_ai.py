@@ -1,4 +1,5 @@
 ﻿import json
+from typing import Any, Iterator
 from uuid import UUID
 
 from fastapi import APIRouter, Depends, HTTPException, status
@@ -16,11 +17,20 @@ from app.schemas.public_ai import (
     PublicAiSource,
     PublicAiStatusResponse,
 )
+from app.services.parameter_response_service import build_parameter_response
 from app.services.conversation_service import (
     get_conversation_messages,
     get_or_create_conversation,
 )
 from app.services.grounded_rag_service import answer_with_rag
+from app.services.fast_router import route_message
+from app.services.fast_parameter_extractor import extract_fast
+from app.services.live_context_service import (
+    is_context_question,
+    get_context_answer,
+)
+from app.services.conversation_context_service import merge_context
+from app.services.ai_orchestrator import process_aquaculture_message
 from app.services.streaming_rag_service import stream_rag_answer
 
 
@@ -30,105 +40,120 @@ router = APIRouter(
 )
 
 
-MEMORY_TERMS = [
-    "did i say",
-    "did i tell you",
-    "what did i tell you",
-    "what did i say",
-    "as i mentioned",
-    "i mentioned",
-    "i told you",
-    "you remember",
-    "do you remember",
-    "my farm",
-    "my pond",
-    "my species",
-    "previous message",
-    "earlier",
-    "before",
-]
-
-
-PERSONAL_CONTEXT_STARTS = [
-    "my ",
-    "i have ",
-    "i grow ",
-    "i farm ",
-    "i use ",
-    "our farm ",
-    "our pond ",
-    "we grow ",
-    "we farm ",
-]
-
-
-KNOWLEDGE_TERMS = [
-    "what is",
-    "why",
-    "how does",
-    "how do",
-    "explain",
-    "aquaculture",
-    "shrimp",
-    "fish",
-    "tilapia",
-    "prawn",
-    "water quality",
-    "dissolved oxygen",
-    "oxygen",
-    "ph",
-    "salinity",
-    "temperature",
-    "feeding",
-    "stocking",
-    "biomass",
-    "disease",
-]
-
-
-def is_memory_question(message: str) -> bool:
-    text = message.lower().strip()
-    return any(term in text for term in MEMORY_TERMS)
-
-
-def is_personal_context(message: str) -> bool:
-    text = message.lower().strip()
-    return any(text.startswith(prefix) for prefix in PERSONAL_CONTEXT_STARTS)
-
-
-def is_knowledge_question(message: str) -> bool:
-    text = message.lower().strip()
-    return any(term in text for term in KNOWLEDGE_TERMS)
-
-
-def answer_from_conversation(
-    history: list[dict[str, str]],
+def build_context_prompt(
+    context: dict[str, Any],
     message: str,
 ) -> str:
+    return f"""
+You are Aqua AI, the aquaculture intelligence assistant for AquaLife.
 
-    messages = [
+The user has explicitly provided the following structured farm context:
+
+{json.dumps(context, indent=2)}
+
+Current user message:
+{message}
+
+Rules:
+- Use the stored context when relevant.
+- Never invent missing farm values.
+- Never claim access to sensors or records that are not present here.
+- Never judge farm performance without supporting evidence.
+- Be concise and practical.
+""".strip()
+
+
+def normal_chat_messages(
+    context: dict[str, Any],
+    history: list[dict[str, str]],
+    message: str,
+) -> list[dict[str, str]]:
+    return [
         {
             "role": "system",
-            "content": (
-                "You are Aqua AI, the aquaculture intelligence "
-                "assistant for AquaLife. Use conversation history "
-                "to remember facts explicitly provided by the user. "
-                "Do not invent farm or personal information. "
-                "Be concise and practical."
+            "content": build_context_prompt(
+                context,
+                message,
             ),
         },
-        *history,
+        *history[-12:],
         {
             "role": "user",
             "content": message,
         },
     ]
 
-    return provider.chat(
-        messages,
-        temperature=0.1,
-        think=False,
+
+def process_structured_context(
+    conversation,
+    message: str,
+    history: list[dict[str, str]],
+) -> dict[str, Any]:
+
+    intent = route_message(
+        text=message,
+        history=history,
     )
+
+    result = {
+        "intent": intent,
+        "confidence": 1.0,
+        "reason": "Fast deterministic routing.",
+        "parameters": None,
+        "missing_fields": [],
+        "ambiguities": [],
+        "validation_warnings": [],
+    }
+
+    if intent in {
+        "farm_data",
+        "parameter_update",
+    }:
+
+        fast_result = extract_fast(
+            message
+        )
+
+        if fast_result["success"]:
+
+            result.update(
+                {
+                    "parameters": fast_result["parameters"],
+                    "missing_fields": fast_result["missing_fields"],
+                    "ambiguities": fast_result["ambiguities"],
+                    "validation_warnings": fast_result[
+                        "validation_warnings"
+                    ],
+                }
+            )
+
+        else:
+
+            from app.services.parameter_extraction_engine import (
+                extract_normalize_validate,
+            )
+
+            extracted = extract_normalize_validate(
+                message
+            )
+
+            result.update(
+                {
+                    "parameters": extracted["parameters"],
+                    "missing_fields": extracted["missing_fields"],
+                    "ambiguities": extracted["ambiguities"],
+                    "validation_warnings": extracted[
+                        "validation_warnings"
+                    ],
+                }
+            )
+
+        conversation.context_data = merge_context(
+            conversation.context_data,
+            result["parameters"],
+        )
+
+    return result
 
 
 @router.get(
@@ -161,33 +186,58 @@ def public_ai_chat(
             conversation_id=conversation.id,
         )
 
-        if (
-            is_memory_question(data.message)
-            or is_personal_context(data.message)
-        ):
-            answer = answer_from_conversation(
-                history=history,
-                message=data.message,
-            )
-            sources = []
+        sources: list[PublicAiSource] = []
 
-        elif is_knowledge_question(data.message):
-            result = answer_with_rag(
-                question=data.message,
-                limit=3,
+        # 1. Simple structured-memory lookup.
+        if is_context_question(data.message):
+            answer = get_context_answer(
+                conversation.context_data or {},
+                data.message,
             )
-            answer = result["answer"]
-            sources = [
-                PublicAiSource(**source)
-                for source in result["sources"]
-            ]
 
         else:
-            answer = answer_from_conversation(
-                history=history,
-                message=data.message,
+            # 2. Intent + extraction + normalization + validation.
+            result = process_structured_context(
+                conversation,
+                data.message,
+                history,
             )
-            sources = []
+
+            # 3. Knowledge/RAG.
+            if result["intent"] == "knowledge":
+                rag_result = answer_with_rag(
+                    data.message,
+                    limit=3,
+                )
+
+                answer = rag_result["answer"]
+
+                sources = [
+                    PublicAiSource(**source)
+                    for source in rag_result["sources"]
+                ]
+
+            # 4. Farm data / parameter updates.
+            elif result["intent"] in {
+                "farm_data",
+                "parameter_update",
+            }:
+                answer = build_parameter_response(
+                    result["intent"],
+                    result["parameters"] or {},
+                )
+
+            # 5. Other messages.
+            else:
+                answer = provider.chat(
+                    normal_chat_messages(
+                        conversation.context_data or {},
+                        history,
+                        data.message,
+                    ),
+                    temperature=0.1,
+                    think=False,
+                )
 
         db.add(
             Message(
@@ -256,51 +306,70 @@ def public_ai_chat_stream(
             conversation_id=conversation.id,
         )
 
-        memory_question = is_memory_question(data.message)
-        personal_context = is_personal_context(data.message)
-        knowledge_question = is_knowledge_question(data.message)
+        # Instant context answer: stream it as one small event.
+        if is_context_question(data.message):
 
-        if knowledge_question and not memory_question and not personal_context:
-            token_iterator, sources = stream_rag_answer(
-                question=data.message,
-                limit=3,
-            )
-        else:
-            messages = [
-                {
-                    "role": "system",
-                    "content": (
-                        "You are Aqua AI, the aquaculture intelligence "
-                        "assistant for AquaLife. Use conversation history "
-                        "to remember facts explicitly provided by the user. "
-                        "Do not invent farm or personal information. "
-                        "Be concise and practical."
-                    ),
-                },
-                *history,
-                {
-                    "role": "user",
-                    "content": data.message,
-                },
-            ]
-
-            token_iterator = provider.chat_stream(
-                messages,
-                temperature=0.1,
-                think=False,
+            answer = get_context_answer(
+                conversation.context_data or {},
+                data.message,
             )
 
+            iterator = iter([answer])
             sources = []
 
-        def event_stream():
-            full_answer = []
+        else:
+
+            result = process_structured_context(
+                conversation,
+                data.message,
+                history,
+            )
+
+            if result["intent"] == "knowledge":
+
+                iterator, sources = stream_rag_answer(
+                    data.message,
+                    limit=3,
+                )
+
+            elif result["intent"] in {
+                "farm_data",
+                "parameter_update",
+            }:
+
+                iterator = iter([
+                    build_parameter_response(
+                        result["intent"],
+                        result["parameters"] or {},
+                    )
+                ])
+
+                sources = []
+
+            else:
+
+                iterator = provider.chat_stream(
+                    normal_chat_messages(
+                        conversation.context_data or {},
+                        history,
+                        data.message,
+                    ),
+                    temperature=0.1,
+                    think=False,
+                )
+
+                sources = []
+
+        def event_stream() -> Iterator[str]:
 
             yield (
                 "data: "
                 + json.dumps(
                     {
                         "type": "meta",
-                        "conversation_id": str(conversation.id),
+                        "conversation_id": str(
+                            conversation.id
+                        ),
                         "model": provider.model,
                         "mode": (
                             "authenticated"
@@ -312,8 +381,11 @@ def public_ai_chat_stream(
                 + "\n\n"
             )
 
+            full_answer: list[str] = []
+
             try:
-                for token in token_iterator:
+                for token in iterator:
+
                     full_answer.append(token)
 
                     yield (
@@ -364,14 +436,13 @@ def public_ai_chat_stream(
                 yield (
                     "data: "
                     + json.dumps(
-                        {
-                            "type": "done",
-                        }
+                        {"type": "done"}
                     )
                     + "\n\n"
                 )
 
             except Exception as exc:
+
                 db.rollback()
 
                 yield (

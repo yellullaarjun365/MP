@@ -3,17 +3,19 @@
 from app.api.v1.routes import (
     auth,
     farms,
-    me,
     onboarding,
     onboarding_status,
     operations,
+    parameter_extraction,
     ponds,
     public_ai,
     species,
+    voice,
 )
 
+
 api_router = APIRouter(
-    prefix="/api/v1",
+    prefix="/api/v1"
 )
 
 api_router.include_router(farms.router)
@@ -23,5 +25,6 @@ api_router.include_router(operations.router)
 api_router.include_router(onboarding.router)
 api_router.include_router(onboarding_status.router)
 api_router.include_router(auth.router)
-api_router.include_router(me.router)
+api_router.include_router(parameter_extraction.router)
+api_router.include_router(voice.router)
 api_router.include_router(public_ai.router)

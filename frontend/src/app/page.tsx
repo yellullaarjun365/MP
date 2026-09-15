@@ -9,12 +9,18 @@ import {
   Fish,
   Leaf,
   MessageCircle,
+  Mic,
   Send,
   ShieldCheck,
+  Square,
   Sparkles,
   Waves,
 } from "lucide-react";
-import { useEffect, useState } from "react";
+import {
+  useEffect,
+  useRef,
+  useState,
+} from "react";
 
 const API_URL =
   process.env.NEXT_PUBLIC_API_URL ??
@@ -59,6 +65,15 @@ export default function HomePage() {
 
   const [chatLoading, setChatLoading] = useState(false);
 
+  const [recording, setRecording] = useState(false);
+  const [voiceLoading, setVoiceLoading] = useState(false);
+
+  const mediaRecorderRef =
+    useRef<MediaRecorder | null>(null);
+
+  const audioChunksRef =
+    useRef<Blob[]>([]);
+
   useEffect(() => {
     let active = true;
 
@@ -94,6 +109,182 @@ export default function HomePage() {
       active = false;
     };
   }, []);
+
+  async function transcribeVoice(
+    audioBlob: Blob,
+  ) {
+    setVoiceLoading(true);
+
+    try {
+      const file = new File(
+        [audioBlob],
+        "aqualife-voice.webm",
+        {
+          type: audioBlob.type || "audio/webm",
+        },
+      );
+
+      const formData = new FormData();
+
+      formData.append(
+        "file",
+        file,
+      );
+
+      const response = await fetch(
+        `${API_URL}/api/v1/voice/transcribe`,
+        {
+          method: "POST",
+          body: formData,
+        },
+      );
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(
+          data?.detail ??
+            "Voice transcription failed.",
+        );
+      }
+
+      const transcript =
+        String(data.text ?? "").trim();
+
+      if (!transcript) {
+        throw new Error(
+          "No speech was detected.",
+        );
+      }
+
+      await sendMessage(transcript);
+
+    } catch (error) {
+      setMessages((current) => [
+        ...current,
+        {
+          role: "assistant",
+          content:
+            error instanceof Error
+              ? error.message
+              : "Voice transcription failed.",
+        },
+      ]);
+    } finally {
+      setVoiceLoading(false);
+    }
+  }
+
+  async function startRecording() {
+    if (
+      chatLoading ||
+      recording ||
+      voiceLoading
+    ) {
+      return;
+    }
+
+    if (
+      typeof window === "undefined" ||
+      !navigator.mediaDevices?.getUserMedia
+    ) {
+      setMessages((current) => [
+        ...current,
+        {
+          role: "assistant",
+          content:
+            "Your browser does not support microphone recording.",
+        },
+      ]);
+
+      return;
+    }
+
+    try {
+      const stream =
+        await navigator.mediaDevices.getUserMedia(
+          {
+            audio: true,
+          },
+        );
+
+      const recorder =
+        new MediaRecorder(stream, {
+          mimeType: "audio/webm",
+        });
+
+      audioChunksRef.current = [];
+
+      recorder.ondataavailable = (
+        event,
+      ) => {
+        if (event.data.size > 0) {
+          audioChunksRef.current.push(
+            event.data,
+          );
+        }
+      };
+
+      recorder.onstop = async () => {
+        stream
+          .getTracks()
+          .forEach((track) => {
+            track.stop();
+          });
+
+        const audioBlob =
+          new Blob(
+            audioChunksRef.current,
+            {
+              type:
+                recorder.mimeType ||
+                "audio/webm",
+            },
+          );
+
+        setRecording(false);
+
+        if (audioBlob.size > 0) {
+          await transcribeVoice(
+            audioBlob,
+          );
+        }
+      };
+
+      mediaRecorderRef.current =
+        recorder;
+
+      recorder.start();
+
+      setRecording(true);
+
+    } catch (error) {
+      setRecording(false);
+
+      setMessages((current) => [
+        ...current,
+        {
+          role: "assistant",
+          content:
+            error instanceof Error
+              ? `Microphone error: ${error.message}`
+              : "Could not access your microphone.",
+        },
+      ]);
+    }
+  }
+
+  function stopRecording() {
+    const recorder =
+      mediaRecorderRef.current;
+
+    if (
+      recorder &&
+      recorder.state !== "inactive"
+    ) {
+      recorder.stop();
+    }
+  }
 
   async function sendMessage(textOverride?: string) {
     const text = (textOverride ?? input).trim();
@@ -517,15 +708,71 @@ export default function HomePage() {
                         sendMessage();
                       }
                     }}
-                    placeholder="Ask an aquaculture question..."
-                    className="h-11 min-w-0 flex-1 rounded-xl border border-border bg-background px-3 text-xs outline-none focus:ring-2 focus:ring-ring"
+                    disabled={
+                      recording ||
+                      voiceLoading
+                    }
+                    placeholder={
+                      recording
+                        ? "Listening..."
+                        : voiceLoading
+                          ? "Transcribing..."
+                          : "Ask an aquaculture question..."
+                    }
+                    className="h-11 min-w-0 flex-1 rounded-xl border border-border bg-background px-3 text-xs outline-none focus:ring-2 focus:ring-ring disabled:opacity-60"
                   />
 
                   <button
                     type="button"
-                    onClick={() => sendMessage()}
-                    disabled={!input.trim() || chatLoading}
-                    className="flex h-11 w-11 items-center justify-center rounded-xl bg-foreground text-background disabled:opacity-40"
+                    onClick={
+                      recording
+                        ? stopRecording
+                        : startRecording
+                    }
+                    disabled={
+                      chatLoading ||
+                      voiceLoading
+                    }
+                    className={[
+                      "flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border transition",
+                      recording
+                        ? "border-foreground bg-foreground text-background"
+                        : "border-border bg-background text-foreground",
+                      chatLoading ||
+                      voiceLoading
+                        ? "opacity-40"
+                        : "hover:bg-muted",
+                    ].join(" ")}
+                    aria-label={
+                      recording
+                        ? "Stop recording"
+                        : "Start voice recording"
+                    }
+                    title={
+                      recording
+                        ? "Stop recording"
+                        : "Speak to Aqua AI"
+                    }
+                  >
+                    {recording ? (
+                      <Square className="h-4 w-4" />
+                    ) : (
+                      <Mic className="h-4 w-4" />
+                    )}
+                  </button>
+
+                  <button
+                    type="button"
+                    onClick={() =>
+                      sendMessage()
+                    }
+                    disabled={
+                      !input.trim() ||
+                      chatLoading ||
+                      recording ||
+                      voiceLoading
+                    }
+                    className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-foreground text-background disabled:opacity-40"
                     aria-label="Send message"
                   >
                     <Send className="h-4 w-4" />
