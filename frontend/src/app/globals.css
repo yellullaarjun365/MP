@@ -128,3 +128,1454 @@
     @apply font-sans;
   }
 }
+
+
+
+@keyframes ocean-pan {
+  0% {
+    transform:
+      scale(1.04)
+      translate3d(-0.8%, -0.4%, 0);
+  }
+
+  50% {
+    transform:
+      scale(1.075)
+      translate3d(0.6%, 0.5%, 0);
+  }
+
+  100% {
+    transform:
+      scale(1.05)
+      translate3d(-0.25%, 0.9%, 0);
+  }
+}
+
+@keyframes ocean-depth {
+  0% {
+    transform:
+      scale(1.05)
+      translate3d(-1.2%, 0.3%, 0);
+  }
+
+  100% {
+    transform:
+      scale(1.11)
+      translate3d(1.2%, -1%, 0);
+  }
+}
+
+@keyframes bubbles-float {
+  0% {
+    background-position:
+      0 0;
+  }
+
+  100% {
+    background-position:
+      45px -680px;
+  }
+}
+
+/* ---------------------------------------------------------
+   JELLYFISH
+   --------------------------------------------------------- */
+
+@keyframes jellyfish-a {
+
+  0% {
+    transform:
+      translate3d(
+        -20vw,
+        12vh,
+        0
+      )
+      rotate(-5deg)
+      scale(0.78);
+  }
+
+  25% {
+    transform:
+      translate3d(
+        10vw,
+        8vh,
+        0
+      )
+      rotate(4deg)
+      scale(0.92);
+  }
+
+  50% {
+    transform:
+      translate3d(
+        38vw,
+        17vh,
+        0
+      )
+      rotate(-2deg)
+      scale(1);
+  }
+
+  75% {
+    transform:
+      translate3d(
+        67vw,
+        8vh,
+        0
+      )
+      rotate(5deg)
+      scale(0.92);
+  }
+
+  100% {
+    transform:
+      translate3d(
+        116vw,
+        18vh,
+        0
+      )
+      rotate(-4deg)
+      scale(0.82);
+  }
+}
+
+@keyframes jellyfish-b {
+
+  0% {
+    transform:
+      translate3d(
+        108vw,
+        56vh,
+        0
+      )
+      scale(0.82);
+  }
+
+  50% {
+    transform:
+      translate3d(
+        55vw,
+        48vh,
+        0
+      )
+      rotate(-7deg)
+      scale(1);
+  }
+
+  100% {
+    transform:
+      translate3d(
+        -20vw,
+        61vh,
+        0
+      )
+      rotate(6deg)
+      scale(0.82);
+  }
+}
+
+/* ---------------------------------------------------------
+   EEL
+   --------------------------------------------------------- */
+
+@keyframes eel-a {
+
+  0% {
+    transform:
+      translate3d(
+        -32vw,
+        45vh,
+        0
+      )
+      rotate(-4deg)
+      scale(0.72);
+  }
+
+  20% {
+    transform:
+      translate3d(
+        4vw,
+        38vh,
+        0
+      )
+      rotate(3deg)
+      scale(0.88);
+  }
+
+  45% {
+    transform:
+      translate3d(
+        35vw,
+        44vh,
+        0
+      )
+      rotate(-2deg)
+      scale(1);
+  }
+
+  70% {
+    transform:
+      translate3d(
+        68vw,
+        36vh,
+        0
+      )
+      rotate(4deg)
+      scale(0.9);
+  }
+
+  100% {
+    transform:
+      translate3d(
+        122vw,
+        48vh,
+        0
+      )
+      rotate(-3deg)
+      scale(0.74);
+  }
+}
+
+@keyframes eel-b {
+
+  0% {
+    transform:
+      translate3d(
+        120vw,
+        70vh,
+        0
+      )
+      rotate(5deg)
+      scale(0.66);
+  }
+
+  50% {
+    transform:
+      translate3d(
+        40vw,
+        64vh,
+        0
+      )
+      rotate(-4deg)
+      scale(0.88);
+  }
+
+  100% {
+    transform:
+      translate3d(
+        -35vw,
+        73vh,
+        0
+      )
+      rotate(4deg)
+      scale(0.66);
+  }
+}
+
+/* ---------------------------------------------------------
+   ANGLERFISH
+   --------------------------------------------------------- */
+
+@keyframes angler {
+
+  0% {
+    transform:
+      translate3d(
+        108vw,
+        70vh,
+        0
+      )
+      rotate(4deg)
+      scale(0.58);
+  }
+
+  25% {
+    transform:
+      translate3d(
+        82vw,
+        66vh,
+        0
+      )
+      rotate(-4deg)
+      scale(0.72);
+  }
+
+  55% {
+    transform:
+      translate3d(
+        55vw,
+        73vh,
+        0
+      )
+      rotate(3deg)
+      scale(0.82);
+  }
+
+  80% {
+    transform:
+      translate3d(
+        22vw,
+        67vh,
+        0
+      )
+      rotate(-2deg)
+      scale(0.7);
+  }
+
+  100% {
+    transform:
+      translate3d(
+        -28vw,
+        75vh,
+        0
+      )
+      rotate(4deg)
+      scale(0.54);
+  }
+}
+
+/* ---------------------------------------------------------
+   COMB JELLY
+   --------------------------------------------------------- */
+
+@keyframes comb {
+
+  0% {
+    transform:
+      translate3d(
+        -18vw,
+        76vh,
+        0
+      )
+      rotate(-8deg)
+      scale(0.72);
+  }
+
+  30% {
+    transform:
+      translate3d(
+        20vw,
+        69vh,
+        0
+      )
+      rotate(6deg)
+      scale(0.88);
+  }
+
+  65% {
+    transform:
+      translate3d(
+        63vw,
+        75vh,
+        0
+      )
+      rotate(-4deg)
+      scale(1);
+  }
+
+  100% {
+    transform:
+      translate3d(
+        120vw,
+        68vh,
+        0
+      )
+      rotate(8deg)
+      scale(0.74);
+  }
+}
+
+/* ---------------------------------------------------------
+   FISH SCHOOL
+   --------------------------------------------------------- */
+
+@keyframes school-a {
+
+  0% {
+    transform:
+      translate3d(
+        -22vw,
+        29vh,
+        0
+      )
+      scale(0.6);
+  }
+
+  30% {
+    transform:
+      translate3d(
+        21vw,
+        25vh,
+        0
+      )
+      scale(0.76);
+  }
+
+  60% {
+    transform:
+      translate3d(
+        52vw,
+        31vh,
+        0
+      )
+      scale(0.88);
+  }
+
+  100% {
+    transform:
+      translate3d(
+        120vw,
+        24vh,
+        0
+      )
+      scale(0.62);
+  }
+}
+
+@keyframes school-b {
+
+  0% {
+    transform:
+      translate3d(
+        118vw,
+        51vh,
+        0
+      )
+      scale(0.56);
+  }
+
+  45% {
+    transform:
+      translate3d(
+        57vw,
+        55vh,
+        0
+      )
+      scale(0.82);
+  }
+
+  100% {
+    transform:
+      translate3d(
+        -30vw,
+        48vh,
+        0
+      )
+      scale(0.56);
+  }
+}
+
+/* ---------------------------------------------------------
+   SPOTTED FISH
+   --------------------------------------------------------- */
+
+@keyframes spotted {
+
+  0% {
+    transform:
+      translate3d(
+        118vw,
+        18vh,
+        0
+      )
+      rotate(4deg)
+      scale(0.58);
+  }
+
+  30% {
+    transform:
+      translate3d(
+        82vw,
+        22vh,
+        0
+      )
+      rotate(-2deg)
+      scale(0.76);
+  }
+
+  60% {
+    transform:
+      translate3d(
+        46vw,
+        15vh,
+        0
+      )
+      rotate(3deg)
+      scale(0.86);
+  }
+
+  100% {
+    transform:
+      translate3d(
+        -28vw,
+        22vh,
+        0
+      )
+      rotate(-3deg)
+      scale(0.58);
+  }
+}
+
+/* ---------------------------------------------------------
+   GLOW / ATMOSPHERE
+   --------------------------------------------------------- */
+
+@keyframes surface-light {
+
+  from {
+    opacity: 0.28;
+    transform:
+      translateX(-50%)
+      scale(0.92);
+  }
+
+  to {
+    opacity: 0.82;
+    transform:
+      translateX(-50%)
+      scale(1.08);
+  }
+}
+
+@keyframes reef-light {
+
+  from {
+    opacity: 0.24;
+    transform: scale(0.9);
+  }
+
+  to {
+    opacity: 0.75;
+    transform: scale(1.16);
+  }
+}
+
+@keyframes reef-light-two {
+
+  from {
+    opacity: 0.20;
+    transform: scale(0.86);
+  }
+
+  to {
+    opacity: 0.60;
+    transform: scale(1.14);
+  }
+}
+
+/* ---------------------------------------------------------
+   CREATURE CLASSES
+   --------------------------------------------------------- */
+
+.ocean-creature-jelly-a {
+  left: 0;
+  top: 0;
+  opacity: 0.62;
+  filter:
+    drop-shadow(
+      0 0 18px rgba(75, 225, 255, 0.70)
+    )
+    saturate(1.22);
+  mix-blend-mode: screen;
+  animation:
+    jellyfish-a
+    32s
+    ease-in-out
+    infinite;
+}
+
+.ocean-creature-jelly-b {
+  left: 0;
+  top: 0;
+  opacity: 0.40;
+  filter:
+    drop-shadow(
+      0 0 14px rgba(100, 220, 255, 0.62)
+    )
+    saturate(1.15);
+  mix-blend-mode: screen;
+  animation:
+    jellyfish-b
+    39s
+    ease-in-out
+    infinite;
+}
+
+.ocean-creature-eel-a {
+  left: 0;
+  top: 0;
+  opacity: 0.58;
+  filter:
+    drop-shadow(
+      0 0 20px rgba(50, 225, 255, 0.78)
+    )
+    saturate(1.30);
+  mix-blend-mode: screen;
+  animation:
+    eel-a
+    36s
+    linear
+    infinite;
+}
+
+.ocean-creature-eel-b {
+  left: 0;
+  top: 0;
+  opacity: 0.34;
+  filter:
+    drop-shadow(
+      0 0 15px rgba(70, 215, 255, 0.70)
+    );
+  mix-blend-mode: screen;
+  animation:
+    eel-b
+    43s
+    linear
+    infinite;
+}
+
+.ocean-creature-angler {
+  left: 0;
+  top: 0;
+  opacity: 0.55;
+  filter:
+    drop-shadow(
+      0 0 21px rgba(70, 215, 255, 0.75)
+    );
+  mix-blend-mode: screen;
+  animation:
+    angler
+    48s
+    ease-in-out
+    infinite;
+}
+
+.ocean-creature-comb {
+  left: 0;
+  top: 0;
+  opacity: 0.46;
+  filter:
+    drop-shadow(
+      0 0 20px rgba(120, 225, 255, 0.76)
+    );
+  mix-blend-mode: screen;
+  animation:
+    comb
+    41s
+    ease-in-out
+    infinite;
+}
+
+.ocean-creature-school-a {
+  left: 0;
+  top: 0;
+  opacity: 0.35;
+  filter:
+    drop-shadow(
+      0 0 14px rgba(80, 220, 255, 0.68)
+    );
+  mix-blend-mode: screen;
+  animation:
+    school-a
+    25s
+    linear
+    infinite;
+}
+
+.ocean-creature-school-b {
+  left: 0;
+  top: 0;
+  opacity: 0.30;
+  filter:
+    drop-shadow(
+      0 0 13px rgba(90, 220, 255, 0.62)
+    );
+  mix-blend-mode: screen;
+  animation:
+    school-b
+    29s
+    linear
+    infinite;
+}
+
+.ocean-creature-spotted {
+  left: 0;
+  top: 0;
+  opacity: 0.45;
+  filter:
+    drop-shadow(
+      0 0 18px rgba(75, 220, 255, 0.74)
+    )
+    saturate(1.18);
+  mix-blend-mode: screen;
+  animation:
+    spotted
+    44s
+    ease-in-out
+    infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+  .ocean-creature-jelly-a,
+  .ocean-creature-jelly-b,
+  .ocean-creature-eel-a,
+  .ocean-creature-eel-b,
+  .ocean-creature-angler,
+  .ocean-creature-comb,
+  .ocean-creature-school-a,
+  .ocean-creature-school-b,
+  .ocean-creature-spotted {
+    animation: none !important;
+  }
+}
+
+@keyframes ocean-pan {
+  0% {
+    transform:
+      scale(1.04)
+      translate3d(-0.8%, -0.4%, 0);
+  }
+
+  50% {
+    transform:
+      scale(1.075)
+      translate3d(0.6%, 0.5%, 0);
+  }
+
+  100% {
+    transform:
+      scale(1.05)
+      translate3d(-0.25%, 0.9%, 0);
+  }
+}
+
+@keyframes ocean-depth {
+  0% {
+    transform:
+      scale(1.05)
+      translate3d(-1.2%, 0.3%, 0);
+  }
+
+  100% {
+    transform:
+      scale(1.11)
+      translate3d(1.2%, -1%, 0);
+  }
+}
+
+@keyframes bubbles-float {
+  0% {
+    background-position:
+      0 0;
+  }
+
+  100% {
+    background-position:
+      45px -680px;
+  }
+}
+
+/* ---------------------------------------------------------
+   JELLYFISH
+   --------------------------------------------------------- */
+
+@keyframes jellyfish-a {
+
+  0% {
+    transform:
+      translate3d(
+        -20vw,
+        12vh,
+        0
+      )
+      rotate(-5deg)
+      scale(0.78);
+  }
+
+  25% {
+    transform:
+      translate3d(
+        10vw,
+        8vh,
+        0
+      )
+      rotate(4deg)
+      scale(0.92);
+  }
+
+  50% {
+    transform:
+      translate3d(
+        38vw,
+        17vh,
+        0
+      )
+      rotate(-2deg)
+      scale(1);
+  }
+
+  75% {
+    transform:
+      translate3d(
+        67vw,
+        8vh,
+        0
+      )
+      rotate(5deg)
+      scale(0.92);
+  }
+
+  100% {
+    transform:
+      translate3d(
+        116vw,
+        18vh,
+        0
+      )
+      rotate(-4deg)
+      scale(0.82);
+  }
+}
+
+@keyframes jellyfish-b {
+
+  0% {
+    transform:
+      translate3d(
+        108vw,
+        56vh,
+        0
+      )
+      scale(0.82);
+  }
+
+  50% {
+    transform:
+      translate3d(
+        55vw,
+        48vh,
+        0
+      )
+      rotate(-7deg)
+      scale(1);
+  }
+
+  100% {
+    transform:
+      translate3d(
+        -20vw,
+        61vh,
+        0
+      )
+      rotate(6deg)
+      scale(0.82);
+  }
+}
+
+/* ---------------------------------------------------------
+   EEL
+   --------------------------------------------------------- */
+
+@keyframes eel-a {
+
+  0% {
+    transform:
+      translate3d(
+        -32vw,
+        45vh,
+        0
+      )
+      rotate(-4deg)
+      scale(0.72);
+  }
+
+  20% {
+    transform:
+      translate3d(
+        4vw,
+        38vh,
+        0
+      )
+      rotate(3deg)
+      scale(0.88);
+  }
+
+  45% {
+    transform:
+      translate3d(
+        35vw,
+        44vh,
+        0
+      )
+      rotate(-2deg)
+      scale(1);
+  }
+
+  70% {
+    transform:
+      translate3d(
+        68vw,
+        36vh,
+        0
+      )
+      rotate(4deg)
+      scale(0.9);
+  }
+
+  100% {
+    transform:
+      translate3d(
+        122vw,
+        48vh,
+        0
+      )
+      rotate(-3deg)
+      scale(0.74);
+  }
+}
+
+@keyframes eel-b {
+
+  0% {
+    transform:
+      translate3d(
+        120vw,
+        70vh,
+        0
+      )
+      rotate(5deg)
+      scale(0.66);
+  }
+
+  50% {
+    transform:
+      translate3d(
+        40vw,
+        64vh,
+        0
+      )
+      rotate(-4deg)
+      scale(0.88);
+  }
+
+  100% {
+    transform:
+      translate3d(
+        -35vw,
+        73vh,
+        0
+      )
+      rotate(4deg)
+      scale(0.66);
+  }
+}
+
+/* ---------------------------------------------------------
+   ANGLERFISH
+   --------------------------------------------------------- */
+
+@keyframes angler {
+
+  0% {
+    transform:
+      translate3d(
+        108vw,
+        70vh,
+        0
+      )
+      rotate(4deg)
+      scale(0.58);
+  }
+
+  25% {
+    transform:
+      translate3d(
+        82vw,
+        66vh,
+        0
+      )
+      rotate(-4deg)
+      scale(0.72);
+  }
+
+  55% {
+    transform:
+      translate3d(
+        55vw,
+        73vh,
+        0
+      )
+      rotate(3deg)
+      scale(0.82);
+  }
+
+  80% {
+    transform:
+      translate3d(
+        22vw,
+        67vh,
+        0
+      )
+      rotate(-2deg)
+      scale(0.7);
+  }
+
+  100% {
+    transform:
+      translate3d(
+        -28vw,
+        75vh,
+        0
+      )
+      rotate(4deg)
+      scale(0.54);
+  }
+}
+
+/* ---------------------------------------------------------
+   COMB JELLY
+   --------------------------------------------------------- */
+
+@keyframes comb {
+
+  0% {
+    transform:
+      translate3d(
+        -18vw,
+        76vh,
+        0
+      )
+      rotate(-8deg)
+      scale(0.72);
+  }
+
+  30% {
+    transform:
+      translate3d(
+        20vw,
+        69vh,
+        0
+      )
+      rotate(6deg)
+      scale(0.88);
+  }
+
+  65% {
+    transform:
+      translate3d(
+        63vw,
+        75vh,
+        0
+      )
+      rotate(-4deg)
+      scale(1);
+  }
+
+  100% {
+    transform:
+      translate3d(
+        120vw,
+        68vh,
+        0
+      )
+      rotate(8deg)
+      scale(0.74);
+  }
+}
+
+/* ---------------------------------------------------------
+   FISH SCHOOL
+   --------------------------------------------------------- */
+
+@keyframes school-a {
+
+  0% {
+    transform:
+      translate3d(
+        -22vw,
+        29vh,
+        0
+      )
+      scale(0.6);
+  }
+
+  30% {
+    transform:
+      translate3d(
+        21vw,
+        25vh,
+        0
+      )
+      scale(0.76);
+  }
+
+  60% {
+    transform:
+      translate3d(
+        52vw,
+        31vh,
+        0
+      )
+      scale(0.88);
+  }
+
+  100% {
+    transform:
+      translate3d(
+        120vw,
+        24vh,
+        0
+      )
+      scale(0.62);
+  }
+}
+
+@keyframes school-b {
+
+  0% {
+    transform:
+      translate3d(
+        118vw,
+        51vh,
+        0
+      )
+      scale(0.56);
+  }
+
+  45% {
+    transform:
+      translate3d(
+        57vw,
+        55vh,
+        0
+      )
+      scale(0.82);
+  }
+
+  100% {
+    transform:
+      translate3d(
+        -30vw,
+        48vh,
+        0
+      )
+      scale(0.56);
+  }
+}
+
+/* ---------------------------------------------------------
+   SPOTTED FISH
+   --------------------------------------------------------- */
+
+@keyframes spotted {
+
+  0% {
+    transform:
+      translate3d(
+        118vw,
+        18vh,
+        0
+      )
+      rotate(4deg)
+      scale(0.58);
+  }
+
+  30% {
+    transform:
+      translate3d(
+        82vw,
+        22vh,
+        0
+      )
+      rotate(-2deg)
+      scale(0.76);
+  }
+
+  60% {
+    transform:
+      translate3d(
+        46vw,
+        15vh,
+        0
+      )
+      rotate(3deg)
+      scale(0.86);
+  }
+
+  100% {
+    transform:
+      translate3d(
+        -28vw,
+        22vh,
+        0
+      )
+      rotate(-3deg)
+      scale(0.58);
+  }
+}
+
+/* ---------------------------------------------------------
+   GLOW / ATMOSPHERE
+   --------------------------------------------------------- */
+
+@keyframes surface-light {
+
+  from {
+    opacity: 0.28;
+    transform:
+      translateX(-50%)
+      scale(0.92);
+  }
+
+  to {
+    opacity: 0.82;
+    transform:
+      translateX(-50%)
+      scale(1.08);
+  }
+}
+
+@keyframes reef-light {
+
+  from {
+    opacity: 0.24;
+    transform: scale(0.9);
+  }
+
+  to {
+    opacity: 0.75;
+    transform: scale(1.16);
+  }
+}
+
+@keyframes reef-light-two {
+
+  from {
+    opacity: 0.20;
+    transform: scale(0.86);
+  }
+
+  to {
+    opacity: 0.60;
+    transform: scale(1.14);
+  }
+}
+
+/* ---------------------------------------------------------
+   CREATURE CLASSES
+   --------------------------------------------------------- */
+
+.ocean-creature-jelly-a {
+  left: 0;
+  top: 0;
+  opacity: 0.62;
+  filter:
+    drop-shadow(
+      0 0 18px rgba(75, 225, 255, 0.70)
+    )
+    saturate(1.22);
+  mix-blend-mode: screen;
+  animation:
+    jellyfish-a
+    32s
+    ease-in-out
+    infinite;
+}
+
+.ocean-creature-jelly-b {
+  left: 0;
+  top: 0;
+  opacity: 0.40;
+  filter:
+    drop-shadow(
+      0 0 14px rgba(100, 220, 255, 0.62)
+    )
+    saturate(1.15);
+  mix-blend-mode: screen;
+  animation:
+    jellyfish-b
+    39s
+    ease-in-out
+    infinite;
+}
+
+.ocean-creature-eel-a {
+  left: 0;
+  top: 0;
+  opacity: 0.58;
+  filter:
+    drop-shadow(
+      0 0 20px rgba(50, 225, 255, 0.78)
+    )
+    saturate(1.30);
+  mix-blend-mode: screen;
+  animation:
+    eel-a
+    36s
+    linear
+    infinite;
+}
+
+.ocean-creature-eel-b {
+  left: 0;
+  top: 0;
+  opacity: 0.34;
+  filter:
+    drop-shadow(
+      0 0 15px rgba(70, 215, 255, 0.70)
+    );
+  mix-blend-mode: screen;
+  animation:
+    eel-b
+    43s
+    linear
+    infinite;
+}
+
+.ocean-creature-angler {
+  left: 0;
+  top: 0;
+  opacity: 0.55;
+  filter:
+    drop-shadow(
+      0 0 21px rgba(70, 215, 255, 0.75)
+    );
+  mix-blend-mode: screen;
+  animation:
+    angler
+    48s
+    ease-in-out
+    infinite;
+}
+
+.ocean-creature-comb {
+  left: 0;
+  top: 0;
+  opacity: 0.46;
+  filter:
+    drop-shadow(
+      0 0 20px rgba(120, 225, 255, 0.76)
+    );
+  mix-blend-mode: screen;
+  animation:
+    comb
+    41s
+    ease-in-out
+    infinite;
+}
+
+.ocean-creature-school-a {
+  left: 0;
+  top: 0;
+  opacity: 0.35;
+  filter:
+    drop-shadow(
+      0 0 14px rgba(80, 220, 255, 0.68)
+    );
+  mix-blend-mode: screen;
+  animation:
+    school-a
+    25s
+    linear
+    infinite;
+}
+
+.ocean-creature-school-b {
+  left: 0;
+  top: 0;
+  opacity: 0.30;
+  filter:
+    drop-shadow(
+      0 0 13px rgba(90, 220, 255, 0.62)
+    );
+  mix-blend-mode: screen;
+  animation:
+    school-b
+    29s
+    linear
+    infinite;
+}
+
+.ocean-creature-spotted {
+  left: 0;
+  top: 0;
+  opacity: 0.45;
+  filter:
+    drop-shadow(
+      0 0 18px rgba(75, 220, 255, 0.74)
+    )
+    saturate(1.18);
+  mix-blend-mode: screen;
+  animation:
+    spotted
+    44s
+    ease-in-out
+    infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+  .ocean-creature-jelly-a,
+  .ocean-creature-jelly-b,
+  .ocean-creature-eel-a,
+  .ocean-creature-eel-b,
+  .ocean-creature-angler,
+  .ocean-creature-comb,
+  .ocean-creature-school-a,
+  .ocean-creature-school-b,
+  .ocean-creature-spotted {
+    animation: none !important;
+  }
+}
+
+
+/* =========================================================
+   AquaLife V0.6.2 black bioluminescent background
+   ========================================================= */
+
+@keyframes aqua-plankton {
+
+  0% {
+    transform:
+      translate3d(
+        0,
+        0,
+        0
+      )
+      scale(0.75);
+
+    opacity: 0.08;
+  }
+
+  50% {
+    transform:
+      translate3d(
+        10px,
+        -16px,
+        0
+      )
+      scale(1.15);
+
+    opacity: 0.30;
+  }
+
+  100% {
+    transform:
+      translate3d(
+        -5px,
+        -32px,
+        0
+      )
+      scale(0.88);
+
+    opacity: 0.12;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+  .animate-\[aqua-plankton_8s_ease-in-out_infinite_alternate\] {
+    animation: none !important;
+  }
+}

@@ -28,23 +28,37 @@ function createParticle(
   height: number,
 ): OceanParticle {
   return {
-    x: Math.random() * width,
-    y: Math.random() * height,
+    x:
+      Math.random() *
+      width,
+
+    y:
+      Math.random() *
+      height,
+
     radius:
-      Math.random() * 1.8 +
+      Math.random() *
+        1.8 +
       0.35,
+
     speed:
-      Math.random() * 0.18 +
+      Math.random() *
+        0.18 +
       0.035,
+
     drift:
-      Math.random() * 0.45 +
+      Math.random() *
+        0.45 +
       0.1,
+
     phase:
       Math.random() *
       Math.PI *
       2,
+
     alpha:
-      Math.random() * 0.55 +
+      Math.random() *
+        0.55 +
       0.18,
   };
 }
@@ -52,27 +66,32 @@ function createParticle(
 function createFish(
   width: number,
   height: number,
-  direction?: 1 | -1,
 ): OceanFish {
-  const resolvedDirection =
-    direction ??
-    (Math.random() > 0.5
+
+  const direction =
+    Math.random() >
+    0.5
       ? 1
-      : -1);
+      : -1;
 
   return {
     x:
       Math.random() *
         width +
-      (resolvedDirection === 1
-        ? -width * 0.25
-        : width * 0.25),
+      (
+        direction === 1
+          ? -width *
+            0.25
+          : width *
+            0.25
+      ),
 
     y:
       Math.random() *
+        height *
+        0.82 +
       height *
-      0.82 +
-      height * 0.08,
+        0.08,
 
     speed:
       Math.random() *
@@ -84,8 +103,7 @@ function createFish(
         11 +
       5,
 
-    direction:
-      resolvedDirection,
+    direction,
 
     phase:
       Math.random() *
@@ -107,14 +125,18 @@ function drawFish(
   fish: OceanFish,
   time: number,
 ) {
+
   const direction =
     fish.direction;
 
-  const x = fish.x;
+  const x =
+    fish.x;
+
   const y =
     fish.y +
     Math.sin(
-      time * 0.00065 +
+      time *
+        0.00065 +
         fish.phase,
     ) *
       7;
@@ -124,11 +146,13 @@ function drawFish(
 
   const opacity =
     0.2 +
-    fish.depth * 0.55;
+    fish.depth *
+      0.55;
 
   const glow =
     6 +
-    fish.glow * 16;
+    fish.glow *
+      16;
 
   ctx.save();
 
@@ -137,21 +161,38 @@ function drawFish(
     y,
   );
 
-  if (direction === -1) {
-    ctx.scale(-1, 1);
+  if (
+    direction ===
+    -1
+  ) {
+    ctx.scale(
+      -1,
+      1,
+    );
   }
 
   ctx.globalAlpha =
     opacity;
 
-  // Bioluminescent aura.
+  // ----------------------------------------------------------
+  // Bioluminescent aura
+  // ----------------------------------------------------------
+
   ctx.shadowColor =
-    `rgba(80, 230, 255, ${0.45 * fish.glow})`;
+    `rgba(
+      80,
+      230,
+      255,
+      ${0.45 * fish.glow}
+    )`;
 
   ctx.shadowBlur =
     glow;
 
-  // Main body.
+  // ----------------------------------------------------------
+  // Main body
+  // ----------------------------------------------------------
+
   const bodyGradient =
     ctx.createLinearGradient(
       -size,
@@ -184,7 +225,8 @@ function drawFish(
     0,
     0,
     size,
-    size * 0.42,
+    size *
+      0.42,
     0,
     0,
     Math.PI * 2,
@@ -192,27 +234,36 @@ function drawFish(
 
   ctx.fill();
 
-  // Tail.
+  // ----------------------------------------------------------
+  // Tail
+  // ----------------------------------------------------------
+
   ctx.beginPath();
 
   ctx.moveTo(
-    -size * 0.68,
+    -size *
+      0.68,
     0,
   );
 
   ctx.lineTo(
-    -size * 1.35,
-    -size * 0.56,
+    -size *
+      1.35,
+    -size *
+      0.56,
   );
 
   ctx.lineTo(
-    -size * 1.18,
+    -size *
+      1.18,
     0,
   );
 
   ctx.lineTo(
-    -size * 1.35,
-    size * 0.56,
+    -size *
+      1.35,
+    size *
+      0.56,
   );
 
   ctx.closePath();
@@ -222,22 +273,31 @@ function drawFish(
 
   ctx.fill();
 
-  // Dorsal fin.
+  // ----------------------------------------------------------
+  // Dorsal fin
+  // ----------------------------------------------------------
+
   ctx.beginPath();
 
   ctx.moveTo(
-    -size * 0.05,
-    -size * 0.3,
+    -size *
+      0.05,
+    -size *
+      0.3,
   );
 
   ctx.lineTo(
-    size * 0.18,
-    -size * 0.92,
+    size *
+      0.18,
+    -size *
+      0.92,
   );
 
   ctx.lineTo(
-    size * 0.42,
-    -size * 0.22,
+    size *
+      0.42,
+    -size *
+      0.22,
   );
 
   ctx.closePath();
@@ -247,7 +307,10 @@ function drawFish(
 
   ctx.fill();
 
-  // Bioluminescent dots.
+  // ----------------------------------------------------------
+  // Bioluminescent dots
+  // ----------------------------------------------------------
+
   ctx.shadowColor =
     "rgba(120,255,255,0.95)";
 
@@ -260,11 +323,14 @@ function drawFish(
   ctx.beginPath();
 
   ctx.arc(
-    size * 0.38,
-    -size * 0.03,
+    size *
+      0.38,
+    -size *
+      0.03,
     Math.max(
       0.8,
-      size * 0.075,
+      size *
+        0.075,
     ),
     0,
     Math.PI * 2,
@@ -275,11 +341,14 @@ function drawFish(
   ctx.beginPath();
 
   ctx.arc(
-    -size * 0.05,
-    size * 0.09,
+    -size *
+      0.05,
+    size *
+      0.09,
     Math.max(
       0.55,
-      size * 0.055,
+      size *
+        0.055,
     ),
     0,
     Math.PI * 2,
@@ -291,12 +360,15 @@ function drawFish(
 }
 
 export default function OceanBackground() {
+
   const canvasRef =
-    useRef<HTMLCanvasElement | null>(
-      null,
-    );
+    useRef<
+      HTMLCanvasElement |
+      null
+    >(null);
 
   useEffect(() => {
+
     const canvas =
       canvasRef.current;
 
@@ -305,33 +377,36 @@ export default function OceanBackground() {
     }
 
     const ctx =
-      canvas.getContext("2d", {
-        alpha: true,
-      });
+      canvas.getContext(
+        "2d",
+        {
+          alpha: true,
+        },
+      );
 
     if (!ctx) {
       return;
     }
 
-    let width = 0;
-    let height = 0;
-    let dpr = 1;
+    let width =
+      0;
+
+    let height =
+      0;
+
+    let dpr =
+      1;
 
     let animationFrame =
       0;
 
-    let destroyed = false;
+    let destroyed =
+      false;
 
     const reducedMotion =
       window.matchMedia(
         "(prefers-reduced-motion: reduce)",
       ).matches;
-
-    let particles:
-      OceanParticle[] = [];
-
-    let fish:
-      OceanFish[] = [];
 
     const particleCount =
       reducedMotion
@@ -340,74 +415,94 @@ export default function OceanBackground() {
 
     const fishCount =
       reducedMotion
-        ? 5
-        : 18;
+        ? 6
+        : 24;
 
-    const resize = () => {
-      width =
-        window.innerWidth;
+    let particles:
+      OceanParticle[] =
+        [];
 
-      height =
-        window.innerHeight;
+    let fish:
+      OceanFish[] =
+        [];
 
-      dpr =
-        Math.min(
-          window.devicePixelRatio ||
-            1,
-          2,
+    // --------------------------------------------------------
+    // Resize
+    // --------------------------------------------------------
+
+    const resize =
+      () => {
+
+        width =
+          window.innerWidth;
+
+        height =
+          window.innerHeight;
+
+        dpr =
+          Math.min(
+            window.devicePixelRatio ||
+              1,
+            2,
+          );
+
+        canvas.width =
+          Math.floor(
+            width *
+              dpr,
+          );
+
+        canvas.height =
+          Math.floor(
+            height *
+              dpr,
+          );
+
+        canvas.style.width =
+          `${width}px`;
+
+        canvas.style.height =
+          `${height}px`;
+
+        ctx.setTransform(
+          dpr,
+          0,
+          0,
+          dpr,
+          0,
+          0,
         );
 
-      canvas.width =
-        Math.floor(
-          width * dpr,
-        );
+        particles =
+          Array.from(
+            {
+              length:
+                particleCount,
+            },
+            () =>
+              createParticle(
+                width,
+                height,
+              ),
+          );
 
-      canvas.height =
-        Math.floor(
-          height * dpr,
-        );
+        fish =
+          Array.from(
+            {
+              length:
+                fishCount,
+            },
+            () =>
+              createFish(
+                width,
+                height,
+              ),
+          );
+      };
 
-      canvas.style.width =
-        `${width}px`;
-
-      canvas.style.height =
-        `${height}px`;
-
-      ctx.setTransform(
-        dpr,
-        0,
-        0,
-        dpr,
-        0,
-        0,
-      );
-
-      particles =
-        Array.from(
-          {
-            length:
-              particleCount,
-          },
-          () =>
-            createParticle(
-              width,
-              height,
-            ),
-        );
-
-      fish =
-        Array.from(
-          {
-            length:
-              fishCount,
-          },
-          () =>
-            createFish(
-              width,
-              height,
-            ),
-        );
-    };
+    // --------------------------------------------------------
+    // Draw
+    // --------------------------------------------------------
 
     const drawOcean =
       (time: number) => {
@@ -423,9 +518,9 @@ export default function OceanBackground() {
           height,
         );
 
-        // --------------------------------------------------
-        // Deep-ocean base.
-        // --------------------------------------------------
+        // ----------------------------------------------------
+        // Deep ocean base
+        // ----------------------------------------------------
 
         const base =
           ctx.createLinearGradient(
@@ -460,26 +555,32 @@ export default function OceanBackground() {
           height,
         );
 
-        // --------------------------------------------------
-        // Moving underwater light fields.
-        // --------------------------------------------------
+        // ----------------------------------------------------
+        // Moving underwater light field
+        // ----------------------------------------------------
 
         const glowOneX =
           width *
-          (0.5 +
+          (
+            0.5 +
             Math.sin(
-              time * 0.00008,
+              time *
+                0.00008,
             ) *
-              0.18);
+              0.18
+          );
 
         const glowOneY =
           height *
-          (0.22 +
+          (
+            0.22 +
             Math.sin(
-              time * 0.00011 +
+              time *
+                0.00011 +
                 1.5,
             ) *
-              0.08);
+              0.08
+          );
 
         const lightOne =
           ctx.createRadialGradient(
@@ -488,7 +589,8 @@ export default function OceanBackground() {
             0,
             glowOneX,
             glowOneY,
-            width * 0.55,
+            width *
+              0.55,
           );
 
         lightOne.addColorStop(
@@ -516,89 +618,47 @@ export default function OceanBackground() {
           height,
         );
 
-        const glowTwoX =
-          width *
-          (0.58 +
-            Math.cos(
-              time * 0.000065,
-            ) *
-              0.25);
-
-        const glowTwoY =
-          height *
-          (0.68 +
-            Math.sin(
-              time * 0.00009,
-            ) *
-              0.1);
-
-        const lightTwo =
-          ctx.createRadialGradient(
-            glowTwoX,
-            glowTwoY,
-            0,
-            glowTwoX,
-            glowTwoY,
-            width * 0.42,
-          );
-
-        lightTwo.addColorStop(
-          0,
-          "rgba(15,150,175,0.06)",
-        );
-
-        lightTwo.addColorStop(
-          1,
-          "rgba(0,0,0,0)",
-        );
-
-        ctx.fillStyle =
-          lightTwo;
-
-        ctx.fillRect(
-          0,
-          0,
-          width,
-          height,
-        );
-
-        // --------------------------------------------------
-        // Water caustics / current ribbons.
-        // --------------------------------------------------
+        // ----------------------------------------------------
+        // Water-current lines
+        // ----------------------------------------------------
 
         ctx.save();
 
         ctx.globalAlpha =
           reducedMotion
-            ? 0.06
-            : 0.1;
+            ? 0.05
+            : 0.09;
 
         ctx.lineWidth =
           1;
 
         for (
           let band = 0;
-          band < 9;
+          band < 10;
           band++
         ) {
 
           const yBase =
             height *
-            (0.08 +
+            (
+              0.06 +
               band *
-                0.105);
+                0.105
+            );
 
           ctx.beginPath();
 
           for (
             let x = -40;
-            x <= width + 40;
+            x <=
+              width + 40;
             x += 24
           ) {
 
             const wave =
               Math.sin(
-                x * 0.009 +
+                x *
+                  0.009 +
                   time *
                     0.00022 +
                   band,
@@ -607,7 +667,8 @@ export default function OceanBackground() {
 
             const cross =
               Math.sin(
-                x * 0.021 -
+                x *
+                  0.021 -
                   time *
                     0.00013,
               ) *
@@ -618,12 +679,18 @@ export default function OceanBackground() {
               wave +
               cross;
 
-            if (x === -40) {
+            if (
+              x ===
+              -40
+            ) {
+
               ctx.moveTo(
                 x,
                 y,
               );
+
             } else {
+
               ctx.lineTo(
                 x,
                 y,
@@ -632,19 +699,20 @@ export default function OceanBackground() {
           }
 
           ctx.strokeStyle =
-            "rgba(82,207,226,0.32)";
+            "rgba(82,207,226,0.30)";
 
           ctx.stroke();
         }
 
         ctx.restore();
 
-        // --------------------------------------------------
-        // Floating particles.
-        // --------------------------------------------------
+        // ----------------------------------------------------
+        // Floating particles
+        // ----------------------------------------------------
 
         for (
-          const particle of particles
+          const particle of
+            particles
         ) {
 
           particle.y -=
@@ -652,7 +720,8 @@ export default function OceanBackground() {
 
           particle.x +=
             Math.sin(
-              time * 0.00035 +
+              time *
+                0.00035 +
                 particle.phase,
             ) *
             particle.drift *
@@ -662,8 +731,10 @@ export default function OceanBackground() {
             particle.y <
             -10
           ) {
+
             particle.y =
-              height + 10;
+              height +
+              10;
 
             particle.x =
               Math.random() *
@@ -675,12 +746,14 @@ export default function OceanBackground() {
             -10
           ) {
             particle.x =
-              width + 10;
+              width +
+              10;
           }
 
           if (
             particle.x >
-            width + 10
+            width +
+              10
           ) {
             particle.x =
               -10;
@@ -689,7 +762,8 @@ export default function OceanBackground() {
           const twinkle =
             0.7 +
             Math.sin(
-              time * 0.001 +
+              time *
+                0.001 +
                 particle.phase,
             ) *
               0.3;
@@ -705,10 +779,15 @@ export default function OceanBackground() {
           );
 
           ctx.fillStyle =
-            `rgba(110,235,255,${
-              particle.alpha *
-              twinkle
-            })`;
+            `rgba(
+              110,
+              235,
+              255,
+              ${
+                particle.alpha *
+                twinkle
+              }
+            )`;
 
           ctx.shadowColor =
             "rgba(80,230,255,0.55)";
@@ -722,40 +801,56 @@ export default function OceanBackground() {
         ctx.shadowBlur =
           0;
 
-        // --------------------------------------------------
-        // Fish.
-        // --------------------------------------------------
+        // ----------------------------------------------------
+        // Fish
+        // ----------------------------------------------------
 
         for (
-          const swimmer of fish
+          const swimmer of
+            fish
         ) {
 
           swimmer.x +=
             swimmer.speed *
             swimmer.direction;
 
-          const margin =
-            width * 0.18;
-
+          // Wrap horizontally.
           if (
             swimmer.direction ===
               1 &&
             swimmer.x >
-              width + margin
+              width +
+                width *
+                  0.18
           ) {
+
             swimmer.x =
-              -margin;
+              -width *
+              0.18;
           }
 
           if (
             swimmer.direction ===
               -1 &&
             swimmer.x <
-              -margin
+              -width *
+                0.18
           ) {
+
             swimmer.x =
-              width + margin;
+              width +
+              width *
+                0.18;
           }
+
+          // Slight vertical movement.
+          swimmer.y +=
+            Math.sin(
+              time *
+                0.0004 +
+                swimmer.phase,
+            ) *
+            0.06;
 
           drawFish(
             ctx,
@@ -764,17 +859,22 @@ export default function OceanBackground() {
           );
         }
 
-        // --------------------------------------------------
-        // Dark readability vignette.
-        // --------------------------------------------------
+        // ----------------------------------------------------
+        // Central readability
+        // ----------------------------------------------------
 
         const vignette =
           ctx.createRadialGradient(
-            width * 0.5,
-            height * 0.46,
-            height * 0.12,
-            width * 0.5,
-            height * 0.5,
+            width *
+              0.5,
+            height *
+              0.46,
+            height *
+              0.12,
+            width *
+              0.5,
+            height *
+              0.5,
             Math.max(
               width,
               height,
@@ -789,12 +889,12 @@ export default function OceanBackground() {
 
         vignette.addColorStop(
           0.66,
-          "rgba(0,0,0,0.18)",
+          "rgba(0,0,0,0.16)",
         );
 
         vignette.addColorStop(
           1,
-          "rgba(0,0,0,0.64)",
+          "rgba(0,0,0,0.68)",
         );
 
         ctx.fillStyle =
@@ -807,16 +907,17 @@ export default function OceanBackground() {
           height,
         );
 
-        // --------------------------------------------------
-        // Top ocean haze.
-        // --------------------------------------------------
+        // ----------------------------------------------------
+        // Top haze
+        // ----------------------------------------------------
 
         const haze =
           ctx.createLinearGradient(
             0,
             0,
             0,
-            height * 0.34,
+            height *
+              0.36,
           );
 
         haze.addColorStop(
@@ -836,7 +937,8 @@ export default function OceanBackground() {
           0,
           0,
           width,
-          height * 0.34,
+          height *
+            0.36,
         );
       };
 
@@ -847,12 +949,15 @@ export default function OceanBackground() {
           return;
         }
 
-        drawOcean(time);
+        drawOcean(
+          time,
+        );
 
         if (
           document.visibilityState !==
           "hidden"
         ) {
+
           animationFrame =
             window.requestAnimationFrame(
               tick,
@@ -867,6 +972,7 @@ export default function OceanBackground() {
           document.visibilityState ===
           "visible"
         ) {
+
           animationFrame =
             window.requestAnimationFrame(
               tick,
@@ -913,23 +1019,31 @@ export default function OceanBackground() {
         animationFrame,
       );
     };
+
   }, []);
 
   return (
     <div
       aria-hidden="true"
-      className="pointer-events-none fixed inset-0 z-0 overflow-hidden"
+      className="
+        pointer-events-none
+        fixed
+        inset-0
+        z-0
+        overflow-hidden
+      "
     >
+
       <canvas
         ref={canvasRef}
-        className="absolute inset-0 h-full w-full"
+        className="
+          absolute
+          inset-0
+          h-full
+          w-full
+        "
       />
 
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_18%,rgba(51,208,230,0.08),transparent_42%)]" />
-
-      <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(1,9,15,0.12),rgba(1,7,13,0.38)_55%,rgba(0,2,5,0.74))]" />
-
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_26%,rgba(0,0,0,0.34)_100%)]" />
     </div>
   );
 }
