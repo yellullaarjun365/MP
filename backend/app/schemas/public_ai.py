@@ -3,6 +3,13 @@
 from pydantic import BaseModel, Field
 
 
+class PublicAiSource(BaseModel):
+    source_file: str
+    page: int
+    chunk_index: int
+    similarity: float
+
+
 class PublicAiChatRequest(BaseModel):
     message: str = Field(
         min_length=1,
@@ -17,6 +24,7 @@ class PublicAiChatResponse(BaseModel):
     model: str
     mode: str
     conversation_id: UUID
+    sources: list[PublicAiSource] = []
 
 
 class PublicAiStatusResponse(BaseModel):

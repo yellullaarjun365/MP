@@ -1,0 +1,58 @@
+﻿[
+    {
+        "name":  "fao_sustainable_aquaculture_guidelines",
+        "source_url":  "https://www.fao.org/3/cc3785en/cc3785en.pdf",
+        "local_file":  "C:\\Users\\yellu\\OneDrive\\Desktop\\files\\projects\\Mini_project\\MP\\backend\\data\\knowledge\\raw\\pdfs\\fao_sustainable_aquaculture_guidelines.pdf",
+        "sha256":  "94C42227D88D8B55F79B9123963519670FF69A756A8B22C2084F3BFCB16CBB5F",
+        "downloaded_at":  "2026-09-15T00:11:11.6286098+05:30"
+    },
+    {
+        "name":  "fao_aquaculture_biosecurity_pmp",
+        "source_url":  "https://www.fao.org/3/cc6858en/cc6858en.pdf",
+        "local_file":  "C:\\Users\\yellu\\OneDrive\\Desktop\\files\\projects\\Mini_project\\MP\\backend\\data\\knowledge\\raw\\pdfs\\fao_aquaculture_biosecurity_pmp.pdf",
+        "sha256":  "81AB6CDE96129B5A292EAB4875BC722E2C75B44DBBAB51426AC681FE70E0BC41",
+        "downloaded_at":  "2026-09-15T00:14:22.2594886+05:30"
+    },
+    {
+        "name":  "fao_water_quality_risk_mitigation",
+        "source_url":  "https://www.fao.org/3/cc7340en/cc7340en.pdf",
+        "local_file":  "C:\\Users\\yellu\\OneDrive\\Desktop\\files\\projects\\Mini_project\\MP\\backend\\data\\knowledge\\raw\\pdfs\\fao_water_quality_risk_mitigation.pdf",
+        "sha256":  "EE3AAC6BE44F339AE3430836B88CFF1DFE3608927EADA7FBEAB33297B639E7BA",
+        "downloaded_at":  "2026-09-15T00:17:14.0614514+05:30"
+    },
+    {
+        "name":  "fao_freshwater_prawn_manual",
+        "source_url":  "https://www.fao.org/4/y4100e/y4100e00.pdf",
+        "local_file":  "C:\\Users\\yellu\\OneDrive\\Desktop\\files\\projects\\Mini_project\\MP\\backend\\data\\knowledge\\raw\\pdfs\\fao_freshwater_prawn_manual.pdf",
+        "sha256":  "6215D23BC3DDB75ADABA0CD2E893DC14582CA262F89EA05BED82F5EE6BE59C8E",
+        "downloaded_at":  "2026-09-15T00:17:21.9413703+05:30"
+    },
+    {
+        "name":  "fao_live_food_aquaculture",
+        "source_url":  "https://www.fao.org/4/w3732e/w3732e00.pdf",
+        "local_file":  "C:\\Users\\yellu\\OneDrive\\Desktop\\files\\projects\\Mini_project\\MP\\backend\\data\\knowledge\\raw\\pdfs\\fao_live_food_aquaculture.pdf",
+        "sha256":  "F8212000118613B3900FA1052BA464A82EDA912B31D2E3DA210D3270809F8A73",
+        "downloaded_at":  "2026-09-15T00:17:22.9772484+05:30"
+    },
+    {
+        "name":  "fao_feed_management_aquaculture",
+        "source_url":  "https://www.fao.org/fishery/docs/CDrom/T583/index.htm",
+        "local_file":  "C:\\Users\\yellu\\OneDrive\\Desktop\\files\\projects\\Mini_project\\MP\\backend\\data\\knowledge\\raw\\pdfs\\fao_feed_management_aquaculture.html",
+        "sha256":  "F8A197552F9DF6D27025E7CCA3537CAD9B1FF8AC087BB4D9C561636DBFB4E8A8",
+        "downloaded_at":  "2026-09-15T00:17:23.7919713+05:30"
+    },
+    {
+        "name":  "worldfish_tilapia_manual",
+        "source_url":  "https://digitalarchive.worldfishcenter.org/bitstream/handle/20.500.12348/1136/CSISA-Tilapia-manual.pdf?sequence1",
+        "local_file":  "C:\\Users\\yellu\\OneDrive\\Desktop\\files\\projects\\Mini_project\\MP\\backend\\data\\knowledge\\raw\\pdfs\\worldfish_tilapia_manual.pdf",
+        "sha256":  "92D6D468680296CE13024343FAD977885AEF66D6DB5CD2E9DDC11399467DB252",
+        "downloaded_at":  "2026-09-15T00:17:32.3366124+05:30"
+    },
+    {
+        "name":  "worldfish_prawn_carp_manual",
+        "source_url":  "https://digitalarchive.worldfishcenter.org/bitstream/handle/20.500.12348/1134/CSISA-Golda-Carp-manual.pdf?sequence1",
+        "local_file":  "C:\\Users\\yellu\\OneDrive\\Desktop\\files\\projects\\Mini_project\\MP\\backend\\data\\knowledge\\raw\\pdfs\\worldfish_prawn_carp_manual.pdf",
+        "sha256":  "DB30B5FAE64055436E0F8E35444745166BDAC85D1B6460A7A37D1EE7F004274D",
+        "downloaded_at":  "2026-09-15T00:17:44.0016593+05:30"
+    }
+]

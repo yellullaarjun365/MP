@@ -67,11 +67,14 @@ class OllamaProvider:
         self,
         messages: list[dict[str, str]],
         temperature: float = 0.2,
+        think: bool = False,
     ) -> str:
+
         payload = {
             "model": self.model,
             "messages": messages,
             "stream": False,
+            "think": think,
             "options": {
                 "temperature": temperature,
             },
