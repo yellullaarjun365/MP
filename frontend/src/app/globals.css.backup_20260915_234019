@@ -1579,16 +1579,3 @@
     animation: none !important;
   }
 }
-
-/* =========================================================
-   AquaLife auth-independent background v3
-   ========================================================= */
-
-html,
-body {
-  background: #000000 !important;
-}
-
-body {
-  min-height: 100vh;
-}
