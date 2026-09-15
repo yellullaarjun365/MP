@@ -1,5 +1,6 @@
-﻿import os
-from typing import Any
+﻿import json
+import os
+from typing import Any, Iterator
 
 import httpx
 from dotenv import load_dotenv
@@ -110,6 +111,74 @@ class OllamaProvider:
                 )
 
             return content
+
+        except httpx.HTTPStatusError as exc:
+            raise OllamaError(
+                f"Ollama HTTP error {exc.response.status_code}: "
+                f"{exc.response.text}"
+            ) from exc
+
+        except httpx.HTTPError as exc:
+            raise OllamaError(
+                f"Could not connect to Ollama: {exc}"
+            ) from exc
+
+    def chat_stream(
+        self,
+        messages: list[dict[str, str]],
+        temperature: float = 0.2,
+        think: bool = False,
+    ) -> Iterator[str]:
+
+        payload = {
+            "model": self.model,
+            "messages": messages,
+            "stream": True,
+            "think": think,
+            "options": {
+                "temperature": temperature,
+            },
+        }
+
+        try:
+            with httpx.Client(
+                timeout=httpx.Timeout(
+                    connect=10.0,
+                    read=180.0,
+                    write=30.0,
+                    pool=10.0,
+                )
+            ) as client:
+
+                with client.stream(
+                    "POST",
+                    f"{self.base_url}/api/chat",
+                    json=payload,
+                ) as response:
+
+                    response.raise_for_status()
+
+                    for line in response.iter_lines():
+
+                        if not line:
+                            continue
+
+                        try:
+                            data = json.loads(line)
+                        except json.JSONDecodeError:
+                            continue
+
+                        message = data.get("message") or {}
+
+                        content = (
+                            message.get("content") or ""
+                        )
+
+                        if content:
+                            yield content
+
+                        if data.get("done"):
+                            break
 
         except httpx.HTTPStatusError as exc:
             raise OllamaError(

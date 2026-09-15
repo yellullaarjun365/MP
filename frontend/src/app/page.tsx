@@ -116,7 +116,7 @@ export default function HomePage() {
 
     try {
       const response = await fetch(
-        `${API_URL}/api/v1/public/ai/chat`,
+        `${API_URL}/api/v1/public/ai/chat/stream`,
         {
           method: "POST",
           headers: {
@@ -130,30 +130,98 @@ export default function HomePage() {
         },
       );
 
-      const data =
-        (await response.json()) as
-          | ChatResponse
-          | { detail?: string };
+      if (!response.ok || !response.body) {
+        let detail = "Aqua AI request failed.";
 
-      if (!response.ok) {
-        throw new Error(
-          "detail" in data && data.detail
-            ? data.detail
-            : "Aqua AI request failed.",
-        );
+        try {
+          const errorData = await response.json();
+
+          if (errorData?.detail) {
+            detail = errorData.detail;
+          }
+        } catch {
+        }
+
+        throw new Error(detail);
       }
 
-      const chat = data as ChatResponse;
+      const reader = response.body.getReader();
+      const decoder = new TextDecoder();
 
-      setConversationId(chat.conversation_id);
+      let buffer = "";
+      let streamedAnswer = "";
 
       setMessages((current) => [
         ...current,
         {
           role: "assistant",
-          content: chat.answer,
+          content: "",
         },
       ]);
+
+      while (true) {
+        const { value, done } = await reader.read();
+
+        if (done) {
+          break;
+        }
+
+        buffer += decoder.decode(value, {
+          stream: true,
+        });
+
+        const events = buffer.split("\n\n");
+        buffer = events.pop() ?? "";
+
+        for (const event of events) {
+          const line = event
+            .split("\n")
+            .find((item) => item.startsWith("data: "));
+
+          if (!line) {
+            continue;
+          }
+
+          try {
+            const payload = JSON.parse(
+              line.slice(6),
+            );
+
+            if (payload.type === "meta") {
+              setConversationId(
+                payload.conversation_id,
+              );
+            }
+
+            if (payload.type === "token") {
+              streamedAnswer += payload.content;
+
+              setMessages((current) => {
+                const next = [...current];
+                const last = next.length - 1;
+
+                next[last] = {
+                  role: "assistant",
+                  content: streamedAnswer,
+                };
+
+                return next;
+              });
+            }
+
+            if (payload.type === "error") {
+              throw new Error(
+                payload.detail ??
+                  "Aqua AI stream failed.",
+              );
+            }
+          } catch (error) {
+            if (error instanceof Error) {
+              throw error;
+            }
+          }
+        }
+      }
     } catch (error) {
       setMessages((current) => [
         ...current,
@@ -660,3 +728,4 @@ function SetupCard({
     </div>
   );
 }
+
