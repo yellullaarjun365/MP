@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import {
   ArrowRight,
@@ -23,6 +23,8 @@ import {
   useRef,
   useState,
 } from "react";
+
+import OceanBackground from "../components/OceanBackground";
 
 const API_URL =
   process.env.NEXT_PUBLIC_API_URL ??
@@ -1243,7 +1245,10 @@ export default function HomePage() {
   }
 
   return (
-    <main className="min-h-screen bg-background text-foreground">
+    <main className="relative min-h-screen bg-transparent text-foreground isolation-isolate">
+      <OceanBackground />
+
+      <div className="relative z-10">
       <header className="sticky top-0 z-40 border-b border-border/70 bg-background/85 backdrop-blur-xl">
         <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
           <a
@@ -1385,9 +1390,9 @@ export default function HomePage() {
 
           <div
             id="ai"
-            className="rounded-[2rem] border border-border bg-card p-4 shadow-2xl shadow-black/5 sm:p-5"
+            className="relative overflow-hidden rounded-[2rem] border border-white/10 bg-slate-950/55 p-4 shadow-[0_24px_100px_rgba(0,0,0,0.42)] backdrop-blur-2xl sm:p-5"
           >
-            <div className="flex items-center justify-between border-b border-border pb-4">
+            <div className="relative flex items-center justify-between border-b border-white/10 pb-4">
               <div className="flex items-center gap-3">
                 <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-foreground text-background">
                   <BrainCircuit className="h-5 w-5" />
@@ -1593,7 +1598,7 @@ export default function HomePage() {
                       "flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border transition",
                       recording
                         ? "border-foreground bg-foreground text-background"
-                        : "border-border bg-background text-foreground",
+                        : "border-border bg-transparent text-foreground",
                       chatLoading ||
                       voiceLoading
                         ? "opacity-40"
@@ -1712,7 +1717,7 @@ export default function HomePage() {
             )}
           </div>
 
-          <div className="rounded-3xl border border-border bg-card p-5 shadow-sm sm:p-7">
+          <div className="rounded-3xl border border-border bg-card/65 p-5 backdrop-blur-xl shadow-sm sm:p-7">
             <div className="grid gap-3 sm:grid-cols-3">
               <SetupCard
                 icon={Leaf}
@@ -1780,7 +1785,8 @@ export default function HomePage() {
           </span>
         </div>
       </footer>
-    </main>
+          </div>
+</main>
   );
 }
 
@@ -1794,7 +1800,7 @@ function PlatformCard({
   text: string;
 }) {
   return (
-    <div className="rounded-2xl border border-border bg-card p-5">
+    <div className="rounded-2xl border border-border bg-card/65 p-5 backdrop-blur-xl">
       <Icon className="h-5 w-5" />
 
       <p className="mt-5 text-sm font-semibold">
