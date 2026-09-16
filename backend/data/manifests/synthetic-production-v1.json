@@ -1,0 +1,134 @@
+﻿{
+  "schema_version": "synthetic-production-v1",
+  "generator_version": "0.1.0",
+  "target": "production_kg",
+  "status": "UNVALIDATED",
+
+  "description": "Evidence-informed synthetic production dataset manifest.",
+
+  "variables": {
+    "pond_area_m2": {
+      "unit": "m2",
+      "min": null,
+      "max": null,
+      "distribution": null,
+      "sources": []
+    },
+
+    "pond_depth_m": {
+      "unit": "m",
+      "min": null,
+      "max": null,
+      "distribution": null,
+      "sources": []
+    },
+
+    "stocking_count": {
+      "unit": "count",
+      "min": null,
+      "max": null,
+      "distribution": null,
+      "sources": []
+    },
+
+    "initial_average_weight_g": {
+      "unit": "g",
+      "min": null,
+      "max": null,
+      "distribution": null,
+      "sources": []
+    },
+
+    "temperature_c": {
+      "unit": "C",
+      "min": null,
+      "max": null,
+      "distribution": null,
+      "sources": []
+    },
+
+    "ph": {
+      "unit": "pH",
+      "min": null,
+      "max": null,
+      "distribution": null,
+      "sources": []
+    },
+
+    "dissolved_oxygen_mg_l": {
+      "unit": "mg/L",
+      "min": null,
+      "max": null,
+      "distribution": null,
+      "sources": []
+    },
+
+    "ammonia_mg_l": {
+      "unit": "mg/L",
+      "min": null,
+      "max": null,
+      "distribution": null,
+      "sources": []
+    },
+
+    "nitrite_mg_l": {
+      "unit": "mg/L",
+      "min": null,
+      "max": null,
+      "distribution": null,
+      "sources": []
+    },
+
+    "salinity_ppt": {
+      "unit": "ppt",
+      "min": null,
+      "max": null,
+      "distribution": null,
+      "sources": []
+    },
+
+    "feed_kg_day": {
+      "unit": "kg/day",
+      "min": null,
+      "max": null,
+      "distribution": null,
+      "sources": []
+    },
+
+    "culture_days": {
+      "unit": "days",
+      "min": null,
+      "max": null,
+      "distribution": null,
+      "sources": []
+    },
+
+    "mortality_rate": {
+      "unit": "fraction",
+      "min": null,
+      "max": null,
+      "distribution": null,
+      "sources": []
+    },
+
+    "production_kg": {
+      "unit": "kg",
+      "min": null,
+      "max": null,
+      "distribution": null,
+      "sources": []
+    }
+  },
+
+  "relationships": [],
+  "constraints": [],
+  "assumptions": [],
+
+  "random_seed": 20260916,
+
+  "notes": [
+    "Populate ranges and distributions from evidence before generation.",
+    "Do not treat synthetic-model metrics as real-world accuracy.",
+    "Reserve independent real-world observations for external validation."
+  ]
+}

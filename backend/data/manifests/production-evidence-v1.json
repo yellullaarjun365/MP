@@ -1,0 +1,334 @@
+{
+  "schema_version": "production-evidence-v1",
+  "species": "Litopenaeus vannamei",
+  "target": "production_kg",
+  "status": "GENERATOR_READY_PARTIAL",
+  "sources": [
+    {
+      "id": "FAO_VANNAMEI_ASIA_PACIFIC",
+      "publisher": "FAO",
+      "title": "Introductions and movement of Penaeus vannamei and Penaeus stylirostris in Asia and the Pacific",
+      "url": "https://www.fao.org/4/ad505e/ad505e06.htm",
+      "evidence": [
+        "Growth potential up to approximately 3 g/week under intensive conditions to about 20 g.",
+        "Commercial Asian earthen ponds commonly report approximately 1.0-1.5 g/week with 80-90% survival in the cited systems.",
+        "Pond stocking density is commonly described in the 60-150 PL/m2 range for intensive systems in the cited context.",
+        "Very high stocking densities require substantially greater environmental and management control."
+      ]
+    },
+    {
+      "id": "FAO_CULTURED_SPECIES_VANNAMEI",
+      "publisher": "FAO",
+      "title": "Penaeus vannamei cultured species information",
+      "url": "https://www.fao.org/fishery/docs/DOCUMENT/aquaculture/CulturedSpecies/file/en/en_whitelegshrimp.htm",
+      "evidence": [
+        "Extensive, semi-intensive, intensive and super-intensive systems have materially different stocking densities and yields.",
+        "Intensive systems in the cited FAO description use approximately 60-300 PL/m2.",
+        "The cited intensive systems report FCRs around 1.4-1.8:1.",
+        "The cited intensive production range is approximately 7,000-20,000 kg/ha/crop, with higher values reported in some systems."
+      ]
+    },
+    {
+      "id": "FAO_AGRIS_DENSITY_2009",
+      "publisher": "FAO AGRIS",
+      "title": "Study of growth, survival rate and final harvesting of Litopenaeus vannamei impact of 25, 35 and 50 per/m2 stocking densities",
+      "year": 2009,
+      "evidence": [
+        "Experimental ponds were operated at 25, 35 and 50 PL/m2.",
+        "The study measured growth, survival and final harvesting under controlled experimental conditions."
+      ]
+    },
+    {
+      "id": "FAO_SHRIMP_POND_MANAGEMENT",
+      "publisher": "FAO",
+      "title": "Shrimp culture: pond design, operation and management",
+      "url": "https://www.fao.org/4/AC210E/AC210E09.htm",
+      "evidence": [
+        "Adequate dissolved oxygen is important to shrimp growth and survival.",
+        "Low oxygen stress can inhibit growth and reduce resistance to disease.",
+        "Oxygen availability is influenced by temperature, respiration and organic matter.",
+        "Tropical shrimp ponds can experience low oxygen conditions because of higher temperatures."
+      ]
+    },
+    {
+      "id": "FAO_OXYGEN_AQUACULTURE",
+      "publisher": "FAO",
+      "title": "Chapter 21 Aeration and Oxygenation in Aquaculture",
+      "url": "https://www.fao.org/4/x5744e/x5744e0m.htm",
+      "evidence": [
+        "Dissolved oxygen is a major water-quality parameter.",
+        "Oxygen solubility changes with temperature and salinity.",
+        "Pond dissolved oxygen varies over the daily cycle due to photosynthesis and respiration."
+      ]
+    },
+    {
+      "id": "FAO_WATER_QUALITY",
+      "publisher": "FAO",
+      "title": "Improving Pond Water Quality",
+      "url": "https://www.fao.org/fishery/docs/CDrom/FAO_Training/FAO_Training/General/x6709e/x6709e02.htm",
+      "evidence": [
+        "Pond pH varies during the day and is affected by photosynthesis and respiration.",
+        "Water temperature influences biological and chemical processes.",
+        "Dissolved oxygen should be monitored as a key pond parameter."
+      ]
+    }
+  ],
+  "variables": {
+    "pond_area_m2": {
+      "unit": "m2",
+      "min": 100.0,
+      "max": 10000.0,
+      "source_ids": [
+        "FAO_CULTURED_SPECIES_VANNAMEI"
+      ],
+      "distribution": "log_uniform",
+      "generator_status": "SUPPORTED_WITH_EVIDENCE",
+      "sampling_enabled": true
+    },
+    "pond_depth_m": {
+      "unit": "m",
+      "min": 0.8,
+      "max": 2.5,
+      "source_ids": [
+        "FAO_CULTURED_SPECIES_VANNAMEI"
+      ],
+      "distribution": "truncated_normal",
+      "generator_status": "SUPPORTED_WITH_EVIDENCE",
+      "sampling_enabled": true
+    },
+    "stocking_density_per_m2": {
+      "unit": "PL/m2",
+      "min": 25.0,
+      "max": 300.0,
+      "source_ids": [
+        "FAO_VANNAMEI_ASIA_PACIFIC",
+        "FAO_CULTURED_SPECIES_VANNAMEI",
+        "FAO_AGRIS_DENSITY_2009"
+      ],
+      "distribution": "mixture",
+      "generator_status": "SUPPORTED_WITH_EVIDENCE",
+      "sampling_enabled": true
+    },
+    "initial_average_weight_g": {
+      "unit": "g",
+      "min": 0.01,
+      "max": 2.0,
+      "source_ids": [
+        "FAO_CULTURED_SPECIES_VANNAMEI"
+      ],
+      "distribution": "log_uniform",
+      "generator_status": "SUPPORTED_WITH_EVIDENCE",
+      "sampling_enabled": true
+    },
+    "temperature_c": {
+      "unit": "C",
+      "min": null,
+      "max": null,
+      "source_ids": [
+        "FAO_OXYGEN_AQUACULTURE",
+        "FAO_WATER_QUALITY"
+      ],
+      "generator_status": "EVIDENCE_RELATION_ONLY",
+      "sampling_enabled": false
+    },
+    "ph": {
+      "unit": "pH",
+      "min": null,
+      "max": null,
+      "source_ids": [
+        "FAO_WATER_QUALITY"
+      ],
+      "generator_status": "EVIDENCE_RELATION_ONLY",
+      "sampling_enabled": false
+    },
+    "dissolved_oxygen_mg_l": {
+      "unit": "mg/L",
+      "min": null,
+      "max": null,
+      "source_ids": [
+        "FAO_SHRIMP_POND_MANAGEMENT",
+        "FAO_OXYGEN_AQUACULTURE"
+      ],
+      "generator_status": "EVIDENCE_RELATION_ONLY",
+      "sampling_enabled": false
+    },
+    "salinity_ppt": {
+      "unit": "ppt",
+      "min": null,
+      "max": null,
+      "source_ids": [
+        "FAO_VANNAMEI_ASIA_PACIFIC"
+      ],
+      "generator_status": "EVIDENCE_RELATION_ONLY",
+      "sampling_enabled": false
+    },
+    "feed_kg_day": {
+      "unit": "kg/day",
+      "min": null,
+      "max": null,
+      "source_ids": [
+        "FAO_CULTURED_SPECIES_VANNAMEI"
+      ],
+      "generator_status": "EVIDENCE_RELATION_ONLY",
+      "sampling_enabled": false
+    },
+    "culture_days": {
+      "unit": "days",
+      "min": 90.0,
+      "max": 180.0,
+      "source_ids": [
+        "FAO_AGRIS_DENSITY_2009",
+        "FAO_CULTURED_SPECIES_VANNAMEI"
+      ],
+      "distribution": "truncated_normal",
+      "generator_status": "SUPPORTED_WITH_EVIDENCE",
+      "sampling_enabled": true
+    },
+    "survival_rate": {
+      "unit": "fraction",
+      "min": 0.5,
+      "max": 0.95,
+      "source_ids": [
+        "FAO_VANNAMEI_ASIA_PACIFIC",
+        "FAO_CULTURED_SPECIES_VANNAMEI"
+      ],
+      "distribution": "truncated_beta",
+      "generator_status": "SUPPORTED_WITH_EVIDENCE",
+      "sampling_enabled": true
+    },
+    "growth_rate_g_week": {
+      "unit": "g/week",
+      "min": 0.5,
+      "max": 3.0,
+      "source_ids": [
+        "FAO_VANNAMEI_ASIA_PACIFIC"
+      ],
+      "distribution": "truncated_normal",
+      "generator_status": "SUPPORTED_WITH_EVIDENCE",
+      "sampling_enabled": true
+    },
+    "ammonia_mg_l": {
+      "source_ids": [
+        "FAO_WATER_QUALITY"
+      ],
+      "generator_status": "EVIDENCE_RELATION_ONLY",
+      "sampling_enabled": false
+    },
+    "nitrite_mg_l": {
+      "source_ids": [
+        "FAO_WATER_QUALITY"
+      ],
+      "generator_status": "EVIDENCE_RELATION_ONLY",
+      "sampling_enabled": false
+    }
+  },
+  "relationships": [
+    {
+      "name": "stocking_density_and_management",
+      "type": "conditional",
+      "description": "Higher stocking density requires greater environmental and management control.",
+      "source_ids": [
+        "FAO_VANNAMEI_ASIA_PACIFIC"
+      ]
+    },
+    {
+      "name": "temperature_and_dissolved_oxygen",
+      "type": "inverse_physical_relationship",
+      "description": "Higher water temperature reduces oxygen solubility.",
+      "source_ids": [
+        "FAO_OXYGEN_AQUACULTURE"
+      ]
+    },
+    {
+      "name": "photosynthesis_and_daily_oxygen",
+      "type": "temporal",
+      "description": "Pond dissolved oxygen changes over the daily cycle due to photosynthesis and respiration.",
+      "source_ids": [
+        "FAO_OXYGEN_AQUACULTURE",
+        "FAO_WATER_QUALITY"
+      ]
+    },
+    {
+      "name": "growth_and_culture_duration",
+      "type": "positive_until_harvest",
+      "description": "Longer culture duration generally permits greater individual weight, subject to biological and management limits.",
+      "source_ids": [
+        "FAO_VANNAMEI_ASIA_PACIFIC"
+      ]
+    },
+    {
+      "name": "survival_and_harvest_biomass",
+      "type": "positive",
+      "description": "Higher surviving stock contributes more individuals to harvest biomass, holding other variables constant.",
+      "source_ids": [
+        "FAO_VANNAMEI_ASIA_PACIFIC"
+      ]
+    }
+  ],
+  "constraints": [
+    {
+      "name": "positive_pond_area",
+      "rule": "pond_area_m2 > 0"
+    },
+    {
+      "name": "positive_stock",
+      "rule": "stocking_density_per_m2 > 0"
+    },
+    {
+      "name": "survival_fraction",
+      "rule": "0 <= survival_rate <= 1"
+    },
+    {
+      "name": "nonnegative_production",
+      "rule": "production_kg >= 0"
+    },
+    {
+      "name": "biomass_identity",
+      "rule": "harvest_biomass = harvested_count * harvest_weight_g / 1000"
+    },
+    {
+      "name": "density_identity",
+      "rule": "stocking_count = stocking_density_per_m2 * pond_area_m2"
+    }
+  ],
+  "scientific_boundary": {
+    "training_data_type": "synthetic",
+    "real_world_validation": false,
+    "claim_allowed": "synthetic-data model development and internal benchmarking",
+    "claim_not_allowed": "validated real-world farm accuracy"
+  },
+  "generator_policy": {
+    "generator_version": "1.0.0",
+    "enabled_variables": [
+      "pond_area_m2",
+      "pond_depth_m",
+      "stocking_density_per_m2",
+      "initial_average_weight_g",
+      "culture_days",
+      "survival_rate",
+      "growth_rate_g_week"
+    ],
+    "relation_only_variables": [
+      "temperature_c",
+      "ph",
+      "dissolved_oxygen_mg_l",
+      "ammonia_mg_l",
+      "nitrite_mg_l",
+      "salinity_ppt",
+      "feed_kg_day"
+    ],
+    "target_generation": "derived_from_biological_rules",
+    "require_source_for_every_sampled_variable": true,
+    "require_min_max_for_every_sampled_variable": true,
+    "require_relationships": true,
+    "require_constraints": true,
+    "random_seed_required": true
+  },
+  "target_policy": {
+    "name": "production_kg",
+    "type": "derived_target",
+    "formula": "harvested_surviving_count * harvest_average_weight_g / 1000",
+    "status": "GENERATOR_DERIVED",
+    "real_world_validation": false
+  }
+}

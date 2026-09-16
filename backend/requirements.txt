@@ -43,3 +43,8 @@ watchfiles==1.2.0
 websockets==16.1.1
 faster-whisper==1.2.1
 python-multipart==0.0.32
+pandas==2.3.3
+numpy==2.2.6
+scipy==1.15.3
+scikit-learn==1.7.2
+joblib==1.6.0
