@@ -79,13 +79,13 @@ export default function DashboardPage() {
   if (!ready) {
 
     return (
-      <main className="flex min-h-screen items-center justify-center bg-background">
+      <div className="flex min-h-[calc(100vh-4rem)] items-center justify-center px-6">
 
         <p className="text-sm text-muted-foreground">
           Loading AquaLife...
         </p>
 
-      </main>
+      </div>
     );
 
   }

@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { useEffect, useMemo, useState } from "react";
 import {
@@ -154,8 +154,8 @@ export default function ForecastPage() {
 
 
   return (
-    <main className="min-h-screen bg-background">
-      <div className="mx-auto w-full max-w-[1500px] px-4 py-6 sm:px-6 lg:px-8 lg:py-8">
+    <div className="w-full px-4 py-6 sm:px-6 lg:px-8 lg:py-8">
+      <div className="mx-auto w-full max-w-[1500px]">
 
         <div className="flex flex-col gap-6">
 
@@ -298,7 +298,7 @@ export default function ForecastPage() {
 
         </div>
       </div>
-    </main>
+    </div>
   );
 }
 

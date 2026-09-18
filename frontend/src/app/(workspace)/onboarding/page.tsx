@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { FormEvent, useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
@@ -302,7 +302,7 @@ export default function OnboardingPage() {
 
   if (success) {
     return (
-      <main className="flex min-h-screen items-center justify-center bg-background px-6">
+      <div className="flex min-h-[calc(100vh-4rem)] items-center justify-center px-6 py-12">
         <div className="w-full max-w-md rounded-3xl border border-border bg-card p-8 text-center shadow-sm">
           <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-2xl bg-foreground text-background">
             <Check className="h-6 w-6" />
@@ -317,38 +317,13 @@ export default function OnboardingPage() {
             created successfully.
           </p>
         </div>
-      </main>
+      </div>
     );
   }
 
   return (
-    <main className="min-h-screen bg-background">
-      <div className="mx-auto min-h-screen max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
-        <header className="flex items-center justify-between border-b border-border pb-5">
-          <button
-            type="button"
-            onClick={() => router.replace("/")}
-            className="flex items-center gap-3"
-          >
-            <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-foreground text-background">
-              <Waves className="h-5 w-5" />
-            </div>
+    <div className="w-full">
 
-            <div className="text-left">
-              <p className="text-sm font-bold">
-                AquaLife
-              </p>
-
-              <p className="text-[9px] font-semibold uppercase tracking-[0.18em] text-muted-foreground">
-                Setup workspace
-              </p>
-            </div>
-          </button>
-
-          <span className="text-xs text-muted-foreground">
-            Step {step} of 3
-          </span>
-        </header>
 
         <div className="mx-auto grid max-w-6xl gap-8 py-10 lg:grid-cols-[220px_1fr] lg:py-16">
           <aside>
@@ -757,8 +732,7 @@ export default function OnboardingPage() {
             )}
           </section>
         </div>
-      </div>
-    </main>
+    </div>
   );
 }
 

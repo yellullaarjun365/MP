@@ -1,14 +1,11 @@
-﻿"use client";
+"use client";
 
 import { useState } from "react";
 import {
-  ArrowLeft,
   BrainCircuit,
   Send,
   Sparkles,
-  Waves,
 } from "lucide-react";
-import Link from "next/link";
 
 const API_URL =
   process.env.NEXT_PUBLIC_API_URL ??
@@ -90,36 +87,10 @@ export default function PublicAiPage() {
   }
 
   return (
-    <main className="min-h-screen bg-background">
-      <div className="mx-auto flex min-h-screen max-w-6xl flex-col px-4 sm:px-6 lg:px-8">
-        <header className="flex h-16 items-center justify-between border-b border-border">
-          <Link
-            href="/login"
-            className="flex items-center gap-2 text-xs font-semibold"
-          >
-            <ArrowLeft className="h-4 w-4" />
-            Back to AquaLife
-          </Link>
+    <div className="w-full">
 
-          <div className="flex items-center gap-2">
-            <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-foreground text-background">
-              <Waves className="h-4 w-4" />
-            </div>
 
-            <span className="text-sm font-bold">
-              Aqua AI
-            </span>
-          </div>
-
-          <Link
-            href="/login"
-            className="rounded-xl border border-border px-3 py-2 text-[11px] font-semibold"
-          >
-            Sign in
-          </Link>
-        </header>
-
-        <section className="mx-auto flex w-full max-w-4xl flex-1 flex-col py-8 sm:py-12">
+        <section className="mx-auto flex w-full max-w-4xl flex-col py-8 sm:py-12">
           <div className="mb-8 text-center">
             <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-2xl bg-foreground text-background">
               <BrainCircuit className="h-6 w-6" />
@@ -213,7 +184,6 @@ export default function PublicAiPage() {
             Farm-specific intelligence becomes available after sign in.
           </p>
         </section>
-      </div>
-    </main>
+    </div>
   );
 }

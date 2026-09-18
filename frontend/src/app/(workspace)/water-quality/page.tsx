@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import {
   useEffect,
@@ -201,7 +201,7 @@ export default function WaterQualityPage() {
 
 
   return (
-    <main className="min-h-screen bg-background">
+    <div className="w-full">
 
       <div className="mx-auto w-full max-w-[1500px] px-4 py-6 sm:px-6 lg:px-8 lg:py-8">
 
@@ -365,6 +365,6 @@ export default function WaterQualityPage() {
 
       </div>
 
-    </main>
+    </div>
   );
 }

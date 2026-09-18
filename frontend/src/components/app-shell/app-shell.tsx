@@ -2,11 +2,15 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import {
+  ChevronRight,
   Home,
   LogIn,
   LogOut,
   Menu,
+  PanelLeftClose,
+  PanelLeftOpen,
   Sparkles,
   Waves,
   X,
@@ -38,9 +42,25 @@ type AquaLifeShellProps = {
 export function AquaLifeShell({
   children,
 }: AquaLifeShellProps) {
+  const pathname = usePathname();
+
+  const sectionLabels: Record<string, string> = {
+    "/dashboard": "Dashboard",
+    "/forecast": "Forecasts",
+    "/water-quality": "Water Quality",
+    "/models": "Models",
+    "/ai": "Aqua AI",
+    "/onboarding": "Farm Setup",
+  };
+
+  const currentSection =
+    sectionLabels[pathname] ??
+    (pathname.startsWith("/models/") ? "Model detail" : "Workspace");
+
   const [user, setUser] = useState<User | null>(null);
   const [checkingAuth, setCheckingAuth] = useState(true);
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [desktopSidebarOpen, setDesktopSidebarOpen] = useState(true);
   const [aquaAIOpen, setAquaAIOpen] = useState(false);
 
   useEffect(() => {
@@ -108,8 +128,18 @@ export function AquaLifeShell({
     <div className="min-h-screen bg-background text-foreground">
       <div className="flex min-h-screen">
 
-        <aside className="hidden w-64 shrink-0 border-r border-border/70 bg-background lg:flex lg:flex-col">
-          <div className="flex h-16 shrink-0 items-center border-b border-border/70 px-5">
+        {desktopSidebarOpen && (
+          <aside className="hidden w-64 shrink-0 border-r border-border/70 bg-background lg:flex lg:flex-col">
+          <div className="relative flex h-16 shrink-0 items-center border-b border-border/70 px-5">
+            <button
+              type="button"
+              aria-label="Close sidebar"
+              title="Close sidebar"
+              onClick={() => setDesktopSidebarOpen(false)}
+              className="absolute right-3 top-1/2 flex h-8 w-8 -translate-y-1/2 items-center justify-center rounded-lg border border-border text-muted-foreground transition hover:bg-muted hover:text-foreground"
+            >
+              <PanelLeftClose className="h-4 w-4" />
+            </button>
             <Link
               href="/"
               className="flex items-center gap-2.5"
@@ -198,29 +228,58 @@ export function AquaLifeShell({
               </button>
             )}
           </div>
-        </aside>
+          </aside>
+        )}
+
+        {!desktopSidebarOpen && (
+          <button
+            type="button"
+            aria-label="Open sidebar"
+            title="Open sidebar"
+            onClick={() => setDesktopSidebarOpen(true)}
+            className="fixed left-4 top-20 z-40 hidden h-10 w-10 items-center justify-center rounded-xl border border-border bg-background/95 text-foreground shadow-lg backdrop-blur lg:flex"
+          >
+            <PanelLeftOpen className="h-4 w-4" />
+          </button>
+        )}
 
         <div className="min-w-0 flex-1">
           <header className="sticky top-0 z-30 flex h-16 items-center justify-between border-b border-border/70 bg-background/90 px-4 backdrop-blur-xl sm:px-6 lg:px-8">
-            <div className="flex items-center gap-3">
+            <div className="flex min-w-0 items-center gap-3">
               <button
                 type="button"
                 aria-label="Open navigation"
                 onClick={() => setMobileOpen(true)}
-                className="flex h-9 w-9 items-center justify-center rounded-xl border border-border lg:hidden"
+                className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl border border-border lg:hidden"
               >
                 <Menu className="h-4 w-4" />
               </button>
 
               <Link
                 href="/"
-                className="flex items-center gap-2 lg:hidden"
+                className="flex shrink-0 items-center gap-2 lg:hidden"
               >
                 <Waves className="h-5 w-5" />
                 <span className="text-sm font-bold">
                   AquaLife
                 </span>
               </Link>
+
+              <div className="hidden min-w-0 items-center gap-2 text-xs sm:flex">
+                <Link
+                  href="/"
+                  className="flex shrink-0 items-center gap-1.5 text-muted-foreground transition hover:text-foreground"
+                >
+                  <Home className="h-3.5 w-3.5" />
+                  <span>Home</span>
+                </Link>
+
+                <ChevronRight className="h-3.5 w-3.5 shrink-0 text-muted-foreground/50" />
+
+                <span className="truncate font-semibold text-foreground">
+                  {currentSection}
+                </span>
+              </div>
             </div>
 
             <div className="flex items-center gap-2">

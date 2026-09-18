@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import {
   useEffect,
@@ -158,13 +158,13 @@ export default function ModelsPage() {
   if (error) {
 
     return (
-      <main className="min-h-screen bg-background">
+      <div className="w-full">
         <div className="mx-auto max-w-[1500px] px-4 py-8 sm:px-6 lg:px-8">
           <div className="rounded-2xl border border-destructive/20 bg-destructive/5 p-6 text-sm text-destructive">
             {error}
           </div>
         </div>
-      </main>
+      </div>
     );
   }
 
@@ -172,7 +172,7 @@ export default function ModelsPage() {
   if (!data) {
 
     return (
-      <main className="min-h-screen bg-background">
+      <div className="w-full">
         <div className="mx-auto max-w-[1500px] px-4 py-8 sm:px-6 lg:px-8">
           <div className="rounded-2xl border border-border bg-card p-8 text-center">
             <p className="text-sm font-semibold">
@@ -184,7 +184,7 @@ export default function ModelsPage() {
             </p>
           </div>
         </div>
-      </main>
+      </div>
     );
   }
 
@@ -218,7 +218,7 @@ export default function ModelsPage() {
 
 
   return (
-    <main className="min-h-screen bg-background">
+    <div className="w-full">
 
       <div className="mx-auto w-full max-w-[1500px] px-4 py-6 sm:px-6 lg:px-8 lg:py-8">
 
@@ -573,7 +573,7 @@ export default function ModelsPage() {
 
       </div>
 
-    </main>
+    </div>
   );
 }
 
