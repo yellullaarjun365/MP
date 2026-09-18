@@ -1,0 +1,114 @@
+{
+  "schema_version": "aqualife-v0110-task1-persistence-baseline-v1",
+  "generated_at_utc": "2026-09-18T05:54:47.851304+00:00",
+  "benchmark": "AquaSustain-Bench",
+  "task": {
+    "id": 1,
+    "name": "Water Quality Forecasting",
+    "target": "DO_mg_L",
+    "horizon_hours": 72,
+    "interval_minutes": 15,
+    "horizon_steps": 288,
+    "primary_metric": "DO RMSE (mg/L)"
+  },
+  "protocol": {
+    "history_steps": 288,
+    "train_fraction": 0.7,
+    "validation_fraction": 0.15,
+    "test_fraction": 0.15,
+    "chronological": true,
+    "shuffle": false
+  },
+  "baseline": {
+    "name": "Persistence",
+    "prediction_rule": "last observed DO"
+  },
+  "farms": [
+    {
+      "farm_id": "A1",
+      "source_file": "A1_sample_90days.csv",
+      "total_rows": 8640,
+      "sequence_rows": 8064,
+      "train_rows": 5644,
+      "validation_rows": 1210,
+      "test_rows": 1210,
+      "history_hours": 72,
+      "horizon_hours": 72,
+      "interval_minutes": 15,
+      "history_steps": 288,
+      "horizon_steps": 288,
+      "metric": "DO RMSE (mg/L)",
+      "baseline": "Persistence",
+      "prediction_rule": "predict future DO using last observed DO",
+      "rmse": 0.1247195853094864,
+      "status": "INDEPENDENTLY_COMPUTED"
+    },
+    {
+      "farm_id": "B1",
+      "source_file": "B1_sample_90days.csv",
+      "total_rows": 8640,
+      "sequence_rows": 8064,
+      "train_rows": 5644,
+      "validation_rows": 1210,
+      "test_rows": 1210,
+      "history_hours": 72,
+      "horizon_hours": 72,
+      "interval_minutes": 15,
+      "history_steps": 288,
+      "horizon_steps": 288,
+      "metric": "DO RMSE (mg/L)",
+      "baseline": "Persistence",
+      "prediction_rule": "predict future DO using last observed DO",
+      "rmse": 0.2794130310473091,
+      "status": "INDEPENDENTLY_COMPUTED"
+    },
+    {
+      "farm_id": "C1",
+      "source_file": "C1_sample_90days.csv",
+      "total_rows": 8640,
+      "sequence_rows": 8064,
+      "train_rows": 5644,
+      "validation_rows": 1210,
+      "test_rows": 1210,
+      "history_hours": 72,
+      "horizon_hours": 72,
+      "interval_minutes": 15,
+      "history_steps": 288,
+      "horizon_steps": 288,
+      "metric": "DO RMSE (mg/L)",
+      "baseline": "Persistence",
+      "prediction_rule": "predict future DO using last observed DO",
+      "rmse": 0.9373257374235422,
+      "status": "INDEPENDENTLY_COMPUTED"
+    }
+  ],
+  "fleet": {
+    "rmse": 0.5692703385081063,
+    "test_rows": 3630,
+    "aggregation": "test-row weighted RMSE"
+  },
+  "comparison_with_lstm": [
+    {
+      "farm_id": "A1",
+      "persistence_rmse": 0.1247195853094864,
+      "lstm_rmse": 0.12371650257438044,
+      "lstm_minus_persistence": -0.0010030827351059646,
+      "lstm_beats_persistence": true
+    },
+    {
+      "farm_id": "B1",
+      "persistence_rmse": 0.2794130310473091,
+      "lstm_rmse": 0.3014283327401196,
+      "lstm_minus_persistence": 0.02201530169281052,
+      "lstm_beats_persistence": false
+    },
+    {
+      "farm_id": "C1",
+      "persistence_rmse": 0.9373257374235422,
+      "lstm_rmse": 0.6831731365672049,
+      "lstm_minus_persistence": -0.2541526008563373,
+      "lstm_beats_persistence": true
+    }
+  ],
+  "status": "PASS"
+}

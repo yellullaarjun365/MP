@@ -1,0 +1,206 @@
+{
+  "schema_version": "aqualife-v0110-lstm-task1-v2-optimized",
+  "generated_at_utc": "2026-09-18T05:31:45.717803+00:00",
+  "implementation": "AquaLife-owned LSTM baseline with progress and resumable checkpoints.",
+  "runtime": {
+    "python": "3.12.14 (main, Sep  1 2026, 00:10:07) [GCC 14.2.0]",
+    "pytorch": "2.14.0+cu130",
+    "device": "cpu",
+    "torch_threads": 4
+  },
+  "data_scope": {
+    "benchmark": "AquaSustain-Bench",
+    "public_data": true,
+    "commercial_data": false,
+    "farms": [
+      "A1",
+      "B1",
+      "C1"
+    ]
+  },
+  "task": {
+    "id": 1,
+    "name": "Water Quality Forecasting",
+    "horizon_hours": 72,
+    "interval_minutes": 15,
+    "horizon_steps": 288,
+    "primary_metric": "DO RMSE (mg/L)"
+  },
+  "protocol": {
+    "history_hours": 72,
+    "history_steps": 288,
+    "train_fraction": 0.7,
+    "validation_fraction": 0.15,
+    "test_fraction": 0.15,
+    "chronological": true,
+    "shuffle": false
+  },
+  "model": {
+    "architecture": "LSTM",
+    "input_size": 1,
+    "hidden_size": 64,
+    "layers": 2,
+    "dropout": 0.2,
+    "batch_size": 64,
+    "epochs": 60,
+    "learning_rate": 0.001,
+    "optimizer": "Adam",
+    "loss": "MSE",
+    "random_seed": 42,
+    "device": "cpu",
+    "torch_threads": 4,
+    "checkpointing": true,
+    "resumable": true,
+    "progress_reporting": true
+  },
+  "features": [
+    "DO_lag_sequence_72h"
+  ],
+  "farms": [
+    {
+      "farm_id": "A1",
+      "source_file": "A1_sample_90days.csv",
+      "total_rows": 8640,
+      "sequence_rows": 8064,
+      "train_rows": 5644,
+      "validation_rows": 1210,
+      "test_rows": 1210,
+      "history_hours": 72,
+      "horizon_hours": 72,
+      "interval_minutes": 15,
+      "history_steps": 288,
+      "horizon_steps": 288,
+      "metric": "DO RMSE (mg/L)",
+      "normalization": {
+        "fit_on_training_only": true,
+        "input_mean": 5.95425271987915,
+        "input_std": 0.2990545630455017,
+        "target_mean": 5.96770715713501,
+        "target_std": 0.30733397603034973
+      },
+      "model": {
+        "architecture": "LSTM",
+        "input_size": 1,
+        "hidden_size": 64,
+        "layers": 2,
+        "dropout": 0.2,
+        "batch_size": 64,
+        "epochs_requested": 60,
+        "epochs_run": 30,
+        "best_epoch": 20,
+        "learning_rate": 0.001,
+        "random_seed": 42,
+        "optimizer": "Adam",
+        "loss": "MSE",
+        "threads": 4,
+        "resumed_from_checkpoint": false
+      },
+      "rmse": 0.12371650257438044,
+      "independent_rmse_check": 0.12371650257438044,
+      "status": "INDEPENDENTLY_COMPUTED"
+    },
+    {
+      "farm_id": "B1",
+      "source_file": "B1_sample_90days.csv",
+      "total_rows": 8640,
+      "sequence_rows": 8064,
+      "train_rows": 5644,
+      "validation_rows": 1210,
+      "test_rows": 1210,
+      "history_hours": 72,
+      "horizon_hours": 72,
+      "interval_minutes": 15,
+      "history_steps": 288,
+      "horizon_steps": 288,
+      "metric": "DO RMSE (mg/L)",
+      "normalization": {
+        "fit_on_training_only": true,
+        "input_mean": 5.7120680809021,
+        "input_std": 0.20044825971126556,
+        "target_mean": 5.730152606964111,
+        "target_std": 0.21693068742752075
+      },
+      "model": {
+        "architecture": "LSTM",
+        "input_size": 1,
+        "hidden_size": 64,
+        "layers": 2,
+        "dropout": 0.2,
+        "batch_size": 64,
+        "epochs_requested": 60,
+        "epochs_run": 11,
+        "best_epoch": 1,
+        "learning_rate": 0.001,
+        "random_seed": 42,
+        "optimizer": "Adam",
+        "loss": "MSE",
+        "threads": 4,
+        "resumed_from_checkpoint": false
+      },
+      "rmse": 0.3014283327401196,
+      "independent_rmse_check": 0.3014283327401196,
+      "status": "INDEPENDENTLY_COMPUTED"
+    },
+    {
+      "farm_id": "C1",
+      "source_file": "C1_sample_90days.csv",
+      "total_rows": 8640,
+      "sequence_rows": 8064,
+      "train_rows": 5644,
+      "validation_rows": 1210,
+      "test_rows": 1210,
+      "history_hours": 72,
+      "horizon_hours": 72,
+      "interval_minutes": 15,
+      "history_steps": 288,
+      "horizon_steps": 288,
+      "metric": "DO RMSE (mg/L)",
+      "normalization": {
+        "fit_on_training_only": true,
+        "input_mean": 5.313026428222656,
+        "input_std": 0.33390697836875916,
+        "target_mean": 5.319615364074707,
+        "target_std": 0.3316117823123932
+      },
+      "model": {
+        "architecture": "LSTM",
+        "input_size": 1,
+        "hidden_size": 64,
+        "layers": 2,
+        "dropout": 0.2,
+        "batch_size": 64,
+        "epochs_requested": 60,
+        "epochs_run": 19,
+        "best_epoch": 9,
+        "learning_rate": 0.001,
+        "random_seed": 42,
+        "optimizer": "Adam",
+        "loss": "MSE",
+        "threads": 4,
+        "resumed_from_checkpoint": false
+      },
+      "rmse": 0.6831731365672049,
+      "independent_rmse_check": 0.6831731365672049,
+      "status": "INDEPENDENTLY_COMPUTED"
+    }
+  ],
+  "fleet": {
+    "rmse": 0.43699364881532615,
+    "test_rows": 3630,
+    "aggregation": "test-row weighted RMSE"
+  },
+  "scientific_boundary": {
+    "independent_public_data_result": true,
+    "source_lstm_implementation_reproduced": false,
+    "commercial_12_farm_validation": false,
+    "real_world_validation": false,
+    "production_accuracy_claim": false
+  },
+  "safety": {
+    "external_weights": false,
+    "network": false,
+    "automatic_training": false,
+    "automatic_deployment": false
+  },
+  "status": "PASS"
+}

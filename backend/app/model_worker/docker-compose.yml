@@ -1,0 +1,33 @@
+
+services:
+
+  aqualife-model-worker:
+
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+    read_only: true
+
+    network_mode: "none"
+
+    privileged: false
+
+    cap_drop:
+      - ALL
+
+    security_opt:
+      - no-new-privileges:true
+
+    tmpfs:
+      - /tmp:rw,noexec,nosuid,size=64m
+
+    mem_limit: 1024m
+
+    cpus: 1.0
+
+    pids_limit: 128
+
+    stdin_open: true
+
+    tty: false

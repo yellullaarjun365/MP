@@ -1,4 +1,4 @@
-﻿from __future__ import annotations
+from __future__ import annotations
 
 from datetime import datetime, timezone
 from typing import Literal
@@ -84,6 +84,16 @@ class ProductionPredictionInput(BaseModel):
     culture_days: float | None = Field(
         default=None,
         ge=0,
+    )
+    survival_rate: float | None = Field(
+        default=None,
+        ge=0,
+        le=1,
+    )
+    growth_rate_g_week: float | None = Field(
+        default=None,
+        ge=0,
+        le=3,
     )
 
     mortality_rate: float | None = Field(

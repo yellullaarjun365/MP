@@ -7,12 +7,17 @@ import {
   ChevronRight,
   Droplets,
   Fish,
+  Gauge,
+  LayoutDashboard,
   Leaf,
+  LogIn,
+  LogOut,
   MessageCircle,
   CircleDot,
   X,
   Mic,
   Send,
+  Settings2,
   ShieldCheck,
   Square,
   Sparkles,
@@ -25,6 +30,7 @@ import {
 } from "react";
 
 import OceanBackground from "../components/OceanBackground";
+import { AquaAIDrawer, AquaAIButton } from "@/components/ai/aqua-ai-drawer";
 
 const API_URL =
   process.env.NEXT_PUBLIC_API_URL ??
@@ -416,6 +422,7 @@ export default function HomePage() {
   ]);
 
   const [chatLoading, setChatLoading] = useState(false);
+  const [aquaAIOpen, setAquaAIOpen] = useState(false);
 
   const [recording, setRecording] = useState(false);
   const [voiceLoading, setVoiceLoading] = useState(false);
@@ -1234,6 +1241,21 @@ export default function HomePage() {
       `${API_URL}/api/v1/auth/google`;
   }
 
+  async function logout() {
+    try {
+      await fetch(
+        `${API_URL}/api/v1/auth/logout`,
+        {
+          method: "POST",
+          credentials: "include",
+          cache: "no-store",
+        },
+      );
+    } finally {
+      window.location.href = "/";
+    }
+  }
+
   function openFarmSetup() {
     const element =
       document.getElementById("farm-setup");
@@ -1245,11 +1267,189 @@ export default function HomePage() {
   }
 
   return (
-    <main className="relative min-h-screen bg-transparent text-foreground isolation-isolate relative min-h-screen bg-transparent text-foreground isolation-isolate">
+    <main className="relative min-h-screen bg-transparent text-foreground isolation-isolate lg:pl-64">
       <OceanBackground />
 
 
       <div className="relative z-10">
+      <aside
+        data-aqualife-workspace="true"
+        className="fixed inset-y-0 left-0 z-50 hidden w-64 border-r border-border bg-background/95 backdrop-blur-2xl lg:flex lg:flex-col"
+      >
+        <div className="flex h-16 shrink-0 items-center border-b border-border px-5">
+          <a href="#top" className="flex items-center gap-3">
+            <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-foreground text-background">
+              <Waves className="h-5 w-5" />
+            </div>
+
+            <div>
+              <p className="text-sm font-bold tracking-tight">
+                AquaLife
+              </p>
+              <p className="text-[9px] font-semibold uppercase tracking-[0.18em] text-muted-foreground">
+                Intelligence
+              </p>
+            </div>
+          </a>
+        </div>
+
+        <div className="flex-1 overflow-y-auto px-3 py-5">
+          <div className="space-y-7">
+
+            <section>
+              <p className="px-3 text-[10px] font-semibold uppercase tracking-[0.18em] text-muted-foreground">
+                Workspace
+              </p>
+
+              <div className="mt-2 space-y-1">
+                <button
+                  type="button"
+                  onClick={() => {
+                    if (user) {
+                      window.location.href = "/dashboard";
+                    } else {
+                      signIn();
+                    }
+                  }}
+                  className="flex w-full items-center gap-3 rounded-xl bg-muted/70 px-3 py-2.5 text-left text-sm font-semibold transition hover:bg-muted"
+                >
+                  <LayoutDashboard className="h-4 w-4" />
+                  <span>Dashboard</span>
+                </button>
+
+                <button
+                  type="button"
+                  onClick={() => {
+                    if (user) {
+                      openFarmSetup();
+                    } else {
+                      signIn();
+                    }
+                  }}
+                  className="flex w-full items-center gap-3 rounded-xl px-3 py-2.5 text-left text-sm text-muted-foreground transition hover:bg-muted hover:text-foreground"
+                >
+                  <Fish className="h-4 w-4" />
+                  <span>Farm setup</span>
+                </button>
+              </div>
+            </section>
+
+            <section>
+              <p className="px-3 text-[10px] font-semibold uppercase tracking-[0.18em] text-muted-foreground">
+                Intelligence
+              </p>
+
+              <div className="mt-2 space-y-1">
+                <a
+                  href="/water-quality"
+                  className="flex items-center gap-3 rounded-xl px-3 py-2.5 text-sm text-muted-foreground transition hover:bg-muted hover:text-foreground"
+                >
+                  <Droplets className="h-4 w-4" />
+                  <span>Water quality</span>
+                </a>
+
+                <a
+                  href="/forecast"
+                  className="flex items-center gap-3 rounded-xl px-3 py-2.5 text-sm text-muted-foreground transition hover:bg-muted hover:text-foreground"
+                >
+                  <Gauge className="h-4 w-4" />
+                  <span>Forecasts</span>
+                </a>
+
+                <a
+                  href="/models"
+                  className="flex items-center gap-3 rounded-xl px-3 py-2.5 text-sm text-muted-foreground transition hover:bg-muted hover:text-foreground"
+                >
+                  <BrainCircuit className="h-4 w-4" />
+                  <span>Models</span>
+                </a>
+
+                <button
+                  type="button"
+                  onClick={() => setAquaAIOpen(true)}
+                  className="flex w-full items-center gap-3 rounded-xl px-3 py-2.5 text-left text-sm text-muted-foreground transition hover:bg-muted hover:text-foreground"
+                >
+                  <Sparkles className="h-4 w-4" />
+                  <span>Aqua AI</span>
+                  <span className="ml-auto rounded-full border border-border px-1.5 py-0.5 text-[9px] font-semibold text-muted-foreground">
+                    AI
+                  </span>
+                </button>
+              </div>
+            </section>
+
+            <section>
+              <p className="px-3 text-[10px] font-semibold uppercase tracking-[0.18em] text-muted-foreground">
+                Platform
+              </p>
+
+              <div className="mt-2 space-y-1">
+                <a
+                  href="#platform"
+                  className="flex items-center gap-3 rounded-xl px-3 py-2.5 text-sm text-muted-foreground transition hover:bg-muted hover:text-foreground"
+                >
+                  <Settings2 className="h-4 w-4" />
+                  <span>Platform</span>
+                </a>
+
+                <button
+                  type="button"
+                  onClick={openFarmSetup}
+                  className="flex w-full items-center gap-3 rounded-xl px-3 py-2.5 text-left text-sm text-muted-foreground transition hover:bg-muted hover:text-foreground"
+                >
+                  <Fish className="h-4 w-4" />
+                  <span>Farm information</span>
+                </button>
+              </div>
+            </section>
+
+          </div>
+        </div>
+
+        <div className="shrink-0 border-t border-border p-3">
+          {checkingAuth ? (
+            <div className="h-16 animate-pulse rounded-xl bg-muted" />
+          ) : user ? (
+            <div className="rounded-xl border border-border bg-muted/30 p-3">
+              <div className="flex items-center gap-3">
+                <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-foreground text-xs font-bold text-background">
+                  {(user.full_name ?? user.email)
+                    .slice(0, 1)
+                    .toUpperCase()}
+                </div>
+
+                <div className="min-w-0 flex-1">
+                  <p className="truncate text-xs font-semibold">
+                    {user.full_name ?? "AquaLife user"}
+                  </p>
+                  <p className="truncate text-[10px] text-muted-foreground">
+                    {user.email}
+                  </p>
+                </div>
+              </div>
+
+              <button
+                type="button"
+                onClick={logout}
+                className="mt-3 flex w-full items-center justify-center gap-2 rounded-lg border border-border px-3 py-2 text-[11px] font-semibold text-muted-foreground transition hover:bg-background hover:text-foreground"
+              >
+                <LogOut className="h-3.5 w-3.5" />
+                Log out
+              </button>
+            </div>
+          ) : (
+            <button
+              type="button"
+              onClick={signIn}
+              className="flex w-full items-center justify-center gap-2 rounded-xl bg-foreground px-3 py-2.5 text-xs font-semibold text-background transition hover:opacity-90"
+            >
+              <LogIn className="h-4 w-4" />
+              Sign in with Google
+            </button>
+          )}
+        </div>
+      </aside>
+
       <header className="sticky top-0 z-40 border-b border-border/70 bg-background/85 backdrop-blur-xl">
         <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
           <a
@@ -1272,9 +1472,13 @@ export default function HomePage() {
           </a>
 
           <nav className="hidden items-center gap-6 text-xs font-medium text-muted-foreground md:flex">
-            <a href="#ai" className="hover:text-foreground">
+            <button
+              type="button"
+              onClick={() => setAquaAIOpen(true)}
+              className="hover:text-foreground"
+            >
               Aqua AI
-            </a>
+            </button>
 
             <a href="#platform" className="hover:text-foreground">
               Platform
@@ -1322,8 +1526,8 @@ export default function HomePage() {
           <div className="absolute left-1/2 top-0 h-[520px] w-[760px] -translate-x-1/2 rounded-full bg-foreground/[0.035] blur-3xl" />
         </div>
 
-        <div className="relative mx-auto grid max-w-7xl gap-14 px-4 pb-16 pt-16 sm:px-6 lg:grid-cols-[1.05fr_0.95fr] lg:px-8 lg:pb-24 lg:pt-24">
-          <div className="max-w-3xl self-center">
+        <div className="relative mx-auto flex min-h-[calc(100vh-4rem)] max-w-5xl items-center justify-center px-4 pb-16 pt-16 sm:px-6 lg:px-8 lg:pb-24 lg:pt-24">
+          <div className="mx-auto max-w-3xl text-center">
             <div className="inline-flex items-center gap-2 rounded-full border border-border bg-muted/40 px-3 py-1.5 text-[10px] font-semibold uppercase tracking-[0.18em] text-muted-foreground">
               <span className="h-1.5 w-1.5 rounded-full bg-foreground" />
               Built for modern aquaculture
@@ -1346,13 +1550,7 @@ export default function HomePage() {
             <div className="mt-8 flex flex-wrap gap-3">
               <button
                 type="button"
-                onClick={() => {
-                  document
-                    .getElementById("ai")
-                    ?.scrollIntoView({
-                      behavior: "smooth",
-                    });
-                }}
+                onClick={() => setAquaAIOpen(true)}
                 className="flex items-center gap-2 rounded-xl bg-foreground px-5 py-3 text-xs font-semibold text-background"
               >
                 Ask Aqua AI
@@ -1389,260 +1587,6 @@ export default function HomePage() {
             </div>
           </div>
 
-          <div
-            id="ai"
-            className="relative overflow-hidden rounded-[2rem] border border-white/10 bg-slate-950/55 p-4 shadow-[0_24px_100px_rgba(0,0,0,0.42)] backdrop-blur-2xl sm:p-5"
-          >
-            <div className="relative flex items-center justify-between border-b border-white/10 pb-4">
-              <div className="flex items-center gap-3">
-                <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-foreground text-background">
-                  <BrainCircuit className="h-5 w-5" />
-                </div>
-
-                <div>
-                  <p className="text-sm font-semibold">
-                    Aqua AI
-                  </p>
-
-                  <p className="text-[10px] text-muted-foreground">
-                    {user
-                      ? "Connected to your AquaLife account"
-                      : "Explore without creating a farm"}
-                  </p>
-                </div>
-              </div>
-
-              <button
-                type="button"
-                onClick={startNewConversation}
-                className="text-[10px] font-semibold text-muted-foreground underline underline-offset-4"
-              >
-                New chat
-              </button>
-            </div>
-
-            <div className="flex min-h-[420px] flex-col">
-              <div className="flex-1 space-y-4 overflow-y-auto py-5">
-                {messages.map((message, index) => (
-                  <div
-                    key={`${message.role}-${index}`}
-                    className={[
-                      "flex gap-3",
-                      message.role === "user"
-                        ? "justify-end"
-                        : "justify-start",
-                    ].join(" ")}
-                  >
-                    {message.role === "assistant" && (
-                      <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-muted">
-                        <BrainCircuit className="h-4 w-4" />
-                      </div>
-                    )}
-
-                    <div
-                      className={[
-                        "max-w-[82%] rounded-2xl px-4 py-3 text-xs leading-6",
-                        message.role === "user"
-                          ? "bg-foreground text-background"
-                          : "bg-muted",
-                      ].join(" ")}
-                    >
-                      {message.role === "assistant" ? (
-                        <StructuredAssistant
-                          message={message}
-                        />
-                      ) : (
-                        <div className="whitespace-pre-wrap">
-                          {message.content}
-                        </div>
-                      )}
-                    </div>
-                  </div>
-                ))}
-
-                {chatLoading && (
-                  <div className="mb-4 flex items-center justify-between rounded-2xl border border-border bg-muted/30 px-4 py-3">
-                    <div className="flex items-center gap-2">
-                      <BrainCircuit className="h-4 w-4 animate-pulse" />
-
-                      <span className="text-xs font-medium">
-                        Aqua AI is responding...
-                      </span>
-                    </div>
-
-                    <button
-                      type="button"
-                      onClick={stopGeneration}
-                      className="flex items-center gap-2 rounded-xl border border-border bg-background px-3 py-2 text-xs font-semibold transition hover:bg-muted"
-                    >
-                      <Square className="h-3.5 w-3.5" />
-                      Stop
-                    </button>
-                  </div>
-                )}
-              </div>
-
-              <div className="border-t border-border pt-4">
-
-                {recording && (
-                  <div className="mb-4 rounded-2xl border border-border bg-background p-4">
-
-                    <div className="flex items-center justify-between">
-
-                      <div className="flex items-center gap-2">
-                        <span className="relative flex h-3 w-3">
-                          <span className="absolute h-3 w-3 animate-ping rounded-full bg-foreground/40" />
-                          <span className="relative h-3 w-3 rounded-full bg-foreground" />
-                        </span>
-
-                        <span className="text-xs font-semibold">
-                          Recording...
-                        </span>
-                      </div>
-
-                      <span className="font-mono text-xs font-semibold tabular-nums">
-                        {String(
-                          Math.floor(
-                            recordingSeconds / 60,
-                          ),
-                        ).padStart(2, "0")}
-                        :
-                        {String(
-                          recordingSeconds % 60,
-                        ).padStart(2, "0")}
-                        <span className="ml-1 text-muted-foreground">
-                          / 01:00
-                        </span>
-                      </span>
-
-                    </div>
-
-                    <div className="mt-3 h-2.5 w-full overflow-hidden rounded-full bg-muted">
-                      <div
-                        className="h-full rounded-full bg-foreground transition-[width] duration-1000 ease-linear"
-                        style={{
-                          width: `${Math.min(
-                            100,
-                            (recordingSeconds / 60) * 100,
-                          )}%`,
-                        }}
-                      />
-                    </div>
-
-                    <div className="mt-4 flex items-center justify-between gap-3">
-
-                      <button
-                        type="button"
-                        onClick={cancelRecording}
-                        className="rounded-xl border border-border px-4 py-2.5 text-xs font-semibold hover:bg-muted"
-                      >
-                        Cancel
-                      </button>
-
-                      <button
-                        type="button"
-                        onClick={stopRecording}
-                        className="flex items-center gap-2 rounded-xl bg-foreground px-4 py-2.5 text-xs font-semibold text-background hover:opacity-90"
-                      >
-                        <Square className="h-4 w-4" />
-                        Stop & transcribe
-                      </button>
-
-                    </div>
-
-                  </div>
-                )}
-
-                {voiceLoading && (
-                  <div className="mb-4 rounded-xl border border-border bg-muted/30 px-4 py-3 text-xs text-muted-foreground">
-                    Transcribing your voice...
-                  </div>
-                )}
-
-                <div className="flex gap-2">
-                  <input
-                    value={input}
-                    onChange={(event) =>
-                      setInput(event.target.value)
-                    }
-                    onKeyDown={(event) => {
-                      if (event.key === "Enter") {
-                        sendMessage();
-                      }
-                    }}
-                    disabled={
-                      recording ||
-                      voiceLoading
-                    }
-                    placeholder={
-                      recording
-                        ? "Listening..."
-                        : voiceLoading
-                          ? "Transcribing..."
-                          : "Ask an aquaculture question..."
-                    }
-                    className="h-11 min-w-0 flex-1 rounded-xl border border-border bg-background px-3 text-xs outline-none focus:ring-2 focus:ring-ring disabled:opacity-60"
-                  />
-
-                  <button
-                    type="button"
-                    onClick={
-                      recording
-                        ? stopRecording
-                        : startRecording
-                    }
-                    disabled={
-                      chatLoading ||
-                      voiceLoading
-                    }
-                    className={[
-                      "flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border transition",
-                      recording
-                        ? "border-foreground bg-foreground text-background"
-                        : "border-border bg-transparent text-foreground",
-                      chatLoading ||
-                      voiceLoading
-                        ? "opacity-40"
-                        : "hover:bg-muted",
-                    ].join(" ")}
-                    aria-label={
-                      recording
-                        ? "Stop recording"
-                        : "Start voice recording"
-                    }
-                    title={
-                      recording
-                        ? "Stop recording"
-                        : "Speak to Aqua AI"
-                    }
-                  >
-                    {recording ? (
-                      <Square className="h-4 w-4" />
-                    ) : (
-                      <Mic className="h-4 w-4" />
-                    )}
-                  </button>
-
-                  <button
-                    type="button"
-                    onClick={() =>
-                      sendMessage()
-                    }
-                    disabled={
-                      !input.trim() ||
-                      chatLoading ||
-                      recording ||
-                      voiceLoading
-                    }
-                    className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-foreground text-background disabled:opacity-40"
-                    aria-label="Send message"
-                  >
-                    <Send className="h-4 w-4" />
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
       </section>
 
@@ -1774,6 +1718,15 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      <AquaAIButton
+        onClick={() => setAquaAIOpen(true)}
+      />
+
+      <AquaAIDrawer
+        open={aquaAIOpen}
+        onClose={() => setAquaAIOpen(false)}
+      />
 
       <footer className="border-t border-border">
         <div className="mx-auto flex max-w-7xl flex-col gap-3 px-4 py-6 text-[10px] text-muted-foreground sm:px-6 md:flex-row md:items-center md:justify-between lg:px-8">
