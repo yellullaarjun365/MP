@@ -1,0 +1,74 @@
+﻿{
+  "schema_version": "aqualife-discovery-sources-v1",
+  "version": "0.9.1",
+
+  "sources": [
+    {
+      "source_id": "github-aquapreddb",
+      "name": "AquaPredDB AquacultureInsight",
+      "type": "github_repository",
+      "url": "https://github.com/AquaPredDB/AquacultureInsight",
+      "discovery_targets": [
+        "models",
+        "datasets",
+        "papers"
+      ]
+    },
+    {
+      "source_id": "github-pondpedia",
+      "name": "PondPedia Machine Learning",
+      "type": "github_repository",
+      "url": "https://github.com/PondPedia/machine-learning",
+      "discovery_targets": [
+        "models",
+        "datasets",
+        "deployment"
+      ]
+    },
+    {
+      "source_id": "github-aquasustain",
+      "name": "AquaSustain-Bench",
+      "type": "github_repository",
+      "url": "https://github.com/Drwae/AquaSustain-Bench",
+      "discovery_targets": [
+        "datasets",
+        "benchmarks",
+        "baselines",
+        "tasks"
+      ]
+    },
+    {
+      "source_id": "github-fish-sense",
+      "name": "Fish-Sense",
+      "type": "github_repository",
+      "url": "https://github.com/Vision-At-SEECS/Fish-Sense",
+      "discovery_targets": [
+        "computer_vision",
+        "biomass",
+        "disease"
+      ]
+    },
+    {
+      "source_id": "github-nitrate-soft-sensor",
+      "name": "LSTM Nitrate Soft Sensor",
+      "type": "github_repository",
+      "url": "https://github.com/iDharshan/LSTM-based-Soft-Sensor-for-Estimating-Nitrate-Concentration-in-Aquaponics-Pond",
+      "discovery_targets": [
+        "models",
+        "datasets",
+        "water_quality"
+      ]
+    },
+    {
+      "source_id": "github-fwi",
+      "name": "Fish Welfare Initiative Public ARA Data",
+      "type": "github_repository",
+      "url": "https://github.com/fish-welfare-initiative/public_ara_data",
+      "discovery_targets": [
+        "datasets",
+        "farm_data",
+        "water_quality"
+      ]
+    }
+  ]
+}

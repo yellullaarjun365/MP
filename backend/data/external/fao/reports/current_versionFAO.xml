@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<auto_update
+	downloadlnx="none"
+	downloadmac="https://www.fao.org/fishery/static/FishStatJ/FishStatJ_4.04.11_app.zip"
+	downloadwin="https://www.fao.org/fishery/static/FishStatJ/FishStatJ_4.04.11_Installer.exe"
+	urlmac="none"
+	urlwin="none"
+	url="https://www.fao.org/fishery/en/statistics/software/fishstatj"
+	manual="https://www.fao.org/fishery/static/FishStatJ/FishStatJ_4.03.05-Manual.pdf"
+	quickref="https://www.fao.org/fishery/static/FishStatJ/FishStatJ_3.05.0-Getting Started.pdf"
+    urlsurvey=""
+  date="2025-07-11" version="4.04.11">
+  <auto_update_wks date="2026-06-25" version="2026.1.0" url="https://www.fao.org/fishery/static/FishStatJ/FAO_FI_REGIONAL_2026.1.0.fws" description="FAO Regional capture fisheries statistics" acronym="FAO_FI_REGIONAL"/>
+  <auto_update_wks date="2026-07-31" version="2026.1.0" url="https://www.fao.org/fishery/static/FishStatJ/FAO_FI_FBS_2026.1.0.fws" description="FAO Food balance sheets of aquatic products" acronym="FAO_FI_FBS"/>
+  <auto_update_wks date="2026-03-31" version="2026.1.0" url="https://www.fao.org/fishery/static/FishStatJ/FAO_FI_Global_Production_2026.1.0.fws" description="FAO Global Fishery and Aquaculture Production Statistics" acronym="FAO_FI_GLOBAL_PROD"/>
+  <auto_update_wks date="2026-05-25" version="2026.1.0" url="https://www.fao.org/fishery/static/FishStatJ/FAO_FI_Border_Rejections_2026.1.0.fws" description="FAO Border Rejections" acronym="FAO_FI_REJECTION"/>
+  <auto_update_wks date="2026-06-30" version="2026.1.0" url="https://www.fao.org/fishery/static/FishStatJ/FAO_FI_GLOBAL_TRADE_2026.1.0.fws" description="FAO Global Aquatic Trade Statistics" acronym="FAO_FI_GLOBAL_TRADE"/>
+  <auto_update_wks date="2026-07-21" version="2026.1.0" url="https://www.fao.org/fishery/static/FishStatJ/FAO_FI_GLOBAL_PP_2026.1.0.fws" description="FAO Global Aquatic Processed Products Statistics" acronym="FAO_FI_GLOBAL_PP"/>
+  <auto_update_wks date="2026-09-04" version="2026.1.0" url="https://www.fao.org/fishery/static/FishStatJ/FAO_FI_EMPLOY_2026.1.0.fws" description="FAO Global employment statistics in primary sector of fisheries and aquaculture" acronym="FAO_FI_EMPLOY"/>
+
+</auto_update>

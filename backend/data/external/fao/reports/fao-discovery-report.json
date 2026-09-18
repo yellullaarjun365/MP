@@ -1,0 +1,35 @@
+﻿{
+  "dataset_id": "fao-global-aquaculture-production",
+  "name": "FAO Global Aquaculture Production",
+  "discovery_status": "READY_FOR_INGESTION",
+  "source_provider": "FAO",
+  "database": "FISHSTAT-AQ-NS",
+  "coverage": "1950-2024",
+  "data_frequency": "annual",
+  "dimensions_expected": [
+    "country_or_area",
+    "species",
+    "year",
+    "aquatic_environment",
+    "production_volume",
+    "production_value"
+  ],
+  "aqualife_use_cases": [
+    "India production trend",
+    "species trend",
+    "global benchmark",
+    "country comparison",
+    "long range production context"
+  ],
+  "not_for": [
+    "pond-level sensor prediction",
+    "direct farm-level target training",
+    "blind concatenation with FWI",
+    "blind concatenation with synthetic data"
+  ],
+  "ingestion_status": {
+    "raw_dataset_downloaded": false,
+    "normalized_dataset_created": false,
+    "training_performed": false
+  }
+}

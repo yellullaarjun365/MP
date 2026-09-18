@@ -1,0 +1,52 @@
+{
+  "schema_version": "synthetic-validation-v1.1",
+  "generator_version": "1.1.0",
+  "rows": 10000,
+  "seed": 20260916,
+  "species": "Litopenaeus vannamei",
+  "target": "production_kg",
+  "validation": {
+    "status": "PASS",
+    "rows": 10000,
+    "checks": {
+      "required_columns": true,
+      "finite_numeric_values": true,
+      "pond_area_range": true,
+      "pond_depth_range": true,
+      "stocking_density_range": true,
+      "initial_weight_range": true,
+      "culture_days_range": true,
+      "survival_range": true,
+      "growth_rate_range": true,
+      "density_multiplier_range": true,
+      "effective_growth_not_above_base": true,
+      "effective_growth_positive": true,
+      "nonnegative_production": true,
+      "stocking_identity": true,
+      "initial_biomass_identity": true,
+      "survival_identity": true,
+      "mortality_identity": true,
+      "production_identity": true,
+      "weight_not_below_initial": true,
+      "production_per_ha_nonnegative": true
+    },
+    "failures": [],
+    "production_summary": {
+      "min_kg": 25.43883656275165,
+      "median_kg": 1072.4609145782495,
+      "mean_kg": 2625.519287838164,
+      "max_kg": 33059.727063136335
+    },
+    "production_per_ha_summary": {
+      "min_kg_per_ha": 1829.9067645130265,
+      "median_kg_per_ha": 11189.571016244348,
+      "mean_kg_per_ha": 12323.142655077068,
+      "max_kg_per_ha": 39748.70915848398
+    }
+  },
+  "scientific_boundary": {
+    "training_data_type": "synthetic",
+    "real_world_validation": false,
+    "real_world_accuracy_claim_allowed": false
+  }
+}

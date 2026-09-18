@@ -1,0 +1,21 @@
+﻿{
+  "dataset_id": "fao-global-aquaculture-production",
+  "name": "FAO Global Aquaculture Production",
+  "provider": "FAO",
+  "database": "FISHSTAT-AQ-NS",
+  "description": "Annual aquaculture production volume and value by species, countries or areas, FAO major fishing areas and culture aquatic environment.",
+  "coverage": "1950-2024",
+  "frequency": "annual",
+  "latest_release_year": 2026,
+  "data_through": 2024,
+  "license": "CC-BY-4.0",
+  "source": "https://www.fao.org/fishery/en/statistics/software/fishstatj",
+  "status": "DISCOVERY_ONLY",
+  "aqualife_policy": {
+    "trend_analysis": true,
+    "benchmarking": true,
+    "farm_level_training": false,
+    "blind_merge_with_fwi": false,
+    "blind_merge_with_synthetic": false
+  }
+}

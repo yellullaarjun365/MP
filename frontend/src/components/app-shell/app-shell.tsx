@@ -45,6 +45,7 @@ export function AquaLifeShell({
   const pathname = usePathname();
 
   const sectionLabels: Record<string, string> = {
+    "/": "Platform",
     "/dashboard": "Dashboard",
     "/forecast": "Forecasts",
     "/water-quality": "Water Quality",
@@ -129,7 +130,12 @@ export function AquaLifeShell({
       <div className="flex min-h-screen">
 
         {desktopSidebarOpen && (
-          <aside className="hidden w-64 shrink-0 border-r border-border/70 bg-background lg:flex lg:flex-col">
+          <aside className={[
+              "hidden w-64 border-r border-border/70 bg-background lg:flex lg:flex-col",
+              pathname === "/"
+                ? "fixed inset-y-0 left-0 z-50"
+                : "shrink-0",
+            ].join(" ")}>
           <div className="relative flex h-16 shrink-0 items-center border-b border-border/70 px-5">
             <button
               type="button"
@@ -293,7 +299,13 @@ export function AquaLifeShell({
             </div>
           </header>
 
-          <main className="mx-auto w-full max-w-[1600px] px-4 py-6 sm:px-6 lg:px-8 lg:py-8">
+          <main
+            className={
+              pathname === "/"
+                ? "w-full"
+                : "mx-auto w-full max-w-[1600px] px-4 py-6 sm:px-6 lg:px-8 lg:py-8"
+            }
+          >
             {children}
           </main>
 

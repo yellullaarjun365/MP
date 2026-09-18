@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { useEffect, useRef } from "react";
 
@@ -518,7 +518,7 @@ export default function OceanBackground() {
         Array.from(
           {
             length:
-              30,
+              15,
           },
           () =>
             makeFish(

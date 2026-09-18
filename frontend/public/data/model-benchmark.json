@@ -1,0 +1,154 @@
+{
+  "schema_version": "aqualife-v0119-benchmark-ui-v1",
+  "generated_at_utc": "2026-09-16T17:28:26.429029+00:00",
+  "task": {
+    "id": 1,
+    "name": "Water Quality Forecasting",
+    "target": "Dissolved Oxygen",
+    "target_unit": "mg/L",
+    "metric": "DO RMSE (mg/L)",
+    "horizon_hours": 72,
+    "interval_minutes": 15,
+    "horizon_steps": 288,
+    "farms": [
+      "A1",
+      "B1",
+      "C1"
+    ]
+  },
+  "models": {
+    "Persistence": {
+      "state": "VERIFIED",
+      "fleet_rmse_mg_l": 0.3842116710776562,
+      "farms": {
+        "A1": {
+          "rmse_mg_l": 0.2934575842693447,
+          "horizon_hours": 72,
+          "horizon_steps": 288,
+          "interval_minutes": 15,
+          "status": "INDEPENDENTLY_COMPUTED"
+        },
+        "B1": {
+          "rmse_mg_l": 0.20236917458836062,
+          "horizon_hours": 72,
+          "horizon_steps": 288,
+          "interval_minutes": 15,
+          "status": "INDEPENDENTLY_COMPUTED"
+        },
+        "C1": {
+          "rmse_mg_l": 0.5619476737100007,
+          "horizon_hours": 72,
+          "horizon_steps": 288,
+          "interval_minutes": 15,
+          "status": "INDEPENDENTLY_COMPUTED"
+        }
+      },
+      "report_sha256": "4bb27786dc59976d3f9e5d65aa60e7c9a4b233bccb58580f3ee660f18d294be8",
+      "report_path": "C:\\Users\\yellu\\OneDrive\\Desktop\\files\\projects\\Mini_project\\MP\\backend\\data\\external\\sandbox\\candidates\\aquasustain-v0101\\reports\\task1-independent-report.json"
+    },
+    "XGBoost": {
+      "state": "VERIFIED",
+      "fleet_rmse_mg_l": 0.4256579160536586,
+      "farms": {
+        "A1": {
+          "rmse_mg_l": 0.13899631589022673,
+          "horizon_hours": 72,
+          "horizon_steps": 288,
+          "interval_minutes": 15,
+          "status": "INDEPENDENTLY_COMPUTED"
+        },
+        "B1": {
+          "rmse_mg_l": 0.284094422792225,
+          "horizon_hours": 72,
+          "horizon_steps": 288,
+          "interval_minutes": 15,
+          "status": "INDEPENDENTLY_COMPUTED"
+        },
+        "C1": {
+          "rmse_mg_l": 0.6659762515320852,
+          "horizon_hours": 72,
+          "horizon_steps": 288,
+          "interval_minutes": 15,
+          "status": "INDEPENDENTLY_COMPUTED"
+        }
+      },
+      "report_sha256": "3e5fbc07509d3dd05b01e749081279b7a196a66deffd53a8a5501eaff761e3cc",
+      "report_path": "C:\\Users\\yellu\\OneDrive\\Desktop\\files\\projects\\Mini_project\\MP\\backend\\data\\external\\sandbox\\candidates\\aquasustain-v0103\\results\\task1-xgboost-independent-report.json"
+    },
+    "Random Forest": {
+      "state": "VERIFIED",
+      "fleet_rmse_mg_l": 0.5577413007492052,
+      "farms": {
+        "A1": {
+          "rmse_mg_l": 0.14135645122219562,
+          "horizon_hours": 72,
+          "horizon_steps": 288,
+          "interval_minutes": 15,
+          "status": "INDEPENDENTLY_COMPUTED"
+        },
+        "B1": {
+          "rmse_mg_l": 0.2886233746506223,
+          "horizon_hours": 72,
+          "horizon_steps": 288,
+          "interval_minutes": 15,
+          "status": "INDEPENDENTLY_COMPUTED"
+        },
+        "C1": {
+          "rmse_mg_l": 0.9110109642520225,
+          "horizon_hours": 72,
+          "horizon_steps": 288,
+          "interval_minutes": 15,
+          "status": "INDEPENDENTLY_COMPUTED"
+        }
+      },
+      "report_sha256": "0dcf167390f8b927f2e7238c659e3d7a292970c6f920cceee43e0f6603cd80e8",
+      "report_path": "C:\\Users\\yellu\\OneDrive\\Desktop\\files\\projects\\Mini_project\\MP\\backend\\data\\external\\sandbox\\candidates\\aquasustain-v0108\\results\\task1-random-forest-independent-report.json"
+    },
+    "LSTM": {
+      "state": "PENDING",
+      "fleet_rmse_mg_l": null,
+      "farms": {},
+      "report_sha256": null,
+      "report_path": "C:\\Users\\yellu\\OneDrive\\Desktop\\files\\projects\\Mini_project\\MP\\backend\\data\\external\\sandbox\\candidates\\aquasustain-v0110\\results\\task1-lstm-independent-report.json"
+    }
+  },
+  "farm_matrix": {
+    "A1": {
+      "Persistence": 0.2934575842693447,
+      "XGBoost": 0.13899631589022673,
+      "Random Forest": 0.14135645122219562,
+      "LSTM": null
+    },
+    "B1": {
+      "Persistence": 0.20236917458836062,
+      "XGBoost": 0.284094422792225,
+      "Random Forest": 0.2886233746506223,
+      "LSTM": null
+    },
+    "C1": {
+      "Persistence": 0.5619476737100007,
+      "XGBoost": 0.6659762515320852,
+      "Random Forest": 0.9110109642520225,
+      "LSTM": null
+    }
+  },
+  "fleet_rmse_mg_l": {
+    "Persistence": 0.3842116710776562,
+    "XGBoost": 0.4256579160536586,
+    "Random Forest": 0.5577413007492052,
+    "LSTM": null
+  },
+  "change_vs_persistence_pct": {
+    "XGBoost": -10.787346688285627,
+    "Random Forest": -45.16511150867032,
+    "LSTM": null
+  },
+  "scientific_boundary": {
+    "public_data_only": true,
+    "commercial_12_farm_validation": false,
+    "real_world_validation": false,
+    "production_accuracy_claim": false,
+    "automatic_model_ranking": false
+  },
+  "status": "PASS"
+}

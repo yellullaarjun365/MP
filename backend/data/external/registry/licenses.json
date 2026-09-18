@@ -1,0 +1,26 @@
+﻿{
+  "schema_version": "aqualife-license-registry-v1",
+  "licenses": [
+    {
+      "license_id": "CC-BY-4.0",
+      "status": "known",
+      "redistribution": "subject_to_license",
+      "commercial_use": "subject_to_license",
+      "modification": "subject_to_license"
+    },
+    {
+      "license_id": "MIT",
+      "status": "known",
+      "redistribution": "permitted_with_conditions",
+      "commercial_use": "permitted_with_conditions",
+      "modification": "permitted_with_conditions"
+    },
+    {
+      "license_id": "SEE_SOURCE_REPOSITORY",
+      "status": "unverified",
+      "redistribution": "unknown_until_verified",
+      "commercial_use": "unknown_until_verified",
+      "modification": "unknown_until_verified"
+    }
+  ]
+}

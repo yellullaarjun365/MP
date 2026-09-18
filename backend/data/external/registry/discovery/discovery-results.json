@@ -1,0 +1,230 @@
+{
+  "schema_version": "aqualife-discovery-results-v1",
+  "generated_at": "2026-09-16T13:42:43.270607+00:00",
+  "source_count": 6,
+  "results": [
+    {
+      "source_id": "github-aquapreddb",
+      "name": "AquaPredDB AquacultureInsight",
+      "url": "https://github.com/AquaPredDB/AquacultureInsight",
+      "source_type": "github_repository",
+      "retrieved_at": "2026-09-16T13:42:37.433556+00:00",
+      "http_status": 200,
+      "repository_exists": true,
+      "readme_available": true,
+      "readme_length": 187,
+      "license": "NO_DECLARED_LICENSE",
+      "license_status": "unverified",
+      "default_branch": "main",
+      "stars": 9,
+      "forks": 1,
+      "open_issues": 0,
+      "last_push": "2026-04-22T08:43:54Z",
+      "topic_matches": {
+        "water_quality": [
+          "water quality"
+        ]
+      },
+      "frameworks": [],
+      "candidate_resource_types": [
+        "water_quality"
+      ],
+      "discovery_status": "DISCOVERED",
+      "notes": [
+        "License requires manual verification."
+      ]
+    },
+    {
+      "source_id": "github-pondpedia",
+      "name": "PondPedia Machine Learning",
+      "url": "https://github.com/PondPedia/machine-learning",
+      "source_type": "github_repository",
+      "retrieved_at": "2026-09-16T13:42:38.534509+00:00",
+      "http_status": 200,
+      "repository_exists": true,
+      "readme_available": true,
+      "readme_length": 5910,
+      "license": "NO_DECLARED_LICENSE",
+      "license_status": "unverified",
+      "default_branch": "main",
+      "stars": 4,
+      "forks": 0,
+      "open_issues": 0,
+      "last_push": "2023-06-16T15:35:31Z",
+      "topic_matches": {
+        "water_quality": [
+          "water quality",
+          "ammonia"
+        ],
+        "growth": [
+          "fish growth",
+          "growth rate"
+        ]
+      },
+      "frameworks": [
+        "lstm",
+        "tensorflow",
+        "scikit-learn"
+      ],
+      "candidate_resource_types": [
+        "growth",
+        "water_quality"
+      ],
+      "discovery_status": "DISCOVERED",
+      "notes": [
+        "License requires manual verification."
+      ]
+    },
+    {
+      "source_id": "github-aquasustain",
+      "name": "AquaSustain-Bench",
+      "url": "https://github.com/Drwae/AquaSustain-Bench",
+      "source_type": "github_repository",
+      "retrieved_at": "2026-09-16T13:42:39.543444+00:00",
+      "http_status": 200,
+      "repository_exists": true,
+      "readme_available": true,
+      "readme_length": 10247,
+      "license": "NOASSERTION",
+      "license_status": "detected",
+      "default_branch": "main",
+      "stars": 1,
+      "forks": 0,
+      "open_issues": 0,
+      "last_push": "2026-07-10T17:29:08Z",
+      "topic_matches": {
+        "water_quality": [
+          "water quality"
+        ],
+        "digital_twin": [
+          "digital twin",
+          "state estimation"
+        ],
+        "federated_learning": [
+          "federated learning"
+        ]
+      },
+      "frameworks": [
+        "xgboost",
+        "lstm",
+        "gru",
+        "tcn",
+        "transformer"
+      ],
+      "candidate_resource_types": [
+        "digital_twin",
+        "federated_learning",
+        "water_quality"
+      ],
+      "discovery_status": "DISCOVERED",
+      "notes": []
+    },
+    {
+      "source_id": "github-fish-sense",
+      "name": "Fish-Sense",
+      "url": "https://github.com/Vision-At-SEECS/Fish-Sense",
+      "source_type": "github_repository",
+      "retrieved_at": "2026-09-16T13:42:40.595870+00:00",
+      "http_status": 200,
+      "repository_exists": true,
+      "readme_available": true,
+      "readme_length": 5491,
+      "license": "NO_DECLARED_LICENSE",
+      "license_status": "unverified",
+      "default_branch": "main",
+      "stars": 4,
+      "forks": 1,
+      "open_issues": 1,
+      "last_push": "2023-08-21T06:34:02Z",
+      "topic_matches": {
+        "growth": [
+          "biomass"
+        ],
+        "disease": [
+          "disease detection",
+          "early disease",
+          "health classification"
+        ],
+        "computer_vision": [
+          "computer vision",
+          "segmentation"
+        ]
+      },
+      "frameworks": [
+        "cnn",
+        "pytorch",
+        "tensorflow"
+      ],
+      "candidate_resource_types": [
+        "computer_vision",
+        "disease",
+        "growth"
+      ],
+      "discovery_status": "DISCOVERED",
+      "notes": [
+        "License requires manual verification."
+      ]
+    },
+    {
+      "source_id": "github-nitrate-soft-sensor",
+      "name": "LSTM Nitrate Soft Sensor",
+      "url": "https://github.com/iDharshan/LSTM-based-Soft-Sensor-for-Estimating-Nitrate-Concentration-in-Aquaponics-Pond",
+      "source_type": "github_repository",
+      "retrieved_at": "2026-09-16T13:42:41.736637+00:00",
+      "http_status": 200,
+      "repository_exists": true,
+      "readme_available": true,
+      "readme_length": 3094,
+      "license": "NO_DECLARED_LICENSE",
+      "license_status": "unverified",
+      "default_branch": "main",
+      "stars": 9,
+      "forks": 0,
+      "open_issues": 0,
+      "last_push": "2024-04-01T12:47:47Z",
+      "topic_matches": {
+        "water_quality": [
+          "water quality",
+          "nitrate"
+        ]
+      },
+      "frameworks": [
+        "lstm",
+        "tensorflow",
+        "scikit-learn"
+      ],
+      "candidate_resource_types": [
+        "water_quality"
+      ],
+      "discovery_status": "DISCOVERED",
+      "notes": [
+        "License requires manual verification."
+      ]
+    },
+    {
+      "source_id": "github-fwi",
+      "name": "Fish Welfare Initiative Public ARA Data",
+      "url": "https://github.com/fish-welfare-initiative/public_ara_data",
+      "source_type": "github_repository",
+      "retrieved_at": "2026-09-16T13:42:42.794964+00:00",
+      "http_status": 404,
+      "repository_exists": false,
+      "readme_available": false,
+      "readme_length": 0,
+      "license": "UNKNOWN",
+      "license_status": "unverified",
+      "default_branch": null,
+      "stars": null,
+      "forks": null,
+      "open_issues": null,
+      "last_push": null,
+      "topic_matches": {},
+      "frameworks": [],
+      "candidate_resource_types": [],
+      "discovery_status": "FAILED",
+      "notes": [
+        "Repository metadata unavailable."
+      ]
+    }
+  ]
+}

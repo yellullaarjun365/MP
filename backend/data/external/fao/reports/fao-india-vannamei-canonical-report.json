@@ -1,0 +1,79 @@
+{
+  "schema_version": "aqualife-fao-india-aquaculture-v1",
+  "dataset_id": "fao-global-aquaculture-production",
+  "provider": "FAO",
+  "release": "2026.1.0",
+  "data_through": 2024,
+  "source_file": "Aquaculture_Quantity.csv",
+  "source_rows": 107419,
+  "india_all_species_rows": 1090,
+  "india_vannamei_rows": 16,
+  "india_vannamei_quantity_rows": 16,
+  "india_un_codes": [
+    356
+  ],
+  "vannamei_codes": [
+    "PNV"
+  ],
+  "years": [
+    2009,
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024
+  ],
+  "checks": {
+    "rows_nonzero": true,
+    "no_negative_production": true,
+    "year_numeric": true,
+    "country_india": true,
+    "species_vannamei": true,
+    "measure_quantity": true
+  },
+  "failed_checks": [],
+  "status_distribution": {
+    "A": 13,
+    "I": 3
+  },
+  "environment_distribution": [
+    {
+      "environment_code": "BW",
+      "environment": "Brackishwater"
+    },
+    {
+      "environment_code": "IN",
+      "environment": "Freshwater"
+    }
+  ],
+  "production_statistics": {
+    "count": 16.0,
+    "mean": 549322.75,
+    "std": 396458.3783266536,
+    "min": 1730.0,
+    "25%": 192475.0,
+    "50%": 522351.0,
+    "75%": 914464.0,
+    "max": 1153339.0
+  },
+  "scientific_boundary": {
+    "source_type": "official_aggregated_statistics",
+    "real_world": true,
+    "farm_level": false,
+    "synthetic": false,
+    "model_training": false,
+    "accuracy_claim": false,
+    "production_unit": "tonnes",
+    "kg_conversion": "production_tonnes * 1000",
+    "note": "This dataset is an annual national/species aquaculture statistics benchmark. It is not a pond-level sensor dataset."
+  }
+}

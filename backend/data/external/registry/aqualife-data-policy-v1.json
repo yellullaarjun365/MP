@@ -1,0 +1,38 @@
+﻿{
+  "schema_version": "aqualife-data-policy-v1",
+  "purpose": "Rules for provenance, separation, validation and model use of external aquaculture datasets.",
+  "rules": [
+    {
+      "id": "real-vs-synthetic",
+      "rule": "Real-world observational datasets and synthetic datasets must remain separately identified."
+    },
+    {
+      "id": "granularity",
+      "rule": "Farm- or pond-level observations must not be blindly concatenated with aggregated annual statistics."
+    },
+    {
+      "id": "provenance",
+      "rule": "Every external dataset must retain provider, source, license and version or commit information."
+    },
+    {
+      "id": "data-lineage",
+      "rule": "Derived values must remain distinguishable from directly observed measurements."
+    },
+    {
+      "id": "temporal-leakage",
+      "rule": "Prediction features must not include observations occurring after the prediction cutoff or harvest event."
+    },
+    {
+      "id": "model-claims",
+      "rule": "Dataset presence or benchmark performance must not be represented as proof of AquaLife real-world accuracy."
+    },
+    {
+      "id": "external-model-license",
+      "rule": "Third-party models or weights may only be redistributed or embedded when their applicable license permits it."
+    },
+    {
+      "id": "evaluation-separation",
+      "rule": "External validation data must not be silently reused as training data for the same evaluation."
+    }
+  ]
+}

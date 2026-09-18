@@ -1,0 +1,9 @@
+﻿{
+    "artifact":  "FAO_FI_Global_Production_2026.1.0.fws",
+    "source":  "https://www.fao.org/fishery/static/FishStatJ/FAO_FI_Global_Production_2026.1.0.fws",
+    "bytes":  22994754,
+    "sha256":  "E232CA53320C1B93B497CF98999007CD50CBA6C0EEC3D49B61656FD3989C126C",
+    "release":  "2026.1.0",
+    "data_through":  2024,
+    "retrieved_at":  "2026-09-16T12:58:35.5837110Z"
+}

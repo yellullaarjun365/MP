@@ -1,0 +1,22 @@
+﻿[
+    {
+        "file":  "water_quality.csv",
+        "bytes":  3651010,
+        "sha256":  "660A6C31048E16336F65CDB350346EA87CDE73542444817582FCFCDC3A914F69"
+    },
+    {
+        "file":  "enrolled_ponds.csv",
+        "bytes":  82598,
+        "sha256":  "C0572587D9C1B5B2348A1D3C1C5939499F312F58ECC0D6181378C84B20A07C8F"
+    },
+    {
+        "file":  "stocking_harvest.csv",
+        "bytes":  392775,
+        "sha256":  "980C0CC9340457898C5A0F6EBF94E8BB2766B9E1A50C99BB662F83459DF4B7C6"
+    },
+    {
+        "file":  "dropouts.csv",
+        "bytes":  19479,
+        "sha256":  "7932B2F0802431F32041FD7E680206F7D3631D88CE27925411FBEAC65628617F"
+    }
+]

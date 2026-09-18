@@ -1,0 +1,70 @@
+﻿{
+  "schema_version": "aqualife-source-registry-v1",
+  "registry_version": "0.9.0",
+  "sources": [
+    {
+      "source_id": "source-fao",
+      "provider": "FAO",
+      "type": "official_statistics",
+      "url": "https://www.fao.org/statistics/data-collection/fishery-and-aquaculture/en",
+      "license": "CC-BY-4.0",
+      "verification": "official"
+    },
+    {
+      "source_id": "source-fwi-ara",
+      "provider": "Fish Welfare Initiative",
+      "type": "public_farm_dataset",
+      "url": "https://github.com/fish-welfare-initiative/public_ara_data",
+      "license": "CC-BY-4.0",
+      "verification": "repository_verified"
+    },
+    {
+      "source_id": "source-aquasustain-bench",
+      "provider": "Drwae",
+      "type": "open_benchmark_repository",
+      "url": "https://github.com/Drwae/AquaSustain-Bench",
+      "license": "SEE_REPOSITORY",
+      "verification": "discovered"
+    },
+    {
+      "source_id": "source-pondpedia",
+      "provider": "PondPedia",
+      "type": "open_research_repository",
+      "url": "https://github.com/PondPedia/machine-learning",
+      "license": "SEE_REPOSITORY",
+      "verification": "discovered"
+    },
+    {
+      "source_id": "source-aquapreddb",
+      "provider": "AquaPredDB",
+      "type": "open_research_repository",
+      "url": "https://github.com/AquaPredDB/AquacultureInsight",
+      "license": "SEE_REPOSITORY",
+      "verification": "discovered"
+    },
+    {
+      "source_id": "source-fish-sense",
+      "provider": "Vision-At-SEECS",
+      "type": "open_research_repository",
+      "url": "https://github.com/Vision-At-SEECS/Fish-Sense",
+      "license": "SEE_REPOSITORY",
+      "verification": "discovered"
+    },
+    {
+      "source_id": "source-nitrate-lstm",
+      "provider": "iDharshan",
+      "type": "open_research_repository",
+      "url": "https://github.com/iDharshan/LSTM-based-Soft-Sensor-for-Estimating-Nitrate-Concentration-in-Aquaponics-Pond",
+      "license": "MIT",
+      "verification": "repository_license_claimed"
+    },
+    {
+      "source_id": "source-iot-aquaponics",
+      "provider": "ShirinMahbuba",
+      "type": "open_research_repository",
+      "url": "https://github.com/ShirinMahbuba/IoT-Sensor-Data-Trend-Prediction",
+      "license": "SEE_REPOSITORY",
+      "verification": "discovered"
+    }
+  ]
+}

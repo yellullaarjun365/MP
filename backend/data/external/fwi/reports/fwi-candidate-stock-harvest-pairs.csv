@@ -1,0 +1,10 @@
+pond_id,stocking_date,harvest_date,culture_days,stocking_type,harvest_type,actual_shrimp_count,intended_shrimp_count,production_kg
+ara2_039a9ccb,2022-04-21,2022-06-26,66,Stocking,Partial harvest,,,104.0
+ara2_3587929e,2022-01-13,2022-05-14,121,Stocking,Partial harvest,,,100.0
+ara2_3587929e,2022-03-04,2022-05-14,71,Partial stocking,Partial harvest,,,100.0
+ara2_5a3d15dd,2021-10-15,2022-11-05,386,Partial stocking,Harvest,,,730.0
+ara2_5a3d15dd,2022-08-04,2022-11-05,93,Stocking,Harvest,,,730.0
+ara2_bddfa227,2021-11-10,2022-02-15,97,Stocking,Harvest,,,350.0
+ara2_bddfa227,2022-03-01,2022-06-04,95,Stocking,Partial harvest,,,190.0
+ara2_c5671cf4,2022-05-01,2022-07-03,63,Stocking,Partial harvest,,,2000.0
+ara2_cf4e9f1b,2022-07-27,2022-10-12,77,Stocking,Harvest,,,440.0

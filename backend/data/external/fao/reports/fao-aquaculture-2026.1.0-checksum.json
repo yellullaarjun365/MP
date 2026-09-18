@@ -1,0 +1,10 @@
+﻿{
+    "dataset_id":  "fao-global-aquaculture-production",
+    "artifact":  "Aquaculture_2026.1.0.zip",
+    "source":  "https://www.fao.org/fishery/static/Data/Aquaculture_2026.1.0.zip",
+    "release":  "2026.1.0",
+    "data_through":  2024,
+    "bytes":  2660027,
+    "sha256":  "143CC510E6132A87AABF6F387833B9E2808E0377EFB58207972483B486276271",
+    "retrieved_at":  "2026-09-16T13:24:39.3409646Z"
+}

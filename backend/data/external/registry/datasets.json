@@ -1,0 +1,133 @@
+﻿{
+  "schema_version": "aqualife-dataset-registry-v1",
+  "registry_version": "0.9.0",
+  "datasets": [
+    {
+      "dataset_id": "fwi-farm-data-india-2026",
+      "name": "FWI Farm Data - India",
+      "provider": "Fish Welfare Initiative",
+      "dataset_type": "real_world_observational",
+      "granularity": "farm_pond_event",
+      "country": "India",
+      "region": [
+        "Eluru",
+        "Nellore"
+      ],
+      "state": "Andhra Pradesh",
+      "license": "CC-BY-4.0",
+      "status": "INGESTED",
+      "path": "data/external/fwi",
+      "tasks": [
+        "pond_production_benchmark",
+        "water_quality_analysis",
+        "farm_event_analysis"
+      ],
+      "training_approved": false,
+      "validation_approved": true,
+      "notes": "Current canonical FWI dataset contains six validated production cycles."
+    },
+    {
+      "dataset_id": "fao-global-aquaculture-production",
+      "name": "FAO Global Aquaculture Production",
+      "provider": "FAO",
+      "dataset_type": "official_aggregated_statistics",
+      "granularity": "annual_country_species_environment",
+      "coverage": "1950-2024",
+      "license": "CC-BY-4.0",
+      "status": "INGESTED",
+      "path": "data/external/fao",
+      "tasks": [
+        "historical_benchmark",
+        "trend_analysis",
+        "country_species_context"
+      ],
+      "training_approved": false,
+      "validation_approved": true,
+      "notes": "Aggregated annual statistics; not pond-level training data."
+    },
+    {
+      "dataset_id": "fao-india-vannamei-aquaculture-2009-2024",
+      "name": "FAO India Litopenaeus vannamei Aquaculture Production",
+      "provider": "FAO",
+      "dataset_type": "official_aggregated_statistics",
+      "granularity": "annual_country_species_environment",
+      "country": "India",
+      "species": "Litopenaeus vannamei",
+      "years": [
+        2009,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "license": "CC-BY-4.0",
+      "status": "CANONICAL",
+      "path": "data/external/fao/canonical/fao-india-vannamei-yearly.csv",
+      "tasks": [
+        "historical_benchmark",
+        "trend_analysis",
+        "national_species_forecast"
+      ],
+      "training_approved": false,
+      "validation_approved": true,
+      "notes": "2010 remains missing and has not been interpolated."
+    },
+    {
+      "dataset_id": "aqua-sustain-bench-v1.1",
+      "name": "AquaSustain-Bench v1.1",
+      "provider": "Drwae",
+      "dataset_type": "public_benchmark_with_synthetic_release",
+      "granularity": "multi_farm_sensor_time_series_schema",
+      "scope": "Egypt, Saudi Arabia, Bangladesh",
+      "species": [
+        "Nile tilapia",
+        "whiteleg shrimp",
+        "catla",
+        "rohu"
+      ],
+      "license": "SEE_SOURCE_REPOSITORY",
+      "status": "DISCOVERED",
+      "source": "https://github.com/Drwae/AquaSustain-Bench",
+      "tasks": [
+        "water_quality_forecasting",
+        "event_detection",
+        "digital_twin_state_estimation",
+        "cross_farm_transfer_learning",
+        "federated_learning"
+      ],
+      "training_approved": false,
+      "validation_approved": false,
+      "notes": "Public v1.1 release describes representative synthetic sensor data while raw commercial farm sensor series are not publicly released."
+    },
+    {
+      "dataset_id": "sensor-based-aquaponics-fish-pond-datasets",
+      "name": "Sensor Based Aquaponics Fish Pond Datasets",
+      "provider": "Kaggle / referenced research repositories",
+      "dataset_type": "sensor_time_series",
+      "granularity": "pond_sensor_time_series",
+      "species": [
+        "catfish",
+        "tilapia"
+      ],
+      "status": "DISCOVERED",
+      "source": "https://github.com/ShirinMahbuba/IoT-Sensor-Data-Trend-Prediction",
+      "tasks": [
+        "dissolved_oxygen_forecasting",
+        "water_quality_forecasting"
+      ],
+      "training_approved": false,
+      "validation_approved": false,
+      "notes": "Requires source-download and license verification before ingestion."
+    }
+  ]
+}

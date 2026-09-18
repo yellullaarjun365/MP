@@ -1,0 +1,40 @@
+{
+  "schema_version": "aqualife-discovery-report-v1",
+  "source_count": 6,
+  "discovery_status": {
+    "DISCOVERED": 5,
+    "FAILED": 1
+  },
+  "license_status": {
+    "unverified": 5,
+    "detected": 1
+  },
+  "candidate_resource_types": {
+    "water_quality": 4,
+    "growth": 2,
+    "digital_twin": 1,
+    "federated_learning": 1,
+    "computer_vision": 1,
+    "disease": 1
+  },
+  "license_detected_sources": [
+    "github-aquasustain"
+  ],
+  "readme_available_sources": [
+    "github-aquapreddb",
+    "github-pondpedia",
+    "github-aquasustain",
+    "github-fish-sense",
+    "github-nitrate-soft-sensor"
+  ],
+  "safe_to_download": [],
+  "safe_to_train": [],
+  "safe_to_deploy": [],
+  "policy": {
+    "metadata_only": true,
+    "automatic_code_execution": false,
+    "automatic_training": false,
+    "automatic_deployment": false,
+    "manual_license_review_required": true
+  }
+}

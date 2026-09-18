@@ -1,0 +1,450 @@
+pond_id,region,date_of_data_collection,enrollment_mechanism,added_by,property_area_in_acres,pond_area_in_acres,depth_in_meters,status,measurements,culture_change,equipment,existing_practices,notes_(existing_practices),fertilizers_used,feed_type,feed_source,feed_brand_or_name,fish_source_(e.g._hatchery_name),notes
+ara2_41e97843,Eluru,07/22/2026,Organic,Chaitanya,17.0,14.1,2.1,Treatment,2,,"1 water pump, Farmer installed blowers in the pond","Water quality measurement during disease outbreak, Weighing and measuring fish once a month",,Cow Manure,Pelleted feed (floating),Self made,,Local farmers,
+ara2_048a77e9,Eluru,07/22/2026,Organic,Chaitanya,4.0,3.2,2.1,Treatment,2,,"1 water pump, Farmer had blowers installed in the pond","Water quality measurement during disease outbreak, Weighing and measuring fish once a month",,Cow Manure,Pelleted feed (floating),Self made,,Local farmers,
+ara2_8ee1e5e2,Eluru,07/22/2026,Organic,Chaitanya,7.0,5.8,2.1,Treatment,2,,"1 water pump, Farmer had blowers installed","Water quality measurement during disease outbreak, Weighing and measuring fish once a month",,Cow Manure,Pelleted feed (floating),Self made,,Local farmers,
+ara2_296bcb81,Eluru,07/22/2026,Organic,Chaitanya,16.0,14.0,3.0,Treatment,2,,"1 water pump, Farmer had blowers installed","Water quality measurement during disease outbreak, Weighing and measuring fish once a month",,Cow Manure,Pelleted feed (floating),Self made,,Local farmers,
+ara2_ea0cc887,Eluru,07/22/2026,Organic,Chaitanya,30.0,25.5,3.0,Treatment,2,,"1 water pump, Farmer had air blowers installed","Water quality measurement during disease outbreak, Weighing and measuring fish once a month",,Cow Manure,Pelleted feed (floating),Self made,,Local farmers,
+ara2_7e684a8f,Eluru,06/23/2026,Organic,Chaitanya,8.0,7.4,2.1,Treatment,3,,,"Disease analysis by sending dead fish to lab, Water quality measurement during disease outbreak, Weighing and measuring fish once a month",,"Super Phosphate, Magnesium, Lime",DORB,Local market,,Local farmers,
+ara2_d60f166f,Eluru,06/23/2026,Organic,Chaitanya,10.0,9.0,2.1,Treatment,3,,4 aerator,"Disease analysis by sending dead fish to lab, Water quality measurement during disease outbreak, Weighing and measuring fish once a month",,"Super Phosphate, Magnesium, Lime",DORB,Local market,,Local farmers,
+ara2_31503b0c,Eluru,06/23/2026,Organic,Chaitanya,50.0,45.5,2.4,Treatment,3,,2 water pump,"Water quality measurement during disease outbreak, Weighing and measuring fish once a month, Disease analysis by sending dead fish to lab",,"Single Super Phosphate, Magnesium, Lime",DORB,Local market,,Local farmers,
+ara2_b8e096b3,Eluru,06/23/2026,Organic,Chaitanya,40.0,37.6,2.4,Treatment,3,,2 water pump,"Water quality measurement during disease outbreak, Weighing and measuring fish once a month, Disease analysis by sending dead fish to lab",,"Super Phosphate, Magnesium, Lime",DORB,Local market,,Local farmers,
+ara2_438777b9,Eluru,06/03/2026,Organic,Chaitanya,5.0,4.6,1.8,Treatment,6,,,"Water quality measurement during disease outbreak, Weighing and measuring fish once a month",,"Cow Manure, Super Phosphate, Lime",DORB,National supplier,,Local farmers,
+ara2_25e534f2,Eluru,06/03/2026,Organic,Chaitanya,16.0,12.5,1.8,Treatment,2,,,"Water quality measurement during disease outbreak, Weighing and measuring fish once a month",,"Cow Manure, Super Phosphate, Lime",DORB,National supplier,,Local farmers,
+ara2_d8a0ad32,Eluru,06/03/2026,Organic,Chaitanya,36.0,32.0,1.8,Treatment,6,,2 water pump,"Water quality measurement during disease outbreak, Weighing and measuring fish once a month",,"Cow Manure, Super Phosphate, Lime",DORB,National supplier,,Local farmers,
+ara2_f33085c0,Eluru,06/03/2026,Organic,Chaitanya,46.0,41.0,1.9,Treatment,6,,"2 water pump, 1 Motor boat","Water quality measurement during disease outbreak, Weighing and measuring fish once a month",,"Cow Manure, Super Phosphate, Lime",DORB,National supplier,,Local farmers,
+ara2_58b844c7,Eluru,06/03/2026,Organic,Chaitanya,7.0,5.5,1.8,Treatment,3,,1 water pump,"Water quality measurement during disease outbreak, Weighing and measuring fish once a month",,"DAP, Lime, Bleaching powder",DORB,National supplier,,Local farmers,
+ara2_0206e1e9,Eluru,04/27/2026,Organic,Chaitanya,15.0,13.8,1.8,Treatment,6,Changed to Breed-out from grow-out in July 2026 ,They get water pumps on rent when needed,"Disease analysis by sending dead fish to lab, Water quality measurement during disease outbreak, Weighing and measuring fish once a month",,"DAP, Lime",DORB,Local market,,Local farmers,
+ara2_cde272ed,Eluru,04/27/2026,Organic,Chaitanya,15.0,13.9,1.8,Treatment,5,,They get water pumps on rent when needed,"Disease analysis by sending dead fish to lab, Water quality measurement during disease outbreak, Weighing and measuring fish once a month",,"DAP, Lime",DORB,Local market,,Local farmers,
+ara2_f7a5fc38,Eluru,04/27/2026,Organic,Chaitanya,20.0,17.8,1.8,Treatment,7,,1 water pump,"Disease analysis by sending dead fish to lab, Water quality measurement during disease outbreak, Weighing and measuring fish once a month",,"DAP, Lime, Bleaching Powder",DORB,Local market,,Local farmers,
+ara2_71e2b7b9,Eluru,04/27/2026,Organic,Chaitanya,50.0,46.0,1.8,Treatment,5,,"4 aerator, 2 water pump","Disease analysis by sending dead fish to lab, Water quality measurement during disease outbreak, Weighing and measuring fish once a month",,"DAP, Lime, Bleaching powder",DORB,Local market,,Local farmers,
+ara2_3c745150,Eluru,04/27/2026,Organic,Chaitanya,12.0,9.5,1.8,Treatment,7,,1 water pump,"Disease analysis by sending dead fish to lab, Water quality measurement during disease outbreak, Weighing and measuring fish once a month",,"DAP, Cow Manure","DORB, Pelleted feed (floating)",Local market,,Local farmers,
+ara2_2bd14b5a,Eluru,04/27/2026,Organic,Chaitanya,45.0,43.2,1.5,Treatment,7,,2 water pump,"Disease analysis by sending dead fish to lab, Water quality measurement during disease outbreak, Weighing and measuring fish once a month",,"DAP, Cow Manure",DORB,Local market,,Local farmers,
+ara2_2a44ce37,Eluru,07/01/2025,Organic,Praveen,12.0,11.2,1.5,Treatment,11,,"6 aerator, 1 water pump","Water quality measurement during disease outbreak, Weighing and measuring fish once a month",,"DAP, Urea, Cow manure",DORB,Local market,,Local farmers,
+ara2_2538f5a6,Eluru,06/11/2025,Organic,Praveen,4.0,3.2,1.5,Treatment,20,,"5 aerator, 1 water pump","Water quality measurement during disease outbreak, Weighing and measuring fish once a month",,"DAP, Urea, Cow manure",DORB,Local market,,Local farmers,
+ara2_7129732d,Eluru,06/11/2025,Organic,Praveen,54.0,48.0,1.5,Treatment,16,,1 water pump,"Water quality measurement during disease outbreak, Weighing and measuring fish once a month",,"DAP, Urea, Cow manure",DORB,Local market,,Local farmers,
+ara2_3dc6f12e,Eluru,06/11/2025,Organic,Praveen,57.0,51.0,1.5,Treatment,20,,"3 aerator, 1 water pump","Water quality measurement during disease outbreak, Weighing and measuring fish once a month",,"DAP, Urea, Cow manure",DORB,Local market,,Local farmers,
+ara2_eb49c98d,Eluru,06/09/2025,Organic,Praveen,3.0,2.9,1.5,Treatment,21,,1 water pump,"Water quality measurement during disease outbreak, Weighing and measuring fish once a month",,"DAP, Urea, Cow manure",DORB,Local market,,Local farmers,
+ara2_807df397,Eluru,06/09/2025,Organic,Praveen,20.0,18.0,1.5,Treatment,16,,1 water pump,"Water quality measurement during disease outbreak, Weighing and measuring fish once a month",,"DAP, Urea, Cow manure",DORB,Local market,,Local farmers,
+ara2_32bcd752,Eluru,06/09/2025,Organic,Praveen,3.0,2.8,1.5,Treatment,17,,1 water pump,"Water quality measurement during disease outbreak, Weighing and measuring fish once a month",,"DAP, Urea, Cow manure",DORB,Local market,,Local farmers,
+ara2_05de0e1a,Eluru,06/09/2025,Organic,Praveen,4.0,3.6,1.5,Treatment,21,,1 water pump,"Water quality measurement during disease outbreak, Weighing and measuring fish once a month",,"DAP, Urea, Cow manure",DORB,Local market,,Local farmers,
+ara2_bdf1f578,Eluru,06/09/2025,Organic,Praveen,30.0,28.0,1.5,Treatment,19,,1 water pump,"Water quality measurement during disease outbreak, Weighing and measuring fish once a month",,"DAP, Urea, Cow manure",DORB,Local market,,Local farmers,
+ara2_844ff6fe,Eluru,06/09/2025,Organic,Praveen,14.0,12.5,1.5,Treatment,11,,1 water pump,"Water quality measurement during disease outbreak, Weighing and measuring fish once a month",,"DAP, Urea, Cow manure",DORB,Local market,,Local farmers,
+ara2_46acb0f4,Eluru,06/09/2025,Organic,Praveen,6.0,5.7,1.5,Treatment,14,,1 water pump,"Water quality measurement during disease outbreak, Weighing and measuring fish once a month",,"DAP, Urea, Cow manure",DORB,Local market,,Local farmers,
+ara2_8a05e891,Eluru,06/09/2025,Organic,Praveen,40.0,38.0,1.5,Treatment,9,,"4 aerator, 1 water pump","Water quality measurement during disease outbreak, Weighing and measuring fish once a month",,"DAP, Urea, Cow manure",DORB,Local market,,Local farmers,
+ara2_2d47d0d8,Eluru,06/09/2025,Organic,Praveen,50.0,48.0,1.5,Treatment,9,,"5 aerator, 1 water pump","Water quality measurement during disease outbreak, Weighing and measuring fish once a month",,"DAP, Urea, Cow manure",DORB,Local market,,Local farmers,
+ara2_176528d3,Eluru,06/03/2025,Organic,Praveen,16.0,15.0,1.5,Treatment,35,,1 water pump,"Water quality measurement during disease outbreak, Weighing and measuring fish once a month",,"DAP, Urea, Cow manure",DORB,National supplier,,Local farmers,
+ara2_45e1cde5,Eluru,06/03/2025,Organic,Praveen,31.0,29.0,1.5,Treatment,36,,1 water pump,"Water quality measurement during disease outbreak, Weighing and measuring fish once a month",,"DAP, Urea, Cow manure",DORB,National supplier,,Local farmers,
+ara2_b3d128ac,Eluru,06/03/2025,Organic,Praveen,50.0,44.0,1.5,Treatment,34,,1 water pump,"Water quality measurement during disease outbreak, Weighing and measuring fish once a month",,"DAP, Urea, Cow manure",DORB,National supplier,,Local farmers,
+ara2_cb98926f,Eluru,05/27/2025,Organic,Praveen,3.0,2.8,1.5,Treatment,16,,"3 aerator, 1 water pump","Water quality measurement during disease outbreak, Weighing and measuring fish once a month",,"DAP, Urea, Cow manure",DORB,National supplier,,Local farmers,
+ara2_30c31874,Eluru,05/05/2025,Organic,Praveen,4.5,4.2,1.5,Treatment,19,,1 water pump,"Water quality measurement during disease outbreak, Weighing and measuring fish once a month",,"DAP, Urea, Cow manure",DORB,Local market,,Local farmers,
+ara2_586ab2f7,Eluru,05/05/2025,Organic,Praveen,4.0,3.5,1.5,Treatment,17,,1 water pump,"Water quality measurement during disease outbreak, Weighing and measuring fish once a month",,"DAP, Urea, Cow manure",DORB,Local market,,Local farmers,
+ara2_778970d8,Eluru,05/05/2025,Organic,Praveen,60.0,54.0,1.5,Treatment,21,,1 water pump,"Water quality measurement during disease outbreak, Weighing and measuring fish once a month",,"DAP, Urea, Cow manure",DORB,Local market,,Local farmers,
+ara2_c3a6ea5e,Eluru,05/05/2025,Organic,Praveen,40.0,38.0,1.5,Treatment,17,,1 water pump,"Water quality measurement during disease outbreak, Weighing and measuring fish once a month",,"DAP, Urea, Cow manure",DORB,Local market,,Local farmers,
+ara2_27387783,Eluru,05/05/2025,Organic,Praveen,10.0,8.5,1.5,Treatment,8,,1 water pump,"Water quality measurement during disease outbreak, Weighing and measuring fish once a month",,"DAP, Urea, Cow manure",DORB,Local market,,Local farmers,
+ara2_29c9448f,Eluru,03/24/2025,Organic,Praveen,9.0,8.0,1.5,Treatment,35,,1 water pump,"Water quality measurement during disease outbreak, Weighing and measuring fish once a month",,"DAP, Urea, Cow manure",DORB,National supplier,,Local farmers,
+ara2_f5dabd1c,Eluru,03/24/2025,Organic,Praveen,16.0,13.5,1.5,Treatment,52,,1 water pump,"Water quality measurement during disease outbreak, Weighing and measuring fish once a month",,"DAP, Urea, Cow manure",DORB,National supplier,,Local farmers,
+ara2_2e53f20a,Eluru,03/24/2025,Organic,Praveen,40.0,36.5,1.5,Treatment,51,,1 water pump,"Water quality measurement during disease outbreak, Weighing and measuring fish once a month",,"DAP, Urea, Cow manure",DORB,National supplier,,Local farmers,
+ara2_3c5dafd2,Eluru,03/19/2025,Organic,Praveen,10.0,9.5,1.5,Treatment,14,,2 water pump,"Water quality measurement during disease outbreak, Weighing and measuring fish once a month",,"DAP, Urea, Cow manure",DORB,Local market,,Local farmers,
+ara2_33f93df9,Eluru,03/19/2025,Organic,Praveen,35.0,30.0,1.5,Treatment,9,,2 water pump,"Water quality measurement during disease outbreak, Weighing and measuring fish once a month",,"DAP, Urea, Cow manure",DORB,Local market,,Local farmers,
+ara2_7b2b4994,Eluru,03/19/2025,Organic,Praveen,40.0,38.0,1.5,Treatment,8,,2 water pump,"Water quality measurement during disease outbreak, Weighing and measuring fish once a month",,"DAP, Urea, Cow manure",DORB,Local market,,Local farmers,
+ara2_0f0eef00,Eluru,03/19/2025,Organic,Praveen,10.0,9.5,1.5,Treatment,17,,1 water pump,"Water quality measurement during disease outbreak, Weighing and measuring fish once a month",,"DAP, Urea, Cow manure",DORB,Local market,,Local farmers,
+ara2_ba07d622,Eluru,03/18/2025,Organic,Praveen,11.0,10.3,1.5,Treatment,14,,"1 aerator, 1 water pump","Water quality measurement during disease outbreak, Weighing and measuring fish once a month",,"DAP, Urea, Cow manure",DORB,Local market,,Local farmers,
+ara2_fdcc3d9a,Eluru,03/17/2025,Organic,Praveen,15.0,13.5,1.5,Treatment,50,,1 water pump,"Water quality measurement during disease outbreak, Weighing and measuring fish once a month",,"DAP, Urea, Cow manure",DORB,Local market,,Local farmers,
+ara2_ef01d63e,Eluru,03/17/2025,Organic,Praveen,16.0,14.6,1.5,Treatment,50,,"2 aerator, 1 water pump","Water quality measurement during disease outbreak, Weighing and measuring fish once a month",,"DAP, Urea, Cow manure",DORB,Local market,,Local farmers,
+ara2_b0a9aa2d,Eluru,03/12/2025,Organic,Praveen,40.0,37.5,1.5,Treatment,2,,2 water pump,"Water quality measurement during disease outbreak, Weighing and measuring fish once a month",,"DAP, Urea, Cow manure",DORB,Local market,,Local farmers,
+ara2_0772ec50,Eluru,03/12/2025,Organic,Praveen,45.0,42.5,1.5,Treatment,31,,2 water pump,"Water quality measurement during disease outbreak, Weighing and measuring fish once a month",,"DAP, Urea, Cow manure",DORB,Local market,,Local farmers,
+ara2_b001208b,Eluru,02/28/2025,Organic,Praveen,11.0,10.0,1.5,Treatment,29,,1 water pump,"Water quality measurement during disease outbreak, Weighing and measuring fish once a month",,"DAP, Urea, Cow manure",DORB,Local market,,Local farmers,
+ara2_8232649d,Eluru,02/25/2025,Organic,Praveen,40.0,38.5,1.5,Treatment,45,,1 water pump,"Water quality measurement during disease outbreak, Weighing and measuring fish once a month",,"DAP, Urea, Cow manure",DORB,National supplier,,Local farmers,
+ara2_71f6e8db,Eluru,02/24/2025,Organic,Praveen,12.0,10.5,1.5,Treatment,17,,1 water pump,"Water quality measurement during disease outbreak, Weighing and measuring fish once a month",,"DAP, Urea, Cow manure",DORB,Local market,,Local farmers,
+ara2_227eb8cd,Eluru,02/20/2025,Organic,Praveen,35.0,30.0,1.5,Treatment,9,,1 water pump,"Water quality measurement during disease outbreak, Weighing and measuring fish once a month",,"DAP, Urea, Cow manure",DORB,Local market,,Local farmers,
+ara2_163f5bc2,Eluru,02/14/2025,Organic,Praveen,25.0,22.0,1.5,Treatment,55,,1 water pump,"Water quality measurement during disease outbreak, Weighing and measuring fish once a month",,"DAP, Urea, Cow manure",DORB,Local market,,Local farmers,
+ara2_c15dc3a2,Eluru,02/14/2025,Organic,Praveen,30.0,28.5,1.5,Treatment,48,,"2 aerator, 1 water pump","Water quality measurement during disease outbreak, Weighing and measuring fish once a month",,"DAP, Urea, Cow manure",DORB,Local market,,Local farmers,
+ara2_c4b7f174,Eluru,02/14/2025,Organic,Praveen,40.0,35.0,1.5,Treatment,48,,"3 aerator, 1 water pump","Water quality measurement during disease outbreak, Weighing and measuring fish once a month",,"DAP, Urea, Cow manure",DORB,Local market,,Local farmers,
+ara2_c3cfe293,Eluru,02/14/2025,Organic,Praveen,25.0,21.5,1.5,Control,28,,"1 aerator, 1 water pump","Water quality measurement during disease outbreak, Weighing and measuring fish once a month",,"DAP, Urea, Cow manure",DORB,Local market,,Local farmers,
+ara2_9103673b,Eluru,02/14/2025,Organic,Praveen,1.5,1.1,1.5,Treatment,30,,1 water pump,"Water quality measurement during disease outbreak, Weighing and measuring fish once a month",,"DAP, Urea, Cow manure",DORB,Local market,,Local farmers,
+ara2_d54330d5,Eluru,02/14/2025,Organic,Praveen,6.0,5.3,1.5,Treatment,34,,1 water pump,"Water quality measurement during disease outbreak, Weighing and measuring fish once a month",,"DAP, Urea, Cow manure",DORB,Local market,,Local farmers,
+ara2_1fcb01f6,Eluru,02/14/2025,Organic,Praveen,5.0,4.2,1.5,Treatment,34,,1 water pump,"Water quality measurement during disease outbreak, Weighing and measuring fish once a month",,"DAP, Urea, Cow manure",DORB,Local market,,Local farmers,
+ara2_c57f3380,Eluru,02/07/2025,Organic,Praveen,25.0,23.5,1.5,Treatment,13,,1 water pump,"Water quality measurement during disease outbreak, Weighing and measuring fish once a month",,"DAP, Urea, Cow manure",DORB,Local market,,Local farmers,
+ara2_148f1633,Eluru,02/06/2025,Organic,Praveen,11.0,10.5,1.5,Treatment,43,Changed to Grow out from Breed-out in May 2026,1 water pump,"Water quality measurement during disease outbreak, Weighing and measuring fish once a month",,"DAP, Urea, Cow manure",DORB,Local market,,Local farmers,
+ara2_858b914c,Eluru,02/06/2025,Organic,Praveen,8.0,7.0,1.5,Treatment,41,,1 water pump,"Water quality measurement during disease outbreak, Weighing and measuring fish once a month",,"DAP, Urea, Cow manure",DORB,Local market,,Local farmers,
+ara2_3b2f3973,Eluru,02/06/2025,Organic,Praveen,22.0,19.5,1.5,Treatment,38,,1 water pump,"Water quality measurement during disease outbreak, Weighing and measuring fish once a month",,"DAP, Urea, Cow manure",DORB,Local market,,Local farmers,
+ara2_1fd0d0ae,Eluru,02/05/2025,Organic,Praveen,10.0,9.0,1.5,Treatment,14,,1 water pump,"Water quality measurement during disease outbreak, Weighing and measuring fish once a month",,"DAP, Urea, Cow manure",DORB,Local market,,Local farmers,
+ara2_3eab831e,Eluru,01/21/2025,Organic,Praveen,11.0,10.1,1.5,Treatment,31,,1 water pump,"Water quality measurement during disease outbreak, Weighing and measuring fish once a month",,"Cow manure, DAP, Urea",DORB,National supplier,,Local farmers,
+ara2_573a2826,Eluru,01/21/2025,Organic,Praveen,6.0,5.0,1.5,Treatment,25,,1 water pump,"Water quality measurement during disease outbreak, Weighing and measuring fish once a month",,"Cow manure, DAP, Urea",DORB,National supplier,,Local farmers,
+ara2_50841581,Eluru,01/21/2025,Organic,Praveen,22.0,20.0,1.5,Treatment,34,,1 water pump,"Water quality measurement during disease outbreak, Weighing and measuring fish once a month",,"Cow manure, DAP, Urea",DORB,Local market,,Local farmers,
+ara2_30440f64,Eluru,01/21/2025,PwC,Praveen,6.0,5.1,1.5,Treatment,4,,1 water pump,"Water quality measurement during disease outbreak, Weighing and measuring fish once a month",,"Cow manure, DAP, Urea",DORB,National supplier,,Local farmers,
+ara2_86d250a3,Eluru,01/21/2025,Organic,Praveen,50.0,45.0,1.5,Treatment,10,,1 water pump,"Water quality measurement during disease outbreak, Weighing and measuring fish once a month",,"DAP, Urea, Cow manure",DORB,National supplier,,Local farmers,
+ara2_b245aae1,Eluru,01/02/2025,Organic,Praveen,18.0,17.0,1.5,Treatment,38,,1 water pump,"Water quality measurement during disease outbreak, Weighing and measuring fish once a month",,"Cow manure, DAP, Urea",DORB,Local market,,Local farmers,
+ara2_c9cdacda,Eluru,01/02/2025,Organic,Praveen,22.0,19.0,1.5,Treatment,20,,1 water pump,"Water quality measurement during disease outbreak, Weighing and measuring fish once a month",,"Cow manure, DAP, Urea",DORB,Local market,,Local farmers,
+ara2_7a6ae57c,Eluru,01/02/2025,Organic,Praveen,50.0,43.0,1.5,Treatment,27,,1 water pump,"Water quality measurement during disease outbreak, Weighing and measuring fish once a month",,"Cow manure, DAP, Urea",DORB,National supplier,,Local farmers,
+ara2_1e1aa1ce,Eluru,01/02/2025,Organic,Praveen,8.0,7.7,1.5,Treatment,16,,1 water pump,"Water quality measurement during disease outbreak, Weighing and measuring fish once a month",,"Cow manure, DAP, Urea",DORB,National supplier,,Local farmers,
+ara2_2b34e28c,Eluru,12/20/2024,Organic,Praveen,25.0,22.5,1.5,Treatment,53,,1 water pump,"Water quality measurement during disease outbreak, Weighing and measuring fish once a month",,"DAP, Urea, Cow manure",DORB,Local market,,Local farmers,
+ara2_f0f921b2,Eluru,12/18/2024,Organic,Praveen,6.0,5.6,1.5,Treatment,41,,1 water pump,"Water quality measurement during disease outbreak, Weighing and measuring fish once a month",,"DAP, Urea, Cow manure",DORB,Local market,,Local farmers,
+ara2_2167f891,Eluru,12/11/2024,Organic,Praveen,2.0,1.5,1.5,Treatment,32,,,"Water quality measurement during disease outbreak, Weighing and measuring fish once a month",,"Cow manure, DAP, Urea",DORB,Local market,,Local farmers,
+ara2_733d0028,Eluru,12/11/2024,Organic,Praveen,8.0,6.75,1.5,Treatment,45,,1 water pump,"Water quality measurement during disease outbreak, Weighing and measuring fish once a month",,"Cow manure, DAP, Urea",DORB,Local market,,Local farmers,
+ara2_95c4b2c4,Eluru,12/11/2024,Organic,Praveen,30.0,27.0,1.5,Treatment,73,,1 water pump,"Water quality measurement during disease outbreak, Weighing and measuring fish once a month",,"Cow manure, DAP, Urea",DORB,Local market,,Local farmers,
+ara2_b32cef11,Eluru,11/09/2024,Organic,Praveen,26.0,24.7,1.5,Treatment,59,,1 water pump,"Water quality measurement during disease outbreak, Weighing and measuring fish once a month",,"Lime, Sanitizers, Tilapia medicine",DORB,National supplier,,Local farmers,
+ara2_e14730af,Eluru,11/09/2024,Organic,Praveen,32.0,29.0,1.5,Treatment,59,,1 water pump,"Water quality measurement during disease outbreak, Weighing and measuring fish once a month",,"Lime, Sanitizers, Tilapia medicine",DORB,National supplier,,Local farmers,
+ara2_4e2f7bb0,Eluru,11/09/2024,Organic,Praveen,34.0,32.5,1.5,Treatment,64,,1 water pump,"Weighing and measuring fish once a month, Water quality measurement during disease outbreak",,"Lime, Sanitizers, Tilapia medicine",DORB,National supplier,,Local farmers,
+ara2_bf024850,Eluru,11/04/2024,Organic,Praveen,50.0,44.0,1.5,Control,28,,1 water pump,"Water quality measurement during disease outbreak, Weighing and measuring fish once a month",,"Cow manure, DAP, Potash",DORB,Local market,,Local farmers,
+ara2_70e56cfa,Eluru,10/05/2024,Organic,Praveen,5.5,5.0,1.5,Treatment,2,,"1 aerator, 1 water pump","Water quality measurement during disease outbreak, Weighing and measuring fish once a month",,"Poultry manure, Cow manure",DORB,Local market,,Local farmers,
+ara2_3a8fffae,Eluru,10/05/2024,Organic,Praveen,22.0,21.2,1.5,Treatment,29,,"2 aerator, 1 water pump","Water quality measurement during disease outbreak, Weighing and measuring fish once a month",,"Poultry manure, Cow manure",DORB,Local market,,Local farmers,
+ara2_10a5f8e4,Eluru,10/05/2024,Organic,Praveen,1.5,1.23,1.5,Treatment,16,,"1 aerator, 1 water pump","Water quality measurement during disease outbreak, Weighing and measuring fish once a month",,"Poultry manure, Cow manure",DORB,Local market,,Local farmers,
+ara2_4ce1c3bb,Eluru,10/05/2024,Organic,Praveen,2.0,1.35,1.5,Treatment,15,,"1 aerator, 1 water pump","Water quality measurement during disease outbreak, Weighing and measuring fish once a month",,"Poultry manure, Cow dung",DORB,Local market,,Local farmers,
+ara2_8cd29c44,Eluru,10/01/2024,Organic,Praveen,4.0,3.2,1.5,Treatment,2,,1 water pump,"Water quality measurement during disease outbreak, Weighing and measuring fish once a month",,"Cow manure, Water probiotics (PS)",DORB,Local market,,Local farmers,
+ara2_55de7689,Eluru,10/01/2024,Organic,Praveen,25.0,23.5,1.5,Treatment,54,,2 water pump,"Water quality measurement during disease outbreak, Weighing and measuring fish once a month",,"Cow manure, Water probiotics (PS)",DORB,Local market,,Local farmers,
+ara2_06ad2d07,Eluru,10/01/2024,Organic,Praveen,18.0,16.8,1.5,Treatment,24,,2 water pump,"Water quality measurement during disease outbreak, Weighing and measuring fish once a month",,"Cow manure, Water probiotics (PS)",DORB,Local market,,Local farmers,
+ara2_6452000e,Eluru,10/01/2024,Organic,Praveen,2.0,1.5,1.5,Treatment,46,,1 water pump,"Water quality measurement during disease outbreak, Weighing and measuring fish once a month",,"DAP, Urea, Cow manure",DORB,Local market,,Local farmers,
+ara2_c2394795,Eluru,10/01/2024,Organic,Praveen,7.0,6.3,1.5,Treatment,45,,1 water pump,"Water quality measurement during disease outbreak, Weighing and measuring fish once a month",,"DAP, Urea, Cow manure",DORB,Local market,,Local farmers,
+ara2_c11a88c9,Eluru,09/18/2024,Organic,Praveen,30.0,28.7,1.5,Treatment,66,,1 water pump,"Water quality measurement during disease outbreak, Weighing and measuring fish once a month",,"DAP, Potash, Cow manure",DORB,National supplier,,Local farmers,
+ara2_7dc637c3,Eluru,09/18/2024,Organic,Praveen,20.0,18.5,1.5,Treatment,44,,1 water pump,"Water quality measurement during disease outbreak, Weighing and measuring fish once a month",,"DAP, Potash, Cow manure",DORB,National supplier,,Local farmers,
+ara2_aa21af30,Eluru,09/18/2024,Organic,Praveen,18.0,16.5,1.5,Treatment,61,,1 water pump,"Water quality measurement during disease outbreak, Weighing and measuring fish once a month",,"DAP, Potash, Cow manure",DORB,National supplier,,Local farmers,
+ara2_771be42c,Eluru,09/18/2024,Organic,Praveen,9.0,8.0,1.5,Treatment,31,,2 water pump,"Water quality measurement during disease outbreak, Weighing and measuring fish once a month",,Gromor,DORB,Local market,,Local farmers,
+ara2_25585dd3,Eluru,09/18/2024,Organic,Praveen,50.0,47.5,1.5,Treatment,12,,"4 aerator, 2 water pump","Water quality measurement during disease outbreak, Weighing and measuring fish once a month, Pond preparation",,"Poultry waste, Cow dung",DORB,Local market,,Local farmers,
+ara2_646bdcdb,Eluru,09/18/2024,Organic,Praveen,5.0,4.75,1.5,Treatment,40,,1 water pump,"Water quality measurement during disease outbreak, Weighing and measuring fish once a month",,"DAP, Potash, Cow manure","Pelleted feed (floating), Mash",Local market,,Local farmers,
+ara2_0b1b03bb,Eluru,09/18/2024,Organic,Praveen,20.0,17.3,1.5,Treatment,38,,1 water pump,"Water quality measurement during disease outbreak, Weighing and measuring fish once a month",,"DAP, Potash. Urea, Cow manure",DORB,National supplier,,Local farmers,
+ara2_0e392abc,Eluru,09/13/2024,Organic,Praveen,20.0,18.8,1.5,Treatment,24,,1 water pump,"Water quality measurement during disease outbreak, Weighing and measuring fish once a month",,"DAP, Potash, Urea, Cow manure",DORB,National supplier,,Local farmers,
+ara2_f17bbe2f,Eluru,09/13/2024,Organic,Praveen,10.0,9.0,1.5,Treatment,63,,1 water pump,"Water quality measurement during disease outbreak, Weighing and measuring fish once a month",,"DAP, Urea, Potash, Cow manure",DORB,National supplier,,Local farmers,
+ara2_8190e6ec,Eluru,09/13/2024,Organic,Praveen,5.0,3.7,1.5,Treatment,43,Changed to grow-out from rearing in June 2026,1 water pump,"Water quality measurement during disease outbreak, Weighing and measuring fish once a month",,"DAP, Urea, Potash, Cow manure","Pelleted feed (floating), Mash",Local market,,Local farmers,
+ara2_d8f6a2aa,Eluru,09/13/2024,Organic,Praveen,30.0,27.0,1.5,Treatment,83,,1 water pump,"Water quality measurement during disease outbreak, Weighing and measuring fish once a month",,"DAP, Potash, Urea, Cow manure",DORB,National supplier,,Local farmers,
+ara2_4b816656,Eluru,09/13/2024,Organic,Praveen,3.5,3.3,1.5,Treatment,12,,"6 aerator, 1 water pump","Water quality measurement during disease outbreak, Weighing and measuring fish once a month",,"DAP, Potash, Cow manure",Pelleted feed (floating),Local market,Nexgen,Local farmers,Species ratio refers to Roopchand: Rohu: Catla
+ara2_32b91757,Eluru,08/29/2024,Organic,Praveen,5.0,3.65,1.5,Treatment,42,,1 water pump,"Water quality measurement during disease outbreak, Weighing and measuring fish once a month",,"DAP, Cow manure",DORB,National supplier,,Local farmers,
+ara2_00793177,Eluru,08/29/2024,Organic,Praveen,43.0,36.7,1.5,Treatment,77,,1 water pump,"Water quality measurement during disease outbreak, Weighing and measuring fish once a month",,"DAP, Cow manure",DORB,National supplier,,Local farmers,
+ara2_6af7067d,Eluru,08/29/2024,Organic,Praveen,35.0,31.0,1.5,Treatment,59,,1 water pump,"Water quality measurement during disease outbreak, Weighing and measuring fish once a month",,"DAP, Cow manure",DORB,National supplier,,Local farmers,
+ara2_0ac139b5,Eluru,08/29/2024,Organic,Praveen,46.0,37.0,1.5,Treatment,58,,1 water pump,"Water quality measurement during disease outbreak, Weighing and measuring fish once a month",,"DAP, Cow manure",DORB,National supplier,,Local farmers,
+ara2_d19ebe54,Eluru,08/29/2024,Organic,Praveen,10.0,8.7,1.5,Treatment,2,,"2 aerator, 1 water pump","Water quality measurement during disease outbreak, Weighing and measuring fish once a month",,"DAP, Potash, Cow manure",DORB,National supplier,,Local farmers,
+ara2_e6fe1327,Eluru,08/29/2024,Organic,Praveen,25.0,22.5,1.5,Treatment,68,Changed to rearing from grow-out in June 2026,"6 aerator, 1 water pump","Water quality measurement during disease outbreak, Weighing and measuring fish once a month",,"DAP, Potash, Cow manure",DORB,National supplier,,Local farmers,
+ara2_27b80a16,Eluru,08/29/2024,Organic,Praveen,16.0,14.8,1.5,Treatment,70,,1 water pump,"Water quality measurement during disease outbreak, Weighing and measuring fish once a month",,"DAP, Potash, Cow manure",DORB,National supplier,,Local farmers,
+ara2_8b32e1c5,Eluru,08/29/2024,Organic,Praveen,13.0,11.5,1.5,Treatment,69,,1 water pump,"Water quality measurement during disease outbreak, Weighing and measuring fish once a month",,"DAP, Potash, Cow manure",DORB,National supplier,,Local farmers,
+ara2_1f1af1d7,Eluru,08/29/2024,Organic,Chaitanya,20.0,18.0,2.0,Treatment,12,,"2 aerator, 2 water pump, 1 Motor Boat","Water quality measurement during disease outbreak, Weighing and measuring fish every two months",,"DAP, Super Phosphate",DORB,National supplier,,Local farmers,
+ara2_30f18320,Eluru,08/29/2024,Organic,Chaitanya,7.0,5.5,2.0,Treatment,12,,"1 water pump, 1 Motor boat","Weighing and measuring fish every two months, Water quality measurement during disease outbreak",,"Super Phosphate, DAP",DORB,National supplier,,Local farmers,
+ara2_574a8c09,Eluru,08/14/2024,Organic,Chaitanya,40.0,32.2,2.0,Treatment,47,,"1 water pump, 1 Motor boat","Water quality measurement during disease outbreak, Weighing and measuring fish once a month",,Gromor fertilizers,DORB,National supplier,,Local farmers,
+ara2_94eeabd8,Eluru,08/14/2024,Organic,Chaitanya,50.0,44.6,2.0,Treatment,46,,"1 water pump, 1 Motor Boat","Water quality measurement during disease outbreak, Weighing and measuring fish once a month",,Gromor Fertilizers,DORB,National supplier,,Local farmers,
+ara2_9d82e6a0,Eluru,08/14/2024,Organic,Chaitanya,33.0,31.45,2.0,Treatment,39,,"4 aerator, 1 water pump, 1 Motor Boat","Weighing and measuring fish once a month, Water quality measurement during disease outbreak",,Gromor fertilizers,DORB,National supplier,,Local farmers,
+ara2_93b6516f,Eluru,06/26/2024,Organic,Chaitanya,30.0,27.72,2.0,Treatment,0,No,"1 aerator, 1 water pump","Water quality measurement during disease outbreak, Weighing and measuring fish once a month",,,DORB,Local market,,Local farmers,
+ara2_00b47526,Eluru,06/26/2024,Organic,Chaitanya,50.0,34.0,2.0,Treatment,8,N0,"3 aerator, 3 water pump","Water quality measurement during disease outbreak, Weighing and measuring fish once a month",,Cow Manure,DORB,Local market,,Local farmers,Stocked the fishes from his own breed out ponds
+ara2_38378731,Eluru,06/26/2024,Organic,Chaitanya,21.0,16.0,2.0,Treatment,8,No,1 water pump,"Water quality measurement during disease outbreak, Weighing and measuring fish once a month",,Cow Manure,DORB,Local market,,Local farmers,Farmer stocked the fishes from his own nursery pond
+ara2_d9e114a2,Eluru,06/26/2024,Organic,Chaitanya,22.0,15.72,2.0,Treatment,15,No,"1 water pump, Aeration Motor boat","Weighing and measuring fish once a month, Water quality measurement during disease outbreak",,Cow Manure,DORB,Local market,,Local farmers,Stocked the fishes from his own nursery ponds
+ara2_4e7754a2,Eluru,06/21/2024,Organic,Chaitanya,50.0,45.88,2.0,Treatment,54,No,"3 water pump, Two boat motor pumps","Water quality measurement during disease outbreak, Weighing and measuring fish once a month",,Cow manure,DORB,Local market,,Local market,
+ara2_865d5a84,Eluru,06/21/2024,Organic,Chaitanya,25.0,23.97,1.5,Treatment,18,No,"2 water pump, One aeration motor boat","Weighing and measuring fish once a month, Water quality measurement during disease outbreak",,,DORB,Local market,,Local farmers,
+ara2_7a7eace1,Eluru,06/17/2024,Organic,Chaitanya,5.0,4.37,1.5,Treatment,28,No,1 water pump,"Weighing and measuring fish once a month, Water quality measurement during disease outbreak",,Minerals,DORB,Local market,,Local farmers,
+ara2_6ca69422,Eluru,06/10/2024,Organic,Chaitanya,10.0,9.2,1.5,Treatment,74,,1 water pump,"Water quality measurement during disease outbreak, Weighing and measuring fish once a month",,"Cow Manure, DAP, Super Phosphate",DORB,Local market,,Local farmers,
+ara2_d52ddb31,Eluru,06/10/2024,Organic,Chaitanya,20.0,18.1,1.5,Treatment,65,,"4 aerator, 1 water pump","Water quality measurement during disease outbreak, Weighing and measuring fish once a month",,"Cow Manure. DAP, Super Phosphate",DORB,Local market,,Local farmers,
+ara2_575536ca,Eluru,06/09/2024,Organic,Chaitanya,7.0,6.2,1.5,Treatment,3,,1 water pump,"Water quality measurement during disease outbreak, Weighing and measuring fish once a month",,Cow Manure,DORB,Local market,,Local farmers,
+ara2_000384fb,Eluru,06/09/2024,Organic,Chaitanya,12.0,11.08,1.5,Treatment,35,,1 water pump,"Weighing and measuring fish once a month, Water quality measurement during disease outbreak",,Cow Manure,DORB,Local market,,Local farmers,
+ara2_db4df335,Eluru,06/07/2024,Organic,Chaitanya,4.5,2.74,1.5,Treatment,24,,"1 aerator, 1 water pump","Weighing and measuring fish once a month, Water quality measurement during disease outbreak",,Gromor Fertilizers,DORB,Local market,,Local farmers,
+ara2_1d5dce9e,Eluru,06/07/2024,Organic,Chaitanya,4.0,3.0,1.5,Treatment,44,,1 water pump,"Water quality measurement during disease outbreak, Weighing and measuring fish every two months",,Gromor Fertilizers,DORB,Local market,,Local farmers,
+ara2_18808778,Eluru,05/27/2024,Organic,Chaitanya,10.0,7.0,1.5,Treatment,3,,1 water pump,"Water quality measurement during disease outbreak, Weighing and measuring fish once a month",,Cow Manure,Mash,Local market,,Local farmers,
+ara2_6a60fbba,Eluru,05/27/2024,Organic,Chaitanya,4.0,3.35,1.5,Treatment,1,,"2 aerator, 2 water pump","Water quality measurement during disease outbreak, Weighing and measuring fish once a month",,Cow Manure,Mash,Local market,,Local farmers,
+ara2_efbf4092,Eluru,05/10/2024,Organic,Chaitanya,9.0,7.04,1.5,Treatment,11,,3 aerator,"Water quality measurement during disease outbreak, Weighing and measuring fish once a month",,"Urea, DAP",Mash,Local market,,Local farmers,
+ara2_ac5a66af,Eluru,05/10/2024,Organic,Chaitanya,11.0,8.94,1.5,Treatment,11,,"4 aerator, 1 water pump","Weighing and measuring fish once a month, Water quality measurement during disease outbreak",,"Urea, DAP",Mash,Local market,,Local farmers,
+ara2_c2bf107e,Eluru,05/10/2024,Organic,Chaitanya,17.0,13.5,1.5,Treatment,7,,2 aerator,"Water quality measurement during disease outbreak, Weighing and measuring fish once a month",,"Urea, DAP",Mash,Local market,,Local farmers,
+ara2_540dc41d,Eluru,05/10/2024,Organic,Chaitanya,16.0,13.89,1.5,Treatment,16,,"2 aerator, 1 water pump","Water quality measurement during disease outbreak, Weighing and measuring fish once a month",,"Urea, DAP",Mash,Local market,,Local farmers,
+ara2_4b73da19,Eluru,05/10/2024,Organic,Chaitanya,30.0,24.0,1.5,Treatment,21,,"3 aerator, 1 water pump, Motor boat with aeration","Water quality measurement during disease outbreak, Weighing and measuring fish once a month",,"Urea, DAP",Mash,Local market,,Local farmers,
+ara2_5aca7455,Eluru,05/06/2024,Organic,Chaitanya,25.0,22.74,2.0,Treatment,13,,1 water pump,Weighing and measuring fish once a month,,,Mash,Local market,,Local farmers,
+ara2_6857ac3f,Eluru,05/06/2024,Organic,Chaitanya,4.0,2.72,1.5,Treatment,40,,"2 aerator, 1 water pump","Weighing and measuring fish once a month, Water quality measurement during disease outbreak",,,Mash,Local market,,Local farmers,
+ara2_fea90a74,Eluru,04/26/2024,Organic,Chaitanya,25.0,21.2,1.5,Treatment,74,,"1 aerator, 1 water pump, 1 Motor Boat","Water quality measurement during disease outbreak, Weighing and measuring fish once a month",,Cow and Poultry Manure,Mash,Local market,,Local farmers,
+ara2_ca187575,Eluru,04/26/2024,Organic,Chaitanya,24.0,17.2,1.5,Treatment,46,,"1 aerator, 1 water pump, Motor Boat","Water quality measurement during disease outbreak, Weighing and measuring fish once a month",,Cow and Poultry Manure,Mash,Local market,,Local farmers,
+ara2_2e8fd6a2,Eluru,04/22/2024,Organic,Chaitanya,7.0,7.0,1.5,Treatment,27,,1 water pump,"Water quality measurement during disease outbreak, Weighing and measuring fish once a month",,Gromor and Cow Manure,Mash,Local market,,Local farmers,
+ara2_c79c24af,Eluru,03/22/2024,Organic,Chaitanya,35.0,28.28,1.5,Treatment,17,,"2 aerator, 1 water pump","Weighing and measuring fish once a month, Water quality measurement during disease outbreak",,Cow and Poultry Manure,"Pelleted feed (floating), Mash",Local market,,Local farmers,
+ara2_a7352243,Eluru,03/22/2024,Organic,Chaitanya,10.0,8.5,1.0,Treatment,29,,1 water pump,"Weighing and measuring fish once a month, Water quality measurement during disease outbreak",,Cow and Poultry Manure,Mash,Local market,,Local farmers,
+ara2_0677080b,Eluru,03/21/2024,Organic,Chaitanya,13.0,13.0,1.5,Treatment,49,Grow out to breed out in November 2025,"1 aerator, 1 water pump","Weighing and measuring fish once a month, Water quality measurement during disease outbreak",,Gromor fertilizers,Mash,Local market,,Local farmers,
+ara2_7bd7da7f,Eluru,03/21/2024,Organic,Chaitanya,1.5,0.85,1.0,Treatment,34,,1 water pump,"Water quality measurement during disease outbreak, Weighing and measuring fish every two months",,No,Mash,Local market,,Local farmers,
+ara2_084db03a,Eluru,03/21/2024,Organic,Chaitanya,2.5,1.5,1.0,Treatment,34,,1 water pump,"Water quality measurement during disease outbreak, Weighing and measuring fish every two months",,No,Mash,Local market,,Local farmers,
+ara2_0f143c64,Eluru,03/21/2024,Organic,Chaitanya,7.0,6.6,2.0,Treatment,52,,1 water pump,"Water quality measurement during disease outbreak, Weighing and measuring fish every two months",,"Fermented DORB, Probiotics",Mash,Local market,,Local farmers,
+ara2_4f79fc8d,Eluru,03/21/2024,Organic,Chaitanya,18.0,15.0,2.0,Treatment,30,Grow out to breed out in September 2025,"4 aerator, 1 water pump","Weighing and measuring fish once a month, Water quality measurement during disease outbreak",,"Fermented DORB, Probiotics",Mash,Local market,,Local farmers,
+ara2_4149d54a,Eluru,03/20/2024,Organic,Chaitanya,17.0,15.4,1.5,Treatment,23,,1 water pump,"Water quality measurement during disease outbreak, Weighing and measuring fish once a month",,Probiotics,"Pelleted feed (floating), Mash",Local market,,Local farmers,
+ara2_96339578,Eluru,02/27/2024,Organic,Chaitanya,10.0,8.5,2.0,Treatment,24,,"3 aerator, 1 water pump","Water quality measurement during disease outbreak, Weighing and measuring fish once a month",,,Pelleted feed (floating),National supplier,,Local farmers,
+ara2_8cf52ce5,Eluru,02/26/2024,Organic,Chaitanya,1.5,1.0,1.5,Treatment,48,,"2 aerator, 1 water pump","Water quality measurement during disease outbreak, Weighing and measuring fish once a month",,,Mash,Local market,,Local farmers,
+ara2_7d060b2c,Eluru,02/23/2024,Organic,Chaitanya,12.0,11.0,2.0,Treatment,2,,"4 aerator, 1 water pump","Water quality measurement during disease outbreak, Weighing and measuring fish once a month",,,Mash,Local market,,Local farmers,
+ara2_346e897c,Eluru,02/23/2024,Organic,Chaitanya,3.0,2.54,1.5,Treatment,13,,1 water pump,Weighing and measuring fish once a month,,,Mash,Local market,,Local farmers,
+ara2_94d5ac19,Eluru,02/23/2024,Organic,Chaitanya,8.0,6.3,1.5,Treatment,2,,1 aerator,"Water quality measurement during disease outbreak, Weighing and measuring fish once a month",,"Super Phosphate, DAP",Mash,Local market,,Local farmers,
+ara2_0a8841ec,Eluru,02/23/2024,Organic,Chaitanya,9.0,7.5,1.5,Treatment,11,,,"Water quality measurement during disease outbreak, Weighing and measuring fish once a month",,Gromor fertilizers,Mash,Local market,,Nursery pond,
+ara2_249e0180,Eluru,02/23/2024,Organic,Chaitanya,47.0,40.7,2.0,Treatment,64,,1 water pump,"Water quality measurement during disease outbreak, Weighing and measuring fish once a month",,Gromor fertilizers,Mash,Local market,,Own pond,
+ara2_4441fb4f,Eluru,12/22/2023,Organic,Chaitanya,3.0,2.85,1.5,Treatment,60,Nursery to Rearing (6/2/2025),1 water pump,"Water quality measurement during disease outbreak, Weighing and measuring fish once a month",,,Mash,Local market,,Local farmers,
+ara2_a90d90d1,Eluru,12/20/2023,Organic,Chaitanya,38.0,36.5,1.8,Treatment,14,,"2 aerator, 1 water pump","Weighing and measuring fish once a month, Water quality measurement once a month",,"DAP, Super Phosphate, Gromor 20:20",Mash,Local market,,Nursery pond,
+ara2_f8742535,Eluru,12/20/2023,Organic,Chaitanya,12.0,11.24,3.0,Treatment,14,,1 water pump,"Weighing and measuring fish once a month, Water quality measurement during disease outbreak",,"Urea, Gromor 20-20-0-13",Mash,Local market,,Local farmers,
+ara2_70271685,Eluru,12/20/2023,PwC,Chaitanya,25.0,20.68,1.8,Treatment,18,,1 water pump,"Weighing and measuring fish once a month, Water quality measurement during disease outbreak",,No,Mash,Local market,,Local farmers,
+ara2_7c20400e,Eluru,12/18/2023,Organic,Chaitanya,10.0,9.07,1.5,Treatment,35,,1 water pump,Weighing and measuring fish once a month,,,Mash,"Local market, National supplier",,Nursery pond,
+ara2_957cbe38,Eluru,12/18/2023,Organic,Chaitanya,10.0,8.97,2.0,Treatment,85,,1 water pump,Weighing and measuring fish once a month,,,Mash,Local market,,Nursery pond,
+ara2_99d6094f,Eluru,12/18/2023,Organic,Chaitanya,1.0,0.69,2.0,Treatment,6,,2 water pump,Weighing and measuring fish once a month,,"DAP, Super Phosphate, Potassium and Magnesium",Mash,Local market,,Nursery pond,
+ara2_20b9b3b1,Eluru,12/18/2023,Organic,Chaitanya,1.0,0.56,2.0,Treatment,6,,2 water pump,Weighing and measuring fish once a month,,"DAP, Super Phosphate, Potassium and Magnesium",Mash,Local market,,Nursery pond,
+ara2_194348f0,Eluru,11/22/2023,Organic,Sanjay,9.0,6.77,1.5,Treatment,14,,,"Water quality measurement during disease outbreak, Weighing and measuring fish once a month",,"DAP, Super, Potash",DORB,Local market,,Local market,
+ara2_00373712,Eluru,11/19/2023,Organic,Nagaraju P.,18.0,14.83,2.0,Treatment,2,,3 aerator,"Weighing and measuring fish once a month, Water quality measurement during disease outbreak",,"DAP, Super, Potash",DORB,Local market,,Local market,
+ara2_a1c0497f,Eluru,11/19/2023,Organic,Nagaraju P.,2.5,1.71,2.0,Treatment,20,,2 aerator,Weighing and measuring fish once a month,,"DAP, Super, Potash",DORB,Local market,,Local market,
+ara2_2ae80458,Eluru,11/19/2023,Organic,Sanjay,6.0,4.65,1.8,Treatment,25,,2 water pump,Weighing and measuring fish every two months,,"DAP, Super, Potash",DORB,Local market,,Local market,
+ara2_a0d5d74d,Eluru,11/18/2023,Organic,Sanjay,6.0,4.26,2.0,Treatment,53,,,"Water quality measurement during disease outbreak, Weighing and measuring fish once a month",,"DAP,Probiotics",DORB,Local market,,Local market,
+ara2_7f72325e,Eluru,10/26/2023,Organic,Sai,3.0,2.18,1.5,Treatment,30,NO,1 water pump,Pond preparation,,"DAP, Super, Potash",DORB,Local market,,Local farmers,
+ara2_cdd141ba,Eluru,10/19/2023,Organic,Sanjay,13.0,9.41,1.5,Treatment,16,NO,1 aerator,"Water quality measurement during disease outbreak, Weighing and measuring fish once a month",,"DAP, Super, Potash, Urea",DORB,Local market,,Local market,Farmer have one boat
+ara2_2d9db0cb,Eluru,09/26/2023,Organic,Sai,25.0,18.64,7.0,Treatment,10,,"5 aerator, Farmer Have 5 Aerators","Water quality measurement during disease outbreak, Weighing and measuring fish once a month",,"DAP, Super, Potash",DORB,Local market,,Local market,Farmer have 5 aerators
+ara2_0c7bd285,Nellore,09/20/2023,Organic,Chaitanya,2.5,2.03,2.0,Treatment,53,,"2 aerator, 2 water pump",Weighing and measuring fish once a month,,,Pelleted feed (floating),Local market,Icon,Local farmers,
+ara2_626e23f2,Nellore,09/20/2023,Organic,Chaitanya,1.0,0.86,1.5,Treatment,40,Changed to grow-out from rearing in April 2026,1 water pump,Weighing and measuring fish once a month,,,Pelleted feed (floating),National supplier,Abis,Local farmers,
+ara2_88abf248,Nellore,09/20/2023,PwC,Chaitanya,7.0,5.55,1.5,Treatment,58,,"2 aerator, 2 water pump",Weighing and measuring fish once a month,,Probiotic and Minerals,Pelleted feed (floating),National supplier,Abis,Nursery pond,
+ara2_dfe79bad,Nellore,09/20/2023,PwC,Chaitanya,2.4,2.09,1.5,Treatment,44,,"1 aerator, 2 water pump",Weighing and measuring fish once a month,,"Probiotic, Magnesium",Pelleted feed (floating),National supplier,Abis,Nursery pond,
+ara2_ee15e2a0,Nellore,09/20/2023,Organic,Chaitanya,5.0,4.27,2.0,Treatment,43,,"2 aerator, 4 water pumps",Weighing and measuring fish once a month,,,Pelleted feed (floating),National supplier,Abis,Local farmers,
+ara2_217d2764,Eluru,09/05/2023,Organic,Sai,25.0,,5.0,Assessment,6,NO,Motor Boat,,,"DAP, Super, Potash",DORB,Local market,,Local market,
+ara2_f0a859d3,Eluru,09/05/2023,Organic,Sai,25.0,,5.0,Assessment,6,,Motor Boat,,,"DAP, Super, Potash",DORB,Local market,,Local market,
+ara2_f5c44392,Eluru,09/05/2023,Organic,Sai,14.0,11.8,3.0,Treatment,103,NO,"1 water pump, Motor Boat",Weighing and measuring fish once a month,,"DAP, Super, Potash","Pelleted feed (sinking), DORB",Local market,,Local market,
+ara2_054e57af,Eluru,09/01/2023,Organic,Sai,17.0,12.88,2.0,Treatment,20,,2 aerator,Weighing and measuring fish once a month,,"DAP, Super, Potash","Pelleted feed (floating), DORB",Local market,Local Market,Local market,
+ara2_ac267ebf,Eluru,09/01/2023,Organic,Sai,16.0,13.33,5.0,Treatment,31,,1 aerator,"Water quality measurement during disease outbreak, Weighing and measuring fish once a month",,He follows organic methods,DORB,Local market,,Local market,
+ara2_27f8f56a,Eluru,08/30/2023,Organic,Sai,53.0,44.07,2.0,Treatment,66,NO,,Disease analysis by sending dead fish to lab,,"Cow Manure, Potash","Pelleted feed (sinking), DORB",Local market,Local Market,Local market,"Fish in the pond are suffering with disease outbreak, farmer is unsure about disease and he said he will let us know."
+ara2_f5124b92,Eluru,08/25/2023,Organic,Sai,9.0,7.81,2.0,Control,89,NO,3 aerator,Weighing and measuring fish once a month,,"DAP, Super, Potash, Urea
+Potash",DORB,Local market,,Local market,Farmer have 4 Aerators
+ara2_2a7578bb,Eluru,08/25/2023,Organic,Sai,20.0,18.7,1.5,Treatment,18,,,Weighing and measuring fish once a month,,"DAP, Super, Potash",DORB,Local market,,Local market,
+ara2_31afc592,Eluru,08/22/2023,Organic,Sai,20.0,16.17,2.5,Treatment,106,NO,2 water pump,Weighing and measuring fish once a month,,"DAP,Probiotics","Pelleted feed (sinking), DORB",Local market,,Local market,
+ara2_e985ca4a,Eluru,08/22/2023,Organic,Sai,8.0,7.36,2.5,Treatment,67,NO,,Weighing and measuring fish once a month,,"DAP,Probiotics","Pelleted feed (sinking), DORB",Local market,,Local market,
+ara2_7e358ea4,Nellore,08/11/2023,PwC,Chandu,5.0,4.32,1.5,Treatment,60,,2 water pump,Weighing and measuring fish once a month,Water quality measurement when there is a disease outbreak,No,Pelleted feed (floating),International supplier,Cargill,Local farmers,
+ara2_122dd1c9,Nellore,08/11/2023,PwC,Chandu,7.0,6.24,2.0,Treatment,58,,2 water pump,Weighing and measuring fish once a month,,,Pelleted feed (floating),International supplier,Cargill,Local farmers,
+ara2_b0010581,Nellore,08/11/2023,PwC,Chandu,4.0,3.49,2.0,Treatment,55,Changed to Grow out from rearing in June 2026,"2 aerator, 1 water pump",Weighing and measuring fish once a month,,No,Pelleted feed (floating),National supplier,IB Ibis,Local farmers,
+ara2_1d54882b,Nellore,08/09/2023,Organic,Chandu,3.0,2.8,1.5,Treatment,36,,"2 aerator, 1 water pump","Weighing and measuring fish once a month, Water quality measurement during disease outbreak",Water quality measurement when there is a disease outbreak,,Pelleted feed (floating),National supplier,IB Ibis,Local farmers,
+ara2_e7d0223c,Nellore,08/09/2023,Organic,Chandu,2.5,2.13,1.5,Treatment,30,Grow out to rearing in November 2025 ,1 water pump,Weighing and measuring fish once a month,Water quality measurement when there is a disease outbreak,No,Pelleted feed (floating),National supplier,Kingfish,Local farmers,
+ara2_79cf3b3a,Nellore,08/09/2023,Organic,Chandu,3.5,2.84,1.5,Treatment,55,,1 water pump,"Water quality measurement during disease outbreak, Weighing and measuring fish once a month, Pond preparation",,No,Pelleted feed (floating),National supplier,Kingfish,Local farmers,
+ara2_f5e499f4,Eluru,08/08/2023,Organic,Sai,6.0,5.03,11.0,Treatment,56,NO,1 water pump,"Water quality measurement during disease outbreak, Weighing and measuring fish once a month",,Single super phosphate,DORB,Local market,Local Market,Local market,
+ara2_970ce848,Eluru,08/08/2023,Organic,Sai,24.0,21.64,2.0,Treatment,86,Breed out to Grow out from December 2025,"3 aerator, 1 water pump",Water quality measurement during disease outbreak,Unsure/ do not remember,"Urea
+Single super phosphate
+Potash
+Magnesium","Pelleted feed (floating), DORB",Local market,Local Market,Local market,Farmer have 5 Aerators
+ara2_f4e367af,Nellore,08/08/2023,Organic,Chandu,1.5,1.22,2.5,Treatment,31,,"3 aerator, 2 water pump","Pond preparation, Weighing and measuring fish once a month",Water quality measurement when there is a disease outbreak,No,Pelleted feed (floating),Local market,,Local farmers,Has 3 Aerators
+ara2_8a37ac9f,Nellore,08/08/2023,Organic,Chandu,4.5,4.08,1.5,Treatment,57,,3 water pump,Weighing and measuring fish once a month,,No,Pelleted feed (floating),Local market,,Local farmers,
+ara2_a6551d54,Eluru,08/08/2023,Organic,Sai,1.0,0.7,1.5,Treatment,51,NO,1 water pump,Water quality measurement during disease outbreak,,Single super phosphate,"Mash, DORB",Local market,Local Market,Local market,
+ara2_6ec2f0e5,Eluru,08/08/2023,Organic,Sai,6.0,4.12,2.5,Treatment,65,Breed out to Nursey in November 2025,2 water pump,Water quality measurement during disease outbreak,,Single super phosphate,"Pelleted feed (sinking), DORB",Local market,Krishna Prabhas,Local market,
+ara2_1b6714d3,Nellore,08/08/2023,Organic,Chandu,2.0,1.75,1.5,Treatment,50,,2 water pump,"Weighing and measuring fish once a month, Water quality measurement during disease outbreak, Pond preparation",,No,Pelleted feed (floating),Local market,,Local farmers,
+ara2_46286ebb,Eluru,08/07/2023,Organic,Sai,28.0,22.52,2.0,Treatment,101,,"2 aerator, 2 water pump",Water quality measurement during disease outbreak,Water quality measurement when there is a disease outbreak,"Urea
+Single super phosphate
+Potash
+Zinc",DORB,Local market,Local Farmer,Local farmers,
+ara2_e74f26b3,Eluru,08/07/2023,Organic,Sai,20.0,16.57,2.0,Treatment,83,,2 aerator,Water quality measurement during disease outbreak,,"Urea
+Single super phosphate
+Potash
+Zinc",DORB,Local market,,Local farmers,
+ara2_0b0bdb08,Nellore,07/26/2023,Organic,Chaitanya,2.0,1.81,1.5,Treatment,41,NO,"2 aerator, 2 water pump","Pond preparation, Weighing and measuring fish once a month, Water quality measurement during disease outbreak",Applied Iodine,,Pelleted feed (floating),Local market,GODREJ,Local farmers,
+ara2_d0d5f943,Nellore,07/26/2023,Organic,Chaitanya,1.0,0.66,1.5,Treatment,51,NO,4 WATER PUMPS,Pond preparation,ADDED BLEACH AND DOLOMITE,No,Mash,Local market,LOCAL MARKET,Local farmers,
+ara2_fc999d29,Nellore,07/26/2023,Organic,Chaitanya,2.0,1.49,1.5,Treatment,59,NO,1 water pump,Pond preparation,ADDED BLEACH AND DOLOMITE,No,Mash,Local market,,Local farmers,
+ara2_83b11f44,Nellore,07/26/2023,Organic,Chaitanya,3.0,2.32,1.5,Treatment,37,NO,2 water pump,Pond preparation,ADDED BLEACH AND DOLOMITE,No,Mash,Local market,,Local farmers,
+ara2_50c225c4,Nellore,07/26/2023,Organic,Chaitanya,2.0,1.42,1.5,Treatment,35,NO,1 water pump,"Pond preparation, Weighing and measuring fish once a month, Water quality measurement during disease outbreak",ADDED BLEACH AND DOLOMITE,No,Mash,Local market,,Local farmers,
+ara2_b0a5ed5f,Eluru,12/16/2022,Organic,Maneesh,50.0,46.94,2.5,Treatment,100,NO,"3 aerator, 3 water pump","Pond preparation, Behavioural welfare assessment, Physical welfare assessment, Weighing and measuring fish once a month",Water quality measurement once a month,"Manure (cow, pig, horse, poultry or other dung)
+Urea
+Ammonium sulphate
+Triple super phosphate",Mash,Local market,PATTABHI FEED,Own pond,
+ara2_b1d545d0,Eluru,12/16/2022,,Maneesh,5.0,,2.5,,0,NO,1 aerator,"Behavioural welfare assessment, Physical welfare assessment, Weighing and measuring fish once a month",Water quality measurement once a month,Triple super phosphate,Mash,Local market,NRK FEEDS,Individual supplier,
+ara2_80a7ea66,Eluru,12/16/2022,,Maneesh,30.0,,2.5,,0,NO,3 aerator,"Pond preparation, Weighing and measuring fish once a month",Water quality measurement twice a month,"Manure (cow, pig, horse, poultry or other dung)
+Urea
+Ammonium sulphate
+Triple super phosphate",Mash,Local market,NRK FEEDS,Own pond,
+ara2_77fa9764,Eluru,12/16/2022,Organic,Maneesh,17.0,16.42,2.5,Treatment,34,NO,,"Behavioural welfare assessment, Weighing and measuring fish once a month",Water quality measurement once a month,"Manure (cow, pig, horse, poultry or other dung)
+Triple super phosphate",Mash,Local market,NRK FEEDS,Individual supplier,
+ara2_e47a8d26,Eluru,12/16/2022,Organic,Maneesh,25.0,22.46,2.5,Treatment,82,NO,"3 aerator, 2 water pump","Pond preparation, Behavioural welfare assessment, Physical welfare assessment, Weighing and measuring fish once a month",Water quality measurement twice a month,"Ammonium sulphate
+Triple super phosphate",Mash,"Local market, Self made",NRK FEEDS,Own pond,
+ara2_cb372445,Eluru,12/16/2022,Organic,Maneesh,10.0,8.73,2.0,Treatment,96,NO,5 aerator,"Pond preparation, Physical welfare assessment",Water quality measurement once a month,"Triple super phosphate
+Potash
+organic manures from local supplier.",Mash,Local market,NRK FEEDS,Own pond,has 5 aerators and 2 submersible aerators followed by a re circulation boat
+ara2_51ffa437,Eluru,12/16/2022,Organic,Maneesh,3.0,2.66,2.0,Treatment,84,NO,2 aerator,"Pond preparation, Physical welfare assessment",Water quality measurement once a month,"Triple super phosphate
+organic manures from local supplier.",Mash,Local market,NRK FEEDS,Hatchery,
+ara2_368849b6,Eluru,12/16/2022,Organic,Maneesh,50.0,49.8,2.5,Treatment,102,NO,"3 aerator, 2 water pump, water re circulation boat","Pond preparation, Behavioural welfare assessment, Physical welfare assessment, Disease analysis by sending dead fish to lab, Weighing and measuring fish once a month",Water quality measurement once a month,"Ammonium sulphate
+Triple super phosphate",Mash,Local market,PATTABHI FEED,Own pond,
+ara2_d891f276,Eluru,12/09/2022,Organic,Maneesh,22.0,19.09,2.0,Treatment,83,No,,"Behavioural welfare assessment, Physical welfare assessment, Weighing and measuring fish once a month",Water quality measurement once a month,"Manure (cow, pig, horse, poultry or other dung)
+Triple super phosphate",Mash,Local market,NRK feeds,Own pond,
+ara2_7f636db2,Eluru,12/09/2022,,Maneesh,10.0,,2.0,Treatment,0,No,,"Pond preparation, Physical welfare assessment, Weighing and measuring fish once a month",Water quality measurement once a month,"Manure (cow, pig, horse, poultry or other dung)",Mash,Local market,NRK Feeds,Own pond,
+ara2_933dba73,Nellore,12/08/2022,Organic,Nagaraju B.,4.0,3.44,2.0,Treatment,65,,"6 aerator, 2 water pump","Pond preparation, Weighing and measuring fish once a month, Weighing and measuring fish every two months, Weighing and measuring fish every three months",Weighing and measuring fish once during a cycle,,Pelleted feed (floating),Local market,,Local market,6 aerators
+ara2_6bbd0878,Nellore,12/07/2022,Organic,Nagaraju B.,1.5,1.05,2.0,Treatment,43,Grow out to breed out in January 2024,"3 aerator, 2 water pump","Water quality measurement during disease outbreak, Weighing and measuring fish once a month",,,Pelleted feed (floating),Local market,,Local market,
+ara2_6608762c,Eluru,12/06/2022,Organic,Maneesh,7.0,5.31,2.0,Treatment,50,NO,,"Pond preparation, Weighing and measuring fish once a month",Water quality measurement once a month,"Manure (cow, pig, horse, poultry or other dung)
+Triple super phosphate
+Potash",Mash,Local market,NR  Feeds,Own pond,
+ara2_3ed4df8e,Eluru,12/06/2022,Organic,Maneesh,18.0,15.03,2.0,Treatment,94,NO,1 water pump,"Pond preparation, Weighing and measuring fish once a month",Water quality measurement once a month,"Manure (cow, pig, horse, poultry or other dung)
+Triple super phosphate
+Potash",Mash,Local market,NR FEEDS,Own pond,
+ara2_03d81c1d,Eluru,12/06/2022,Organic,Maneesh,10.0,8.02,2.0,Treatment,62,NO,1 water pump,"Pond preparation, Weighing and measuring fish once a month",Water quality measurement once a month,"Manure (cow, pig, horse, poultry or other dung)
+Triple super phosphate
+Potash",Mash,Local market,NRK FEEDS,Own pond,
+ara2_c725f135,Eluru,12/06/2022,,Maneesh,7.0,,2.0,Treatment,2,NO,,"Pond preparation, Physical welfare assessment, Weighing and measuring fish once a month",,"Manure (cow, pig, horse, poultry or other dung)
+Triple super phosphate",Mash,Local market,VP FEEDS,Individual supplier,
+ara2_84b6fb93,Eluru,12/06/2022,Organic,Maneesh,22.0,19.63,2.0,Treatment,95,Changed from Breed out to Grow out in October 2023,1 water pump,Weighing and measuring fish once a month,Water quality measurement once a month,"Manure (cow, pig, horse, poultry or other dung)
+Ammonium sulphate
+Triple super phosphate
+Potash",Mash,Local market,Vallabha feed suppliers,Individual supplier,
+ara2_8ed50b25,Eluru,12/01/2022,Organic,Maneesh,1.2,1.14,2.0,Treatment,45,NO,,"Physical welfare assessment, Weighing and measuring fish once a month",Water quality measurement twice a month,"Manure (cow, pig, horse, poultry or other dung)
+Triple super phosphate",Mash,Local market,NRK deoiled rice bran,Hatchery,
+ara2_1c72ee85,Eluru,11/10/2022,,Maneesh,10.0,,2.5,Treatment,5,NO,,,,"Manure (cow, pig, horse, poultry or other dung)
+Urea",Mash,Local market,,Own pond,
+ara2_eb39bc48,Eluru,10/18/2022,Organic,Maneesh,9.0,8.42,2.5,Treatment,50,NO,,"Pond preparation, Behavioural welfare assessment, Physical welfare assessment, Weighing and measuring fish once a month",Water quality measurement twice a month,"Manure (cow, pig, horse, poultry or other dung)
+Urea
+Triple super phosphate
+Single super phosphate",Mash,Local market,NRK FEEDS,Individual supplier,
+ara2_7ac87fad,Eluru,09/16/2022,Organic,Maneesh,30.0,27.52,2.5,Treatment,78,NO,"3 aerator, 3 water pump","Pond preparation, Behavioural welfare assessment, Physical welfare assessment, Disease analysis by sending dead fish to lab, Weighing and measuring fish once a month",Water quality measurement twice a month,"Urea
+Ammonium sulphate
+Triple super phosphate
+organic manures from local supplier.",Mash,Self made,NRK FEEDS,Own pond,
+ara2_cd998399,Eluru,08/05/2022,Organic,Maneesh,33.0,27.2,2.5,Treatment,120,NO,,"Pond preparation, Behavioural welfare assessment, Physical welfare assessment, Weighing and measuring fish once a month",Water quality measurement once a month,"Manure (cow, pig, horse, poultry or other dung)
+Ammonium sulphate
+Triple super phosphate","Pelleted feed (floating), Mash",Local market,NRK FEEDS,Own pond,
+ara2_b469062a,Eluru,08/05/2022,,Maneesh,32.0,,2.5,,0,NO,,"Pond preparation, Behavioural welfare assessment, Physical welfare assessment, Weighing and measuring fish once a month",Water quality measurement once a month,"Manure (cow, pig, horse, poultry or other dung)
+Urea
+Triple super phosphate","Pelleted feed (floating), Mash",Local market,NRK FEEDS,Own pond,
+ara2_725e7f3b,Eluru,08/05/2022,Organic,Maneesh,25.0,23.67,1.8,Treatment,117,NO,1 water pump,"Pond preparation, Behavioural welfare assessment, Physical welfare assessment, Weighing and measuring fish once a month",Water quality measurement once a month,"Manure (cow, pig, horse, poultry or other dung)
+Urea
+Triple super phosphate","Pelleted feed (floating), Mash",Local market,NRK FEEDS,Own pond,
+ara2_65d75ab9,Eluru,07/22/2022,,Maneesh,5.0,,2.5,Treatment,4,NO,,"Behavioural welfare assessment, Physical welfare assessment, Weighing and measuring fish once a month",Water quality measurement once a month,"Manure (cow, pig, horse, poultry or other dung)
+Ammonium sulphate
+Triple super phosphate",Mash,Local market,NR DE OILED RICE BRAWN,Individual supplier,
+ara2_4b2065d2,Eluru,06/15/2022,,Maneesh,23.0,,2.5,Assessment,4,NO,3 aerator,"Pond preparation, Physical welfare assessment",Water quality measurement twice a month,"Manure (cow, pig, horse, poultry or other dung)
+Triple super phosphate
+Potash",Mash,Local market,Godavari edible oils,Own pond,
+ara2_9305b036,Eluru,06/15/2022,,Maneesh,13.0,,2.0,Treatment,7,NO,,"Pond preparation, Physical welfare assessment",Water quality measurement once a month,"Manure (cow, pig, horse, poultry or other dung)
+Triple super phosphate
+Potash",Mash,Local market,,Hatchery,
+ara2_a17f49ab,Eluru,06/15/2022,,Maneesh,30.0,,2.0,Assessment,4,NO,3 aerator,"Pond preparation, Physical welfare assessment",Water quality measurement twice a month,"Manure (cow, pig, horse, poultry or other dung)
+Triple super phosphate
+Potash",Mash,Local market,Godavari edible oils,Own pond,
+ara2_237abe57,Nellore,06/07/2022,Organic,Chandu,1.0,0.9,1.5,Treatment,72,,"1 aerator, 1 water pump",Weighing and measuring fish once a month,Water quality measurement when there is a disease outbreak,,Pelleted feed (floating),National supplier,IB,Nursery pond,2500 Rohu 100 Catla
+ara2_9d4fb0a0,Nellore,06/07/2022,Organic,Chandu,1.3,1.06,1.5,Treatment,40,,"1 aerator, 2 water pump",Weighing and measuring fish once a month,Water quality measurement when there is a disease outbreak,,Mash,Local market,,Nursery pond,5200 Rohu 500 Catla 300 Grass Carp
+ara2_29660d32,Eluru,06/04/2022,Organic,Maneesh,17.0,13.2,3.0,Treatment,91,NO,3 aerator,"Pond preparation, Behavioural welfare assessment",Water quality measurement once a month,No,"Pelleted feed (floating), Mash",Local market,Godavari edible oils,Own pond,
+ara2_87661414,Eluru,06/03/2022,,Maneesh,20.0,,2.5,Treatment,14,NO,,Physical welfare assessment,"Weighing and measuring once a month
+Water quality measurement once a month","Manure (cow, pig, horse, poultry or other dung)
+Triple super phosphate
+Single super phosphate",Mash,Local market,NRK,Own pond,
+ara2_423f3699,Eluru,05/26/2022,,Maneesh,25.0,,2.5,Treatment,5,No,"3 aerator, 5 aerators","Pond preparation, Physical welfare assessment",Water quality measurement once a month,"Manure (cow, pig, horse, poultry or other dung)
+Urea","Pelleted feed (floating), Mash",Local market,Local,Own pond,
+ara2_e38b9ac3,Nellore,04/30/2022,,Chandu,1.0,,1.0,Treatment,38,,1 water pump,Weighing and measuring fish once a month,,,"Pelleted feed (floating), Mash",National supplier,"Godrej, DORB",Nursery pond,
+ara2_bd12b267,Nellore,04/27/2022,Organic,Chandu,3.0,2.36,1.5,Treatment,111,,"2 aerator, 2 water pump",Weighing and measuring fish once a month,Water quality measurement when there is a disease outbreak,,"Pelleted feed (sinking), Mash",National supplier,"Godrej Prawn feed, DORB",Nursery pond,
+ara2_658ff40d,Nellore,04/07/2022,,Chandu,3.5,,1.5,Treatment,18,,3 water pump,Weighing and measuring fish once a month,Water quality measurement when there is a disease outbreak,,Pelleted feed (sinking),National supplier,CP Sinking Feed,Nursery pond,"After floods stocked less at 2000 per acre, 4000 Roopchand 3000 Rohu"
+ara2_18175a05,Nellore,04/07/2022,,Chandu,7.0,,1.5,Treatment,14,No,"2 aerator, 2 water pump",Weighing and measuring fish once a month,Water quality measurement when there is a disease outbreak,,Pelleted feed (floating),National supplier,King Fish,Nursery pond,"After floods stocked less at 2142 per acre, 10000 Rohu 5000 Ropchand"
+ara2_3f9ee6c3,Nellore,03/29/2022,Organic,Chandu,4.0,3.53,1.5,Treatment,94,,"2 water pump, 5 Aerators",Weighing and measuring fish once a month,"Done Sample checking 3 days back the average weight is around 80gms
+Water quality measurement when there is a disease outbreak",,"Pelleted feed (floating), DORB","Local market, National supplier",Kingmei,Nursery pond,"Roopchand 16000
+Rohu 1000"
+ara2_6ea8e528,Nellore,03/29/2022,Organic,Chandu,3.5,3.15,1.5,Treatment,107,,"3 aerator, 2 water pump",Weighing and measuring fish once a month,,,Pelleted feed (floating),Local market,Nexus,Nursery pond,"Roopchand 4000
+Rohu 3000
+Catla 1000"
+ara2_7fa93b14,Nellore,03/29/2022,,Chandu,4.0,,1.5,Treatment,14,,"2 aerator, 2 water pump",Weighing and measuring fish once a month,,,"Pelleted feed (sinking), DORB","Local market, National supplier",CP,Nursery pond,"Rohu 6000
+Catla 300"
+ara2_b77a0d03,Nellore,03/28/2022,Organic,Chandu,20.0,17.33,2.0,Control,76,,4 Water Pumps,"Water quality measurement during disease outbreak, Weighing and measuring fish once a month, Pond preparation",Water quality measurement when there is a disease outbreak,,Pelleted feed (floating),National supplier,Kingmei,Nursery pond,"Roopchand 90000
+Rohu 10000
+Catla 1000
+Grass Carp 1000"
+ara2_8a429bf1,Nellore,03/28/2022,Organic,Chandu,30.0,27.83,2.0,Treatment,94,,"3 aerator, 8 Aerators and 10 Water Pumps",Weighing and measuring fish once a month,,,DORB,Local market,,Nursery pond,
+ara2_bf22ac2f,Nellore,03/28/2022,Organic,Chandu,22.0,21.48,2.0,Treatment,93,,,Weighing and measuring fish once a month,Water quality measurement when there is a disease outbreak,,Pelleted feed (sinking),National supplier,CP Sinking Feed,Nursery pond,"Rohu 72000
+Catla 8000"
+ara2_cf6f1332,Eluru,03/16/2022,Organic,Maneesh,50.0,41.09,2.5,Treatment,67,,,Pond preparation,Water quality measurement twice a month,"Manure (cow, pig, horse, poultry or other dung)
+Triple super phosphate
+Single super phosphate",Mash,Local market,Sms 9,Own pond,
+ara2_a2d65cb4,Eluru,03/15/2022,Organic,Maneesh,40.0,39.28,2.5,Treatment,49,No,Water recirculating boat,"Physical welfare assessment, Weighing and measuring fish once a month",,"Manure (cow, pig, horse, poultry or other dung)
+Ammonium sulphate
+Double super phosphate",Mash,Local market,NF,Own pond,
+ara2_1144b702,Eluru,03/03/2022,,Maneesh,10.0,,2.5,Treatment,8,NO,,"Pond preparation, Behavioural welfare assessment, Physical welfare assessment, Weighing and measuring fish once a month",Water quality measurement once a month,"Manure (cow, pig, horse, poultry or other dung)
+Ammonium sulphate
+Triple super phosphate",Mash,Local market,,Own pond,
+ara2_734d27c8,Eluru,03/03/2022,,Maneesh,14.0,,2.5,Treatment,6,,,"Behavioural welfare assessment, Physical welfare assessment",Water quality measurement once a month,"Urea
+Triple super phosphate
+Potash",Mash,Local market,NRR,Own pond,
+ara2_044398f2,Eluru,02/15/2022,Organic,Maneesh,13.0,9.97,2.5,Treatment,62,,"3 aerator, 2 water pump, Water quality monitoring device, Soil quality monitoring device","Behavioural welfare assessment, Physical welfare assessment, Weighing and measuring fish every two months","Sanitizing the pond
+Water quality measurement once a month
+Water quality measurement when there is a disease outbreak","Manure (cow, pig, horse, poultry or other dung)
+Ammonium sulphate",Mash,Local market,,Own pond,
+ara2_469c3f4d,Eluru,02/15/2022,Organic,Maneesh,7.0,6.12,3.5,Treatment,74,no,2 aerator,"Pond preparation, Behavioural welfare assessment, Physical welfare assessment, Weighing and measuring fish once a month",Water quality measurement weekly,"Manure (cow, pig, horse, poultry or other dung)
+Urea
+Triple super phosphate",Mash,Local market,,Hatchery,
+ara2_f33085c0,Eluru,02/15/2022,,Maneesh,10.0,,2.5,Treatment,42,NO,,Physical welfare assessment,Water quality measurement once a month,"Manure (cow, pig, horse, poultry or other dung)
+Triple super phosphate",Mash,Local market,PATTABHI FEED,Own pond,
+ara2_c5abf9be,Eluru,02/11/2022,,Maneesh,10.0,,2.5,Treatment,23,,,"Pond preparation, Physical welfare assessment",,"Manure (cow, pig, horse, poultry or other dung)
+Triple super phosphate","Pelleted feed (floating), Mash",Local market,Pattabhi aqua feeds,Own pond,
+ara2_d20a02d0,Eluru,02/11/2022,,Maneesh,6.0,,2.5,,0,,1 water pump,Pond preparation,,,,[],,,This is a newly carved out pond and is yet to be filled out with water
+ara2_7ed0eacc,Nellore,01/31/2022,Organic,Chandu,1.0,0.75,1.5,Treatment,94,,"3 aerator, 2 water pump",Pond preparation,,,Pelleted feed (floating),Local market,,Local farmers,
+ara2_6f5cd71e,Nellore,12/23/2021,Organic,Chaitanya,1.0,0.72,1.0,Treatment,122,,1 water pump,"Pond preparation, Weighing and measuring fish once a month",Water quality measurement once a month,"Manure (cow, pig, horse, poultry or other dung)",He Mixes cow dung & rice husk prepare his own feed and give to the fish,Self made,,Nursery pond,
+ara2_cd288d30,Nellore,12/22/2021,Organic,Chaitanya,1.0,0.7,1.5,Treatment,115,,"1 aerator, 2 water pump","Pond preparation, Weighing and measuring fish once a month",Water quality measurement twice a month,,Pelleted feed (floating),Local market,,Nursery pond,Fish were washed out shortly after this stocking by the floods. The farmer restocked on December 30 (see Stocking & Harvest entry).
+ara2_98d96403,Nellore,12/22/2021,Organic,Chaitanya,1.0,0.85,1.0,Treatment,107,,1 water pump,"Pond preparation, Weighing and measuring fish once a month",Water quality measurement once a month,,"Pelleted feed (floating), Mash",Local market,,Own pond,
+ara2_0d53cd07,Nellore,12/22/2021,Organic,Chaitanya,3.0,2.22,1.0,Treatment,115,,"2 aerator, 3 water pump","Pond preparation, Weighing and measuring fish once a month",Water quality measurement once a month,,"Pelleted feed (floating), Mash",Local market,,Own pond,
+ara2_bddfa227,Nellore,11/27/2021,Organic,Chandu,1.0,0.88,1.5,Treatment,125,,"2 aerator, 2 water pump","Pond preparation, Weighing and measuring fish once a month",Water quality measurement once a month,"Manure (cow, pig, horse, poultry or other dung)
+Single super phosphate
+Potash
+Magnesium Chloride","Pelleted feed (floating), Pelleted feed (sinking), Mash",Local market,"Godawari DOP, Kingfish floating feed, CP sinking feed for shrimp",Own pond,
+ara2_061a901a,Eluru,11/21/2021,Organic,Nikhil,30.0,28.35,2.5,Treatment,40,,,Physical welfare assessment,Water quality measurement once a month,"Urea
+Triple super phosphate",Mash,Local market,,,
+ara2_09faa72c,Eluru,11/17/2021,Organic,Maneesh,13.0,10.81,2.0,Treatment,170,,,"Pond preparation, Weighing and measuring fish once a month",Water quality measurement once a month,"Urea
+Triple super phosphate",Mash,Local market,,Own pond,
+ara2_0867d29c,Eluru,11/17/2021,,Maneesh,7.0,,2.0,Treatment,17,,,"Physical welfare assessment, Weighing and measuring fish once a month",Water quality measurement once a month,"Manure (cow, pig, horse, poultry or other dung)
+Ammonium sulphate
+Triple super phosphate",Mash,Local market,,Own pond,
+ara2_8a6b6eb2,Eluru,11/17/2021,,Nikhil,1.5,,2.0,Treatment,42,,Sprinkler system,Physical welfare assessment,Water quality measurement once a month,"Urea
+Triple super phosphate",Mash,Local market,,,
+ara2_20dd0295,Eluru,11/17/2021,Organic,Nikhil,2.5,2.07,2.0,Treatment,76,,,Physical welfare assessment,Water quality measurement once a month,"Urea
+Triple super phosphate",Mash,Local market,,,
+ara2_60dd3e14,Eluru,11/17/2021,Organic,Nikhil,1.5,1.35,2.0,Treatment,76,,,Physical welfare assessment,Water quality measurement once a month,"Urea
+Triple super phosphate",Mash,Local market,,,
+ara2_9ea43968,Eluru,11/17/2021,Organic,Maneesh,16.0,15.52,2.0,Treatment,103,,,"Pond preparation, Weighing and measuring fish once a month",Water quality measurement once a month,"Manure (cow, pig, horse, poultry or other dung)
+Urea
+Triple super phosphate",Mash,Local market,"Dop,ground  nut cake",Own pond,
+ara2_93628934,Eluru,11/17/2021,,Nikhil,1.0,,2.0,Treatment,43,,Sprinkler system,Physical welfare assessment,Water quality measurement once a month,"Urea
+Triple super phosphate",Mash,Local market,,,
+ara2_aeaba081,Eluru,11/17/2021,Organic,Maneesh,3.0,2.19,2.0,Treatment,30,,,Water quality measurement during disease outbreak,,"Urea
+Triple super phosphate",Mash,Local market,,Hatchery,
+ara2_f24623af,Eluru,11/17/2021,,Maneesh,9.0,,2.0,Treatment,30,,,Weighing and measuring fish once a month,Water quality measurement once a month,"Manure (cow, pig, horse, poultry or other dung)
+Urea
+Triple super phosphate",Mash,Local market,,Own pond,
+ara2_f95d18f1,Eluru,11/17/2021,,Maneesh,22.0,,2.0,Treatment,19,,,"Pond preparation, Weighing and measuring fish once a month",Water quality measurement once a month,"Urea
+Triple super phosphate",Mash,Local market,,Own pond,
+ara2_64aa484e,Eluru,11/17/2021,,Maneesh,17.0,,2.0,Treatment,34,,,,,"Manure (cow, pig, horse, poultry or other dung)",Mash,Local market,,Own pond,
+ara2_ff85ba57,Eluru,11/16/2021,Organic,Maneesh,36.0,29.32,2.5,Treatment,140,,,"Water quality measurement every two months, Weighing and measuring fish once a month",,"Manure (cow, pig, horse, poultry or other dung)
+Triple super phosphate
+Potash",Mash,Local market,Godavari Dop,Own pond,
+ara2_b18c32b8,Nellore,09/28/2021,Organic,Fiverr,2.0,1.5,1.5,Treatment,77,,1 water pump,Pond preparation,,,DORB,Local market,,Nursery pond,
+ara2_039a9ccb,Nellore,09/28/2021,,Fiverr,2.3,,1.5,Treatment,24,,2 water pump,Pond preparation,,,DORB,Local market,CP aqua & DOP,Nursery pond,
+ara2_78cbfd0d,Nellore,09/28/2021,Organic,Fiverr,2.5,2.31,1.9,Treatment,113,,"2 aerator, 3 water pump",Pond preparation,,"Manure (cow, pig, horse, poultry or other dung)
+Compost","Pelleted feed (sinking), DORB",Local market,CP aqua & DOP,Own pond,
+ara2_3587929e,Nellore,09/28/2021,Organic,Fiverr,1.0,0.66,1.9,Treatment,140,,"1 aerator, 1 water pump",Pond preparation,,,"Pelleted feed (sinking), DORB",Local market,,Own pond,
+ara2_cf4e9f1b,Nellore,09/28/2021,Organic,Fiverr,1.0,0.72,1.9,Treatment,74,,"3 aerator, 1 water pump",Pond preparation,,,"Pelleted feed (sinking), DORB",Local market,DOP - Tenali brand & CP aqua sinking feed,Nursery pond,
+ara2_a00174c4,Nellore,09/08/2021,Organic,Fiverr,2.5,2.0,2.5,Treatment,80,,,"Weighing and measuring fish once a month, Water quality measurement during disease outbreak, Pond preparation",,,,Local market,,,
+ara2_308ec37e,Nellore,09/06/2021,,Fiverr,5.5,,2.5,Control,39,,"2 aerator, 2 water pump","Pond preparation, Water quality measurement every two months",,,"Pelleted feed (sinking), DOP",Local market,DOP - Tenali brand,Nursery pond,
+ara2_2d4cda6c,Eluru,08/09/2021,,Jennifer Kirsch,1.0,,2.0,Treatment,56,,,,,"Manure (cow, pig, horse, poultry or other dung)
+Urea","Pelleted feed (floating), Mash",Local market,Godavari DOP,Own pond,
+ara2_8ae86d8e,Eluru,08/09/2021,Organic,Jennifer Kirsch,0.25,0.13,2.0,Treatment,104,,,Water quality measurement during disease outbreak,,"Manure (cow, pig, horse, poultry or other dung)",,Self made,,,
+ara2_65a854d9,Nellore,06/29/2021,Organic,Fiverr,6.0,5.1,2.5,Treatment,112,,"2 aerator, 2 water pump",Pond preparation,Water quality measurement once a month,"Single super phosphate
+Potash","Pelleted feed (floating), DORB, Rice husk",Local market,"CP aqua feeds, SMS9, Vijaya Aqua feeds",Nursery pond,
+ara2_6c015433,Nellore,06/29/2021,Organic,Fiverr,5.0,5.03,2.5,Control,80,,"3 aerator, 2 water pump",Pond preparation,Water quality measurement once a month,"Single super phosphate
+Potash","Pelleted feed (floating), DORB, Rice husk",,"CP aqua feeds, SMS9, Vijaya Aqua feeds",Nursery pond,
+ara2_ea9c93a5,Nellore,06/26/2021,Organic,Fiverr,5.5,4.56,2.5,Treatment,120,,"4 water pumps, NO aerators",Pond preparation,,,"Pelleted feed (floating), DORB, Rice husk",Local market,"CP aqua feeds, SMS9, Vijaya Aqua feeds",Own pond,
+ara2_07d25a85,Nellore,06/24/2021,Organic,Fiverr,6.0,4.95,2.0,Control,69,,"3 aerator, 2 water pump",Pond preparation,Water quality measurement once a month,"Single super phosphate
+Potash","DORB, Rice husk",Local market,,Nursery pond,
+ara2_17b9d7b4,Nellore,06/24/2021,Organic,Fiverr,4.0,3.45,2.0,Control,86,,"3 aerator, 2 water pump",Pond preparation,Water quality measurement once a month,"Single super phosphate
+Potash","Mash, DORB, Rice husk",Local market,,Nursery pond,
+ara2_f1a474ab,Nellore,06/24/2021,,Fiverr,2.0,,3.0,Treatment,72,,2 water pump,,,,,,,,
+ara2_fe1074da,Nellore,06/23/2021,Organic,Fiverr,4.0,3.7,2.5,Treatment,76,,"2 aerator, 1 water pump",Pond preparation,Water quality measurement twice a month,,"Pelleted feed (floating), DORB",Local market,Godrej,Own pond,
+ara2_8ae937af,Eluru,06/23/2021,,Jennifer Kirsch,7.0,,2.5,Treatment,18,,,,,"Urea
+Ammonium sulphate","Pelleted feed (floating), Mash",Local market,King Mei,Individual supplier,
+ara2_244da38b,Eluru,06/23/2021,,Fiverr,7.0,,2.5,Treatment,18,,,,,"Urea
+Ammonium sulphate","Pelleted feed (floating), Mash",Local market,King Mei,Individual supplier,
+ara2_dedca16a,Nellore,06/23/2021,Organic,Fiverr,5.0,4.11,2.0,Treatment,126,,"3 aerator, 3 water pump",Pond preparation,Water quality measurement twice a month,"Single super phosphate
+Potash","Pelleted feed (floating), Mash, Rice husk",Local market,,Nursery pond,
+ara2_c5671cf4,Nellore,06/23/2021,Organic,Fiverr,5.5,5.38,4.0,Control,76,,3 aerator,Pond preparation,,Single super phosphate,Mash,Local market,,Own pond,
+ara2_37556c00,Nellore,06/22/2021,Organic,Fiverr,1.0,1.0,1.5,Treatment,67,,"2 aerator, 1 water pump",Pond preparation,Water quality measurement twice a month,"Single super phosphate
+Potash","DORB, Rice husk",Local market,,Nursery pond,
+ara2_bbfca80b,Nellore,06/22/2021,Organic,Fiverr,1.0,1.0,1.5,Treatment,65,,"1 aerator, 1 water pump",Pond preparation,Water quality measurement twice a month,"Single super phosphate
+Potash","DORB, Rice husk",Local market,,Own pond,Local village Nursary ponds
+ara2_82546b56,Eluru,06/22/2021,,Maneesh,7.0,,2.0,Treatment,6,,,,,"Manure (cow, pig, horse, poultry or other dung)
+Urea","Pelleted feed (floating), Mash",Local market,King Mei,Individual supplier,
+ara2_51ee6ab1,Nellore,06/21/2021,Organic,Fiverr,2.5,1.65,3.5,Treatment,125,,"1 aerator, 2 water pump",Pond preparation,Water quality measurement once a month,"Single super phosphate
+Potash","Pelleted feed (floating), Mash",Local market,Hanaqua,Nursery pond,
+ara2_60cb8cf2,Nellore,06/21/2021,,Fiverr,1.8,,2.0,Treatment,6,,"2 aerator, 2 water pump",Pond preparation,Water quality measurement once a month,,"Mash, DORB",Local market,,Own pond,
+ara2_0c2e7530,Nellore,06/21/2021,,Fiverr,1.8,,2.5,Control,44,,2 aerator,Pond preparation,,,"Mash, DORB, Rice husk",Local market,,Own pond,
+ara2_5a3d15dd,Nellore,06/19/2021,Organic,Fiverr,1.5,1.3,2.5,Treatment,84,,"3 aerator, 2 water pump",Pond preparation,Water quality measurement daily,,DORB,Local market,,Nursery pond,
+ara2_407f70f7,Nellore,06/17/2021,,Fiverr,1.0,,2.5,Treatment,32,,"3 aerator, 2 water pump",Pond preparation,Water quality measurement weekly,,"Pelleted feed (floating), Rice husk",Local market,CP,Own pond,
+ara2_e6feb688,Eluru,06/10/2021,Organic,Jennifer Kirsch,5.0,2.69,2.5,Treatment,95,,,Water quality measurement during disease outbreak,,"Manure (cow, pig, horse, poultry or other dung)
+Urea","Pelleted feed (floating), Mash",Local market,Ajanta feed,Individual supplier,
+ara2_c4feda19,Eluru,06/10/2021,Organic,Fiverr,4.0,2.84,2.5,Treatment,105,,,Water quality measurement during disease outbreak,,"Manure (cow, pig, horse, poultry or other dung)
+Urea","Pelleted feed (floating), Mash",Local market,Ajanta feed,Individual supplier,
+ara2_df661923,Eluru,06/08/2021,,Fiverr,20.0,,2.0,Treatment,28,,,,,Urea,"Pelleted feed (floating), Mash",Local market,Anji feeds pvt ltd,Hatchery,
+ara2_01463d19,Eluru,06/08/2021,Organic,Jennifer Kirsch,4.0,2.86,2.0,Treatment,97,,,Water quality measurement during disease outbreak,,Urea,"Pelleted feed (floating), Mash",Local market,Godavari DOP,Individual supplier,
+ara2_a2f19fe6,Eluru,06/08/2021,,Fiverr,2.0,,2.0,Treatment,45,,,,,Urea,"Pelleted feed (floating), Mash",Local market,Godavari dop,Individual supplier,
+ara2_9eefff29,Eluru,06/07/2021,,Fiverr,5.0,,2.5,Treatment,68,"Yes there has been a culture change form grow out to breed out on August 20, 2022.",,,,"Manure (cow, pig, horse, poultry or other dung)
+Urea","Pelleted feed (floating), Mash",Local market,Godavari dop,Individual supplier,
+ara2_44e030ef,Nellore,06/04/2021,Organic,Fiverr,3.0,2.36,3.5,Treatment,80,,"3 aerator, 2 water pump",Pond preparation,Water quality measurement once a month,,Rice husk Mash,Local market,,Nursery pond,
+ara2_d53b776c,Eluru,06/03/2021,,Fiverr,6.0,,2.5,Treatment,69,,2 aerator,Physical welfare assessment,,"Manure (cow, pig, horse, poultry or other dung)","Pelleted feed (floating), Mash",Local market,PRATIBHA AGRO FOODS PVT LTD,Hatchery,
+ara2_38a721f5,Eluru,06/03/2021,,Fiverr,6.0,,2.5,Treatment,61,,Sprinkler system,"Physical welfare assessment, Weighing and measuring fish once a month",,"Manure (cow, pig, horse, poultry or other dung)
+Urea","Pelleted feed (floating), Mash",Local market,GODAVARI DOP,Individual supplier,
+ara2_06155f82,Eluru,06/03/2021,,Jennifer Kirsch,10.0,,2.5,Treatment,6,,,Physical welfare assessment,,"Manure (cow, pig, horse, poultry or other dung)
+Urea","Pelleted feed (floating), Mash",Local market,PRATIBHA AGRO FOODS PVT LTD,Hatchery,
+ara2_bd32b7fb,Eluru,06/01/2021,,Fiverr,4.0,,2.5,Treatment,33,"This pond has been converted from grow out to breeding as in the last cycle there was mass mortalities. The conversion happened after December 30, 2021 with a stocking density of 5,000 pangasius per acre.",,"Physical welfare assessment, Weighing and measuring fish once a month",Water quality measurement once a month,"Urea
+Triple super phosphate
+Potash",Mash,Local market,Godavari DOP,Individual supplier,
+ara2_b8f28481,Eluru,06/01/2021,,Jennifer Kirsch,8.0,,2.5,Treatment,62,,,"Physical welfare assessment, Weighing and measuring fish once a month","Weighs fish to also check for diseases
+","Urea
+Triple super phosphate
+Potash",Mash,Local market,Godavari DOP,Individual supplier,

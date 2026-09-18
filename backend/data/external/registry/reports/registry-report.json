@@ -1,0 +1,33 @@
+{
+  "schema_version": "aqualife-intelligence-registry-report-v1",
+  "registry_version": "0.9.0",
+  "generated_at": "2026-09-16T13:37:12.794880+00:00",
+  "counts": {
+    "datasets": 5,
+    "models": 8,
+    "sources": 8,
+    "licenses": 3
+  },
+  "datasets_by_status": {
+    "INGESTED": 2,
+    "CANONICAL": 1,
+    "DISCOVERED": 2
+  },
+  "models_by_status": {
+    "ACTIVE_DEVELOPMENT": 1,
+    "DISCOVERED": 7
+  },
+  "training_approved_models": [
+    "aqualife-catboost-production-v0.2"
+  ],
+  "real_world_validated_models": [],
+  "deployment_approved_models": [],
+  "unverified_license_models": [
+    "pondpedia-lstm-water-quality",
+    "aquapreddb-lstm-attention",
+    "aquapreddb-patchtst",
+    "aquapreddb-mamba",
+    "iot-aquaponics-lstm-do",
+    "fish-sense-biomass"
+  ]
+}

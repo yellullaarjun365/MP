@@ -1,0 +1,941 @@
+{
+  "dataset_id": "fwi-farm-data-india-2026",
+  "status": "INSPECTED",
+  "files": {
+    "water_quality.csv": {
+      "rows": 13567,
+      "column_count": 53,
+      "columns": [
+        {
+          "name": "pond_id",
+          "dtype": "object",
+          "non_null": 13567,
+          "null": 0,
+          "unique": 317
+        },
+        {
+          "name": "region",
+          "dtype": "object",
+          "non_null": 13567,
+          "null": 0,
+          "unique": 2
+        },
+        {
+          "name": "Date of data collection",
+          "dtype": "object",
+          "non_null": 13567,
+          "null": 0,
+          "unique": 1263
+        },
+        {
+          "name": "Time of data collection",
+          "dtype": "object",
+          "non_null": 13567,
+          "null": 0,
+          "unique": 357
+        },
+        {
+          "name": "Type",
+          "dtype": "object",
+          "non_null": 13565,
+          "null": 2,
+          "unique": 2
+        },
+        {
+          "name": "Is follow up",
+          "dtype": "object",
+          "non_null": 13567,
+          "null": 0,
+          "unique": 2
+        },
+        {
+          "name": "Is follow up possible",
+          "dtype": "object",
+          "non_null": 685,
+          "null": 12882,
+          "unique": 2
+        },
+        {
+          "name": "Reason follow up not possible",
+          "dtype": "object",
+          "non_null": 9,
+          "null": 13558,
+          "unique": 7
+        },
+        {
+          "name": "Group",
+          "dtype": "object",
+          "non_null": 13519,
+          "null": 48,
+          "unique": 10
+        },
+        {
+          "name": "Pond status",
+          "dtype": "object",
+          "non_null": 13530,
+          "null": 37,
+          "unique": 3
+        },
+        {
+          "name": "Observer",
+          "dtype": "object",
+          "non_null": 13567,
+          "null": 0,
+          "unique": 13
+        },
+        {
+          "name": "Equipment",
+          "dtype": "object",
+          "non_null": 13081,
+          "null": 486,
+          "unique": 222
+        },
+        {
+          "name": "Weather",
+          "dtype": "object",
+          "non_null": 12839,
+          "null": 728,
+          "unique": 37
+        },
+        {
+          "name": "DO (mg/L)",
+          "dtype": "float64",
+          "non_null": 13548,
+          "null": 19,
+          "unique": 196
+        },
+        {
+          "name": "pH",
+          "dtype": "float64",
+          "non_null": 13548,
+          "null": 19,
+          "unique": 233
+        },
+        {
+          "name": "Turbidity (in cm)",
+          "dtype": "float64",
+          "non_null": 4924,
+          "null": 8643,
+          "unique": 66
+        },
+        {
+          "name": "Ammonia\u2014TAN (NH3-N) (mg/L)",
+          "dtype": "float64",
+          "non_null": 5564,
+          "null": 8003,
+          "unique": 124
+        },
+        {
+          "name": "Ammonia\u2014TAN (NH3) (mg/L)",
+          "dtype": "float64",
+          "non_null": 1964,
+          "null": 11603,
+          "unique": 7
+        },
+        {
+          "name": "Ammonia\u2014NH3 (mg/L)",
+          "dtype": "float64",
+          "non_null": 1965,
+          "null": 11602,
+          "unique": 23
+        },
+        {
+          "name": "Temp (in \u00b0C)",
+          "dtype": "float64",
+          "non_null": 13545,
+          "null": 22,
+          "unique": 159
+        },
+        {
+          "name": "TDS (ppt)",
+          "dtype": "float64",
+          "non_null": 4616,
+          "null": 8951,
+          "unique": 1017
+        },
+        {
+          "name": "Alkalinity (mg/L)",
+          "dtype": "float64",
+          "non_null": 0,
+          "null": 13567,
+          "unique": 0
+        },
+        {
+          "name": "Hardness (mg/L)",
+          "dtype": "float64",
+          "non_null": 0,
+          "null": 13567,
+          "unique": 0
+        },
+        {
+          "name": "Water color",
+          "dtype": "object",
+          "non_null": 12708,
+          "null": 859,
+          "unique": 6
+        },
+        {
+          "name": "Is WQ in range?",
+          "dtype": "object",
+          "non_null": 13567,
+          "null": 0,
+          "unique": 2
+        },
+        {
+          "name": "Parameters out of range",
+          "dtype": "object",
+          "non_null": 2433,
+          "null": 11134,
+          "unique": 17
+        },
+        {
+          "name": "Corrective actions requested",
+          "dtype": "object",
+          "non_null": 1436,
+          "null": 12131,
+          "unique": 120
+        },
+        {
+          "name": "Corrective actions requested (other)",
+          "dtype": "object",
+          "non_null": 122,
+          "null": 13445,
+          "unique": 43
+        },
+        {
+          "name": "Corrective actions amount requested",
+          "dtype": "object",
+          "non_null": 186,
+          "null": 13381,
+          "unique": 84
+        },
+        {
+          "name": "Corrective actions implemented",
+          "dtype": "object",
+          "non_null": 1028,
+          "null": 12539,
+          "unique": 3
+        },
+        {
+          "name": "Corrective actions implementation date",
+          "dtype": "object",
+          "non_null": 834,
+          "null": 12733,
+          "unique": 291
+        },
+        {
+          "name": "Corrective actions taken",
+          "dtype": "object",
+          "non_null": 957,
+          "null": 12610,
+          "unique": 97
+        },
+        {
+          "name": "Corrective actions taken (other)",
+          "dtype": "object",
+          "non_null": 75,
+          "null": 13492,
+          "unique": 40
+        },
+        {
+          "name": "Corrective actions taken (details)",
+          "dtype": "object",
+          "non_null": 314,
+          "null": 13253,
+          "unique": 87
+        },
+        {
+          "name": "Non-prescribed corrective actions taken",
+          "dtype": "object",
+          "non_null": 58,
+          "null": 13509,
+          "unique": 22
+        },
+        {
+          "name": "Reason not implemented",
+          "dtype": "object",
+          "non_null": 96,
+          "null": 13471,
+          "unique": 62
+        },
+        {
+          "name": "Water quality improved after corrective actions",
+          "dtype": "object",
+          "non_null": 1030,
+          "null": 12537,
+          "unique": 2
+        },
+        {
+          "name": "Corrective action notes",
+          "dtype": "object",
+          "non_null": 129,
+          "null": 13438,
+          "unique": 82
+        },
+        {
+          "name": "Individuals air gulping",
+          "dtype": "float64",
+          "non_null": 10563,
+          "null": 3004,
+          "unique": 35
+        },
+        {
+          "name": "Individuals tail splashing",
+          "dtype": "float64",
+          "non_null": 10547,
+          "null": 3020,
+          "unique": 36
+        },
+        {
+          "name": "Dead fish",
+          "dtype": "float64",
+          "non_null": 9659,
+          "null": 3908,
+          "unique": 38
+        },
+        {
+          "name": "Notes (mortalities)",
+          "dtype": "object",
+          "non_null": 118,
+          "null": 13449,
+          "unique": 61
+        },
+        {
+          "name": "Self-initiated corrective actions taken",
+          "dtype": "object",
+          "non_null": 1020,
+          "null": 12547,
+          "unique": 120
+        },
+        {
+          "name": "Self-initiated corrective actions implemented on (exact date)",
+          "dtype": "object",
+          "non_null": 258,
+          "null": 13309,
+          "unique": 127
+        },
+        {
+          "name": "Self-initiated corrective actions implemented (date range)",
+          "dtype": "object",
+          "non_null": 897,
+          "null": 12670,
+          "unique": 5
+        },
+        {
+          "name": "Self-initiated corrective actions notes",
+          "dtype": "object",
+          "non_null": 192,
+          "null": 13375,
+          "unique": 134
+        },
+        {
+          "name": "Feed amount (kg)",
+          "dtype": "float64",
+          "non_null": 7333,
+          "null": 6234,
+          "unique": 169
+        },
+        {
+          "name": "Stocking density (per acre)",
+          "dtype": "float64",
+          "non_null": 10912,
+          "null": 2655,
+          "unique": 606
+        },
+        {
+          "name": "Species",
+          "dtype": "object",
+          "non_null": 9782,
+          "null": 3785,
+          "unique": 22
+        },
+        {
+          "name": "Weight",
+          "dtype": "float64",
+          "non_null": 6696,
+          "null": 6871,
+          "unique": 107
+        },
+        {
+          "name": "Notes",
+          "dtype": "object",
+          "non_null": 912,
+          "null": 12655,
+          "unique": 313
+        },
+        {
+          "name": "Have fish been helped",
+          "dtype": "object",
+          "non_null": 13567,
+          "null": 0,
+          "unique": 2
+        },
+        {
+          "name": "Corrective actions",
+          "dtype": "object",
+          "non_null": 62,
+          "null": 13505,
+          "unique": 2
+        }
+      ],
+      "missing_cells": 393256,
+      "duplicate_rows": 0
+    },
+    "enrolled_ponds.csv": {
+      "rows": 324,
+      "column_count": 20,
+      "columns": [
+        {
+          "name": "pond_id",
+          "dtype": "object",
+          "non_null": 324,
+          "null": 0,
+          "unique": 323
+        },
+        {
+          "name": "region",
+          "dtype": "object",
+          "non_null": 324,
+          "null": 0,
+          "unique": 2
+        },
+        {
+          "name": "Date of data collection",
+          "dtype": "object",
+          "non_null": 324,
+          "null": 0,
+          "unique": 124
+        },
+        {
+          "name": "Enrollment mechanism",
+          "dtype": "object",
+          "non_null": 279,
+          "null": 45,
+          "unique": 2
+        },
+        {
+          "name": "Added by",
+          "dtype": "object",
+          "non_null": 324,
+          "null": 0,
+          "unique": 11
+        },
+        {
+          "name": "Property area in acres",
+          "dtype": "float64",
+          "non_null": 324,
+          "null": 0,
+          "unique": 55
+        },
+        {
+          "name": "Pond area in acres",
+          "dtype": "float64",
+          "non_null": 277,
+          "null": 47,
+          "unique": 228
+        },
+        {
+          "name": "Depth in meters",
+          "dtype": "float64",
+          "non_null": 324,
+          "null": 0,
+          "unique": 14
+        },
+        {
+          "name": "Status",
+          "dtype": "object",
+          "non_null": 320,
+          "null": 4,
+          "unique": 3
+        },
+        {
+          "name": "Measurements",
+          "dtype": "int64",
+          "non_null": 324,
+          "null": 0,
+          "unique": 107
+        },
+        {
+          "name": "Culture change",
+          "dtype": "object",
+          "non_null": 71,
+          "null": 253,
+          "unique": 20
+        },
+        {
+          "name": "Equipment",
+          "dtype": "object",
+          "non_null": 269,
+          "null": 55,
+          "unique": 51
+        },
+        {
+          "name": "Existing practices",
+          "dtype": "object",
+          "non_null": 312,
+          "null": 12,
+          "unique": 30
+        },
+        {
+          "name": "Notes (existing practices)",
+          "dtype": "object",
+          "non_null": 83,
+          "null": 241,
+          "unique": 13
+        },
+        {
+          "name": "Fertilizers used",
+          "dtype": "object",
+          "non_null": 274,
+          "null": 50,
+          "unique": 74
+        },
+        {
+          "name": "Feed type",
+          "dtype": "object",
+          "non_null": 320,
+          "null": 4,
+          "unique": 19
+        },
+        {
+          "name": "Feed source",
+          "dtype": "object",
+          "non_null": 322,
+          "null": 2,
+          "unique": 7
+        },
+        {
+          "name": "Feed brand or name",
+          "dtype": "object",
+          "non_null": 91,
+          "null": 233,
+          "unique": 52
+        },
+        {
+          "name": "Fish source (e.g. hatchery name)",
+          "dtype": "object",
+          "non_null": 315,
+          "null": 9,
+          "unique": 6
+        },
+        {
+          "name": "Notes",
+          "dtype": "object",
+          "non_null": 24,
+          "null": 300,
+          "unique": 24
+        }
+      ],
+      "missing_cells": 1255,
+      "duplicate_rows": 0
+    },
+    "stocking_harvest.csv": {
+      "rows": 1699,
+      "column_count": 48,
+      "columns": [
+        {
+          "name": "pond_id",
+          "dtype": "object",
+          "non_null": 1699,
+          "null": 0,
+          "unique": 321
+        },
+        {
+          "name": "region",
+          "dtype": "object",
+          "non_null": 1699,
+          "null": 0,
+          "unique": 2
+        },
+        {
+          "name": "Event date",
+          "dtype": "object",
+          "non_null": 1699,
+          "null": 0,
+          "unique": 979
+        },
+        {
+          "name": "Initial entry",
+          "dtype": "object",
+          "non_null": 1699,
+          "null": 0,
+          "unique": 2
+        },
+        {
+          "name": "Pond status",
+          "dtype": "object",
+          "non_null": 1614,
+          "null": 85,
+          "unique": 3
+        },
+        {
+          "name": "Type",
+          "dtype": "object",
+          "non_null": 1699,
+          "null": 0,
+          "unique": 4
+        },
+        {
+          "name": "Logged by",
+          "dtype": "object",
+          "non_null": 1673,
+          "null": 26,
+          "unique": 11
+        },
+        {
+          "name": "Data verification method",
+          "dtype": "object",
+          "non_null": 853,
+          "null": 846,
+          "unique": 3
+        },
+        {
+          "name": "Data verified by",
+          "dtype": "float64",
+          "non_null": 0,
+          "null": 1699,
+          "unique": 0
+        },
+        {
+          "name": "Data verification notes",
+          "dtype": "float64",
+          "non_null": 0,
+          "null": 1699,
+          "unique": 0
+        },
+        {
+          "name": "Lifecycle",
+          "dtype": "object",
+          "non_null": 913,
+          "null": 786,
+          "unique": 4
+        },
+        {
+          "name": "Current fish stocking density per acre",
+          "dtype": "float64",
+          "non_null": 1663,
+          "null": 36,
+          "unique": 612
+        },
+        {
+          "name": "Current shrimp stocking density per acre",
+          "dtype": "float64",
+          "non_null": 204,
+          "null": 1495,
+          "unique": 25
+        },
+        {
+          "name": "Species",
+          "dtype": "object",
+          "non_null": 1545,
+          "null": 154,
+          "unique": 25
+        },
+        {
+          "name": "Species ratio",
+          "dtype": "object",
+          "non_null": 716,
+          "null": 983,
+          "unique": 23
+        },
+        {
+          "name": "Reported target weight in grams",
+          "dtype": "float64",
+          "non_null": 372,
+          "null": 1327,
+          "unique": 19
+        },
+        {
+          "name": "Communicated stock density limit",
+          "dtype": "float64",
+          "non_null": 368,
+          "null": 1331,
+          "unique": 21
+        },
+        {
+          "name": "Average fish weight (in grams)",
+          "dtype": "float64",
+          "non_null": 1299,
+          "null": 400,
+          "unique": 205
+        },
+        {
+          "name": "Average weight of Catla (Catla catla) (in grams)",
+          "dtype": "float64",
+          "non_null": 91,
+          "null": 1608,
+          "unique": 27
+        },
+        {
+          "name": "Average weight of Rohu (Labeo rohita) (in grams)",
+          "dtype": "float64",
+          "non_null": 320,
+          "null": 1379,
+          "unique": 51
+        },
+        {
+          "name": "Average weight of Mrigal (Cirrhinus cirrhosus) (in grams)",
+          "dtype": "float64",
+          "non_null": 0,
+          "null": 1699,
+          "unique": 0
+        },
+        {
+          "name": "Average weight of Grass Carp (Ctenopharyngodon idella) (in grams)",
+          "dtype": "float64",
+          "non_null": 1,
+          "null": 1698,
+          "unique": 1
+        },
+        {
+          "name": "Average weight of Common Carp (Cyprinus carpio) (in grams)",
+          "dtype": "float64",
+          "non_null": 0,
+          "null": 1699,
+          "unique": 0
+        },
+        {
+          "name": "Average weight of Roopchand (in grams)",
+          "dtype": "float64",
+          "non_null": 21,
+          "null": 1678,
+          "unique": 15
+        },
+        {
+          "name": "Average weight of Whiteleg Shrimp (Litopenaeus vannamei) (in grams)",
+          "dtype": "float64",
+          "non_null": 0,
+          "null": 1699,
+          "unique": 0
+        },
+        {
+          "name": "Average weight of Pangasius (in grams)",
+          "dtype": "float64",
+          "non_null": 0,
+          "null": 1699,
+          "unique": 0
+        },
+        {
+          "name": "Intended fish stocking density (per acre)",
+          "dtype": "object",
+          "non_null": 817,
+          "null": 882,
+          "unique": 502
+        },
+        {
+          "name": "Intended fish stocking density (entire pond)",
+          "dtype": "float64",
+          "non_null": 388,
+          "null": 1311,
+          "unique": 125
+        },
+        {
+          "name": "Actual fish stocking density (per acre)",
+          "dtype": "float64",
+          "non_null": 772,
+          "null": 927,
+          "unique": 520
+        },
+        {
+          "name": "Fish stocking density (entire pond)",
+          "dtype": "float64",
+          "non_null": 388,
+          "null": 1311,
+          "unique": 122
+        },
+        {
+          "name": "Fish purchases diverted",
+          "dtype": "float64",
+          "non_null": 693,
+          "null": 1006,
+          "unique": 33
+        },
+        {
+          "name": "Intended shrimp stocking density (per acre)",
+          "dtype": "float64",
+          "non_null": 25,
+          "null": 1674,
+          "unique": 8
+        },
+        {
+          "name": "Intended shrimp stocking density (entire pond)",
+          "dtype": "float64",
+          "non_null": 1,
+          "null": 1698,
+          "unique": 1
+        },
+        {
+          "name": "Actual shrimp stocking density (per acre)",
+          "dtype": "float64",
+          "non_null": 32,
+          "null": 1667,
+          "unique": 16
+        },
+        {
+          "name": "Actual shrimp stocking density (entire pond)",
+          "dtype": "float64",
+          "non_null": 1,
+          "null": 1698,
+          "unique": 1
+        },
+        {
+          "name": "Shrimp purchases diverted",
+          "dtype": "float64",
+          "non_null": 2,
+          "null": 1697,
+          "unique": 1
+        },
+        {
+          "name": "Did the farmer do pond preparation?",
+          "dtype": "object",
+          "non_null": 688,
+          "null": 1011,
+          "unique": 4
+        },
+        {
+          "name": "Explain what the farmer did for pond preparation",
+          "dtype": "object",
+          "non_null": 200,
+          "null": 1499,
+          "unique": 121
+        },
+        {
+          "name": "Harvest reason",
+          "dtype": "object",
+          "non_null": 770,
+          "null": 929,
+          "unique": 3
+        },
+        {
+          "name": "Fish harvested (total, in kg)",
+          "dtype": "object",
+          "non_null": 632,
+          "null": 1067,
+          "unique": 265
+        },
+        {
+          "name": "Shrimp harvested (total, in kg)",
+          "dtype": "object",
+          "non_null": 38,
+          "null": 1661,
+          "unique": 13
+        },
+        {
+          "name": "Fish left in the pond (total, in individuals)",
+          "dtype": "object",
+          "non_null": 625,
+          "null": 1074,
+          "unique": 53
+        },
+        {
+          "name": "Shrimp left in the pond (total, in individuals)",
+          "dtype": "float64",
+          "non_null": 46,
+          "null": 1653,
+          "unique": 1
+        },
+        {
+          "name": "Is the farmer planning to do pond preparation?",
+          "dtype": "object",
+          "non_null": 699,
+          "null": 1000,
+          "unique": 4
+        },
+        {
+          "name": "Explain what the farmer is planning to do for pond preparation",
+          "dtype": "object",
+          "non_null": 242,
+          "null": 1457,
+          "unique": 128
+        },
+        {
+          "name": "Notes",
+          "dtype": "object",
+          "non_null": 277,
+          "null": 1422,
+          "unique": 257
+        },
+        {
+          "name": "Lifecycle is updated accordingly on the master doc",
+          "dtype": "object",
+          "non_null": 453,
+          "null": 1246,
+          "unique": 1
+        },
+        {
+          "name": "Created at",
+          "dtype": "object",
+          "non_null": 1699,
+          "null": 0,
+          "unique": 1202
+        }
+      ],
+      "missing_cells": 51916,
+      "duplicate_rows": 0
+    },
+    "dropouts.csv": {
+      "rows": 128,
+      "column_count": 8,
+      "columns": [
+        {
+          "name": "pond_id",
+          "dtype": "object",
+          "non_null": 128,
+          "null": 0,
+          "unique": 128
+        },
+        {
+          "name": "region",
+          "dtype": "object",
+          "non_null": 128,
+          "null": 0,
+          "unique": 2
+        },
+        {
+          "name": "Date of drop out",
+          "dtype": "object",
+          "non_null": 128,
+          "null": 0,
+          "unique": 42
+        },
+        {
+          "name": "Added by",
+          "dtype": "object",
+          "non_null": 128,
+          "null": 0,
+          "unique": 6
+        },
+        {
+          "name": "Tenancy type",
+          "dtype": "object",
+          "non_null": 101,
+          "null": 27,
+          "unique": 2
+        },
+        {
+          "name": "Pond measurements",
+          "dtype": "int64",
+          "non_null": 128,
+          "null": 0,
+          "unique": 61
+        },
+        {
+          "name": "Reason",
+          "dtype": "object",
+          "non_null": 128,
+          "null": 0,
+          "unique": 4
+        },
+        {
+          "name": "Further details on reason",
+          "dtype": "object",
+          "non_null": 126,
+          "null": 2,
+          "unique": 74
+        }
+      ],
+      "missing_cells": 29,
+      "duplicate_rows": 0
+    }
+  }
+}

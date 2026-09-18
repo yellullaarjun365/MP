@@ -1,0 +1,21 @@
+{
+  "schema_version": "aqualife-fishstatj-jdbc-inspection-v1",
+  "jar": "fishstatj-jdbc-dao.jar",
+  "inspection_files": [
+    "AbstractDAO.javap.txt",
+    "ResourceManager.javap.txt",
+    "TsdAquacultureQuantityDaoImpl.javap.txt",
+    "org_fao_fi_fishstat_data_generated_jdbc_RefAreaDaoImpl.javap.txt",
+    "org_fao_fi_fishstat_data_generated_jdbc_RefCountryDaoImpl.javap.txt",
+    "org_fao_fi_fishstat_data_generated_jdbc_RefEnvironmentDaoImpl.javap.txt",
+    "org_fao_fi_fishstat_data_generated_jdbc_RefMeasureDaoImpl.javap.txt",
+    "org_fao_fi_fishstat_data_generated_jdbc_RefSpeciesDaoImpl.javap.txt",
+    "org_fao_fi_fishstat_data_generated_jdbc_TsmDatasetDaoImpl.javap.txt",
+    "org_fao_fi_fishstat_data_generated_jdbc_TsmDimensionDaoImpl.javap.txt",
+    "org_fao_fi_fishstat_data_generated_jdbc_TsmTimeseriesDaoImpl.javap.txt"
+  ],
+  "next_action": "Use identified ResourceManager/JDBC connection and DAO schema to read the embedded FishStatJ workspace.",
+  "data_target": "TsdAquacultureQuantity",
+  "training_performed": false,
+  "workspace_modified": false
+}

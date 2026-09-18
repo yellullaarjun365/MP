@@ -1,0 +1,30 @@
+﻿{
+  "schema_version": "aqualife-fao-artifact-v1",
+  "dataset_id": "fao-global-aquaculture-production",
+  "provider": "FAO",
+  "workspace": "FAO_FI_Global_Production_2026.1.0.fws",
+  "release": "2026.1.0",
+  "data_through": 2024,
+  "frequency": "annual",
+  "official_source": "https://www.fao.org/fishery/static/FishStatJ/FAO_FI_Global_Production_2026.1.0.fws",
+  "license": "CC-BY-4.0",
+  "dataset_scope": [
+    "global aquaculture production",
+    "global capture production",
+    "global fisheries and aquaculture production"
+  ],
+  "current_ingestion_status": {
+    "workspace_downloaded": true,
+    "aquaculture_csv_extracted": false,
+    "india_subset_created": false,
+    "species_subset_created": false,
+    "model_training": false
+  },
+  "aqualife_policy": {
+    "farm_level_training": false,
+    "historical_benchmark": true,
+    "trend_analysis": true,
+    "blind_merge_with_fwi": false,
+    "blind_merge_with_synthetic": false
+  }
+}

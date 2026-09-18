@@ -1,10 +1,57 @@
 ﻿"use client";
 
+
+
+/*
+ * AquaLife browser voice recording helpers.
+ *
+ * The browser determines which MediaRecorder MIME type is supported.
+ * We never blindly claim that arbitrary bytes are audio/webm.
+ */
+const getAquaLifeRecordingMimeType = (): string => {
+  if (
+    typeof MediaRecorder === "undefined" ||
+    typeof MediaRecorder.isTypeSupported !== "function"
+  ) {
+    return "";
+  }
+
+  const candidates = [
+    "audio/webm;codecs=opus",
+    "audio/webm",
+    "audio/ogg;codecs=opus",
+    "audio/ogg",
+  ];
+
+  for (const type of candidates) {
+    try {
+      if (MediaRecorder.isTypeSupported(type)) {
+        return type;
+      }
+    } catch {
+      // Try the next format.
+    }
+  }
+
+  return "";
+};
+
+const getAquaLifeAudioExtension = (mimeType: string): string => {
+  const type = (mimeType || "").toLowerCase();
+
+  if (type.includes("ogg")) {
+    return "ogg";
+  }
+
+  return "webm";
+};
 import {
   BrainCircuit,
   Loader2,
+  Mic,
   Send,
   Sparkles,
+  Square,
   X,
 } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
@@ -29,6 +76,18 @@ export function AquaAIDrawer({
 }: AquaAIDrawerProps) {
   const [input, setInput] = useState("");
   const [chatLoading, setChatLoading] = useState(false);
+  const [recording, setRecording] = useState(false);
+  const [voiceLoading, setVoiceLoading] = useState(false);
+  const [recordingSeconds, setRecordingSeconds] = useState(0);
+
+  const mediaRecorderRef =
+    useRef<MediaRecorder | null>(null);
+  const audioChunksRef =
+    useRef<Blob[]>([]);
+  const discardRecordingRef =
+    useRef(false);
+  const recordingTimerRef =
+    useRef<ReturnType<typeof setInterval> | null>(null);
 
   const [messages, setMessages] = useState<ChatMessage[]>([
     {
@@ -50,8 +109,305 @@ export function AquaAIDrawer({
   useEffect(() => {
     return () => {
       abortRef.current?.abort();
+
+      if (recordingTimerRef.current) {
+        clearInterval(recordingTimerRef.current);
+        recordingTimerRef.current = null;
+      }
+
+      const recorder = mediaRecorderRef.current;
+
+      if (
+        recorder &&
+        recorder.state !== "inactive"
+      ) {
+        recorder.stop();
+      }
+
+      recorder?.stream
+        .getTracks()
+        .forEach((track) => track.stop());
+
+      mediaRecorderRef.current = null;
     };
   }, []);
+
+  async function transcribeVoice(audioBlob: Blob) {
+    setVoiceLoading(true);
+
+    try {
+      const file = new File(
+        [audioBlob],
+        "aqualife-voice.webm",
+        {
+          type:
+            audioBlob.type ||
+            "audio/webm",
+        },
+      );
+
+      const formData = new FormData();
+      formData.append("file", file);
+      formData.append("language", "auto");
+
+      const response = await fetch(
+        `${API_URL}/api/v1/voice/transcribe`,
+        {
+          method: "POST",
+          body: formData,
+        },
+      );
+
+      const data =
+        (await response.json()) as {
+          text?: string;
+          detail?: string;
+        };
+
+      if (!response.ok) {
+        throw new Error(
+          data.detail ??
+            `Voice transcription failed: ${response.status}`,
+        );
+      }
+
+      const transcript =
+        data.text?.trim() ?? "";
+
+      if (!transcript) {
+        throw new Error(
+          "No speech was detected in the recording.",
+        );
+      }
+
+      setInput(transcript);
+    } catch (error) {
+      setMessages((current) => [
+        ...current,
+        {
+          role: "assistant",
+          content:
+            error instanceof Error
+              ? error.message
+              : "Voice transcription failed.",
+        },
+      ]);
+    } finally {
+      setVoiceLoading(false);
+    }
+  }
+
+  function clearRecordingTimer() {
+    if (recordingTimerRef.current) {
+      clearInterval(recordingTimerRef.current);
+      recordingTimerRef.current = null;
+    }
+  }
+
+  async function startRecording() {
+    if (
+      chatLoading ||
+      recording ||
+      voiceLoading
+    ) {
+      return;
+    }
+
+    if (
+      !navigator.mediaDevices?.getUserMedia ||
+      typeof MediaRecorder === "undefined"
+    ) {
+      setMessages((current) => [
+        ...current,
+        {
+          role: "assistant",
+          content:
+            "Your browser does not support microphone recording.",
+        },
+      ]);
+      return;
+    }
+
+    try {
+      const stream =
+        await navigator.mediaDevices.getUserMedia({
+          audio: {
+            echoCancellation: true,
+            noiseSuppression: true,
+            autoGainControl: true,
+          },
+        });
+
+      let mimeType = "";
+
+      if (
+        MediaRecorder.isTypeSupported(
+          "audio/webm;codecs=opus",
+        )
+      ) {
+        mimeType = "audio/webm;codecs=opus";
+      } else if (
+        MediaRecorder.isTypeSupported(
+          "audio/webm",
+        )
+      ) {
+        mimeType = "audio/webm";
+      }
+
+      const recorder = mimeType
+        ? new MediaRecorder(
+            stream,
+            { mimeType },
+          )
+        : new MediaRecorder(
+        stream,
+        {
+          mimeType: getAquaLifeRecordingMimeType(),
+        },
+      );
+
+      audioChunksRef.current = [];
+      discardRecordingRef.current = false;
+
+      recorder.ondataavailable = (event) => {
+        if (event.data.size > 0) {
+          audioChunksRef.current.push(
+            event.data,
+          );
+        }
+      };
+
+      recorder.onerror = () => {
+        clearRecordingTimer();
+
+        stream
+          .getTracks()
+          .forEach((track) => track.stop());
+
+        mediaRecorderRef.current = null;
+        setRecording(false);
+        setRecordingSeconds(0);
+
+        setMessages((current) => [
+          ...current,
+          {
+            role: "assistant",
+            content:
+              "An error occurred while recording your voice.",
+          },
+        ]);
+      };
+
+      recorder.onstop = async () => {
+        clearRecordingTimer();
+
+        stream
+          .getTracks()
+          .forEach((track) => track.stop());
+
+        mediaRecorderRef.current = null;
+        setRecording(false);
+
+        const cancelled =
+          discardRecordingRef.current;
+
+        setRecordingSeconds(0);
+
+        if (cancelled) {
+          audioChunksRef.current = [];
+          return;
+        }
+
+        const audioBlob = new Blob(
+          audioChunksRef.current,
+          {
+            type:
+              mimeType ||
+              "audio/webm",
+          },
+        );
+
+        audioChunksRef.current = [];
+
+        if (audioBlob.size > 0) {
+          await transcribeVoice(
+            audioBlob,
+          );
+        }
+      };
+
+      mediaRecorderRef.current = recorder;
+      recorder.start(250);
+
+      setRecordingSeconds(0);
+      setRecording(true);
+
+      recordingTimerRef.current =
+        setInterval(() => {
+          setRecordingSeconds(
+            (current) => {
+              const next = current + 1;
+
+              if (next >= 60) {
+                window.setTimeout(
+                  () => stopRecording(),
+                  0,
+                );
+                return 60;
+              }
+
+              return next;
+            },
+          );
+        }, 1000);
+    } catch (error) {
+      clearRecordingTimer();
+      setRecording(false);
+      setRecordingSeconds(0);
+
+      setMessages((current) => [
+        ...current,
+        {
+          role: "assistant",
+          content:
+            error instanceof Error
+              ? error.message
+              : "Unable to access your microphone.",
+        },
+      ]);
+    }
+  }
+
+  function stopRecording() {
+    const recorder =
+      mediaRecorderRef.current;
+
+    if (
+      recorder &&
+      recorder.state !== "inactive"
+    ) {
+      recorder.stop();
+    }
+  }
+
+  function cancelRecording() {
+    discardRecordingRef.current = true;
+    clearRecordingTimer();
+
+    const recorder =
+      mediaRecorderRef.current;
+
+    if (
+      recorder &&
+      recorder.state !== "inactive"
+    ) {
+      recorder.stop();
+    } else {
+      setRecording(false);
+      setRecordingSeconds(0);
+      audioChunksRef.current = [];
+    }
+  }
 
   async function sendMessage() {
     const text = input.trim();
@@ -329,7 +685,84 @@ export function AquaAIDrawer({
         </div>
 
         <div className="border-t border-border p-4">
+
+          {recording && (
+            <div className="mb-3 rounded-2xl border border-border bg-background p-3">
+
+              <div className="flex items-center justify-between gap-3">
+
+                <div className="flex items-center gap-2">
+                  <span className="relative flex h-3 w-3">
+                    <span className="absolute h-3 w-3 animate-ping rounded-full bg-foreground/40" />
+                    <span className="relative h-3 w-3 rounded-full bg-foreground" />
+                  </span>
+
+                  <span className="text-xs font-semibold">
+                    Recording...
+                  </span>
+                </div>
+
+                <span className="font-mono text-xs font-semibold tabular-nums">
+                  {String(
+                    Math.floor(
+                      recordingSeconds / 60,
+                    ),
+                  ).padStart(2, "0")}
+                  :
+                  {String(
+                    recordingSeconds % 60,
+                  ).padStart(2, "0")}
+                  <span className="ml-1 text-muted-foreground">
+                    / 01:00
+                  </span>
+                </span>
+
+              </div>
+
+              <div className="mt-3 h-2 w-full overflow-hidden rounded-full bg-muted">
+                <div
+                  className="h-full rounded-full bg-foreground transition-[width] duration-1000 ease-linear"
+                  style={{
+                    width: `${Math.min(
+                      100,
+                      (recordingSeconds / 60) * 100,
+                    )}%`,
+                  }}
+                />
+              </div>
+
+              <div className="mt-3 flex items-center justify-between gap-2">
+
+                <button
+                  type="button"
+                  onClick={cancelRecording}
+                  className="rounded-xl border border-border px-3 py-2 text-xs font-semibold transition hover:bg-muted"
+                >
+                  Cancel
+                </button>
+
+                <button
+                  type="button"
+                  onClick={stopRecording}
+                  className="flex items-center gap-2 rounded-xl bg-foreground px-3 py-2 text-xs font-semibold text-background transition hover:opacity-90"
+                >
+                  <Square className="h-3.5 w-3.5" />
+                  Stop & transcribe
+                </button>
+
+              </div>
+
+            </div>
+          )}
+
+          {voiceLoading && (
+            <div className="mb-3 rounded-xl border border-border bg-muted/30 px-3 py-2 text-[10px] text-muted-foreground">
+              Transcribing your voice...
+            </div>
+          )}
+
           <div className="flex items-center gap-2 rounded-2xl border border-border bg-muted/20 p-2">
+
             <input
               value={input}
               onChange={(event) =>
@@ -341,26 +774,77 @@ export function AquaAIDrawer({
                   void sendMessage();
                 }
               }}
-              placeholder="Ask Aqua AI..."
-              className="h-10 min-w-0 flex-1 bg-transparent px-2 text-xs outline-none placeholder:text-muted-foreground"
+              disabled={
+                recording ||
+                voiceLoading
+              }
+              placeholder={
+                recording
+                  ? "Listening..."
+                  : voiceLoading
+                    ? "Transcribing..."
+                    : "Ask Aqua AI..."
+              }
+              className="h-10 min-w-0 flex-1 bg-transparent px-2 text-xs outline-none placeholder:text-muted-foreground disabled:opacity-60"
             />
+
+            <button
+              type="button"
+              onClick={
+                recording
+                  ? stopRecording
+                  : startRecording
+              }
+              disabled={
+                chatLoading ||
+                voiceLoading
+              }
+              className={[
+                "flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border transition",
+                recording
+                  ? "border-foreground bg-foreground text-background"
+                  : "border-border bg-transparent text-foreground",
+                chatLoading || voiceLoading
+                  ? "opacity-40"
+                  : "hover:bg-muted",
+              ].join(" ")}
+              aria-label={
+                recording
+                  ? "Stop recording"
+                  : "Start voice recording"
+              }
+              title={
+                recording
+                  ? "Stop recording"
+                  : "Speak to Aqua AI"
+              }
+            >
+              {recording ? (
+                <Square className="h-4 w-4" />
+              ) : (
+                <Mic className="h-4 w-4" />
+              )}
+            </button>
 
             <button
               type="button"
               onClick={() => void sendMessage()}
               disabled={
                 !input.trim() ||
-                chatLoading
+                chatLoading ||
+                recording ||
+                voiceLoading
               }
               className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-foreground text-background transition hover:opacity-90 disabled:opacity-40"
               aria-label="Send message"
             >
               <Send className="h-4 w-4" />
             </button>
+
           </div>
 
           <p className="mt-2 px-1 text-[9px] text-muted-foreground">
-            Responses are generated from AquaLife's available AI and knowledge systems.
+            Speak or type your question. Voice input is transcribed locally through AquaLife's voice service.
           </p>
         </div>
       </aside>
@@ -392,3 +876,4 @@ export function AquaAIButton({
     </button>
   );
 }
+

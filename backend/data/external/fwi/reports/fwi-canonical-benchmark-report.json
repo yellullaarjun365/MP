@@ -1,0 +1,44 @@
+{
+  "schema_version": "fwi-canonical-benchmark-v1",
+  "source": "FWI Farm Data - India",
+  "source_repository": "https://github.com/fish-welfare-initiative/fwi-farm-data-india",
+  "source_commit": "971491084b5093f12cf2a32b0c7718c00323f4b0",
+  "real_world": true,
+  "synthetic": false,
+  "model_training": false,
+  "event_summary": {
+    "total_events": 1699,
+    "shrimp_species_events": 21,
+    "shrimp_stocking_events": 21,
+    "shrimp_harvest_events": 10
+  },
+  "canonical_datasets": {
+    "event_benchmark": {
+      "file": "data\\external\\fwi\\canonical\\fwi-shrimp-event-benchmark.csv",
+      "rows": 31
+    },
+    "production_benchmark": {
+      "file": "data\\external\\fwi\\canonical\\fwi-production-benchmark.csv",
+      "rows": 8
+    },
+    "water_quality_context": {
+      "file": "data\\external\\fwi\\canonical\\fwi-water-quality-context.csv",
+      "rows": 13567
+    }
+  },
+  "availability": {
+    "pond_area": 27,
+    "pond_depth": 31,
+    "shrimp_stocking_count": 0,
+    "average_weight": 0,
+    "production_target": 10,
+    "usable_production_records": 8
+  },
+  "scientific_boundary": {
+    "real_world_observational": true,
+    "validated_aqualife_accuracy": false,
+    "training_performed": false,
+    "stocking_harvest_pairing": "NOT_PERFORMED",
+    "reason": "This release creates a conservative event-level benchmark. Stocking-to-harvest cycle reconstruction requires additional temporal validation before it can be used as a supervised training table."
+  }
+}

@@ -1,0 +1,146 @@
+{
+  "schema_version": "synthetic-distribution-audit-v1.1",
+  "rows": 10000,
+  "status": "PASS",
+  "checks": {
+    "rows_10000": true,
+    "single_species": true,
+    "no_missing": true,
+    "density_range": true,
+    "survival_range": true,
+    "growth_range": true,
+    "production_nonnegative": true,
+    "harvest_weight_decreases_with_density": true,
+    "effective_growth_decreases_with_density": true
+  },
+  "evidence_comparison": {
+    "typical_band_kg_per_ha": {
+      "min": 7000.0,
+      "max": 20000.0
+    },
+    "below_7000_percent": 19.28,
+    "inside_7000_20000_percent": 68.91000000000001,
+    "above_20000_percent": 11.81,
+    "above_35000_percent": 0.09
+  },
+  "density_effects": [
+    {
+      "density_band": "(24.999, 50.0]",
+      "rows": 3176,
+      "median_density": 37.392406229427266,
+      "median_effective_growth": 1.2930082067481528,
+      "median_harvest_weight": 22.455715061966487,
+      "median_survival": 0.8697713982076631,
+      "median_production_kg_per_ha": 6887.41402029534
+    },
+    {
+      "density_band": "(50.0, 80.0]",
+      "rows": 3814,
+      "median_density": 64.79365242310314,
+      "median_effective_growth": 1.2309507140395795,
+      "median_harvest_weight": 21.612757718620472,
+      "median_survival": 0.8691376531285657,
+      "median_production_kg_per_ha": 11706.316437100917
+    },
+    {
+      "density_band": "(80.0, 110.0]",
+      "rows": 1261,
+      "median_density": 95.40732782427948,
+      "median_effective_growth": 1.1340330030393824,
+      "median_harvest_weight": 20.225486901788564,
+      "median_survival": 0.8690180230656386,
+      "median_production_kg_per_ha": 16489.87259716604
+    },
+    {
+      "density_band": "(110.0, 150.0]",
+      "rows": 1749,
+      "median_density": 129.573235208983,
+      "median_effective_growth": 1.0202120163170776,
+      "median_harvest_weight": 18.344994945747068,
+      "median_survival": 0.8702348265071652,
+      "median_production_kg_per_ha": 20247.727740488976
+    }
+  ],
+  "correlations": {
+    "stocking_density_per_m2": {
+      "stocking_density_per_m2": 1.0,
+      "culture_days": 0.0004,
+      "growth_rate_g_week": -0.0043,
+      "survival_rate": 0.0047,
+      "effective_growth_rate_g_week": -0.3083,
+      "harvest_average_weight_g": -0.2598,
+      "production_kg_per_ha": 0.8142
+    },
+    "culture_days": {
+      "stocking_density_per_m2": 0.0004,
+      "culture_days": 1.0,
+      "growth_rate_g_week": 0.0024,
+      "survival_rate": 0.0001,
+      "effective_growth_rate_g_week": 0.0013,
+      "harvest_average_weight_g": 0.4822,
+      "production_kg_per_ha": 0.2524
+    },
+    "growth_rate_g_week": {
+      "stocking_density_per_m2": -0.0043,
+      "culture_days": 0.0024,
+      "growth_rate_g_week": 1.0,
+      "survival_rate": -0.0024,
+      "effective_growth_rate_g_week": 0.9492,
+      "harvest_average_weight_g": 0.8149,
+      "production_kg_per_ha": 0.4257
+    },
+    "survival_rate": {
+      "stocking_density_per_m2": 0.0047,
+      "culture_days": 0.0001,
+      "growth_rate_g_week": -0.0024,
+      "survival_rate": 1.0,
+      "effective_growth_rate_g_week": -0.004,
+      "harvest_average_weight_g": -0.0035,
+      "production_kg_per_ha": 0.1292
+    },
+    "effective_growth_rate_g_week": {
+      "stocking_density_per_m2": -0.3083,
+      "culture_days": 0.0013,
+      "growth_rate_g_week": 0.9492,
+      "survival_rate": -0.004,
+      "effective_growth_rate_g_week": 1.0,
+      "harvest_average_weight_g": 0.8507,
+      "production_kg_per_ha": 0.1392
+    },
+    "harvest_average_weight_g": {
+      "stocking_density_per_m2": -0.2598,
+      "culture_days": 0.4822,
+      "growth_rate_g_week": 0.8149,
+      "survival_rate": -0.0035,
+      "effective_growth_rate_g_week": 0.8507,
+      "harvest_average_weight_g": 1.0,
+      "production_kg_per_ha": 0.2781
+    },
+    "production_kg_per_ha": {
+      "stocking_density_per_m2": 0.8142,
+      "culture_days": 0.2524,
+      "growth_rate_g_week": 0.4257,
+      "survival_rate": 0.1292,
+      "effective_growth_rate_g_week": 0.1392,
+      "harvest_average_weight_g": 0.2781,
+      "production_kg_per_ha": 1.0
+    }
+  },
+  "problem_flags": [],
+  "production_summary": {
+    "kg": {
+      "min": 25.43883656275165,
+      "median": 1072.4609145782495,
+      "mean": 2625.519287838164,
+      "p95": 10366.58542285291,
+      "max": 33059.727063136335
+    },
+    "kg_per_ha": {
+      "min": 1829.9067645130265,
+      "median": 11189.57101624435,
+      "mean": 12323.142655077068,
+      "p95": 24073.17463191723,
+      "max": 39748.70915848398
+    }
+  }
+}

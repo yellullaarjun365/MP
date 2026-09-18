@@ -1,0 +1,262 @@
+{
+  "schema_version": "synthetic-distribution-audit-v1",
+  "dataset": "data\\synthetic\\production-synthetic-v1.csv",
+  "rows": 10000,
+  "status": "REVIEW",
+  "checks": {
+    "exactly_10000_rows": true,
+    "single_species": true,
+    "no_missing_values": true,
+    "density_weight_effect_observed": false,
+    "production_nonnegative": true,
+    "survival_valid": true,
+    "density_valid": true
+  },
+  "distribution": {
+    "pond_area_m2": {
+      "min": 100.00060242351522,
+      "p05": 125.30714504836895,
+      "p25": 316.2235171384611,
+      "median": 976.2161110398193,
+      "mean": 2120.7618957833915,
+      "p75": 3077.6516031128085,
+      "p95": 7946.1523410152195,
+      "max": 9995.456830441626
+    },
+    "pond_depth_m": {
+      "min": 0.8,
+      "p05": 1.039558695678295,
+      "p25": 1.3111274023725243,
+      "median": 1.499245897663835,
+      "mean": 1.4985824408941673,
+      "p75": 1.6858400354339884,
+      "p95": 1.9494392653888075,
+      "max": 2.5
+    },
+    "stocking_density_per_m2": {
+      "min": 25.000206428342185,
+      "p05": 28.829687250421838,
+      "p25": 44.49098094976952,
+      "median": 64.25853597019457,
+      "mean": 71.28458274453406,
+      "p75": 92.66695374846203,
+      "p95": 137.98133647423737,
+      "max": 149.9992544959128
+    },
+    "stocking_count": {
+      "min": 2606.0,
+      "p05": 6698.8,
+      "p25": 20088.25,
+      "median": 62478.5,
+      "mean": 151598.2308,
+      "p75": 193489.25,
+      "p95": 605022.25,
+      "max": 1484102.0
+    },
+    "initial_average_weight_g": {
+      "min": 0.0100001262505766,
+      "p05": 0.013174686932082775,
+      "p25": 0.03752141901565977,
+      "median": 0.13915380702105629,
+      "mean": 0.3717434215551968,
+      "p75": 0.5291303539468272,
+      "p95": 1.5131314090522936,
+      "max": 1.9994628604853664
+    },
+    "initial_biomass_kg": {
+      "min": 0.0308656112185747,
+      "p05": 0.2772061046956798,
+      "p25": 2.0715614602253627,
+      "median": 9.11207581059184,
+      "mean": 55.331331202108785,
+      "p75": 36.74093512027861,
+      "p95": 285.28212938809486,
+      "max": 2234.578989460812
+    },
+    "culture_days": {
+      "min": 90.0,
+      "p05": 95.0,
+      "p25": 113.0,
+      "median": 125.0,
+      "mean": 125.2239,
+      "p75": 137.0,
+      "p95": 155.0,
+      "max": 180.0
+    },
+    "survival_rate": {
+      "min": 0.6126919499206984,
+      "p05": 0.7606193236716151,
+      "p25": 0.8292668385707869,
+      "median": 0.8694106961855024,
+      "mean": 0.8608096864434498,
+      "p75": 0.9023015248780102,
+      "p95": 0.9315590649481477,
+      "max": 0.949981739592872
+    },
+    "mortality_rate": {
+      "min": 0.0500182604071279,
+      "p05": 0.06844093505185234,
+      "p25": 0.09769847512198976,
+      "median": 0.13058930381449765,
+      "mean": 0.13919031355655012,
+      "p75": 0.170733161429213,
+      "p95": 0.23938067632838472,
+      "max": 0.3873080500793016
+    },
+    "growth_rate_g_week": {
+      "min": 0.5,
+      "p05": 0.7637156756626526,
+      "p25": 1.1094848129849766,
+      "median": 1.339893503047446,
+      "mean": 1.344977257941145,
+      "p75": 1.5806394698253978,
+      "p95": 1.9274487884718934,
+      "max": 2.7096632067481856
+    },
+    "harvest_average_weight_g": {
+      "min": 6.454258097026595,
+      "p05": 13.213457136972503,
+      "p25": 19.388113354239415,
+      "median": 22.965806296702358,
+      "mean": 22.368639202514025,
+      "p75": 25.775800985537174,
+      "p95": 29.56642605733798,
+      "max": 35.965665337519226
+    },
+    "surviving_count": {
+      "min": 2076.0,
+      "p05": 5658.6,
+      "p25": 17281.5,
+      "median": 53531.5,
+      "mean": 130533.4356,
+      "p75": 165652.75,
+      "p95": 522956.64999999973,
+      "max": 1297679.0
+    },
+    "production_kg": {
+      "min": 25.73968411898354,
+      "p05": 120.83053148320322,
+      "p25": 373.6210509780717,
+      "median": 1163.8272204043005,
+      "mean": 2926.4852516494366,
+      "p75": 3651.894229179783,
+      "p95": 11744.897677973044,
+      "max": 37521.94906086033
+    },
+    "production_kg_per_ha": {
+      "min": 1844.5504001478728,
+      "p05": 4930.32449389873,
+      "p25": 8115.591811596262,
+      "median": 12032.83386588866,
+      "mean": 13721.935807165375,
+      "p75": 17672.445832454017,
+      "p95": 28569.512099234253,
+      "max": 45646.07754040501
+    }
+  },
+  "evidence_comparison": {
+    "typical_intensive_band_kg_per_ha": {
+      "min": 7000.0,
+      "max": 20000.0
+    },
+    "inside_typical_percent": 63.61,
+    "below_typical_percent": 17.5,
+    "above_typical_percent": 18.89,
+    "above_upper_intensive_percent": 0.8,
+    "density": {
+      "min": 25.000206428342185,
+      "median": 64.25853597019457,
+      "max": 149.9992544959128,
+      "percent_25_to_50": 31.759999999999998,
+      "percent_50_to_100": 46.39,
+      "percent_100_to_150": 21.85
+    }
+  },
+  "density_effects": [
+    {
+      "density_band": "(24.999, 50.0]",
+      "rows": 3176,
+      "median_harvest_weight_g": 22.8500150666722,
+      "mean_harvest_weight_g": 22.32562837477423,
+      "median_survival": 0.8697713982076631,
+      "median_production_kg_per_ha": 7031.24740181956
+    },
+    {
+      "density_band": "(50.0, 80.0]",
+      "rows": 3814,
+      "median_harvest_weight_g": 23.06309559425965,
+      "mean_harvest_weight_g": 22.43252638970123,
+      "median_survival": 0.8691376531285657,
+      "median_production_kg_per_ha": 12487.586165931138
+    },
+    {
+      "density_band": "(80.0, 110.0]",
+      "rows": 1261,
+      "median_harvest_weight_g": 23.09680874845589,
+      "mean_harvest_weight_g": 22.468628527910525,
+      "median_survival": 0.8690180230656386,
+      "median_production_kg_per_ha": 18781.7403053487
+    },
+    {
+      "density_band": "(110.0, 150.0]",
+      "rows": 1749,
+      "median_harvest_weight_g": 22.851458291968054,
+      "mean_harvest_weight_g": 22.235334524209073,
+      "median_survival": 0.8702348265071652,
+      "median_production_kg_per_ha": 25124.843214070384
+    }
+  ],
+  "correlations": {
+    "stocking_density_per_m2": {
+      "stocking_density_per_m2": 1.0,
+      "culture_days": 0.0004,
+      "growth_rate_g_week": -0.0043,
+      "survival_rate": 0.0047,
+      "harvest_average_weight_g": -0.0045,
+      "production_kg_per_ha": 0.8797
+    },
+    "culture_days": {
+      "stocking_density_per_m2": 0.0004,
+      "culture_days": 1.0,
+      "growth_rate_g_week": 0.0024,
+      "survival_rate": 0.0001,
+      "harvest_average_weight_g": 0.5118,
+      "production_kg_per_ha": 0.2121
+    },
+    "growth_rate_g_week": {
+      "stocking_density_per_m2": -0.0043,
+      "culture_days": 0.0024,
+      "growth_rate_g_week": 1.0,
+      "survival_rate": -0.0024,
+      "harvest_average_weight_g": 0.8281,
+      "production_kg_per_ha": 0.3382
+    },
+    "survival_rate": {
+      "stocking_density_per_m2": 0.0047,
+      "culture_days": 0.0001,
+      "growth_rate_g_week": -0.0024,
+      "survival_rate": 1.0,
+      "harvest_average_weight_g": -0.0018,
+      "production_kg_per_ha": 0.1192
+    },
+    "harvest_average_weight_g": {
+      "stocking_density_per_m2": -0.0045,
+      "culture_days": 0.5118,
+      "growth_rate_g_week": 0.8281,
+      "survival_rate": -0.0018,
+      "harvest_average_weight_g": 1.0,
+      "production_kg_per_ha": 0.4096
+    },
+    "production_kg_per_ha": {
+      "stocking_density_per_m2": 0.8797,
+      "culture_days": 0.2121,
+      "growth_rate_g_week": 0.3382,
+      "survival_rate": 0.1192,
+      "harvest_average_weight_g": 0.4096,
+      "production_kg_per_ha": 1.0
+    }
+  },
+  "problem_flags": [
+    "Higher density does not reduce median harvest weight across the generated density bands."
+  ]
+}

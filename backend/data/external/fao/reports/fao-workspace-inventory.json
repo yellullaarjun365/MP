@@ -1,0 +1,218 @@
+{
+  "workspace": "data\\external\\fao\\raw\\FAO_FI_Global_Production_2026.1.0.fws",
+  "entries": 639,
+  "extension_counts": {
+    "<directory>": 8,
+    ".html": 18,
+    ".pdf": 10,
+    ".jpg": 1,
+    ".lck": 1,
+    ".ctrl": 2,
+    ".dat": 596,
+    ".properties": 1,
+    ".jar": 1,
+    ".xml": 1
+  },
+  "largest_files": [
+    {
+      "name": "db/seg0/c2290.dat",
+      "size": 47882240,
+      "compressed_size": 3172823
+    },
+    {
+      "name": "db/seg0/c2330.dat",
+      "size": 42246144,
+      "compressed_size": 2767086
+    },
+    {
+      "name": "db/seg0/c23c0.dat",
+      "size": 5672960,
+      "compressed_size": 353961
+    },
+    {
+      "name": "db/seg0/c2440.dat",
+      "size": 3411968,
+      "compressed_size": 404479
+    },
+    {
+      "name": "db/seg0/c2301.dat",
+      "size": 3051520,
+      "compressed_size": 471399
+    },
+    {
+      "name": "db/seg0/c9e0.dat",
+      "size": 2658304,
+      "compressed_size": 756947
+    },
+    {
+      "name": "db/seg0/c2391.dat",
+      "size": 2166784,
+      "compressed_size": 375312
+    },
+    {
+      "name": "db/seg0/c22d1.dat",
+      "size": 1478656,
+      "compressed_size": 193276
+    },
+    {
+      "name": "db/seg0/c22b1.dat",
+      "size": 1380352,
+      "compressed_size": 216183
+    },
+    {
+      "name": "db/seg0/c2371.dat",
+      "size": 1314816,
+      "compressed_size": 172058
+    },
+    {
+      "name": "db/seg0/c22c1.dat",
+      "size": 1282048,
+      "compressed_size": 240799
+    },
+    {
+      "name": "db/seg0/c2351.dat",
+      "size": 1216512,
+      "compressed_size": 189190
+    },
+    {
+      "name": "db/seg0/c22e1.dat",
+      "size": 1150976,
+      "compressed_size": 164247
+    },
+    {
+      "name": "db/seg0/c2361.dat",
+      "size": 1150976,
+      "compressed_size": 213279
+    },
+    {
+      "name": "jar/fishstatj-jdbc-dao.jar",
+      "size": 1111846,
+      "compressed_size": 917481
+    },
+    {
+      "name": "db/seg0/c1c71.dat",
+      "size": 1085440,
+      "compressed_size": 130423
+    },
+    {
+      "name": "db/seg0/c1db1.dat",
+      "size": 1052672,
+      "compressed_size": 125859
+    },
+    {
+      "name": "db/seg0/c2171.dat",
+      "size": 1052672,
+      "compressed_size": 124357
+    },
+    {
+      "name": "db/log/log279.dat",
+      "size": 1052225,
+      "compressed_size": 290863
+    },
+    {
+      "name": "db/log/log282.dat",
+      "size": 1051553,
+      "compressed_size": 286250
+    },
+    {
+      "name": "db/log/log283.dat",
+      "size": 1051533,
+      "compressed_size": 294022
+    },
+    {
+      "name": "db/log/log280.dat",
+      "size": 1050844,
+      "compressed_size": 294831
+    },
+    {
+      "name": "db/log/log285.dat",
+      "size": 1050806,
+      "compressed_size": 287172
+    },
+    {
+      "name": "db/log/log284.dat",
+      "size": 1050366,
+      "compressed_size": 293206
+    },
+    {
+      "name": "db/log/log281.dat",
+      "size": 1050055,
+      "compressed_size": 282920
+    },
+    {
+      "name": "db/log/log286.dat",
+      "size": 1048881,
+      "compressed_size": 289261
+    },
+    {
+      "name": "db/log/log287.dat",
+      "size": 1048576,
+      "compressed_size": 240334
+    },
+    {
+      "name": "db/seg0/c1ea1.dat",
+      "size": 1019904,
+      "compressed_size": 131439
+    },
+    {
+      "name": "db/seg0/c1fe1.dat",
+      "size": 1019904,
+      "compressed_size": 135055
+    },
+    {
+      "name": "db/seg0/c22a1.dat",
+      "size": 1019904,
+      "compressed_size": 217402
+    },
+    {
+      "name": "db/seg0/c1e01.dat",
+      "size": 987136,
+      "compressed_size": 142450
+    },
+    {
+      "name": "db/seg0/c1d11.dat",
+      "size": 954368,
+      "compressed_size": 155752
+    },
+    {
+      "name": "db/seg0/c1d61.dat",
+      "size": 954368,
+      "compressed_size": 155234
+    },
+    {
+      "name": "db/seg0/c22f1.dat",
+      "size": 921600,
+      "compressed_size": 151408
+    },
+    {
+      "name": "db/seg0/c2341.dat",
+      "size": 888832,
+      "compressed_size": 191725
+    },
+    {
+      "name": "db/seg0/c2381.dat",
+      "size": 823296,
+      "compressed_size": 133300
+    },
+    {
+      "name": "db/seg0/c1c50.dat",
+      "size": 790528,
+      "compressed_size": 97407
+    },
+    {
+      "name": "db/seg0/c1ca0.dat",
+      "size": 790528,
+      "compressed_size": 94598
+    },
+    {
+      "name": "db/seg0/c1cf0.dat",
+      "size": 790528,
+      "compressed_size": 109530
+    },
+    {
+      "name": "db/seg0/c1d40.dat",
+      "size": 790528,
+      "compressed_size": 104268
+    }
+  ]
+}

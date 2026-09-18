@@ -1,0 +1,21 @@
+{
+  "schema_version": "synthetic-dataset-v1",
+  "generator_version": "1.0.0",
+  "generated_at": "2026-09-16T12:00:30.648035+00:00",
+  "rows": 10000,
+  "seed": 20260916,
+  "species": "Litopenaeus vannamei",
+  "target": "production_kg",
+  "manifest_schema": "production-evidence-v1",
+  "operational_bounds": {
+    "pond_density_min": 25.0,
+    "pond_density_max": 150.0,
+    "pond_area_min": 100.0,
+    "pond_area_max": 10000.0
+  },
+  "scientific_boundary": {
+    "training_data_type": "synthetic",
+    "real_world_validation": false,
+    "purpose": "model development and internal benchmarking"
+  }
+}

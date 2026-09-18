@@ -1,0 +1,55 @@
+{
+  "schema_version": "fwi-cycle-validation-v1",
+  "total_candidate_pairs": 8,
+  "valid_cycles": 6,
+  "ambiguous_cycles": 0,
+  "rejected_cycles": 2,
+  "valid_cycle_columns": [
+    "pond_id",
+    "region",
+    "stocking_date",
+    "harvest_date",
+    "culture_days",
+    "stocking_type",
+    "harvest_type",
+    "species",
+    "pond_area_acres",
+    "pond_area_m2",
+    "pond_depth_m",
+    "observed_stocking_density_per_acre",
+    "derived_stocking_count",
+    "production_kg",
+    "stocking_to_harvest_days",
+    "classification",
+    "flags"
+  ],
+  "production_statistics": {
+    "count": 6.0,
+    "mean": 635.0,
+    "std": 703.6689562571308,
+    "min": 100.0,
+    "25%": 230.0,
+    "50%": 395.0,
+    "75%": 657.5,
+    "max": 2000.0
+  },
+  "culture_days_statistics": {
+    "count": 6.0,
+    "mean": 82.66666666666667,
+    "std": 14.27818849387648,
+    "min": 63.0,
+    "25%": 72.5,
+    "50%": 85.0,
+    "75%": 94.5,
+    "max": 97.0
+  },
+  "scientific_boundary": {
+    "real_world": true,
+    "synthetic": false,
+    "model_training": false,
+    "accuracy_claim": false,
+    "derived_stocking_count": true,
+    "stocking_count_observed": false,
+    "note": "Derived stocking count is calculated from observed per-acre density and pond area. It must not be represented as directly observed."
+  }
+}

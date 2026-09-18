@@ -1,0 +1,52 @@
+{
+  "schema_version": "aqualife-fao-vannamei-benchmark-v1",
+  "dataset_id": "fao-global-aquaculture-production",
+  "provider": "FAO",
+  "release": "2026.1.0",
+  "data_through": 2024,
+  "country": "India",
+  "species": "Litopenaeus vannamei",
+  "source_file": "Aquaculture_Quantity.csv",
+  "source_rows": 16,
+  "year_count": 15,
+  "first_year": 2009,
+  "last_year": 2024,
+  "missing_years": [
+    2010
+  ],
+  "first_year_production_tonnes": 1730.0,
+  "last_year_production_tonnes": 1183453.0,
+  "cagr_pct": 54.52793253714536,
+  "minimum_year": 2009,
+  "minimum_production_tonnes": 1730.0,
+  "maximum_year": 2024,
+  "maximum_production_tonnes": 1183453.0,
+  "official_observations": 13,
+  "imputed_observations": 3,
+  "yearly_dataset": "data\\external\\fao\\canonical\\fao-india-vannamei-yearly.csv",
+  "environment_dataset": "data\\external\\fao\\canonical\\fao-india-vannamei-environment.csv",
+  "environment_share_dataset": "data\\external\\fao\\canonical\\fao-india-vannamei-environment-share.csv",
+  "status_dataset": "data\\external\\fao\\canonical\\fao-india-vannamei-status.csv",
+  "checks": {
+    "nonempty": true,
+    "india_only": true,
+    "vannamei_only": true,
+    "quantity_only": true,
+    "positive_production": true,
+    "valid_year": true
+  },
+  "failed_checks": [],
+  "scientific_boundary": {
+    "source_type": "official_aggregated_statistics",
+    "real_world": true,
+    "farm_level": false,
+    "pond_level": false,
+    "synthetic": false,
+    "model_training": false,
+    "prediction_accuracy_claim": false,
+    "missing_years_interpolated": false,
+    "status_preserved": true,
+    "environment_values_aggregated": true,
+    "note": "Annual national/species aquaculture statistics benchmark. Not a pond-level prediction dataset."
+  }
+}

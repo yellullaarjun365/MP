@@ -1,0 +1,75 @@
+{
+  "schema_version": "aqualife-fishstatj-contract-v1",
+  "workspace": "FAO_FI_Global_Production_2026.1.0.fws",
+  "target_dao": "TsdAquacultureQuantityDaoImpl",
+  "reference_daos": [
+    "RefCountryDaoImpl",
+    "RefSpeciesDaoImpl",
+    "RefEnvironmentDaoImpl",
+    "RefMeasureDaoImpl",
+    "TsmDatasetDaoImpl",
+    "TsmDimensionDaoImpl",
+    "TsmTimeseriesDaoImpl"
+  ],
+  "inspection_files": [
+    {
+      "file": "ResourceManager-contract.txt",
+      "exists": true,
+      "bytes": 27872
+    },
+    {
+      "file": "AbstractDAO-contract.txt",
+      "exists": true,
+      "bytes": 33866
+    },
+    {
+      "file": "TsdAquacultureQuantityDaoImpl-contract.txt",
+      "exists": true,
+      "bytes": 909242
+    },
+    {
+      "file": "TsdAquacultureValueDaoImpl-contract.txt",
+      "exists": true,
+      "bytes": 530688
+    },
+    {
+      "file": "RefCountryDaoImpl-contract.txt",
+      "exists": true,
+      "bytes": 130676
+    },
+    {
+      "file": "RefSpeciesDaoImpl-contract.txt",
+      "exists": true,
+      "bytes": 107602
+    },
+    {
+      "file": "RefEnvironmentDaoImpl-contract.txt",
+      "exists": true,
+      "bytes": 97030
+    },
+    {
+      "file": "RefMeasureDaoImpl-contract.txt",
+      "exists": true,
+      "bytes": 100824
+    },
+    {
+      "file": "TsmDatasetDaoImpl-contract.txt",
+      "exists": true,
+      "bytes": 156934
+    },
+    {
+      "file": "TsmDimensionDaoImpl-contract.txt",
+      "exists": true,
+      "bytes": 139644
+    },
+    {
+      "file": "TsmTimeseriesDaoImpl-contract.txt",
+      "exists": true,
+      "bytes": 148332
+    }
+  ],
+  "workspace_modified": false,
+  "data_extraction": false,
+  "model_training": false,
+  "next_step": "Determine the exact database connection path and table/column contract before opening the workspace database."
+}

@@ -1,0 +1,9 @@
+source_dataset,source_pond_id,region,event_date,event_type,species,pond_area_m2,pond_depth_m,shrimp_stocking_count,average_weight_g,production_kg,source_lifecycle,source_verification_method,has_pond_area,has_pond_depth,has_stocking_count,has_average_weight,has_production_target,usable_production_record
+FWI Farm Data - India,ara2_5a3d15dd,Nellore,2022-11-05,Harvest,,5260.91334912,2.5,,,730.0,,,True,True,False,False,True,True
+FWI Farm Data - India,ara2_cf4e9f1b,Nellore,2022-10-12,Harvest,,2913.736624128,1.9,,,440.0,,,True,True,False,False,True,True
+FWI Farm Data - India,ara2_c5671cf4,Nellore,2022-07-03,Partial harvest,,21772.087552512,4.0,,,2000.0,,,True,True,False,False,True,True
+FWI Farm Data - India,ara2_bddfa227,Nellore,2022-06-04,Partial harvest,,3561.233651712,1.5,,,190.0,,,True,True,False,False,True,True
+FWI Farm Data - India,ara2_3587929e,Nellore,2022-05-14,Partial harvest,,2670.925238784,1.9,,,100.0,,,True,True,False,False,True,True
+FWI Farm Data - India,ara2_3f9ee6c3,Nellore,2022-05-09,Partial harvest,,14285.403171072,1.5,,,300.0,,,True,True,False,False,True,True
+FWI Farm Data - India,ara2_ea9c93a5,Nellore,2022-04-29,Partial harvest,,18453.665286143998,2.5,,,500.0,,,True,True,False,False,True,True
+FWI Farm Data - India,ara2_bddfa227,Nellore,2022-02-15,Harvest,,3561.233651712,1.5,,,350.0,,,True,True,False,False,True,True

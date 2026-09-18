@@ -1,0 +1,20 @@
+﻿{
+    "schema_version":  "aqualife-fao-aquaculture-artifact-v1",
+    "dataset_id":  "fao-global-aquaculture-production",
+    "provider":  "FAO",
+    "artifact":  "Aquaculture_2026.1.0.zip",
+    "release":  "2026.1.0",
+    "data_through":  2024,
+    "frequency":  "annual",
+    "source":  "https://www.fao.org/fishery/static/Data/Aquaculture_2026.1.0.zip",
+    "license":  "CC-BY-4.0",
+    "sha256":  "143CC510E6132A87AABF6F387833B9E2808E0377EFB58207972483B486276271",
+    "ingestion":  {
+                      "zip_downloaded":  true,
+                      "zip_extracted":  true,
+                      "tabular_files_discovered":  12,
+                      "india_subset_created":  false,
+                      "species_subset_created":  false,
+                      "model_training":  false
+                  }
+}

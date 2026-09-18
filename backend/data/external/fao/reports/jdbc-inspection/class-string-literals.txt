@@ -1,0 +1,1609 @@
+org/fao/fi/fishstat/data/generated/jdbc/AbstractDAO.class	()Ljava/sql/Connection;
+org/fao/fi/fishstat/data/generated/jdbc/AbstractDAO.class	(Failed to delete all due to Exception: 
+org/fao/fi/fishstat/data/generated/jdbc/AbstractDAO.class	(Ljava/sql/Connection;)V
+org/fao/fi/fishstat/data/generated/jdbc/AbstractDAO.class	3org/fao/fi/fishstat/data/generated/jdbc/AbstractDAO
+org/fao/fi/fishstat/data/generated/jdbc/AbstractDAO.class	7org/fao/fi/fishstat/data/generated/jdbc/ResourceManager
+org/fao/fi/fishstat/data/generated/jdbc/AbstractDAO.class	DELETE FROM 
+org/fao/fi/fishstat/data/generated/jdbc/AbstractDAO.class	SELECT COUNT(*) FROM FISHSTAT.
+org/fao/fi/fishstat/data/generated/jdbc/AbstractDAO.class	SQL_DELETE_ALL
+org/fao/fi/fishstat/data/generated/jdbc/AbstractDAO.class	deleteAll
+org/fao/fi/fishstat/data/generated/jdbc/AbstractDAO.class	executeUpdate
+org/fao/fi/fishstat/data/generated/jdbc/AbstractDAO.class	getConnection
+org/fao/fi/fishstat/data/generated/jdbc/AbstractDAO.class	java/sql/Connection
+org/fao/fi/fishstat/data/generated/jdbc/RefCountryDaoImpl.class	 ( ID, NAME_EN, NAME_FR, NAME_ES, NAME_AR, NAME_ZH, NAME_RU, ISO_3_CODE, ISO_2_CODE, EBXID, OFFICIAL_NAME_EN, OFFICIAL_NAME_FR, OFFICIAL_NAME_ES, OFFICIAL_NAME_AR, OFFICIAL_NAME_ZH, OFFICIAL_NAME_RU, UN_CODE, ALPHA12_CODE ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? )
+org/fao/fi/fishstat/data/generated/jdbc/RefCountryDaoImpl.class	 SET ID = ?, NAME_EN = ?, NAME_FR = ?, NAME_ES = ?, NAME_AR = ?, NAME_ZH = ?, NAME_RU = ?, ISO_3_CODE = ?, ISO_2_CODE = ?, EBXID = ?, OFFICIAL_NAME_EN = ?, OFFICIAL_NAME_FR = ?, OFFICIAL_NAME_ES = ?, OFFICIAL_NAME_AR = ?, OFFICIAL_NAME_ZH = ?, OFFICIAL_NAME_RU = ?, UN_CODE = ?, ALPHA12_CODE = ? WHERE ID = ?
+org/fao/fi/fishstat/data/generated/jdbc/RefCountryDaoImpl.class	 WHERE 
+org/fao/fi/fishstat/data/generated/jdbc/RefCountryDaoImpl.class	 WHERE ALPHA12_CODE = ? ORDER BY ALPHA12_CODE
+org/fao/fi/fishstat/data/generated/jdbc/RefCountryDaoImpl.class	 WHERE EBXID = ? ORDER BY EBXID
+org/fao/fi/fishstat/data/generated/jdbc/RefCountryDaoImpl.class	 WHERE ID = ?
+org/fao/fi/fishstat/data/generated/jdbc/RefCountryDaoImpl.class	 WHERE ID = ? ORDER BY ID
+org/fao/fi/fishstat/data/generated/jdbc/RefCountryDaoImpl.class	 WHERE ISO_2_CODE = ? ORDER BY ISO_2_CODE
+org/fao/fi/fishstat/data/generated/jdbc/RefCountryDaoImpl.class	 WHERE ISO_3_CODE = ? ORDER BY ISO_3_CODE
+org/fao/fi/fishstat/data/generated/jdbc/RefCountryDaoImpl.class	 WHERE NAME_AR = ? ORDER BY NAME_AR
+org/fao/fi/fishstat/data/generated/jdbc/RefCountryDaoImpl.class	 WHERE NAME_EN = ? ORDER BY NAME_EN
+org/fao/fi/fishstat/data/generated/jdbc/RefCountryDaoImpl.class	 WHERE NAME_ES = ? ORDER BY NAME_ES
+org/fao/fi/fishstat/data/generated/jdbc/RefCountryDaoImpl.class	 WHERE NAME_FR = ? ORDER BY NAME_FR
+org/fao/fi/fishstat/data/generated/jdbc/RefCountryDaoImpl.class	 WHERE NAME_RU = ? ORDER BY NAME_RU
+org/fao/fi/fishstat/data/generated/jdbc/RefCountryDaoImpl.class	 WHERE NAME_ZH = ? ORDER BY NAME_ZH
+org/fao/fi/fishstat/data/generated/jdbc/RefCountryDaoImpl.class	 WHERE OFFICIAL_NAME_AR = ? ORDER BY OFFICIAL_NAME_AR
+org/fao/fi/fishstat/data/generated/jdbc/RefCountryDaoImpl.class	 WHERE OFFICIAL_NAME_EN = ? ORDER BY OFFICIAL_NAME_EN
+org/fao/fi/fishstat/data/generated/jdbc/RefCountryDaoImpl.class	 WHERE OFFICIAL_NAME_ES = ? ORDER BY OFFICIAL_NAME_ES
+org/fao/fi/fishstat/data/generated/jdbc/RefCountryDaoImpl.class	 WHERE OFFICIAL_NAME_FR = ? ORDER BY OFFICIAL_NAME_FR
+org/fao/fi/fishstat/data/generated/jdbc/RefCountryDaoImpl.class	 WHERE OFFICIAL_NAME_RU = ? ORDER BY OFFICIAL_NAME_RU
+org/fao/fi/fishstat/data/generated/jdbc/RefCountryDaoImpl.class	 WHERE OFFICIAL_NAME_ZH = ? ORDER BY OFFICIAL_NAME_ZH
+org/fao/fi/fishstat/data/generated/jdbc/RefCountryDaoImpl.class	 WHERE UN_CODE = ? ORDER BY UN_CODE
+org/fao/fi/fishstat/data/generated/jdbc/RefCountryDaoImpl.class	()Ljava/sql/Connection;
+org/fao/fi/fishstat/data/generated/jdbc/RefCountryDaoImpl.class	(Ljava/sql/Connection;)V
+org/fao/fi/fishstat/data/generated/jdbc/RefCountryDaoImpl.class	,INSERT INTO 
+org/fao/fi/fishstat/data/generated/jdbc/RefCountryDaoImpl.class	1org/fao/fi/fishstat/data/generated/dto/RefCountry
+org/fao/fi/fishstat/data/generated/jdbc/RefCountryDaoImpl.class	3org/fao/fi/fishstat/data/generated/dto/RefCountryPk
+org/fao/fi/fishstat/data/generated/jdbc/RefCountryDaoImpl.class	3org/fao/fi/fishstat/data/generated/jdbc/AbstractDAO
+org/fao/fi/fishstat/data/generated/jdbc/RefCountryDaoImpl.class	4[Lorg/fao/fi/fishstat/data/generated/dto/RefCountry;
+org/fao/fi/fishstat/data/generated/jdbc/RefCountryDaoImpl.class	4org/fao/fi/fishstat/data/generated/dao/RefCountryDao
+org/fao/fi/fishstat/data/generated/jdbc/RefCountryDaoImpl.class	6()[Lorg/fao/fi/fishstat/data/generated/dto/RefCountry;
+org/fao/fi/fishstat/data/generated/jdbc/RefCountryDaoImpl.class	6(Lorg/fao/fi/fishstat/data/generated/dto/RefCountry;)V
+org/fao/fi/fishstat/data/generated/jdbc/RefCountryDaoImpl.class	7()Lorg/fao/fi/fishstat/data/generated/dto/RefCountryPk;
+org/fao/fi/fishstat/data/generated/jdbc/RefCountryDaoImpl.class	7org/fao/fi/fishstat/data/generated/jdbc/ResourceManager
+org/fao/fi/fishstat/data/generated/jdbc/RefCountryDaoImpl.class	8(Lorg/fao/fi/fishstat/data/generated/dto/RefCountryPk;)V
+org/fao/fi/fishstat/data/generated/jdbc/RefCountryDaoImpl.class	9org/fao/fi/fishstat/data/generated/jdbc/RefCountryDaoImpl
+org/fao/fi/fishstat/data/generated/jdbc/RefCountryDaoImpl.class	<UPDATE 
+org/fao/fi/fishstat/data/generated/jdbc/RefCountryDaoImpl.class	ConstantValue
+org/fao/fi/fishstat/data/generated/jdbc/RefCountryDaoImpl.class	DELETE FROM 
+org/fao/fi/fishstat/data/generated/jdbc/RefCountryDaoImpl.class	Dorg/fao/fi/fishstat/data/generated/exceptions/RefCountryDaoException
+org/fao/fi/fishstat/data/generated/jdbc/RefCountryDaoImpl.class	F(Ljava/lang/Long;)[Lorg/fao/fi/fishstat/data/generated/dto/RefCountry;
+org/fao/fi/fishstat/data/generated/jdbc/RefCountryDaoImpl.class	G(Ljava/lang/String;)Lorg/fao/fi/fishstat/data/generated/dto/RefCountry;
+org/fao/fi/fishstat/data/generated/jdbc/RefCountryDaoImpl.class	H(Ljava/lang/String;)[Lorg/fao/fi/fishstat/data/generated/dto/RefCountry;
+org/fao/fi/fishstat/data/generated/jdbc/RefCountryDaoImpl.class	I(Ljava/sql/ResultSet;)Lorg/fao/fi/fishstat/data/generated/dto/RefCountry;
+org/fao/fi/fishstat/data/generated/jdbc/RefCountryDaoImpl.class	J(Ljava/sql/ResultSet;)[Lorg/fao/fi/fishstat/data/generated/dto/RefCountry;
+org/fao/fi/fishstat/data/generated/jdbc/RefCountryDaoImpl.class	J(Lorg/fao/fi/fishstat/data/generated/dto/RefCountry;Ljava/sql/ResultSet;)V
+org/fao/fi/fishstat/data/generated/jdbc/RefCountryDaoImpl.class	Ljava/sql/Connection;
+org/fao/fi/fishstat/data/generated/jdbc/RefCountryDaoImpl.class	REF_COUNTRY
+org/fao/fi/fishstat/data/generated/jdbc/RefCountryDaoImpl.class	RefCountryDaoImpl.java
+org/fao/fi/fishstat/data/generated/jdbc/RefCountryDaoImpl.class	SELECT ID, NAME_EN, NAME_FR, NAME_ES, NAME_AR, NAME_ZH, NAME_RU, ISO_3_CODE, ISO_2_CODE, EBXID, OFFICIAL_NAME_EN, OFFICIAL_NAME_FR, OFFICIAL_NAME_ES, OFFICIAL_NAME_AR, OFFICIAL_NAME_ZH, OFFICIAL_NAME_RU, UN_CODE, ALPHA12_CODE FROM 
+org/fao/fi/fishstat/data/generated/jdbc/RefCountryDaoImpl.class	SQL_DELETE
+org/fao/fi/fishstat/data/generated/jdbc/RefCountryDaoImpl.class	SQL_INSERT
+org/fao/fi/fishstat/data/generated/jdbc/RefCountryDaoImpl.class	SQL_SELECT
+org/fao/fi/fishstat/data/generated/jdbc/RefCountryDaoImpl.class	SQL_UPDATE
+org/fao/fi/fishstat/data/generated/jdbc/RefCountryDaoImpl.class	[(Ljava/lang/String;[Ljava/lang/Object;)[Lorg/fao/fi/fishstat/data/generated/dto/RefCountry;
+org/fao/fi/fishstat/data/generated/jdbc/RefCountryDaoImpl.class	delete
+org/fao/fi/fishstat/data/generated/jdbc/RefCountryDaoImpl.class	executeUpdate
+org/fao/fi/fishstat/data/generated/jdbc/RefCountryDaoImpl.class	findByDynamicSelect
+org/fao/fi/fishstat/data/generated/jdbc/RefCountryDaoImpl.class	findByDynamicWhere
+org/fao/fi/fishstat/data/generated/jdbc/RefCountryDaoImpl.class	findWhereAlpha12CodeEquals
+org/fao/fi/fishstat/data/generated/jdbc/RefCountryDaoImpl.class	findWhereEbxidEquals
+org/fao/fi/fishstat/data/generated/jdbc/RefCountryDaoImpl.class	findWhereIdEquals
+org/fao/fi/fishstat/data/generated/jdbc/RefCountryDaoImpl.class	findWhereIso2CodeEquals
+org/fao/fi/fishstat/data/generated/jdbc/RefCountryDaoImpl.class	findWhereIso3CodeEquals
+org/fao/fi/fishstat/data/generated/jdbc/RefCountryDaoImpl.class	findWhereNameArEquals
+org/fao/fi/fishstat/data/generated/jdbc/RefCountryDaoImpl.class	findWhereNameEnEquals
+org/fao/fi/fishstat/data/generated/jdbc/RefCountryDaoImpl.class	findWhereNameEsEquals
+org/fao/fi/fishstat/data/generated/jdbc/RefCountryDaoImpl.class	findWhereNameFrEquals
+org/fao/fi/fishstat/data/generated/jdbc/RefCountryDaoImpl.class	findWhereNameRuEquals
+org/fao/fi/fishstat/data/generated/jdbc/RefCountryDaoImpl.class	findWhereNameZhEquals
+org/fao/fi/fishstat/data/generated/jdbc/RefCountryDaoImpl.class	findWhereOfficialNameArEquals
+org/fao/fi/fishstat/data/generated/jdbc/RefCountryDaoImpl.class	findWhereOfficialNameEnEquals
+org/fao/fi/fishstat/data/generated/jdbc/RefCountryDaoImpl.class	findWhereOfficialNameEsEquals
+org/fao/fi/fishstat/data/generated/jdbc/RefCountryDaoImpl.class	findWhereOfficialNameFrEquals
+org/fao/fi/fishstat/data/generated/jdbc/RefCountryDaoImpl.class	findWhereOfficialNameRuEquals
+org/fao/fi/fishstat/data/generated/jdbc/RefCountryDaoImpl.class	findWhereOfficialNameZhEquals
+org/fao/fi/fishstat/data/generated/jdbc/RefCountryDaoImpl.class	findWhereUnCodeEquals
+org/fao/fi/fishstat/data/generated/jdbc/RefCountryDaoImpl.class	getConnection
+org/fao/fi/fishstat/data/generated/jdbc/RefCountryDaoImpl.class	insert
+org/fao/fi/fishstat/data/generated/jdbc/RefCountryDaoImpl.class	j(Lorg/fao/fi/fishstat/data/generated/dto/RefCountry;)Lorg/fao/fi/fishstat/data/generated/dto/RefCountryPk;
+org/fao/fi/fishstat/data/generated/jdbc/RefCountryDaoImpl.class	j(Lorg/fao/fi/fishstat/data/generated/dto/RefCountryPk;)Lorg/fao/fi/fishstat/data/generated/dto/RefCountry;
+org/fao/fi/fishstat/data/generated/jdbc/RefCountryDaoImpl.class	java/sql/Connection
+org/fao/fi/fishstat/data/generated/jdbc/RefCountryDaoImpl.class	k(Lorg/fao/fi/fishstat/data/generated/dto/RefCountryPk;Lorg/fao/fi/fishstat/data/generated/dto/RefCountry;)V
+org/fao/fi/fishstat/data/generated/jdbc/RefCountryDaoImpl.class	longValue
+org/fao/fi/fishstat/data/generated/jdbc/RefCountryDaoImpl.class	update
+org/fao/fi/fishstat/data/generated/jdbc/RefEnvironmentDaoImpl.class	 ( ID, EBXID, ALPHA_2_CODE, NAME_EN, NAME_FR, NAME_ES, NAME_AR, NAME_ZH, NAME_RU ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? )
+org/fao/fi/fishstat/data/generated/jdbc/RefEnvironmentDaoImpl.class	 SET ID = ?, EBXID = ?, ALPHA_2_CODE = ?, NAME_EN = ?, NAME_FR = ?, NAME_ES = ?, NAME_AR = ?, NAME_ZH = ?, NAME_RU = ? WHERE ID = ?
+org/fao/fi/fishstat/data/generated/jdbc/RefEnvironmentDaoImpl.class	 WHERE 
+org/fao/fi/fishstat/data/generated/jdbc/RefEnvironmentDaoImpl.class	 WHERE ALPHA_2_CODE = ? ORDER BY ALPHA_2_CODE
+org/fao/fi/fishstat/data/generated/jdbc/RefEnvironmentDaoImpl.class	 WHERE EBXID = ? ORDER BY EBXID
+org/fao/fi/fishstat/data/generated/jdbc/RefEnvironmentDaoImpl.class	 WHERE ID = ?
+org/fao/fi/fishstat/data/generated/jdbc/RefEnvironmentDaoImpl.class	 WHERE ID = ? ORDER BY ID
+org/fao/fi/fishstat/data/generated/jdbc/RefEnvironmentDaoImpl.class	 WHERE NAME_AR = ? ORDER BY NAME_AR
+org/fao/fi/fishstat/data/generated/jdbc/RefEnvironmentDaoImpl.class	 WHERE NAME_EN = ? ORDER BY NAME_EN
+org/fao/fi/fishstat/data/generated/jdbc/RefEnvironmentDaoImpl.class	 WHERE NAME_ES = ? ORDER BY NAME_ES
+org/fao/fi/fishstat/data/generated/jdbc/RefEnvironmentDaoImpl.class	 WHERE NAME_FR = ? ORDER BY NAME_FR
+org/fao/fi/fishstat/data/generated/jdbc/RefEnvironmentDaoImpl.class	 WHERE NAME_RU = ? ORDER BY NAME_RU
+org/fao/fi/fishstat/data/generated/jdbc/RefEnvironmentDaoImpl.class	 WHERE NAME_ZH = ? ORDER BY NAME_ZH
+org/fao/fi/fishstat/data/generated/jdbc/RefEnvironmentDaoImpl.class	()Ljava/sql/Connection;
+org/fao/fi/fishstat/data/generated/jdbc/RefEnvironmentDaoImpl.class	(Ljava/sql/Connection;)V
+org/fao/fi/fishstat/data/generated/jdbc/RefEnvironmentDaoImpl.class	3org/fao/fi/fishstat/data/generated/jdbc/AbstractDAO
+org/fao/fi/fishstat/data/generated/jdbc/RefEnvironmentDaoImpl.class	5org/fao/fi/fishstat/data/generated/dto/RefEnvironment
+org/fao/fi/fishstat/data/generated/jdbc/RefEnvironmentDaoImpl.class	7org/fao/fi/fishstat/data/generated/dto/RefEnvironmentPk
+org/fao/fi/fishstat/data/generated/jdbc/RefEnvironmentDaoImpl.class	7org/fao/fi/fishstat/data/generated/jdbc/ResourceManager
+org/fao/fi/fishstat/data/generated/jdbc/RefEnvironmentDaoImpl.class	8[Lorg/fao/fi/fishstat/data/generated/dto/RefEnvironment;
+org/fao/fi/fishstat/data/generated/jdbc/RefEnvironmentDaoImpl.class	8org/fao/fi/fishstat/data/generated/dao/RefEnvironmentDao
+org/fao/fi/fishstat/data/generated/jdbc/RefEnvironmentDaoImpl.class	:()[Lorg/fao/fi/fishstat/data/generated/dto/RefEnvironment;
+org/fao/fi/fishstat/data/generated/jdbc/RefEnvironmentDaoImpl.class	:(Lorg/fao/fi/fishstat/data/generated/dto/RefEnvironment;)V
+org/fao/fi/fishstat/data/generated/jdbc/RefEnvironmentDaoImpl.class	;()Lorg/fao/fi/fishstat/data/generated/dto/RefEnvironmentPk;
+org/fao/fi/fishstat/data/generated/jdbc/RefEnvironmentDaoImpl.class	<(Lorg/fao/fi/fishstat/data/generated/dto/RefEnvironmentPk;)V
+org/fao/fi/fishstat/data/generated/jdbc/RefEnvironmentDaoImpl.class	=org/fao/fi/fishstat/data/generated/jdbc/RefEnvironmentDaoImpl
+org/fao/fi/fishstat/data/generated/jdbc/RefEnvironmentDaoImpl.class	ConstantValue
+org/fao/fi/fishstat/data/generated/jdbc/RefEnvironmentDaoImpl.class	DELETE FROM 
+org/fao/fi/fishstat/data/generated/jdbc/RefEnvironmentDaoImpl.class	Horg/fao/fi/fishstat/data/generated/exceptions/RefEnvironmentDaoException
+org/fao/fi/fishstat/data/generated/jdbc/RefEnvironmentDaoImpl.class	INSERT INTO 
+org/fao/fi/fishstat/data/generated/jdbc/RefEnvironmentDaoImpl.class	J(Ljava/lang/Long;)[Lorg/fao/fi/fishstat/data/generated/dto/RefEnvironment;
+org/fao/fi/fishstat/data/generated/jdbc/RefEnvironmentDaoImpl.class	K(Ljava/lang/String;)Lorg/fao/fi/fishstat/data/generated/dto/RefEnvironment;
+org/fao/fi/fishstat/data/generated/jdbc/RefEnvironmentDaoImpl.class	L(Ljava/lang/String;)[Lorg/fao/fi/fishstat/data/generated/dto/RefEnvironment;
+org/fao/fi/fishstat/data/generated/jdbc/RefEnvironmentDaoImpl.class	Ljava/sql/Connection;
+org/fao/fi/fishstat/data/generated/jdbc/RefEnvironmentDaoImpl.class	M(Ljava/sql/ResultSet;)Lorg/fao/fi/fishstat/data/generated/dto/RefEnvironment;
+org/fao/fi/fishstat/data/generated/jdbc/RefEnvironmentDaoImpl.class	N(Ljava/sql/ResultSet;)[Lorg/fao/fi/fishstat/data/generated/dto/RefEnvironment;
+org/fao/fi/fishstat/data/generated/jdbc/RefEnvironmentDaoImpl.class	N(Lorg/fao/fi/fishstat/data/generated/dto/RefEnvironment;Ljava/sql/ResultSet;)V
+org/fao/fi/fishstat/data/generated/jdbc/RefEnvironmentDaoImpl.class	REF_ENVIRONMENT
+org/fao/fi/fishstat/data/generated/jdbc/RefEnvironmentDaoImpl.class	RefEnvironmentDaoImpl.java
+org/fao/fi/fishstat/data/generated/jdbc/RefEnvironmentDaoImpl.class	SQL_DELETE
+org/fao/fi/fishstat/data/generated/jdbc/RefEnvironmentDaoImpl.class	SQL_INSERT
+org/fao/fi/fishstat/data/generated/jdbc/RefEnvironmentDaoImpl.class	SQL_SELECT
+org/fao/fi/fishstat/data/generated/jdbc/RefEnvironmentDaoImpl.class	SQL_UPDATE
+org/fao/fi/fishstat/data/generated/jdbc/RefEnvironmentDaoImpl.class	UPDATE 
+org/fao/fi/fishstat/data/generated/jdbc/RefEnvironmentDaoImpl.class	[SELECT ID, EBXID, ALPHA_2_CODE, NAME_EN, NAME_FR, NAME_ES, NAME_AR, NAME_ZH, NAME_RU FROM 
+org/fao/fi/fishstat/data/generated/jdbc/RefEnvironmentDaoImpl.class	_(Ljava/lang/String;[Ljava/lang/Object;)[Lorg/fao/fi/fishstat/data/generated/dto/RefEnvironment;
+org/fao/fi/fishstat/data/generated/jdbc/RefEnvironmentDaoImpl.class	delete
+org/fao/fi/fishstat/data/generated/jdbc/RefEnvironmentDaoImpl.class	executeUpdate
+org/fao/fi/fishstat/data/generated/jdbc/RefEnvironmentDaoImpl.class	findByDynamicSelect
+org/fao/fi/fishstat/data/generated/jdbc/RefEnvironmentDaoImpl.class	findByDynamicWhere
+org/fao/fi/fishstat/data/generated/jdbc/RefEnvironmentDaoImpl.class	findWhereAlpha2CodeEquals
+org/fao/fi/fishstat/data/generated/jdbc/RefEnvironmentDaoImpl.class	findWhereEbxidEquals
+org/fao/fi/fishstat/data/generated/jdbc/RefEnvironmentDaoImpl.class	findWhereIdEquals
+org/fao/fi/fishstat/data/generated/jdbc/RefEnvironmentDaoImpl.class	findWhereNameArEquals
+org/fao/fi/fishstat/data/generated/jdbc/RefEnvironmentDaoImpl.class	findWhereNameEnEquals
+org/fao/fi/fishstat/data/generated/jdbc/RefEnvironmentDaoImpl.class	findWhereNameEsEquals
+org/fao/fi/fishstat/data/generated/jdbc/RefEnvironmentDaoImpl.class	findWhereNameFrEquals
+org/fao/fi/fishstat/data/generated/jdbc/RefEnvironmentDaoImpl.class	findWhereNameRuEquals
+org/fao/fi/fishstat/data/generated/jdbc/RefEnvironmentDaoImpl.class	findWhereNameZhEquals
+org/fao/fi/fishstat/data/generated/jdbc/RefEnvironmentDaoImpl.class	getConnection
+org/fao/fi/fishstat/data/generated/jdbc/RefEnvironmentDaoImpl.class	insert
+org/fao/fi/fishstat/data/generated/jdbc/RefEnvironmentDaoImpl.class	java/sql/Connection
+org/fao/fi/fishstat/data/generated/jdbc/RefEnvironmentDaoImpl.class	longValue
+org/fao/fi/fishstat/data/generated/jdbc/RefEnvironmentDaoImpl.class	r(Lorg/fao/fi/fishstat/data/generated/dto/RefEnvironment;)Lorg/fao/fi/fishstat/data/generated/dto/RefEnvironmentPk;
+org/fao/fi/fishstat/data/generated/jdbc/RefEnvironmentDaoImpl.class	r(Lorg/fao/fi/fishstat/data/generated/dto/RefEnvironmentPk;)Lorg/fao/fi/fishstat/data/generated/dto/RefEnvironment;
+org/fao/fi/fishstat/data/generated/jdbc/RefEnvironmentDaoImpl.class	s(Lorg/fao/fi/fishstat/data/generated/dto/RefEnvironmentPk;Lorg/fao/fi/fishstat/data/generated/dto/RefEnvironment;)V
+org/fao/fi/fishstat/data/generated/jdbc/RefEnvironmentDaoImpl.class	update
+org/fao/fi/fishstat/data/generated/jdbc/RefMeasureDaoImpl.class	 ( ID, CODE, NAME_EN, NAME_FR, NAME_ES, NAME_AR, NAME_ZH, NAME_RU, UNIT, UNIT_MULTIPLIER, SHORT_NAME ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? )
+org/fao/fi/fishstat/data/generated/jdbc/RefMeasureDaoImpl.class	 SET ID = ?, CODE = ?, NAME_EN = ?, NAME_FR = ?, NAME_ES = ?, NAME_AR = ?, NAME_ZH = ?, NAME_RU = ?, UNIT = ?, UNIT_MULTIPLIER = ?, SHORT_NAME = ? WHERE ID = ?
+org/fao/fi/fishstat/data/generated/jdbc/RefMeasureDaoImpl.class	 WHERE 
+org/fao/fi/fishstat/data/generated/jdbc/RefMeasureDaoImpl.class	 WHERE CODE = ? ORDER BY CODE
+org/fao/fi/fishstat/data/generated/jdbc/RefMeasureDaoImpl.class	 WHERE ID = ?
+org/fao/fi/fishstat/data/generated/jdbc/RefMeasureDaoImpl.class	 WHERE ID = ? ORDER BY ID
+org/fao/fi/fishstat/data/generated/jdbc/RefMeasureDaoImpl.class	 WHERE NAME_AR = ? ORDER BY NAME_AR
+org/fao/fi/fishstat/data/generated/jdbc/RefMeasureDaoImpl.class	 WHERE NAME_EN = ? ORDER BY NAME_EN
+org/fao/fi/fishstat/data/generated/jdbc/RefMeasureDaoImpl.class	 WHERE NAME_ES = ? ORDER BY NAME_ES
+org/fao/fi/fishstat/data/generated/jdbc/RefMeasureDaoImpl.class	 WHERE NAME_FR = ? ORDER BY NAME_FR
+org/fao/fi/fishstat/data/generated/jdbc/RefMeasureDaoImpl.class	 WHERE NAME_RU = ? ORDER BY NAME_RU
+org/fao/fi/fishstat/data/generated/jdbc/RefMeasureDaoImpl.class	 WHERE NAME_ZH = ? ORDER BY NAME_ZH
+org/fao/fi/fishstat/data/generated/jdbc/RefMeasureDaoImpl.class	 WHERE SHORT_NAME = ? ORDER BY SHORT_NAME
+org/fao/fi/fishstat/data/generated/jdbc/RefMeasureDaoImpl.class	 WHERE UNIT = ? ORDER BY UNIT
+org/fao/fi/fishstat/data/generated/jdbc/RefMeasureDaoImpl.class	 WHERE UNIT_MULTIPLIER = ? ORDER BY UNIT_MULTIPLIER
+org/fao/fi/fishstat/data/generated/jdbc/RefMeasureDaoImpl.class	()Ljava/sql/Connection;
+org/fao/fi/fishstat/data/generated/jdbc/RefMeasureDaoImpl.class	(Ljava/sql/Connection;)V
+org/fao/fi/fishstat/data/generated/jdbc/RefMeasureDaoImpl.class	1org/fao/fi/fishstat/data/generated/dto/RefMeasure
+org/fao/fi/fishstat/data/generated/jdbc/RefMeasureDaoImpl.class	3org/fao/fi/fishstat/data/generated/dto/RefMeasurePk
+org/fao/fi/fishstat/data/generated/jdbc/RefMeasureDaoImpl.class	3org/fao/fi/fishstat/data/generated/jdbc/AbstractDAO
+org/fao/fi/fishstat/data/generated/jdbc/RefMeasureDaoImpl.class	4[Lorg/fao/fi/fishstat/data/generated/dto/RefMeasure;
+org/fao/fi/fishstat/data/generated/jdbc/RefMeasureDaoImpl.class	4org/fao/fi/fishstat/data/generated/dao/RefMeasureDao
+org/fao/fi/fishstat/data/generated/jdbc/RefMeasureDaoImpl.class	6()[Lorg/fao/fi/fishstat/data/generated/dto/RefMeasure;
+org/fao/fi/fishstat/data/generated/jdbc/RefMeasureDaoImpl.class	6(Lorg/fao/fi/fishstat/data/generated/dto/RefMeasure;)V
+org/fao/fi/fishstat/data/generated/jdbc/RefMeasureDaoImpl.class	7()Lorg/fao/fi/fishstat/data/generated/dto/RefMeasurePk;
+org/fao/fi/fishstat/data/generated/jdbc/RefMeasureDaoImpl.class	7org/fao/fi/fishstat/data/generated/jdbc/ResourceManager
+org/fao/fi/fishstat/data/generated/jdbc/RefMeasureDaoImpl.class	8(Lorg/fao/fi/fishstat/data/generated/dto/RefMeasurePk;)V
+org/fao/fi/fishstat/data/generated/jdbc/RefMeasureDaoImpl.class	9org/fao/fi/fishstat/data/generated/jdbc/RefMeasureDaoImpl
+org/fao/fi/fishstat/data/generated/jdbc/RefMeasureDaoImpl.class	ConstantValue
+org/fao/fi/fishstat/data/generated/jdbc/RefMeasureDaoImpl.class	DELETE FROM 
+org/fao/fi/fishstat/data/generated/jdbc/RefMeasureDaoImpl.class	Dorg/fao/fi/fishstat/data/generated/exceptions/RefMeasureDaoException
+org/fao/fi/fishstat/data/generated/jdbc/RefMeasureDaoImpl.class	G(Ljava/lang/String;)Lorg/fao/fi/fishstat/data/generated/dto/RefMeasure;
+org/fao/fi/fishstat/data/generated/jdbc/RefMeasureDaoImpl.class	H(Ljava/lang/String;)[Lorg/fao/fi/fishstat/data/generated/dto/RefMeasure;
+org/fao/fi/fishstat/data/generated/jdbc/RefMeasureDaoImpl.class	I(Ljava/sql/ResultSet;)Lorg/fao/fi/fishstat/data/generated/dto/RefMeasure;
+org/fao/fi/fishstat/data/generated/jdbc/RefMeasureDaoImpl.class	INSERT INTO 
+org/fao/fi/fishstat/data/generated/jdbc/RefMeasureDaoImpl.class	J(Ljava/sql/ResultSet;)[Lorg/fao/fi/fishstat/data/generated/dto/RefMeasure;
+org/fao/fi/fishstat/data/generated/jdbc/RefMeasureDaoImpl.class	J(Lorg/fao/fi/fishstat/data/generated/dto/RefMeasure;Ljava/sql/ResultSet;)V
+org/fao/fi/fishstat/data/generated/jdbc/RefMeasureDaoImpl.class	Ljava/sql/Connection;
+org/fao/fi/fishstat/data/generated/jdbc/RefMeasureDaoImpl.class	REF_MEASURE
+org/fao/fi/fishstat/data/generated/jdbc/RefMeasureDaoImpl.class	RefMeasureDaoImpl.java
+org/fao/fi/fishstat/data/generated/jdbc/RefMeasureDaoImpl.class	SQL_DELETE
+org/fao/fi/fishstat/data/generated/jdbc/RefMeasureDaoImpl.class	SQL_INSERT
+org/fao/fi/fishstat/data/generated/jdbc/RefMeasureDaoImpl.class	SQL_SELECT
+org/fao/fi/fishstat/data/generated/jdbc/RefMeasureDaoImpl.class	SQL_UPDATE
+org/fao/fi/fishstat/data/generated/jdbc/RefMeasureDaoImpl.class	UPDATE 
+org/fao/fi/fishstat/data/generated/jdbc/RefMeasureDaoImpl.class	[(Ljava/lang/String;[Ljava/lang/Object;)[Lorg/fao/fi/fishstat/data/generated/dto/RefMeasure;
+org/fao/fi/fishstat/data/generated/jdbc/RefMeasureDaoImpl.class	delete
+org/fao/fi/fishstat/data/generated/jdbc/RefMeasureDaoImpl.class	executeUpdate
+org/fao/fi/fishstat/data/generated/jdbc/RefMeasureDaoImpl.class	findByDynamicSelect
+org/fao/fi/fishstat/data/generated/jdbc/RefMeasureDaoImpl.class	findByDynamicWhere
+org/fao/fi/fishstat/data/generated/jdbc/RefMeasureDaoImpl.class	findWhereCodeEquals
+org/fao/fi/fishstat/data/generated/jdbc/RefMeasureDaoImpl.class	findWhereIdEquals
+org/fao/fi/fishstat/data/generated/jdbc/RefMeasureDaoImpl.class	findWhereNameArEquals
+org/fao/fi/fishstat/data/generated/jdbc/RefMeasureDaoImpl.class	findWhereNameEnEquals
+org/fao/fi/fishstat/data/generated/jdbc/RefMeasureDaoImpl.class	findWhereNameEsEquals
+org/fao/fi/fishstat/data/generated/jdbc/RefMeasureDaoImpl.class	findWhereNameFrEquals
+org/fao/fi/fishstat/data/generated/jdbc/RefMeasureDaoImpl.class	findWhereNameRuEquals
+org/fao/fi/fishstat/data/generated/jdbc/RefMeasureDaoImpl.class	findWhereNameZhEquals
+org/fao/fi/fishstat/data/generated/jdbc/RefMeasureDaoImpl.class	findWhereShortNameEquals
+org/fao/fi/fishstat/data/generated/jdbc/RefMeasureDaoImpl.class	findWhereUnitEquals
+org/fao/fi/fishstat/data/generated/jdbc/RefMeasureDaoImpl.class	findWhereUnitMultiplierEquals
+org/fao/fi/fishstat/data/generated/jdbc/RefMeasureDaoImpl.class	getConnection
+org/fao/fi/fishstat/data/generated/jdbc/RefMeasureDaoImpl.class	insert
+org/fao/fi/fishstat/data/generated/jdbc/RefMeasureDaoImpl.class	j(Lorg/fao/fi/fishstat/data/generated/dto/RefMeasure;)Lorg/fao/fi/fishstat/data/generated/dto/RefMeasurePk;
+org/fao/fi/fishstat/data/generated/jdbc/RefMeasureDaoImpl.class	j(Lorg/fao/fi/fishstat/data/generated/dto/RefMeasurePk;)Lorg/fao/fi/fishstat/data/generated/dto/RefMeasure;
+org/fao/fi/fishstat/data/generated/jdbc/RefMeasureDaoImpl.class	java/sql/Connection
+org/fao/fi/fishstat/data/generated/jdbc/RefMeasureDaoImpl.class	k(Lorg/fao/fi/fishstat/data/generated/dto/RefMeasurePk;Lorg/fao/fi/fishstat/data/generated/dto/RefMeasure;)V
+org/fao/fi/fishstat/data/generated/jdbc/RefMeasureDaoImpl.class	oSELECT ID, CODE, NAME_EN, NAME_FR, NAME_ES, NAME_AR, NAME_ZH, NAME_RU, UNIT, UNIT_MULTIPLIER, SHORT_NAME FROM 
+org/fao/fi/fishstat/data/generated/jdbc/RefMeasureDaoImpl.class	update
+org/fao/fi/fishstat/data/generated/jdbc/RefSpeciesDaoImpl.class	 ( ID, SCIENTIFIC_NAME, NAME_EN, NAME_FR, NAME_ES, NAME_AR, NAME_ZH, NAME_RU, EBXID, TAXONOMIC_CODE, ALPHA_3_CODE, AUTHOR ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? )
+org/fao/fi/fishstat/data/generated/jdbc/RefSpeciesDaoImpl.class	 SET ID = ?, SCIENTIFIC_NAME = ?, NAME_EN = ?, NAME_FR = ?, NAME_ES = ?, NAME_AR = ?, NAME_ZH = ?, NAME_RU = ?, EBXID = ?, TAXONOMIC_CODE = ?, ALPHA_3_CODE = ?, AUTHOR = ? WHERE ID = ?
+org/fao/fi/fishstat/data/generated/jdbc/RefSpeciesDaoImpl.class	 WHERE 
+org/fao/fi/fishstat/data/generated/jdbc/RefSpeciesDaoImpl.class	 WHERE ALPHA_3_CODE = ? ORDER BY ALPHA_3_CODE
+org/fao/fi/fishstat/data/generated/jdbc/RefSpeciesDaoImpl.class	 WHERE AUTHOR = ? ORDER BY AUTHOR
+org/fao/fi/fishstat/data/generated/jdbc/RefSpeciesDaoImpl.class	 WHERE EBXID = ? ORDER BY EBXID
+org/fao/fi/fishstat/data/generated/jdbc/RefSpeciesDaoImpl.class	 WHERE ID = ?
+org/fao/fi/fishstat/data/generated/jdbc/RefSpeciesDaoImpl.class	 WHERE ID = ? ORDER BY ID
+org/fao/fi/fishstat/data/generated/jdbc/RefSpeciesDaoImpl.class	 WHERE NAME_AR = ? ORDER BY NAME_AR
+org/fao/fi/fishstat/data/generated/jdbc/RefSpeciesDaoImpl.class	 WHERE NAME_EN = ? ORDER BY NAME_EN
+org/fao/fi/fishstat/data/generated/jdbc/RefSpeciesDaoImpl.class	 WHERE NAME_ES = ? ORDER BY NAME_ES
+org/fao/fi/fishstat/data/generated/jdbc/RefSpeciesDaoImpl.class	 WHERE NAME_FR = ? ORDER BY NAME_FR
+org/fao/fi/fishstat/data/generated/jdbc/RefSpeciesDaoImpl.class	 WHERE NAME_RU = ? ORDER BY NAME_RU
+org/fao/fi/fishstat/data/generated/jdbc/RefSpeciesDaoImpl.class	 WHERE NAME_ZH = ? ORDER BY NAME_ZH
+org/fao/fi/fishstat/data/generated/jdbc/RefSpeciesDaoImpl.class	 WHERE SCIENTIFIC_NAME = ? ORDER BY SCIENTIFIC_NAME
+org/fao/fi/fishstat/data/generated/jdbc/RefSpeciesDaoImpl.class	 WHERE TAXONOMIC_CODE = ? ORDER BY TAXONOMIC_CODE
+org/fao/fi/fishstat/data/generated/jdbc/RefSpeciesDaoImpl.class	()Ljava/sql/Connection;
+org/fao/fi/fishstat/data/generated/jdbc/RefSpeciesDaoImpl.class	(Ljava/sql/Connection;)V
+org/fao/fi/fishstat/data/generated/jdbc/RefSpeciesDaoImpl.class	1org/fao/fi/fishstat/data/generated/dto/RefSpecies
+org/fao/fi/fishstat/data/generated/jdbc/RefSpeciesDaoImpl.class	3org/fao/fi/fishstat/data/generated/dto/RefSpeciesPk
+org/fao/fi/fishstat/data/generated/jdbc/RefSpeciesDaoImpl.class	3org/fao/fi/fishstat/data/generated/jdbc/AbstractDAO
+org/fao/fi/fishstat/data/generated/jdbc/RefSpeciesDaoImpl.class	4[Lorg/fao/fi/fishstat/data/generated/dto/RefSpecies;
+org/fao/fi/fishstat/data/generated/jdbc/RefSpeciesDaoImpl.class	4org/fao/fi/fishstat/data/generated/dao/RefSpeciesDao
+org/fao/fi/fishstat/data/generated/jdbc/RefSpeciesDaoImpl.class	6()[Lorg/fao/fi/fishstat/data/generated/dto/RefSpecies;
+org/fao/fi/fishstat/data/generated/jdbc/RefSpeciesDaoImpl.class	6(Lorg/fao/fi/fishstat/data/generated/dto/RefSpecies;)V
+org/fao/fi/fishstat/data/generated/jdbc/RefSpeciesDaoImpl.class	7()Lorg/fao/fi/fishstat/data/generated/dto/RefSpeciesPk;
+org/fao/fi/fishstat/data/generated/jdbc/RefSpeciesDaoImpl.class	7org/fao/fi/fishstat/data/generated/jdbc/ResourceManager
+org/fao/fi/fishstat/data/generated/jdbc/RefSpeciesDaoImpl.class	8(Lorg/fao/fi/fishstat/data/generated/dto/RefSpeciesPk;)V
+org/fao/fi/fishstat/data/generated/jdbc/RefSpeciesDaoImpl.class	9org/fao/fi/fishstat/data/generated/jdbc/RefSpeciesDaoImpl
+org/fao/fi/fishstat/data/generated/jdbc/RefSpeciesDaoImpl.class	ConstantValue
+org/fao/fi/fishstat/data/generated/jdbc/RefSpeciesDaoImpl.class	DELETE FROM 
+org/fao/fi/fishstat/data/generated/jdbc/RefSpeciesDaoImpl.class	Dorg/fao/fi/fishstat/data/generated/exceptions/RefSpeciesDaoException
+org/fao/fi/fishstat/data/generated/jdbc/RefSpeciesDaoImpl.class	F(Ljava/lang/Long;)[Lorg/fao/fi/fishstat/data/generated/dto/RefSpecies;
+org/fao/fi/fishstat/data/generated/jdbc/RefSpeciesDaoImpl.class	G(Ljava/lang/String;)Lorg/fao/fi/fishstat/data/generated/dto/RefSpecies;
+org/fao/fi/fishstat/data/generated/jdbc/RefSpeciesDaoImpl.class	H(Ljava/lang/String;)[Lorg/fao/fi/fishstat/data/generated/dto/RefSpecies;
+org/fao/fi/fishstat/data/generated/jdbc/RefSpeciesDaoImpl.class	I(Ljava/sql/ResultSet;)Lorg/fao/fi/fishstat/data/generated/dto/RefSpecies;
+org/fao/fi/fishstat/data/generated/jdbc/RefSpeciesDaoImpl.class	INSERT INTO 
+org/fao/fi/fishstat/data/generated/jdbc/RefSpeciesDaoImpl.class	J(Ljava/sql/ResultSet;)[Lorg/fao/fi/fishstat/data/generated/dto/RefSpecies;
+org/fao/fi/fishstat/data/generated/jdbc/RefSpeciesDaoImpl.class	J(Lorg/fao/fi/fishstat/data/generated/dto/RefSpecies;Ljava/sql/ResultSet;)V
+org/fao/fi/fishstat/data/generated/jdbc/RefSpeciesDaoImpl.class	Ljava/sql/Connection;
+org/fao/fi/fishstat/data/generated/jdbc/RefSpeciesDaoImpl.class	REF_SPECIES
+org/fao/fi/fishstat/data/generated/jdbc/RefSpeciesDaoImpl.class	RefSpeciesDaoImpl.java
+org/fao/fi/fishstat/data/generated/jdbc/RefSpeciesDaoImpl.class	SELECT ID, SCIENTIFIC_NAME, NAME_EN, NAME_FR, NAME_ES, NAME_AR, NAME_ZH, NAME_RU, EBXID, TAXONOMIC_CODE, ALPHA_3_CODE, AUTHOR FROM 
+org/fao/fi/fishstat/data/generated/jdbc/RefSpeciesDaoImpl.class	SQL_DELETE
+org/fao/fi/fishstat/data/generated/jdbc/RefSpeciesDaoImpl.class	SQL_INSERT
+org/fao/fi/fishstat/data/generated/jdbc/RefSpeciesDaoImpl.class	SQL_SELECT
+org/fao/fi/fishstat/data/generated/jdbc/RefSpeciesDaoImpl.class	SQL_UPDATE
+org/fao/fi/fishstat/data/generated/jdbc/RefSpeciesDaoImpl.class	UPDATE 
+org/fao/fi/fishstat/data/generated/jdbc/RefSpeciesDaoImpl.class	[(Ljava/lang/String;[Ljava/lang/Object;)[Lorg/fao/fi/fishstat/data/generated/dto/RefSpecies;
+org/fao/fi/fishstat/data/generated/jdbc/RefSpeciesDaoImpl.class	delete
+org/fao/fi/fishstat/data/generated/jdbc/RefSpeciesDaoImpl.class	executeUpdate
+org/fao/fi/fishstat/data/generated/jdbc/RefSpeciesDaoImpl.class	findByDynamicSelect
+org/fao/fi/fishstat/data/generated/jdbc/RefSpeciesDaoImpl.class	findByDynamicWhere
+org/fao/fi/fishstat/data/generated/jdbc/RefSpeciesDaoImpl.class	findWhereAlpha3CodeEquals
+org/fao/fi/fishstat/data/generated/jdbc/RefSpeciesDaoImpl.class	findWhereAuthorEquals
+org/fao/fi/fishstat/data/generated/jdbc/RefSpeciesDaoImpl.class	findWhereEbxidEquals
+org/fao/fi/fishstat/data/generated/jdbc/RefSpeciesDaoImpl.class	findWhereIdEquals
+org/fao/fi/fishstat/data/generated/jdbc/RefSpeciesDaoImpl.class	findWhereNameArEquals
+org/fao/fi/fishstat/data/generated/jdbc/RefSpeciesDaoImpl.class	findWhereNameEnEquals
+org/fao/fi/fishstat/data/generated/jdbc/RefSpeciesDaoImpl.class	findWhereNameEsEquals
+org/fao/fi/fishstat/data/generated/jdbc/RefSpeciesDaoImpl.class	findWhereNameFrEquals
+org/fao/fi/fishstat/data/generated/jdbc/RefSpeciesDaoImpl.class	findWhereNameRuEquals
+org/fao/fi/fishstat/data/generated/jdbc/RefSpeciesDaoImpl.class	findWhereNameZhEquals
+org/fao/fi/fishstat/data/generated/jdbc/RefSpeciesDaoImpl.class	findWhereScientificNameEquals
+org/fao/fi/fishstat/data/generated/jdbc/RefSpeciesDaoImpl.class	findWhereTaxonomicCodeEquals
+org/fao/fi/fishstat/data/generated/jdbc/RefSpeciesDaoImpl.class	getConnection
+org/fao/fi/fishstat/data/generated/jdbc/RefSpeciesDaoImpl.class	insert
+org/fao/fi/fishstat/data/generated/jdbc/RefSpeciesDaoImpl.class	j(Lorg/fao/fi/fishstat/data/generated/dto/RefSpecies;)Lorg/fao/fi/fishstat/data/generated/dto/RefSpeciesPk;
+org/fao/fi/fishstat/data/generated/jdbc/RefSpeciesDaoImpl.class	j(Lorg/fao/fi/fishstat/data/generated/dto/RefSpeciesPk;)Lorg/fao/fi/fishstat/data/generated/dto/RefSpecies;
+org/fao/fi/fishstat/data/generated/jdbc/RefSpeciesDaoImpl.class	java/sql/Connection
+org/fao/fi/fishstat/data/generated/jdbc/RefSpeciesDaoImpl.class	k(Lorg/fao/fi/fishstat/data/generated/dto/RefSpeciesPk;Lorg/fao/fi/fishstat/data/generated/dto/RefSpecies;)V
+org/fao/fi/fishstat/data/generated/jdbc/RefSpeciesDaoImpl.class	longValue
+org/fao/fi/fishstat/data/generated/jdbc/RefSpeciesDaoImpl.class	update
+org/fao/fi/fishstat/data/generated/jdbc/ResourceManager.class	 Failed to initialise JDBC driver
+org/fao/fi/fishstat/data/generated/jdbc/ResourceManager.class	#ERROR: deregistering jdbc driver: 
+org/fao/fi/fishstat/data/generated/jdbc/ResourceManager.class	$org.apache.derby.jdbc.EmbeddedDriver
+org/fao/fi/fishstat/data/generated/jdbc/ResourceManager.class	%(Ljava/sql/Driver;)Ljava/lang/String;
+org/fao/fi/fishstat/data/generated/jdbc/ResourceManager.class	()Ljava/sql/Connection;
+org/fao/fi/fishstat/data/generated/jdbc/ResourceManager.class	(Ljava/sql/Connection;)V
+org/fao/fi/fishstat/data/generated/jdbc/ResourceManager.class	(Ljava/sql/Driver;)V
+org/fao/fi/fishstat/data/generated/jdbc/ResourceManager.class	)(Ljava/lang/String;)Ljava/sql/Connection;
+org/fao/fi/fishstat/data/generated/jdbc/ResourceManager.class	7ResourceManager.embedded: loading JDBC driver: 
+org/fao/fi/fishstat/data/generated/jdbc/ResourceManager.class	7org/fao/fi/fishstat/data/generated/jdbc/ResourceManager
+org/fao/fi/fishstat/data/generated/jdbc/ResourceManager.class	ConstantValue
+org/fao/fi/fishstat/data/generated/jdbc/ResourceManager.class	DEFAULT_JDBC_DAO_JAR_URL
+org/fao/fi/fishstat/data/generated/jdbc/ResourceManager.class	DEFAULT_JDBC_DRIVER
+org/fao/fi/fishstat/data/generated/jdbc/ResourceManager.class	DEFAULT_JDBC_PASSWORD
+org/fao/fi/fishstat/data/generated/jdbc/ResourceManager.class	DEFAULT_JDBC_SCHEMA
+org/fao/fi/fishstat/data/generated/jdbc/ResourceManager.class	DEFAULT_JDBC_USER
+org/fao/fi/fishstat/data/generated/jdbc/ResourceManager.class	DERBY_JDBC_EMBEDDED_DRIVER
+org/fao/fi/fishstat/data/generated/jdbc/ResourceManager.class	JDBC_DAO_JAR_URL_PROPERTY
+org/fao/fi/fishstat/data/generated/jdbc/ResourceManager.class	JDBC_DRIVER_PROPERTY
+org/fao/fi/fishstat/data/generated/jdbc/ResourceManager.class	JDBC_PASSWORD_PROPERTY
+org/fao/fi/fishstat/data/generated/jdbc/ResourceManager.class	JDBC_SCHEMA_PROPERTY
+org/fao/fi/fishstat/data/generated/jdbc/ResourceManager.class	JDBC_URL_PROPERTY
+org/fao/fi/fishstat/data/generated/jdbc/ResourceManager.class	JDBC_USER_PROPERTY
+org/fao/fi/fishstat/data/generated/jdbc/ResourceManager.class	Ljava/sql/Driver;
+org/fao/fi/fishstat/data/generated/jdbc/ResourceManager.class	M(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/sql/Connection;
+org/fao/fi/fishstat/data/generated/jdbc/ResourceManager.class	closeDriver
+org/fao/fi/fishstat/data/generated/jdbc/ResourceManager.class	deRegisterDrivers
+org/fao/fi/fishstat/data/generated/jdbc/ResourceManager.class	deregisterDriver
+org/fao/fi/fishstat/data/generated/jdbc/ResourceManager.class	deregistering jdbc driver: 
+org/fao/fi/fishstat/data/generated/jdbc/ResourceManager.class	driver
+org/fao/fi/fishstat/data/generated/jdbc/ResourceManager.class	fishstat.jdbc.dao.jar.url
+org/fao/fi/fishstat/data/generated/jdbc/ResourceManager.class	fishstat.jdbc.driver
+org/fao/fi/fishstat/data/generated/jdbc/ResourceManager.class	fishstat.jdbc.password
+org/fao/fi/fishstat/data/generated/jdbc/ResourceManager.class	fishstat.jdbc.schema
+org/fao/fi/fishstat/data/generated/jdbc/ResourceManager.class	fishstat.jdbc.url
+org/fao/fi/fishstat/data/generated/jdbc/ResourceManager.class	fishstat.jdbc.user
+org/fao/fi/fishstat/data/generated/jdbc/ResourceManager.class	getConnection
+org/fao/fi/fishstat/data/generated/jdbc/ResourceManager.class	getDrivers
+org/fao/fi/fishstat/data/generated/jdbc/ResourceManager.class	getJdbcDaoJarUrl
+org/fao/fi/fishstat/data/generated/jdbc/ResourceManager.class	getJdbcDriver
+org/fao/fi/fishstat/data/generated/jdbc/ResourceManager.class	getJdbcPassword
+org/fao/fi/fishstat/data/generated/jdbc/ResourceManager.class	getJdbcSchema
+org/fao/fi/fishstat/data/generated/jdbc/ResourceManager.class	getJdbcUrl
+org/fao/fi/fishstat/data/generated/jdbc/ResourceManager.class	getJdbcUser
+org/fao/fi/fishstat/data/generated/jdbc/ResourceManager.class	java/sql/Connection
+org/fao/fi/fishstat/data/generated/jdbc/ResourceManager.class	java/sql/Driver
+org/fao/fi/fishstat/data/generated/jdbc/ResourceManager.class	java/sql/DriverManager
+org/fao/fi/fishstat/data/generated/jdbc/ResourceManager.class	jdbc:derby:;shutdown=true
+org/fao/fi/fishstat/data/generated/jdbc/ResourceManager.class	registerDriver
+org/fao/fi/fishstat/data/generated/jdbc/ResourceManager.class	setJdbcDaoJarUrl
+org/fao/fi/fishstat/data/generated/jdbc/ResourceManager.class	setJdbcDriver
+org/fao/fi/fishstat/data/generated/jdbc/ResourceManager.class	setJdbcPassword
+org/fao/fi/fishstat/data/generated/jdbc/ResourceManager.class	setJdbcSchema
+org/fao/fi/fishstat/data/generated/jdbc/ResourceManager.class	setJdbcUrl
+org/fao/fi/fishstat/data/generated/jdbc/ResourceManager.class	setJdbcUser
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 ( ID, COUNTRY, SPECIES, AREA, ENVIRONMENT, MEASURE, VALUE_Y1950, SYMBOL_Y1950, VALUE_Y1951, SYMBOL_Y1951, VALUE_Y1952, SYMBOL_Y1952, VALUE_Y1953, SYMBOL_Y1953, VALUE_Y1954, SYMBOL_Y1954, VALUE_Y1955, SYMBOL_Y1955, VALUE_Y1956, SYMBOL_Y1956, VALUE_Y1957, SYMBOL_Y1957, VALUE_Y1958, SYMBOL_Y1958, VALUE_Y1959, SYMBOL_Y1959, VALUE_Y1960, SYMBOL_Y1960, VALUE_Y1961, SYMBOL_Y1961, VALUE_Y1962, SYMBOL_Y1962, VALUE_Y1963, SYMBOL_Y1963, VALUE_Y1964, SYMBOL_Y1964, VALUE_Y1965, SYMBOL_Y1965, VALUE_Y1966, SYMBOL_Y1966, VALUE_Y1967, SYMBOL_Y1967, VALUE_Y1968, SYMBOL_Y1968, VALUE_Y1969, SYMBOL_Y1969, VALUE_Y1970, SYMBOL_Y1970, VALUE_Y1971, SYMBOL_Y1971, VALUE_Y1972, SYMBOL_Y1972, VALUE_Y1973, SYMBOL_Y1973, VALUE_Y1974, SYMBOL_Y1974, VALUE_Y1975, SYMBOL_Y1975, VALUE_Y1976, SYMBOL_Y1976, VALUE_Y1977, SYMBOL_Y1977, VALUE_Y1978, SYMBOL_Y1978, VALUE_Y1979, SYMBOL_Y1979, VALUE_Y1980, SYMBOL_Y1980, VALUE_Y1981, SYMBOL_Y1981, VALUE_Y1982, SYMBOL_Y1982, VALUE_Y1983, SYMBOL_Y1983, VALUE_Y1984, SYMBOL_Y1984, VALUE_Y1985, SYMBOL_Y1985, VALUE_Y1986, SYMBOL_Y1986, VALUE_Y1987, SYMBOL_Y1987, VALUE_Y1988, SYMBOL_Y1988, VALUE_Y1989, SYMBOL_Y1989, VALUE_Y1990, SYMBOL_Y1990, VALUE_Y1991, SYMBOL_Y1991, VALUE_Y1992, SYMBOL_Y1992, VALUE_Y1993, SYMBOL_Y1993, VALUE_Y1994, SYMBOL_Y1994, VALUE_Y1995, SYMBOL_Y1995, VALUE_Y1996, SYMBOL_Y1996, VALUE_Y1997, SYMBOL_Y1997, VALUE_Y1998, SYMBOL_Y1998, VALUE_Y1999, SYMBOL_Y1999, VALUE_Y2000, SYMBOL_Y2000, VALUE_Y2001, SYMBOL_Y2001, VALUE_Y2002, SYMBOL_Y2002, VALUE_Y2003, SYMBOL_Y2003, VALUE_Y2004, SYMBOL_Y2004, VALUE_Y2005, SYMBOL_Y2005, VALUE_Y2006, SYMBOL_Y2006, VALUE_Y2007, SYMBOL_Y2007, VALUE_Y2008, SYMBOL_Y2008, VALUE_Y2009, SYMBOL_Y2009, VALUE_Y2010, SYMBOL_Y2010, VALUE_Y2011, SYMBOL_Y2011, VALUE_Y2012, SYMBOL_Y2012, VALUE_Y2013, SYMBOL_Y2013, VALUE_Y2014, SYMBOL_Y2014, VALUE_Y2015, SYMBOL_Y2015, VALUE_Y2016, SYMBOL_Y2016, VALUE_Y2017, SYMBOL_Y2017, VALUE_Y2018, SYMBOL_Y2018, VALUE_Y2019, SYMBOL_Y2019, VALUE_Y2020, SYMBOL_Y2020, VALUE_Y2021, SYMBOL_Y2021, VALUE_Y2022, SYMBOL_Y2022, VALUE_Y2023, SYMBOL_Y2023, VALUE_Y2024, SYMBOL_Y2024 ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? )
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 SET ID = ?, COUNTRY = ?, SPECIES = ?, AREA = ?, ENVIRONMENT = ?, MEASURE = ?, VALUE_Y1950 = ?, SYMBOL_Y1950 = ?, VALUE_Y1951 = ?, SYMBOL_Y1951 = ?, VALUE_Y1952 = ?, SYMBOL_Y1952 = ?, VALUE_Y1953 = ?, SYMBOL_Y1953 = ?, VALUE_Y1954 = ?, SYMBOL_Y1954 = ?, VALUE_Y1955 = ?, SYMBOL_Y1955 = ?, VALUE_Y1956 = ?, SYMBOL_Y1956 = ?, VALUE_Y1957 = ?, SYMBOL_Y1957 = ?, VALUE_Y1958 = ?, SYMBOL_Y1958 = ?, VALUE_Y1959 = ?, SYMBOL_Y1959 = ?, VALUE_Y1960 = ?, SYMBOL_Y1960 = ?, VALUE_Y1961 = ?, SYMBOL_Y1961 = ?, VALUE_Y1962 = ?, SYMBOL_Y1962 = ?, VALUE_Y1963 = ?, SYMBOL_Y1963 = ?, VALUE_Y1964 = ?, SYMBOL_Y1964 = ?, VALUE_Y1965 = ?, SYMBOL_Y1965 = ?, VALUE_Y1966 = ?, SYMBOL_Y1966 = ?, VALUE_Y1967 = ?, SYMBOL_Y1967 = ?, VALUE_Y1968 = ?, SYMBOL_Y1968 = ?, VALUE_Y1969 = ?, SYMBOL_Y1969 = ?, VALUE_Y1970 = ?, SYMBOL_Y1970 = ?, VALUE_Y1971 = ?, SYMBOL_Y1971 = ?, VALUE_Y1972 = ?, SYMBOL_Y1972 = ?, VALUE_Y1973 = ?, SYMBOL_Y1973 = ?, VALUE_Y1974 = ?, SYMBOL_Y1974 = ?, VALUE_Y1975 = ?, SYMBOL_Y1975 = ?, VALUE_Y1976 = ?, SYMBOL_Y1976 = ?, VALUE_Y1977 = ?, SYMBOL_Y1977 = ?, VALUE_Y1978 = ?, SYMBOL_Y1978 = ?, VALUE_Y1979 = ?, SYMBOL_Y1979 = ?, VALUE_Y1980 = ?, SYMBOL_Y1980 = ?, VALUE_Y1981 = ?, SYMBOL_Y1981 = ?, VALUE_Y1982 = ?, SYMBOL_Y1982 = ?, VALUE_Y1983 = ?, SYMBOL_Y1983 = ?, VALUE_Y1984 = ?, SYMBOL_Y1984 = ?, VALUE_Y1985 = ?, SYMBOL_Y1985 = ?, VALUE_Y1986 = ?, SYMBOL_Y1986 = ?, VALUE_Y1987 = ?, SYMBOL_Y1987 = ?, VALUE_Y1988 = ?, SYMBOL_Y1988 = ?, VALUE_Y1989 = ?, SYMBOL_Y1989 = ?, VALUE_Y1990 = ?, SYMBOL_Y1990 = ?, VALUE_Y1991 = ?, SYMBOL_Y1991 = ?, VALUE_Y1992 = ?, SYMBOL_Y1992 = ?, VALUE_Y1993 = ?, SYMBOL_Y1993 = ?, VALUE_Y1994 = ?, SYMBOL_Y1994 = ?, VALUE_Y1995 = ?, SYMBOL_Y1995 = ?, VALUE_Y1996 = ?, SYMBOL_Y1996 = ?, VALUE_Y1997 = ?, SYMBOL_Y1997 = ?, VALUE_Y1998 = ?, SYMBOL_Y1998 = ?, VALUE_Y1999 = ?, SYMBOL_Y1999 = ?, VALUE_Y2000 = ?, SYMBOL_Y2000 = ?, VALUE_Y2001 = ?, SYMBOL_Y2001 = ?, VALUE_Y2002 = ?, SYMBOL_Y2002 = ?, VALUE_Y2003 = ?, SYMBOL_Y2003 = ?, VALUE_Y2004 = ?, SYMBOL_Y2004 = ?, VALUE_Y2005 = ?, SYMBOL_Y2005 = ?, VALUE_Y2006 = ?, SYMBOL_Y2006 = ?, VALUE_Y2007 = ?, SYMBOL_Y2007 = ?, VALUE_Y2008 = ?, SYMBOL_Y2008 = ?, VALUE_Y2009 = ?, SYMBOL_Y2009 = ?, VALUE_Y2010 = ?, SYMBOL_Y2010 = ?, VALUE_Y2011 = ?, SYMBOL_Y2011 = ?, VALUE_Y2012 = ?, SYMBOL_Y2012 = ?, VALUE_Y2013 = ?, SYMBOL_Y2013 = ?, VALUE_Y2014 = ?, SYMBOL_Y2014 = ?, VALUE_Y2015 = ?, SYMBOL_Y2015 = ?, VALUE_Y2016 = ?, SYMBOL_Y2016 = ?, VALUE_Y2017 = ?, SYMBOL_Y2017 = ?, VALUE_Y2018 = ?, SYMBOL_Y2018 = ?, VALUE_Y2019 = ?, SYMBOL_Y2019 = ?, VALUE_Y2020 = ?, SYMBOL_Y2020 = ?, VALUE_Y2021 = ?, SYMBOL_Y2021 = ?, VALUE_Y2022 = ?, SYMBOL_Y2022 = ?, VALUE_Y2023 = ?, SYMBOL_Y2023 = ?, VALUE_Y2024 = ?, SYMBOL_Y2024 = ? WHERE ID = ?
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE 
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE AREA = ? ORDER BY AREA
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE COUNTRY = ? ORDER BY COUNTRY
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE ENVIRONMENT = ? ORDER BY ENVIRONMENT
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE ID = ?
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE ID = ? ORDER BY ID
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE MEASURE = ? ORDER BY MEASURE
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE SPECIES = ? ORDER BY SPECIES
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE SYMBOL_Y1950 = ? ORDER BY SYMBOL_Y1950
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE SYMBOL_Y1951 = ? ORDER BY SYMBOL_Y1951
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE SYMBOL_Y1952 = ? ORDER BY SYMBOL_Y1952
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE SYMBOL_Y1953 = ? ORDER BY SYMBOL_Y1953
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE SYMBOL_Y1954 = ? ORDER BY SYMBOL_Y1954
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE SYMBOL_Y1955 = ? ORDER BY SYMBOL_Y1955
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE SYMBOL_Y1956 = ? ORDER BY SYMBOL_Y1956
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE SYMBOL_Y1957 = ? ORDER BY SYMBOL_Y1957
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE SYMBOL_Y1958 = ? ORDER BY SYMBOL_Y1958
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE SYMBOL_Y1959 = ? ORDER BY SYMBOL_Y1959
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE SYMBOL_Y1960 = ? ORDER BY SYMBOL_Y1960
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE SYMBOL_Y1961 = ? ORDER BY SYMBOL_Y1961
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE SYMBOL_Y1962 = ? ORDER BY SYMBOL_Y1962
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE SYMBOL_Y1963 = ? ORDER BY SYMBOL_Y1963
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE SYMBOL_Y1964 = ? ORDER BY SYMBOL_Y1964
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE SYMBOL_Y1965 = ? ORDER BY SYMBOL_Y1965
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE SYMBOL_Y1966 = ? ORDER BY SYMBOL_Y1966
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE SYMBOL_Y1967 = ? ORDER BY SYMBOL_Y1967
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE SYMBOL_Y1968 = ? ORDER BY SYMBOL_Y1968
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE SYMBOL_Y1969 = ? ORDER BY SYMBOL_Y1969
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE SYMBOL_Y1970 = ? ORDER BY SYMBOL_Y1970
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE SYMBOL_Y1971 = ? ORDER BY SYMBOL_Y1971
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE SYMBOL_Y1972 = ? ORDER BY SYMBOL_Y1972
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE SYMBOL_Y1973 = ? ORDER BY SYMBOL_Y1973
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE SYMBOL_Y1974 = ? ORDER BY SYMBOL_Y1974
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE SYMBOL_Y1975 = ? ORDER BY SYMBOL_Y1975
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE SYMBOL_Y1976 = ? ORDER BY SYMBOL_Y1976
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE SYMBOL_Y1977 = ? ORDER BY SYMBOL_Y1977
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE SYMBOL_Y1978 = ? ORDER BY SYMBOL_Y1978
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE SYMBOL_Y1979 = ? ORDER BY SYMBOL_Y1979
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE SYMBOL_Y1980 = ? ORDER BY SYMBOL_Y1980
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE SYMBOL_Y1981 = ? ORDER BY SYMBOL_Y1981
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE SYMBOL_Y1982 = ? ORDER BY SYMBOL_Y1982
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE SYMBOL_Y1983 = ? ORDER BY SYMBOL_Y1983
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE SYMBOL_Y1984 = ? ORDER BY SYMBOL_Y1984
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE SYMBOL_Y1985 = ? ORDER BY SYMBOL_Y1985
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE SYMBOL_Y1986 = ? ORDER BY SYMBOL_Y1986
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE SYMBOL_Y1987 = ? ORDER BY SYMBOL_Y1987
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE SYMBOL_Y1988 = ? ORDER BY SYMBOL_Y1988
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE SYMBOL_Y1989 = ? ORDER BY SYMBOL_Y1989
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE SYMBOL_Y1990 = ? ORDER BY SYMBOL_Y1990
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE SYMBOL_Y1991 = ? ORDER BY SYMBOL_Y1991
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE SYMBOL_Y1992 = ? ORDER BY SYMBOL_Y1992
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE SYMBOL_Y1993 = ? ORDER BY SYMBOL_Y1993
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE SYMBOL_Y1994 = ? ORDER BY SYMBOL_Y1994
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE SYMBOL_Y1995 = ? ORDER BY SYMBOL_Y1995
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE SYMBOL_Y1996 = ? ORDER BY SYMBOL_Y1996
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE SYMBOL_Y1997 = ? ORDER BY SYMBOL_Y1997
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE SYMBOL_Y1998 = ? ORDER BY SYMBOL_Y1998
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE SYMBOL_Y1999 = ? ORDER BY SYMBOL_Y1999
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE SYMBOL_Y2000 = ? ORDER BY SYMBOL_Y2000
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE SYMBOL_Y2001 = ? ORDER BY SYMBOL_Y2001
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE SYMBOL_Y2002 = ? ORDER BY SYMBOL_Y2002
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE SYMBOL_Y2003 = ? ORDER BY SYMBOL_Y2003
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE SYMBOL_Y2004 = ? ORDER BY SYMBOL_Y2004
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE SYMBOL_Y2005 = ? ORDER BY SYMBOL_Y2005
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE SYMBOL_Y2006 = ? ORDER BY SYMBOL_Y2006
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE SYMBOL_Y2007 = ? ORDER BY SYMBOL_Y2007
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE SYMBOL_Y2008 = ? ORDER BY SYMBOL_Y2008
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE SYMBOL_Y2009 = ? ORDER BY SYMBOL_Y2009
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE SYMBOL_Y2010 = ? ORDER BY SYMBOL_Y2010
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE SYMBOL_Y2011 = ? ORDER BY SYMBOL_Y2011
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE SYMBOL_Y2012 = ? ORDER BY SYMBOL_Y2012
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE SYMBOL_Y2013 = ? ORDER BY SYMBOL_Y2013
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE SYMBOL_Y2014 = ? ORDER BY SYMBOL_Y2014
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE SYMBOL_Y2015 = ? ORDER BY SYMBOL_Y2015
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE SYMBOL_Y2016 = ? ORDER BY SYMBOL_Y2016
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE SYMBOL_Y2017 = ? ORDER BY SYMBOL_Y2017
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE SYMBOL_Y2018 = ? ORDER BY SYMBOL_Y2018
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE SYMBOL_Y2019 = ? ORDER BY SYMBOL_Y2019
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE SYMBOL_Y2020 = ? ORDER BY SYMBOL_Y2020
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE SYMBOL_Y2021 = ? ORDER BY SYMBOL_Y2021
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE SYMBOL_Y2022 = ? ORDER BY SYMBOL_Y2022
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE SYMBOL_Y2023 = ? ORDER BY SYMBOL_Y2023
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE SYMBOL_Y2024 = ? ORDER BY SYMBOL_Y2024
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE VALUE_Y1950 = ? ORDER BY VALUE_Y1950
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE VALUE_Y1951 = ? ORDER BY VALUE_Y1951
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE VALUE_Y1952 = ? ORDER BY VALUE_Y1952
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE VALUE_Y1953 = ? ORDER BY VALUE_Y1953
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE VALUE_Y1954 = ? ORDER BY VALUE_Y1954
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE VALUE_Y1955 = ? ORDER BY VALUE_Y1955
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE VALUE_Y1956 = ? ORDER BY VALUE_Y1956
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE VALUE_Y1957 = ? ORDER BY VALUE_Y1957
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE VALUE_Y1958 = ? ORDER BY VALUE_Y1958
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE VALUE_Y1959 = ? ORDER BY VALUE_Y1959
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE VALUE_Y1960 = ? ORDER BY VALUE_Y1960
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE VALUE_Y1961 = ? ORDER BY VALUE_Y1961
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE VALUE_Y1962 = ? ORDER BY VALUE_Y1962
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE VALUE_Y1963 = ? ORDER BY VALUE_Y1963
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE VALUE_Y1964 = ? ORDER BY VALUE_Y1964
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE VALUE_Y1965 = ? ORDER BY VALUE_Y1965
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE VALUE_Y1966 = ? ORDER BY VALUE_Y1966
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE VALUE_Y1967 = ? ORDER BY VALUE_Y1967
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE VALUE_Y1968 = ? ORDER BY VALUE_Y1968
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE VALUE_Y1969 = ? ORDER BY VALUE_Y1969
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE VALUE_Y1970 = ? ORDER BY VALUE_Y1970
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE VALUE_Y1971 = ? ORDER BY VALUE_Y1971
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE VALUE_Y1972 = ? ORDER BY VALUE_Y1972
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE VALUE_Y1973 = ? ORDER BY VALUE_Y1973
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE VALUE_Y1974 = ? ORDER BY VALUE_Y1974
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE VALUE_Y1975 = ? ORDER BY VALUE_Y1975
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE VALUE_Y1976 = ? ORDER BY VALUE_Y1976
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE VALUE_Y1977 = ? ORDER BY VALUE_Y1977
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE VALUE_Y1978 = ? ORDER BY VALUE_Y1978
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE VALUE_Y1979 = ? ORDER BY VALUE_Y1979
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE VALUE_Y1980 = ? ORDER BY VALUE_Y1980
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE VALUE_Y1981 = ? ORDER BY VALUE_Y1981
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE VALUE_Y1982 = ? ORDER BY VALUE_Y1982
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE VALUE_Y1983 = ? ORDER BY VALUE_Y1983
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE VALUE_Y1984 = ? ORDER BY VALUE_Y1984
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE VALUE_Y1985 = ? ORDER BY VALUE_Y1985
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE VALUE_Y1986 = ? ORDER BY VALUE_Y1986
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE VALUE_Y1987 = ? ORDER BY VALUE_Y1987
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE VALUE_Y1988 = ? ORDER BY VALUE_Y1988
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE VALUE_Y1989 = ? ORDER BY VALUE_Y1989
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE VALUE_Y1990 = ? ORDER BY VALUE_Y1990
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE VALUE_Y1991 = ? ORDER BY VALUE_Y1991
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE VALUE_Y1992 = ? ORDER BY VALUE_Y1992
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE VALUE_Y1993 = ? ORDER BY VALUE_Y1993
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE VALUE_Y1994 = ? ORDER BY VALUE_Y1994
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE VALUE_Y1995 = ? ORDER BY VALUE_Y1995
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE VALUE_Y1996 = ? ORDER BY VALUE_Y1996
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE VALUE_Y1997 = ? ORDER BY VALUE_Y1997
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE VALUE_Y1998 = ? ORDER BY VALUE_Y1998
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE VALUE_Y1999 = ? ORDER BY VALUE_Y1999
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE VALUE_Y2000 = ? ORDER BY VALUE_Y2000
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE VALUE_Y2001 = ? ORDER BY VALUE_Y2001
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE VALUE_Y2002 = ? ORDER BY VALUE_Y2002
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE VALUE_Y2003 = ? ORDER BY VALUE_Y2003
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE VALUE_Y2004 = ? ORDER BY VALUE_Y2004
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE VALUE_Y2005 = ? ORDER BY VALUE_Y2005
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE VALUE_Y2006 = ? ORDER BY VALUE_Y2006
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE VALUE_Y2007 = ? ORDER BY VALUE_Y2007
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE VALUE_Y2008 = ? ORDER BY VALUE_Y2008
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE VALUE_Y2009 = ? ORDER BY VALUE_Y2009
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE VALUE_Y2010 = ? ORDER BY VALUE_Y2010
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE VALUE_Y2011 = ? ORDER BY VALUE_Y2011
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE VALUE_Y2012 = ? ORDER BY VALUE_Y2012
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE VALUE_Y2013 = ? ORDER BY VALUE_Y2013
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE VALUE_Y2014 = ? ORDER BY VALUE_Y2014
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE VALUE_Y2015 = ? ORDER BY VALUE_Y2015
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE VALUE_Y2016 = ? ORDER BY VALUE_Y2016
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE VALUE_Y2017 = ? ORDER BY VALUE_Y2017
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE VALUE_Y2018 = ? ORDER BY VALUE_Y2018
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE VALUE_Y2019 = ? ORDER BY VALUE_Y2019
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE VALUE_Y2020 = ? ORDER BY VALUE_Y2020
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE VALUE_Y2021 = ? ORDER BY VALUE_Y2021
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE VALUE_Y2022 = ? ORDER BY VALUE_Y2022
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE VALUE_Y2023 = ? ORDER BY VALUE_Y2023
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	 WHERE VALUE_Y2024 = ? ORDER BY VALUE_Y2024
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	"TsdAquacultureQuantityDaoImpl.java
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	'SELECT ID, COUNTRY, SPECIES, AREA, ENVIRONMENT, MEASURE, VALUE_Y1950, SYMBOL_Y1950, VALUE_Y1951, SYMBOL_Y1951, VALUE_Y1952, SYMBOL_Y1952, VALUE_Y1953, SYMBOL_Y1953, VALUE_Y1954, SYMBOL_Y1954, VALUE_Y1955, SYMBOL_Y1955, VALUE_Y1956, SYMBOL_Y1956, VALUE_Y1957, SYMBOL_Y1957, VALUE_Y1958, SYMBOL_Y1958, VALUE_Y1959, SYMBOL_Y1959, VALUE_Y1960, SYMBOL_Y1960, VALUE_Y1961, SYMBOL_Y1961, VALUE_Y1962, SYMBOL_Y1962, VALUE_Y1963, SYMBOL_Y1963, VALUE_Y1964, SYMBOL_Y1964, VALUE_Y1965, SYMBOL_Y1965, VALUE_Y1966, SYMBOL_Y1966, VALUE_Y1967, SYMBOL_Y1967, VALUE_Y1968, SYMBOL_Y1968, VALUE_Y1969, SYMBOL_Y1969, VALUE_Y1970, SYMBOL_Y1970, VALUE_Y1971, SYMBOL_Y1971, VALUE_Y1972, SYMBOL_Y1972, VALUE_Y1973, SYMBOL_Y1973, VALUE_Y1974, SYMBOL_Y1974, VALUE_Y1975, SYMBOL_Y1975, VALUE_Y1976, SYMBOL_Y1976, VALUE_Y1977, SYMBOL_Y1977, VALUE_Y1978, SYMBOL_Y1978, VALUE_Y1979, SYMBOL_Y1979, VALUE_Y1980, SYMBOL_Y1980, VALUE_Y1981, SYMBOL_Y1981, VALUE_Y1982, SYMBOL_Y1982, VALUE_Y1983, SYMBOL_Y1983, VALUE_Y1984, SYMBOL_Y1984, VALUE_Y1985, SYMBOL_Y1985, VALUE_Y1986, SYMBOL_Y1986, VALUE_Y1987, SYMBOL_Y1987, VALUE_Y1988, SYMBOL_Y1988, VALUE_Y1989, SYMBOL_Y1989, VALUE_Y1990, SYMBOL_Y1990, VALUE_Y1991, SYMBOL_Y1991, VALUE_Y1992, SYMBOL_Y1992, VALUE_Y1993, SYMBOL_Y1993, VALUE_Y1994, SYMBOL_Y1994, VALUE_Y1995, SYMBOL_Y1995, VALUE_Y1996, SYMBOL_Y1996, VALUE_Y1997, SYMBOL_Y1997, VALUE_Y1998, SYMBOL_Y1998, VALUE_Y1999, SYMBOL_Y1999, VALUE_Y2000, SYMBOL_Y2000, VALUE_Y2001, SYMBOL_Y2001, VALUE_Y2002, SYMBOL_Y2002, VALUE_Y2003, SYMBOL_Y2003, VALUE_Y2004, SYMBOL_Y2004, VALUE_Y2005, SYMBOL_Y2005, VALUE_Y2006, SYMBOL_Y2006, VALUE_Y2007, SYMBOL_Y2007, VALUE_Y2008, SYMBOL_Y2008, VALUE_Y2009, SYMBOL_Y2009, VALUE_Y2010, SYMBOL_Y2010, VALUE_Y2011, SYMBOL_Y2011, VALUE_Y2012, SYMBOL_Y2012, VALUE_Y2013, SYMBOL_Y2013, VALUE_Y2014, SYMBOL_Y2014, VALUE_Y2015, SYMBOL_Y2015, VALUE_Y2016, SYMBOL_Y2016, VALUE_Y2017, SYMBOL_Y2017, VALUE_Y2018, SYMBOL_Y2018, VALUE_Y2019, SYMBOL_Y2019, VALUE_Y2020, SYMBOL_Y2020, VALUE_Y2021, SYMBOL_Y2021, VALUE_Y2022, SYMBOL_Y2022, VALUE_Y2023, SYMBOL_Y2023, VALUE_Y2024, SYMBOL_Y2024 FROM 
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	()Ljava/sql/Connection;
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	(Ljava/sql/Connection;)V
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	(Lorg/fao/fi/fishstat/data/generated/dto/TsdAquacultureQuantity;)Lorg/fao/fi/fishstat/data/generated/dto/TsdAquacultureQuantityPk;
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	(Lorg/fao/fi/fishstat/data/generated/dto/TsdAquacultureQuantityPk;)Lorg/fao/fi/fishstat/data/generated/dto/TsdAquacultureQuantity;
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	(Lorg/fao/fi/fishstat/data/generated/dto/TsdAquacultureQuantityPk;Lorg/fao/fi/fishstat/data/generated/dto/TsdAquacultureQuantity;)V
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	3org/fao/fi/fishstat/data/generated/jdbc/AbstractDAO
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	7org/fao/fi/fishstat/data/generated/jdbc/ResourceManager
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	=org/fao/fi/fishstat/data/generated/dto/TsdAquacultureQuantity
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	?org/fao/fi/fishstat/data/generated/dto/TsdAquacultureQuantityPk
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	@[Lorg/fao/fi/fishstat/data/generated/dto/TsdAquacultureQuantity;
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	@org/fao/fi/fishstat/data/generated/dao/TsdAquacultureQuantityDao
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	B()[Lorg/fao/fi/fishstat/data/generated/dto/TsdAquacultureQuantity;
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	B(Lorg/fao/fi/fishstat/data/generated/dto/TsdAquacultureQuantity;)V
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	C()Lorg/fao/fi/fishstat/data/generated/dto/TsdAquacultureQuantityPk;
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	COLUMN_COUNTRY
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	COLUMN_ENVIRONMENT
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	COLUMN_MEASURE
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	COLUMN_SPECIES
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	COLUMN_VALUE_Y1950
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	COLUMN_VALUE_Y1951
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	COLUMN_VALUE_Y1952
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	COLUMN_VALUE_Y1953
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	COLUMN_VALUE_Y1954
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	COLUMN_VALUE_Y1955
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	COLUMN_VALUE_Y1956
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	COLUMN_VALUE_Y1957
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	COLUMN_VALUE_Y1958
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	COLUMN_VALUE_Y1959
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	COLUMN_VALUE_Y1960
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	COLUMN_VALUE_Y1961
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	COLUMN_VALUE_Y1962
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	COLUMN_VALUE_Y1963
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	COLUMN_VALUE_Y1964
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	COLUMN_VALUE_Y1965
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	COLUMN_VALUE_Y1966
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	COLUMN_VALUE_Y1967
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	COLUMN_VALUE_Y1968
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	COLUMN_VALUE_Y1969
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	COLUMN_VALUE_Y1970
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	COLUMN_VALUE_Y1971
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	COLUMN_VALUE_Y1972
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	COLUMN_VALUE_Y1973
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	COLUMN_VALUE_Y1974
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	COLUMN_VALUE_Y1975
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	COLUMN_VALUE_Y1976
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	COLUMN_VALUE_Y1977
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	COLUMN_VALUE_Y1978
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	COLUMN_VALUE_Y1979
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	COLUMN_VALUE_Y1980
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	COLUMN_VALUE_Y1981
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	COLUMN_VALUE_Y1982
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	COLUMN_VALUE_Y1983
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	COLUMN_VALUE_Y1984
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	COLUMN_VALUE_Y1985
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	COLUMN_VALUE_Y1986
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	COLUMN_VALUE_Y1987
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	COLUMN_VALUE_Y1988
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	COLUMN_VALUE_Y1989
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	COLUMN_VALUE_Y1990
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	COLUMN_VALUE_Y1991
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	COLUMN_VALUE_Y1992
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	COLUMN_VALUE_Y1993
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	COLUMN_VALUE_Y1994
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	COLUMN_VALUE_Y1995
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	COLUMN_VALUE_Y1996
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	COLUMN_VALUE_Y1997
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	COLUMN_VALUE_Y1998
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	COLUMN_VALUE_Y1999
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	COLUMN_VALUE_Y2000
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	COLUMN_VALUE_Y2001
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	COLUMN_VALUE_Y2002
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	COLUMN_VALUE_Y2003
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	COLUMN_VALUE_Y2004
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	COLUMN_VALUE_Y2005
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	COLUMN_VALUE_Y2006
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	COLUMN_VALUE_Y2007
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	COLUMN_VALUE_Y2008
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	COLUMN_VALUE_Y2009
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	COLUMN_VALUE_Y2010
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	COLUMN_VALUE_Y2011
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	COLUMN_VALUE_Y2012
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	COLUMN_VALUE_Y2013
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	COLUMN_VALUE_Y2014
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	COLUMN_VALUE_Y2015
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	COLUMN_VALUE_Y2016
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	COLUMN_VALUE_Y2017
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	COLUMN_VALUE_Y2018
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	COLUMN_VALUE_Y2019
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	COLUMN_VALUE_Y2020
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	COLUMN_VALUE_Y2021
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	COLUMN_VALUE_Y2022
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	COLUMN_VALUE_Y2023
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	COLUMN_VALUE_Y2024
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	ConstantValue
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	D(Lorg/fao/fi/fishstat/data/generated/dto/TsdAquacultureQuantityPk;)V
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	DELETE FROM 
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	Eorg/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	INSERT INTO 
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	Ljava/sql/Connection;
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	Porg/fao/fi/fishstat/data/generated/exceptions/TsdAquacultureQuantityDaoException
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	S(Ljava/lang/String;)Lorg/fao/fi/fishstat/data/generated/dto/TsdAquacultureQuantity;
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	SQL_DELETE
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	SQL_INSERT
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	SQL_SELECT
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	SQL_UPDATE
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	T(Ljava/lang/Double;)[Lorg/fao/fi/fishstat/data/generated/dto/TsdAquacultureQuantity;
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	T(Ljava/lang/String;)[Lorg/fao/fi/fishstat/data/generated/dto/TsdAquacultureQuantity;
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	TSD_AQUACULTURE_QUANTITY
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	U(Ljava/sql/ResultSet;)Lorg/fao/fi/fishstat/data/generated/dto/TsdAquacultureQuantity;
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	UPDATE 
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	V(Ljava/sql/ResultSet;)[Lorg/fao/fi/fishstat/data/generated/dto/TsdAquacultureQuantity;
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	V(Lorg/fao/fi/fishstat/data/generated/dto/TsdAquacultureQuantity;Ljava/sql/ResultSet;)V
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	delete
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	doubleValue
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	executeUpdate
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findByDynamicSelect
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findByDynamicWhere
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereAreaEquals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereCountryEquals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereEnvironmentEquals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereIdEquals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereMeasureEquals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereSpeciesEquals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereSymbolY1950Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereSymbolY1951Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereSymbolY1952Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereSymbolY1953Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereSymbolY1954Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereSymbolY1955Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereSymbolY1956Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereSymbolY1957Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereSymbolY1958Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereSymbolY1959Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereSymbolY1960Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereSymbolY1961Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereSymbolY1962Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereSymbolY1963Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereSymbolY1964Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereSymbolY1965Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereSymbolY1966Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereSymbolY1967Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereSymbolY1968Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereSymbolY1969Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereSymbolY1970Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereSymbolY1971Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereSymbolY1972Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereSymbolY1973Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereSymbolY1974Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereSymbolY1975Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereSymbolY1976Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereSymbolY1977Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereSymbolY1978Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereSymbolY1979Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereSymbolY1980Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereSymbolY1981Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereSymbolY1982Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereSymbolY1983Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereSymbolY1984Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereSymbolY1985Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereSymbolY1986Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereSymbolY1987Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereSymbolY1988Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereSymbolY1989Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereSymbolY1990Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereSymbolY1991Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereSymbolY1992Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereSymbolY1993Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereSymbolY1994Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereSymbolY1995Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereSymbolY1996Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereSymbolY1997Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereSymbolY1998Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereSymbolY1999Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereSymbolY2000Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereSymbolY2001Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereSymbolY2002Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereSymbolY2003Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereSymbolY2004Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereSymbolY2005Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereSymbolY2006Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereSymbolY2007Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereSymbolY2008Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereSymbolY2009Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereSymbolY2010Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereSymbolY2011Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereSymbolY2012Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereSymbolY2013Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereSymbolY2014Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereSymbolY2015Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereSymbolY2016Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereSymbolY2017Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereSymbolY2018Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereSymbolY2019Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereSymbolY2020Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereSymbolY2021Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereSymbolY2022Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereSymbolY2023Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereSymbolY2024Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereValueY1950Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereValueY1951Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereValueY1952Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereValueY1953Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereValueY1954Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereValueY1955Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereValueY1956Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereValueY1957Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereValueY1958Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereValueY1959Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereValueY1960Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereValueY1961Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereValueY1962Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereValueY1963Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereValueY1964Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereValueY1965Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereValueY1966Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereValueY1967Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereValueY1968Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereValueY1969Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereValueY1970Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereValueY1971Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereValueY1972Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereValueY1973Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereValueY1974Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereValueY1975Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereValueY1976Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereValueY1977Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereValueY1978Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereValueY1979Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereValueY1980Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereValueY1981Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereValueY1982Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereValueY1983Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereValueY1984Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereValueY1985Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereValueY1986Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereValueY1987Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereValueY1988Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereValueY1989Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereValueY1990Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereValueY1991Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereValueY1992Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereValueY1993Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereValueY1994Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereValueY1995Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereValueY1996Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereValueY1997Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereValueY1998Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereValueY1999Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereValueY2000Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereValueY2001Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereValueY2002Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereValueY2003Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereValueY2004Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereValueY2005Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereValueY2006Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereValueY2007Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereValueY2008Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereValueY2009Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereValueY2010Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereValueY2011Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereValueY2012Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereValueY2013Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereValueY2014Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereValueY2015Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereValueY2016Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereValueY2017Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereValueY2018Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereValueY2019Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereValueY2020Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereValueY2021Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereValueY2022Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereValueY2023Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	findWhereValueY2024Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	g(Ljava/lang/String;[Ljava/lang/Object;)[Lorg/fao/fi/fishstat/data/generated/dto/TsdAquacultureQuantity;
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	getConnection
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	getCountry
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	getEnvironment
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	getMeasure
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	getSpecies
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	getValueY1950
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	getValueY1951
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	getValueY1952
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	getValueY1953
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	getValueY1954
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	getValueY1955
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	getValueY1956
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	getValueY1957
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	getValueY1958
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	getValueY1959
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	getValueY1960
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	getValueY1961
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	getValueY1962
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	getValueY1963
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	getValueY1964
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	getValueY1965
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	getValueY1966
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	getValueY1967
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	getValueY1968
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	getValueY1969
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	getValueY1970
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	getValueY1971
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	getValueY1972
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	getValueY1973
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	getValueY1974
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	getValueY1975
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	getValueY1976
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	getValueY1977
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	getValueY1978
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	getValueY1979
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	getValueY1980
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	getValueY1981
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	getValueY1982
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	getValueY1983
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	getValueY1984
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	getValueY1985
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	getValueY1986
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	getValueY1987
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	getValueY1988
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	getValueY1989
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	getValueY1990
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	getValueY1991
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	getValueY1992
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	getValueY1993
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	getValueY1994
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	getValueY1995
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	getValueY1996
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	getValueY1997
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	getValueY1998
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	getValueY1999
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	getValueY2000
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	getValueY2001
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	getValueY2002
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	getValueY2003
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	getValueY2004
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	getValueY2005
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	getValueY2006
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	getValueY2007
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	getValueY2008
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	getValueY2009
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	getValueY2010
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	getValueY2011
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	getValueY2012
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	getValueY2013
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	getValueY2014
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	getValueY2015
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	getValueY2016
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	getValueY2017
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	getValueY2018
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	getValueY2019
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	getValueY2020
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	getValueY2021
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	getValueY2022
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	getValueY2023
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	getValueY2024
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	insert
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	java/sql/Connection
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	setCountry
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	setEnvironment
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	setMeasure
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	setSpecies
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	setValueY1950
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	setValueY1951
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	setValueY1952
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	setValueY1953
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	setValueY1954
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	setValueY1955
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	setValueY1956
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	setValueY1957
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	setValueY1958
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	setValueY1959
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	setValueY1960
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	setValueY1961
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	setValueY1962
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	setValueY1963
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	setValueY1964
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	setValueY1965
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	setValueY1966
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	setValueY1967
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	setValueY1968
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	setValueY1969
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	setValueY1970
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	setValueY1971
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	setValueY1972
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	setValueY1973
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	setValueY1974
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	setValueY1975
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	setValueY1976
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	setValueY1977
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	setValueY1978
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	setValueY1979
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	setValueY1980
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	setValueY1981
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	setValueY1982
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	setValueY1983
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	setValueY1984
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	setValueY1985
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	setValueY1986
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	setValueY1987
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	setValueY1988
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	setValueY1989
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	setValueY1990
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	setValueY1991
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	setValueY1992
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	setValueY1993
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	setValueY1994
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	setValueY1995
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	setValueY1996
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	setValueY1997
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	setValueY1998
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	setValueY1999
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	setValueY2000
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	setValueY2001
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	setValueY2002
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	setValueY2003
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	setValueY2004
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	setValueY2005
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	setValueY2006
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	setValueY2007
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	setValueY2008
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	setValueY2009
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	setValueY2010
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	setValueY2011
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	setValueY2012
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	setValueY2013
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	setValueY2014
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	setValueY2015
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	setValueY2016
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	setValueY2017
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	setValueY2018
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	setValueY2019
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	setValueY2020
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	setValueY2021
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	setValueY2022
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	setValueY2023
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	setValueY2024
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureQuantityDaoImpl.class	update
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	 ( ID, COUNTRY, SPECIES, AREA, ENVIRONMENT, MEASURE, VALUE_Y1984, SYMBOL_Y1984, VALUE_Y1985, SYMBOL_Y1985, VALUE_Y1986, SYMBOL_Y1986, VALUE_Y1987, SYMBOL_Y1987, VALUE_Y1988, SYMBOL_Y1988, VALUE_Y1989, SYMBOL_Y1989, VALUE_Y1990, SYMBOL_Y1990, VALUE_Y1991, SYMBOL_Y1991, VALUE_Y1992, SYMBOL_Y1992, VALUE_Y1993, SYMBOL_Y1993, VALUE_Y1994, SYMBOL_Y1994, VALUE_Y1995, SYMBOL_Y1995, VALUE_Y1996, SYMBOL_Y1996, VALUE_Y1997, SYMBOL_Y1997, VALUE_Y1998, SYMBOL_Y1998, VALUE_Y1999, SYMBOL_Y1999, VALUE_Y2000, SYMBOL_Y2000, VALUE_Y2001, SYMBOL_Y2001, VALUE_Y2002, SYMBOL_Y2002, VALUE_Y2003, SYMBOL_Y2003, VALUE_Y2004, SYMBOL_Y2004, VALUE_Y2005, SYMBOL_Y2005, VALUE_Y2006, SYMBOL_Y2006, VALUE_Y2007, SYMBOL_Y2007, VALUE_Y2008, SYMBOL_Y2008, VALUE_Y2009, SYMBOL_Y2009, VALUE_Y2010, SYMBOL_Y2010, VALUE_Y2011, SYMBOL_Y2011, VALUE_Y2012, SYMBOL_Y2012, VALUE_Y2013, SYMBOL_Y2013, VALUE_Y2014, SYMBOL_Y2014, VALUE_Y2015, SYMBOL_Y2015, VALUE_Y2016, SYMBOL_Y2016, VALUE_Y2017, SYMBOL_Y2017, VALUE_Y2018, SYMBOL_Y2018, VALUE_Y2019, SYMBOL_Y2019, VALUE_Y2020, SYMBOL_Y2020, VALUE_Y2021, SYMBOL_Y2021, VALUE_Y2022, SYMBOL_Y2022, VALUE_Y2023, SYMBOL_Y2023, VALUE_Y2024, SYMBOL_Y2024 ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? )
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	 SET ID = ?, COUNTRY = ?, SPECIES = ?, AREA = ?, ENVIRONMENT = ?, MEASURE = ?, VALUE_Y1984 = ?, SYMBOL_Y1984 = ?, VALUE_Y1985 = ?, SYMBOL_Y1985 = ?, VALUE_Y1986 = ?, SYMBOL_Y1986 = ?, VALUE_Y1987 = ?, SYMBOL_Y1987 = ?, VALUE_Y1988 = ?, SYMBOL_Y1988 = ?, VALUE_Y1989 = ?, SYMBOL_Y1989 = ?, VALUE_Y1990 = ?, SYMBOL_Y1990 = ?, VALUE_Y1991 = ?, SYMBOL_Y1991 = ?, VALUE_Y1992 = ?, SYMBOL_Y1992 = ?, VALUE_Y1993 = ?, SYMBOL_Y1993 = ?, VALUE_Y1994 = ?, SYMBOL_Y1994 = ?, VALUE_Y1995 = ?, SYMBOL_Y1995 = ?, VALUE_Y1996 = ?, SYMBOL_Y1996 = ?, VALUE_Y1997 = ?, SYMBOL_Y1997 = ?, VALUE_Y1998 = ?, SYMBOL_Y1998 = ?, VALUE_Y1999 = ?, SYMBOL_Y1999 = ?, VALUE_Y2000 = ?, SYMBOL_Y2000 = ?, VALUE_Y2001 = ?, SYMBOL_Y2001 = ?, VALUE_Y2002 = ?, SYMBOL_Y2002 = ?, VALUE_Y2003 = ?, SYMBOL_Y2003 = ?, VALUE_Y2004 = ?, SYMBOL_Y2004 = ?, VALUE_Y2005 = ?, SYMBOL_Y2005 = ?, VALUE_Y2006 = ?, SYMBOL_Y2006 = ?, VALUE_Y2007 = ?, SYMBOL_Y2007 = ?, VALUE_Y2008 = ?, SYMBOL_Y2008 = ?, VALUE_Y2009 = ?, SYMBOL_Y2009 = ?, VALUE_Y2010 = ?, SYMBOL_Y2010 = ?, VALUE_Y2011 = ?, SYMBOL_Y2011 = ?, VALUE_Y2012 = ?, SYMBOL_Y2012 = ?, VALUE_Y2013 = ?, SYMBOL_Y2013 = ?, VALUE_Y2014 = ?, SYMBOL_Y2014 = ?, VALUE_Y2015 = ?, SYMBOL_Y2015 = ?, VALUE_Y2016 = ?, SYMBOL_Y2016 = ?, VALUE_Y2017 = ?, SYMBOL_Y2017 = ?, VALUE_Y2018 = ?, SYMBOL_Y2018 = ?, VALUE_Y2019 = ?, SYMBOL_Y2019 = ?, VALUE_Y2020 = ?, SYMBOL_Y2020 = ?, VALUE_Y2021 = ?, SYMBOL_Y2021 = ?, VALUE_Y2022 = ?, SYMBOL_Y2022 = ?, VALUE_Y2023 = ?, SYMBOL_Y2023 = ?, VALUE_Y2024 = ?, SYMBOL_Y2024 = ? WHERE ID = ?
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	 WHERE 
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	 WHERE AREA = ? ORDER BY AREA
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	 WHERE COUNTRY = ? ORDER BY COUNTRY
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	 WHERE ENVIRONMENT = ? ORDER BY ENVIRONMENT
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	 WHERE ID = ?
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	 WHERE ID = ? ORDER BY ID
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	 WHERE MEASURE = ? ORDER BY MEASURE
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	 WHERE SPECIES = ? ORDER BY SPECIES
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	 WHERE SYMBOL_Y1984 = ? ORDER BY SYMBOL_Y1984
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	 WHERE SYMBOL_Y1985 = ? ORDER BY SYMBOL_Y1985
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	 WHERE SYMBOL_Y1986 = ? ORDER BY SYMBOL_Y1986
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	 WHERE SYMBOL_Y1987 = ? ORDER BY SYMBOL_Y1987
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	 WHERE SYMBOL_Y1988 = ? ORDER BY SYMBOL_Y1988
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	 WHERE SYMBOL_Y1989 = ? ORDER BY SYMBOL_Y1989
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	 WHERE SYMBOL_Y1990 = ? ORDER BY SYMBOL_Y1990
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	 WHERE SYMBOL_Y1991 = ? ORDER BY SYMBOL_Y1991
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	 WHERE SYMBOL_Y1992 = ? ORDER BY SYMBOL_Y1992
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	 WHERE SYMBOL_Y1993 = ? ORDER BY SYMBOL_Y1993
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	 WHERE SYMBOL_Y1994 = ? ORDER BY SYMBOL_Y1994
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	 WHERE SYMBOL_Y1995 = ? ORDER BY SYMBOL_Y1995
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	 WHERE SYMBOL_Y1996 = ? ORDER BY SYMBOL_Y1996
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	 WHERE SYMBOL_Y1997 = ? ORDER BY SYMBOL_Y1997
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	 WHERE SYMBOL_Y1998 = ? ORDER BY SYMBOL_Y1998
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	 WHERE SYMBOL_Y1999 = ? ORDER BY SYMBOL_Y1999
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	 WHERE SYMBOL_Y2000 = ? ORDER BY SYMBOL_Y2000
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	 WHERE SYMBOL_Y2001 = ? ORDER BY SYMBOL_Y2001
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	 WHERE SYMBOL_Y2002 = ? ORDER BY SYMBOL_Y2002
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	 WHERE SYMBOL_Y2003 = ? ORDER BY SYMBOL_Y2003
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	 WHERE SYMBOL_Y2004 = ? ORDER BY SYMBOL_Y2004
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	 WHERE SYMBOL_Y2005 = ? ORDER BY SYMBOL_Y2005
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	 WHERE SYMBOL_Y2006 = ? ORDER BY SYMBOL_Y2006
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	 WHERE SYMBOL_Y2007 = ? ORDER BY SYMBOL_Y2007
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	 WHERE SYMBOL_Y2008 = ? ORDER BY SYMBOL_Y2008
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	 WHERE SYMBOL_Y2009 = ? ORDER BY SYMBOL_Y2009
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	 WHERE SYMBOL_Y2010 = ? ORDER BY SYMBOL_Y2010
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	 WHERE SYMBOL_Y2011 = ? ORDER BY SYMBOL_Y2011
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	 WHERE SYMBOL_Y2012 = ? ORDER BY SYMBOL_Y2012
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	 WHERE SYMBOL_Y2013 = ? ORDER BY SYMBOL_Y2013
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	 WHERE SYMBOL_Y2014 = ? ORDER BY SYMBOL_Y2014
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	 WHERE SYMBOL_Y2015 = ? ORDER BY SYMBOL_Y2015
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	 WHERE SYMBOL_Y2016 = ? ORDER BY SYMBOL_Y2016
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	 WHERE SYMBOL_Y2017 = ? ORDER BY SYMBOL_Y2017
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	 WHERE SYMBOL_Y2018 = ? ORDER BY SYMBOL_Y2018
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	 WHERE SYMBOL_Y2019 = ? ORDER BY SYMBOL_Y2019
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	 WHERE SYMBOL_Y2020 = ? ORDER BY SYMBOL_Y2020
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	 WHERE SYMBOL_Y2021 = ? ORDER BY SYMBOL_Y2021
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	 WHERE SYMBOL_Y2022 = ? ORDER BY SYMBOL_Y2022
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	 WHERE SYMBOL_Y2023 = ? ORDER BY SYMBOL_Y2023
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	 WHERE SYMBOL_Y2024 = ? ORDER BY SYMBOL_Y2024
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	 WHERE VALUE_Y1984 = ? ORDER BY VALUE_Y1984
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	 WHERE VALUE_Y1985 = ? ORDER BY VALUE_Y1985
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	 WHERE VALUE_Y1986 = ? ORDER BY VALUE_Y1986
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	 WHERE VALUE_Y1987 = ? ORDER BY VALUE_Y1987
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	 WHERE VALUE_Y1988 = ? ORDER BY VALUE_Y1988
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	 WHERE VALUE_Y1989 = ? ORDER BY VALUE_Y1989
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	 WHERE VALUE_Y1990 = ? ORDER BY VALUE_Y1990
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	 WHERE VALUE_Y1991 = ? ORDER BY VALUE_Y1991
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	 WHERE VALUE_Y1992 = ? ORDER BY VALUE_Y1992
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	 WHERE VALUE_Y1993 = ? ORDER BY VALUE_Y1993
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	 WHERE VALUE_Y1994 = ? ORDER BY VALUE_Y1994
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	 WHERE VALUE_Y1995 = ? ORDER BY VALUE_Y1995
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	 WHERE VALUE_Y1996 = ? ORDER BY VALUE_Y1996
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	 WHERE VALUE_Y1997 = ? ORDER BY VALUE_Y1997
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	 WHERE VALUE_Y1998 = ? ORDER BY VALUE_Y1998
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	 WHERE VALUE_Y1999 = ? ORDER BY VALUE_Y1999
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	 WHERE VALUE_Y2000 = ? ORDER BY VALUE_Y2000
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	 WHERE VALUE_Y2001 = ? ORDER BY VALUE_Y2001
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	 WHERE VALUE_Y2002 = ? ORDER BY VALUE_Y2002
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	 WHERE VALUE_Y2003 = ? ORDER BY VALUE_Y2003
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	 WHERE VALUE_Y2004 = ? ORDER BY VALUE_Y2004
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	 WHERE VALUE_Y2005 = ? ORDER BY VALUE_Y2005
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	 WHERE VALUE_Y2006 = ? ORDER BY VALUE_Y2006
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	 WHERE VALUE_Y2007 = ? ORDER BY VALUE_Y2007
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	 WHERE VALUE_Y2008 = ? ORDER BY VALUE_Y2008
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	 WHERE VALUE_Y2009 = ? ORDER BY VALUE_Y2009
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	 WHERE VALUE_Y2010 = ? ORDER BY VALUE_Y2010
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	 WHERE VALUE_Y2011 = ? ORDER BY VALUE_Y2011
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	 WHERE VALUE_Y2012 = ? ORDER BY VALUE_Y2012
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	 WHERE VALUE_Y2013 = ? ORDER BY VALUE_Y2013
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	 WHERE VALUE_Y2014 = ? ORDER BY VALUE_Y2014
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	 WHERE VALUE_Y2015 = ? ORDER BY VALUE_Y2015
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	 WHERE VALUE_Y2016 = ? ORDER BY VALUE_Y2016
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	 WHERE VALUE_Y2017 = ? ORDER BY VALUE_Y2017
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	 WHERE VALUE_Y2018 = ? ORDER BY VALUE_Y2018
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	 WHERE VALUE_Y2019 = ? ORDER BY VALUE_Y2019
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	 WHERE VALUE_Y2020 = ? ORDER BY VALUE_Y2020
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	 WHERE VALUE_Y2021 = ? ORDER BY VALUE_Y2021
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	 WHERE VALUE_Y2022 = ? ORDER BY VALUE_Y2022
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	 WHERE VALUE_Y2023 = ? ORDER BY VALUE_Y2023
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	 WHERE VALUE_Y2024 = ? ORDER BY VALUE_Y2024
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	()Ljava/sql/Connection;
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	(Ljava/sql/Connection;)V
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	3org/fao/fi/fishstat/data/generated/jdbc/AbstractDAO
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	7org/fao/fi/fishstat/data/generated/jdbc/ResourceManager
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	:org/fao/fi/fishstat/data/generated/dto/TsdAquacultureValue
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	<org/fao/fi/fishstat/data/generated/dto/TsdAquacultureValuePk
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	=[Lorg/fao/fi/fishstat/data/generated/dto/TsdAquacultureValue;
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	=org/fao/fi/fishstat/data/generated/dao/TsdAquacultureValueDao
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	?()[Lorg/fao/fi/fishstat/data/generated/dto/TsdAquacultureValue;
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	?(Lorg/fao/fi/fishstat/data/generated/dto/TsdAquacultureValue;)V
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	@()Lorg/fao/fi/fishstat/data/generated/dto/TsdAquacultureValuePk;
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	A(Lorg/fao/fi/fishstat/data/generated/dto/TsdAquacultureValuePk;)V
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	Borg/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	COLUMN_COUNTRY
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	COLUMN_ENVIRONMENT
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	COLUMN_MEASURE
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	COLUMN_SPECIES
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	COLUMN_VALUE_Y1984
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	COLUMN_VALUE_Y1985
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	COLUMN_VALUE_Y1986
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	COLUMN_VALUE_Y1987
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	COLUMN_VALUE_Y1988
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	COLUMN_VALUE_Y1989
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	COLUMN_VALUE_Y1990
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	COLUMN_VALUE_Y1991
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	COLUMN_VALUE_Y1992
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	COLUMN_VALUE_Y1993
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	COLUMN_VALUE_Y1994
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	COLUMN_VALUE_Y1995
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	COLUMN_VALUE_Y1996
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	COLUMN_VALUE_Y1997
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	COLUMN_VALUE_Y1998
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	COLUMN_VALUE_Y1999
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	COLUMN_VALUE_Y2000
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	COLUMN_VALUE_Y2001
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	COLUMN_VALUE_Y2002
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	COLUMN_VALUE_Y2003
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	COLUMN_VALUE_Y2004
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	COLUMN_VALUE_Y2005
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	COLUMN_VALUE_Y2006
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	COLUMN_VALUE_Y2007
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	COLUMN_VALUE_Y2008
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	COLUMN_VALUE_Y2009
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	COLUMN_VALUE_Y2010
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	COLUMN_VALUE_Y2011
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	COLUMN_VALUE_Y2012
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	COLUMN_VALUE_Y2013
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	COLUMN_VALUE_Y2014
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	COLUMN_VALUE_Y2015
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	COLUMN_VALUE_Y2016
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	COLUMN_VALUE_Y2017
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	COLUMN_VALUE_Y2018
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	COLUMN_VALUE_Y2019
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	COLUMN_VALUE_Y2020
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	COLUMN_VALUE_Y2021
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	COLUMN_VALUE_Y2022
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	COLUMN_VALUE_Y2023
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	COLUMN_VALUE_Y2024
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	ConstantValue
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	DELETE FROM 
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	INSERT INTO 
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	Ljava/sql/Connection;
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	Morg/fao/fi/fishstat/data/generated/exceptions/TsdAquacultureValueDaoException
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	P(Ljava/lang/String;)Lorg/fao/fi/fishstat/data/generated/dto/TsdAquacultureValue;
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	Q(Ljava/lang/Double;)[Lorg/fao/fi/fishstat/data/generated/dto/TsdAquacultureValue;
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	Q(Ljava/lang/String;)[Lorg/fao/fi/fishstat/data/generated/dto/TsdAquacultureValue;
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	R(Ljava/sql/ResultSet;)Lorg/fao/fi/fishstat/data/generated/dto/TsdAquacultureValue;
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	S(Ljava/sql/ResultSet;)[Lorg/fao/fi/fishstat/data/generated/dto/TsdAquacultureValue;
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	S(Lorg/fao/fi/fishstat/data/generated/dto/TsdAquacultureValue;Ljava/sql/ResultSet;)V
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	SELECT ID, COUNTRY, SPECIES, AREA, ENVIRONMENT, MEASURE, VALUE_Y1984, SYMBOL_Y1984, VALUE_Y1985, SYMBOL_Y1985, VALUE_Y1986, SYMBOL_Y1986, VALUE_Y1987, SYMBOL_Y1987, VALUE_Y1988, SYMBOL_Y1988, VALUE_Y1989, SYMBOL_Y1989, VALUE_Y1990, SYMBOL_Y1990, VALUE_Y1991, SYMBOL_Y1991, VALUE_Y1992, SYMBOL_Y1992, VALUE_Y1993, SYMBOL_Y1993, VALUE_Y1994, SYMBOL_Y1994, VALUE_Y1995, SYMBOL_Y1995, VALUE_Y1996, SYMBOL_Y1996, VALUE_Y1997, SYMBOL_Y1997, VALUE_Y1998, SYMBOL_Y1998, VALUE_Y1999, SYMBOL_Y1999, VALUE_Y2000, SYMBOL_Y2000, VALUE_Y2001, SYMBOL_Y2001, VALUE_Y2002, SYMBOL_Y2002, VALUE_Y2003, SYMBOL_Y2003, VALUE_Y2004, SYMBOL_Y2004, VALUE_Y2005, SYMBOL_Y2005, VALUE_Y2006, SYMBOL_Y2006, VALUE_Y2007, SYMBOL_Y2007, VALUE_Y2008, SYMBOL_Y2008, VALUE_Y2009, SYMBOL_Y2009, VALUE_Y2010, SYMBOL_Y2010, VALUE_Y2011, SYMBOL_Y2011, VALUE_Y2012, SYMBOL_Y2012, VALUE_Y2013, SYMBOL_Y2013, VALUE_Y2014, SYMBOL_Y2014, VALUE_Y2015, SYMBOL_Y2015, VALUE_Y2016, SYMBOL_Y2016, VALUE_Y2017, SYMBOL_Y2017, VALUE_Y2018, SYMBOL_Y2018, VALUE_Y2019, SYMBOL_Y2019, VALUE_Y2020, SYMBOL_Y2020, VALUE_Y2021, SYMBOL_Y2021, VALUE_Y2022, SYMBOL_Y2022, VALUE_Y2023, SYMBOL_Y2023, VALUE_Y2024, SYMBOL_Y2024 FROM 
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	SQL_DELETE
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	SQL_INSERT
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	SQL_SELECT
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	SQL_UPDATE
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	TSD_AQUACULTURE_VALUE
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	TsdAquacultureValueDaoImpl.java
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	UPDATE 
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	d(Ljava/lang/String;[Ljava/lang/Object;)[Lorg/fao/fi/fishstat/data/generated/dto/TsdAquacultureValue;
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	delete
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	doubleValue
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	executeUpdate
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	findByDynamicSelect
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	findByDynamicWhere
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	findWhereAreaEquals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	findWhereCountryEquals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	findWhereEnvironmentEquals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	findWhereIdEquals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	findWhereMeasureEquals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	findWhereSpeciesEquals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	findWhereSymbolY1984Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	findWhereSymbolY1985Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	findWhereSymbolY1986Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	findWhereSymbolY1987Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	findWhereSymbolY1988Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	findWhereSymbolY1989Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	findWhereSymbolY1990Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	findWhereSymbolY1991Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	findWhereSymbolY1992Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	findWhereSymbolY1993Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	findWhereSymbolY1994Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	findWhereSymbolY1995Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	findWhereSymbolY1996Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	findWhereSymbolY1997Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	findWhereSymbolY1998Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	findWhereSymbolY1999Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	findWhereSymbolY2000Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	findWhereSymbolY2001Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	findWhereSymbolY2002Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	findWhereSymbolY2003Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	findWhereSymbolY2004Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	findWhereSymbolY2005Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	findWhereSymbolY2006Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	findWhereSymbolY2007Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	findWhereSymbolY2008Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	findWhereSymbolY2009Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	findWhereSymbolY2010Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	findWhereSymbolY2011Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	findWhereSymbolY2012Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	findWhereSymbolY2013Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	findWhereSymbolY2014Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	findWhereSymbolY2015Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	findWhereSymbolY2016Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	findWhereSymbolY2017Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	findWhereSymbolY2018Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	findWhereSymbolY2019Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	findWhereSymbolY2020Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	findWhereSymbolY2021Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	findWhereSymbolY2022Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	findWhereSymbolY2023Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	findWhereSymbolY2024Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	findWhereValueY1984Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	findWhereValueY1985Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	findWhereValueY1986Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	findWhereValueY1987Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	findWhereValueY1988Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	findWhereValueY1989Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	findWhereValueY1990Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	findWhereValueY1991Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	findWhereValueY1992Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	findWhereValueY1993Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	findWhereValueY1994Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	findWhereValueY1995Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	findWhereValueY1996Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	findWhereValueY1997Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	findWhereValueY1998Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	findWhereValueY1999Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	findWhereValueY2000Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	findWhereValueY2001Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	findWhereValueY2002Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	findWhereValueY2003Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	findWhereValueY2004Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	findWhereValueY2005Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	findWhereValueY2006Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	findWhereValueY2007Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	findWhereValueY2008Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	findWhereValueY2009Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	findWhereValueY2010Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	findWhereValueY2011Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	findWhereValueY2012Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	findWhereValueY2013Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	findWhereValueY2014Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	findWhereValueY2015Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	findWhereValueY2016Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	findWhereValueY2017Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	findWhereValueY2018Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	findWhereValueY2019Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	findWhereValueY2020Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	findWhereValueY2021Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	findWhereValueY2022Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	findWhereValueY2023Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	findWhereValueY2024Equals
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	getConnection
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	getCountry
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	getEnvironment
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	getMeasure
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	getSpecies
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	getValueY1984
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	getValueY1985
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	getValueY1986
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	getValueY1987
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	getValueY1988
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	getValueY1989
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	getValueY1990
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	getValueY1991
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	getValueY1992
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	getValueY1993
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	getValueY1994
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	getValueY1995
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	getValueY1996
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	getValueY1997
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	getValueY1998
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	getValueY1999
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	getValueY2000
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	getValueY2001
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	getValueY2002
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	getValueY2003
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	getValueY2004
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	getValueY2005
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	getValueY2006
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	getValueY2007
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	getValueY2008
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	getValueY2009
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	getValueY2010
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	getValueY2011
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	getValueY2012
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	getValueY2013
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	getValueY2014
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	getValueY2015
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	getValueY2016
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	getValueY2017
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	getValueY2018
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	getValueY2019
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	getValueY2020
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	getValueY2021
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	getValueY2022
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	getValueY2023
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	getValueY2024
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	insert
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	java/sql/Connection
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	setCountry
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	setEnvironment
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	setMeasure
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	setSpecies
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	setValueY1984
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	setValueY1985
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	setValueY1986
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	setValueY1987
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	setValueY1988
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	setValueY1989
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	setValueY1990
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	setValueY1991
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	setValueY1992
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	setValueY1993
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	setValueY1994
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	setValueY1995
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	setValueY1996
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	setValueY1997
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	setValueY1998
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	setValueY1999
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	setValueY2000
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	setValueY2001
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	setValueY2002
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	setValueY2003
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	setValueY2004
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	setValueY2005
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	setValueY2006
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	setValueY2007
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	setValueY2008
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	setValueY2009
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	setValueY2010
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	setValueY2011
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	setValueY2012
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	setValueY2013
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	setValueY2014
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	setValueY2015
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	setValueY2016
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	setValueY2017
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	setValueY2018
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	setValueY2019
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	setValueY2020
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	setValueY2021
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	setValueY2022
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	setValueY2023
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	setValueY2024
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	update
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	|(Lorg/fao/fi/fishstat/data/generated/dto/TsdAquacultureValue;)Lorg/fao/fi/fishstat/data/generated/dto/TsdAquacultureValuePk;
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	|(Lorg/fao/fi/fishstat/data/generated/dto/TsdAquacultureValuePk;)Lorg/fao/fi/fishstat/data/generated/dto/TsdAquacultureValue;
+org/fao/fi/fishstat/data/generated/jdbc/TsdAquacultureValueDaoImpl.class	}(Lorg/fao/fi/fishstat/data/generated/dto/TsdAquacultureValuePk;Lorg/fao/fi/fishstat/data/generated/dto/TsdAquacultureValue;)V
+org/fao/fi/fishstat/data/generated/jdbc/TsmDatasetDaoImpl.class	 ( ID, ACRONYM, NAME_EN, NAME_FR, NAME_ES, NAME_AR, NAME_ZH, NAME_RU, DESCRIPTION_EN, DESCRIPTION_FR, DESCRIPTION_ES, DESCRIPTION_AR, DESCRIPTION_ZH, DESCRIPTION_RU, CITATION_EN, CITATION_FR, CITATION_ES, CITATION_AR, CITATION_ZH, CITATION_RU, DATA_SOURCE, URL, V_DATE, V_AUTHOR, V_NUMBER ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? )
+org/fao/fi/fishstat/data/generated/jdbc/TsmDatasetDaoImpl.class	 SET ID = ?, ACRONYM = ?, NAME_EN = ?, NAME_FR = ?, NAME_ES = ?, NAME_AR = ?, NAME_ZH = ?, NAME_RU = ?, DESCRIPTION_EN = ?, DESCRIPTION_FR = ?, DESCRIPTION_ES = ?, DESCRIPTION_AR = ?, DESCRIPTION_ZH = ?, DESCRIPTION_RU = ?, CITATION_EN = ?, CITATION_FR = ?, CITATION_ES = ?, CITATION_AR = ?, CITATION_ZH = ?, CITATION_RU = ?, DATA_SOURCE = ?, URL = ?, V_DATE = ?, V_AUTHOR = ?, V_NUMBER = ? WHERE ID = ?
+org/fao/fi/fishstat/data/generated/jdbc/TsmDatasetDaoImpl.class	 WHERE 
+org/fao/fi/fishstat/data/generated/jdbc/TsmDatasetDaoImpl.class	 WHERE ACRONYM = ? ORDER BY ACRONYM
+org/fao/fi/fishstat/data/generated/jdbc/TsmDatasetDaoImpl.class	 WHERE CITATION_AR = ? ORDER BY CITATION_AR
+org/fao/fi/fishstat/data/generated/jdbc/TsmDatasetDaoImpl.class	 WHERE CITATION_EN = ? ORDER BY CITATION_EN
+org/fao/fi/fishstat/data/generated/jdbc/TsmDatasetDaoImpl.class	 WHERE CITATION_ES = ? ORDER BY CITATION_ES
+org/fao/fi/fishstat/data/generated/jdbc/TsmDatasetDaoImpl.class	 WHERE CITATION_FR = ? ORDER BY CITATION_FR
+org/fao/fi/fishstat/data/generated/jdbc/TsmDatasetDaoImpl.class	 WHERE CITATION_RU = ? ORDER BY CITATION_RU
+org/fao/fi/fishstat/data/generated/jdbc/TsmDatasetDaoImpl.class	 WHERE CITATION_ZH = ? ORDER BY CITATION_ZH
+org/fao/fi/fishstat/data/generated/jdbc/TsmDatasetDaoImpl.class	 WHERE DATA_SOURCE = ? ORDER BY DATA_SOURCE
+org/fao/fi/fishstat/data/generated/jdbc/TsmDatasetDaoImpl.class	 WHERE DESCRIPTION_AR = ? ORDER BY DESCRIPTION_AR
+org/fao/fi/fishstat/data/generated/jdbc/TsmDatasetDaoImpl.class	 WHERE DESCRIPTION_EN = ? ORDER BY DESCRIPTION_EN
+org/fao/fi/fishstat/data/generated/jdbc/TsmDatasetDaoImpl.class	 WHERE DESCRIPTION_ES = ? ORDER BY DESCRIPTION_ES
+org/fao/fi/fishstat/data/generated/jdbc/TsmDatasetDaoImpl.class	 WHERE DESCRIPTION_FR = ? ORDER BY DESCRIPTION_FR
+org/fao/fi/fishstat/data/generated/jdbc/TsmDatasetDaoImpl.class	 WHERE DESCRIPTION_RU = ? ORDER BY DESCRIPTION_RU
+org/fao/fi/fishstat/data/generated/jdbc/TsmDatasetDaoImpl.class	 WHERE DESCRIPTION_ZH = ? ORDER BY DESCRIPTION_ZH
+org/fao/fi/fishstat/data/generated/jdbc/TsmDatasetDaoImpl.class	 WHERE ID = ?
+org/fao/fi/fishstat/data/generated/jdbc/TsmDatasetDaoImpl.class	 WHERE ID = ? ORDER BY ID
+org/fao/fi/fishstat/data/generated/jdbc/TsmDatasetDaoImpl.class	 WHERE NAME_AR = ? ORDER BY NAME_AR
+org/fao/fi/fishstat/data/generated/jdbc/TsmDatasetDaoImpl.class	 WHERE NAME_EN = ? ORDER BY NAME_EN
+org/fao/fi/fishstat/data/generated/jdbc/TsmDatasetDaoImpl.class	 WHERE NAME_ES = ? ORDER BY NAME_ES
+org/fao/fi/fishstat/data/generated/jdbc/TsmDatasetDaoImpl.class	 WHERE NAME_FR = ? ORDER BY NAME_FR
+org/fao/fi/fishstat/data/generated/jdbc/TsmDatasetDaoImpl.class	 WHERE NAME_RU = ? ORDER BY NAME_RU
+org/fao/fi/fishstat/data/generated/jdbc/TsmDatasetDaoImpl.class	 WHERE NAME_ZH = ? ORDER BY NAME_ZH
+org/fao/fi/fishstat/data/generated/jdbc/TsmDatasetDaoImpl.class	 WHERE URL = ? ORDER BY URL
+org/fao/fi/fishstat/data/generated/jdbc/TsmDatasetDaoImpl.class	 WHERE V_AUTHOR = ? ORDER BY V_AUTHOR
+org/fao/fi/fishstat/data/generated/jdbc/TsmDatasetDaoImpl.class	 WHERE V_DATE = ? ORDER BY V_DATE
+org/fao/fi/fishstat/data/generated/jdbc/TsmDatasetDaoImpl.class	 WHERE V_NUMBER = ? ORDER BY V_NUMBER
+org/fao/fi/fishstat/data/generated/jdbc/TsmDatasetDaoImpl.class	()Ljava/sql/Connection;
+org/fao/fi/fishstat/data/generated/jdbc/TsmDatasetDaoImpl.class	(Ljava/sql/Connection;)V
+org/fao/fi/fishstat/data/generated/jdbc/TsmDatasetDaoImpl.class	+SELECT ID, ACRONYM, NAME_EN, NAME_FR, NAME_ES, NAME_AR, NAME_ZH, NAME_RU, DESCRIPTION_EN, DESCRIPTION_FR, DESCRIPTION_ES, DESCRIPTION_AR, DESCRIPTION_ZH, DESCRIPTION_RU, CITATION_EN, CITATION_FR, CITATION_ES, CITATION_AR, CITATION_ZH, CITATION_RU, DATA_SOURCE, URL, V_DATE, V_AUTHOR, V_NUMBER FROM 
+org/fao/fi/fishstat/data/generated/jdbc/TsmDatasetDaoImpl.class	1org/fao/fi/fishstat/data/generated/dto/TsmDataset
+org/fao/fi/fishstat/data/generated/jdbc/TsmDatasetDaoImpl.class	3org/fao/fi/fishstat/data/generated/dto/TsmDatasetPk
+org/fao/fi/fishstat/data/generated/jdbc/TsmDatasetDaoImpl.class	3org/fao/fi/fishstat/data/generated/jdbc/AbstractDAO
+org/fao/fi/fishstat/data/generated/jdbc/TsmDatasetDaoImpl.class	4[Lorg/fao/fi/fishstat/data/generated/dto/TsmDataset;
+org/fao/fi/fishstat/data/generated/jdbc/TsmDatasetDaoImpl.class	4org/fao/fi/fishstat/data/generated/dao/TsmDatasetDao
+org/fao/fi/fishstat/data/generated/jdbc/TsmDatasetDaoImpl.class	6()[Lorg/fao/fi/fishstat/data/generated/dto/TsmDataset;
+org/fao/fi/fishstat/data/generated/jdbc/TsmDatasetDaoImpl.class	6(Lorg/fao/fi/fishstat/data/generated/dto/TsmDataset;)V
+org/fao/fi/fishstat/data/generated/jdbc/TsmDatasetDaoImpl.class	7()Lorg/fao/fi/fishstat/data/generated/dto/TsmDatasetPk;
+org/fao/fi/fishstat/data/generated/jdbc/TsmDatasetDaoImpl.class	7org/fao/fi/fishstat/data/generated/jdbc/ResourceManager
+org/fao/fi/fishstat/data/generated/jdbc/TsmDatasetDaoImpl.class	8(Lorg/fao/fi/fishstat/data/generated/dto/TsmDatasetPk;)V
+org/fao/fi/fishstat/data/generated/jdbc/TsmDatasetDaoImpl.class	9org/fao/fi/fishstat/data/generated/jdbc/TsmDatasetDaoImpl
+org/fao/fi/fishstat/data/generated/jdbc/TsmDatasetDaoImpl.class	ConstantValue
+org/fao/fi/fishstat/data/generated/jdbc/TsmDatasetDaoImpl.class	DELETE FROM 
+org/fao/fi/fishstat/data/generated/jdbc/TsmDatasetDaoImpl.class	Dorg/fao/fi/fishstat/data/generated/exceptions/TsmDatasetDaoException
+org/fao/fi/fishstat/data/generated/jdbc/TsmDatasetDaoImpl.class	F(Ljava/util/Date;)[Lorg/fao/fi/fishstat/data/generated/dto/TsmDataset;
+org/fao/fi/fishstat/data/generated/jdbc/TsmDatasetDaoImpl.class	G(Ljava/lang/String;)Lorg/fao/fi/fishstat/data/generated/dto/TsmDataset;
+org/fao/fi/fishstat/data/generated/jdbc/TsmDatasetDaoImpl.class	H(Ljava/lang/String;)[Lorg/fao/fi/fishstat/data/generated/dto/TsmDataset;
+org/fao/fi/fishstat/data/generated/jdbc/TsmDatasetDaoImpl.class	I(Ljava/sql/ResultSet;)Lorg/fao/fi/fishstat/data/generated/dto/TsmDataset;
+org/fao/fi/fishstat/data/generated/jdbc/TsmDatasetDaoImpl.class	INSERT INTO 
+org/fao/fi/fishstat/data/generated/jdbc/TsmDatasetDaoImpl.class	J(Ljava/sql/ResultSet;)[Lorg/fao/fi/fishstat/data/generated/dto/TsmDataset;
+org/fao/fi/fishstat/data/generated/jdbc/TsmDatasetDaoImpl.class	J(Lorg/fao/fi/fishstat/data/generated/dto/TsmDataset;Ljava/sql/ResultSet;)V
+org/fao/fi/fishstat/data/generated/jdbc/TsmDatasetDaoImpl.class	Ljava/sql/Connection;
+org/fao/fi/fishstat/data/generated/jdbc/TsmDatasetDaoImpl.class	SQL_DELETE
+org/fao/fi/fishstat/data/generated/jdbc/TsmDatasetDaoImpl.class	SQL_INSERT
+org/fao/fi/fishstat/data/generated/jdbc/TsmDatasetDaoImpl.class	SQL_SELECT
+org/fao/fi/fishstat/data/generated/jdbc/TsmDatasetDaoImpl.class	SQL_UPDATE
+org/fao/fi/fishstat/data/generated/jdbc/TsmDatasetDaoImpl.class	TSM_DATASET
+org/fao/fi/fishstat/data/generated/jdbc/TsmDatasetDaoImpl.class	TsmDatasetDaoImpl.java
+org/fao/fi/fishstat/data/generated/jdbc/TsmDatasetDaoImpl.class	UPDATE 
+org/fao/fi/fishstat/data/generated/jdbc/TsmDatasetDaoImpl.class	[(Ljava/lang/String;[Ljava/lang/Object;)[Lorg/fao/fi/fishstat/data/generated/dto/TsmDataset;
+org/fao/fi/fishstat/data/generated/jdbc/TsmDatasetDaoImpl.class	delete
+org/fao/fi/fishstat/data/generated/jdbc/TsmDatasetDaoImpl.class	executeUpdate
+org/fao/fi/fishstat/data/generated/jdbc/TsmDatasetDaoImpl.class	findByDynamicSelect
+org/fao/fi/fishstat/data/generated/jdbc/TsmDatasetDaoImpl.class	findByDynamicWhere
+org/fao/fi/fishstat/data/generated/jdbc/TsmDatasetDaoImpl.class	findWhereAcronymEquals
+org/fao/fi/fishstat/data/generated/jdbc/TsmDatasetDaoImpl.class	findWhereCitationArEquals
+org/fao/fi/fishstat/data/generated/jdbc/TsmDatasetDaoImpl.class	findWhereCitationEnEquals
+org/fao/fi/fishstat/data/generated/jdbc/TsmDatasetDaoImpl.class	findWhereCitationEsEquals
+org/fao/fi/fishstat/data/generated/jdbc/TsmDatasetDaoImpl.class	findWhereCitationFrEquals
+org/fao/fi/fishstat/data/generated/jdbc/TsmDatasetDaoImpl.class	findWhereCitationRuEquals
+org/fao/fi/fishstat/data/generated/jdbc/TsmDatasetDaoImpl.class	findWhereCitationZhEquals
+org/fao/fi/fishstat/data/generated/jdbc/TsmDatasetDaoImpl.class	findWhereDataSourceEquals
+org/fao/fi/fishstat/data/generated/jdbc/TsmDatasetDaoImpl.class	findWhereDescriptionArEquals
+org/fao/fi/fishstat/data/generated/jdbc/TsmDatasetDaoImpl.class	findWhereDescriptionEnEquals
+org/fao/fi/fishstat/data/generated/jdbc/TsmDatasetDaoImpl.class	findWhereDescriptionEsEquals
+org/fao/fi/fishstat/data/generated/jdbc/TsmDatasetDaoImpl.class	findWhereDescriptionFrEquals
+org/fao/fi/fishstat/data/generated/jdbc/TsmDatasetDaoImpl.class	findWhereDescriptionRuEquals
+org/fao/fi/fishstat/data/generated/jdbc/TsmDatasetDaoImpl.class	findWhereDescriptionZhEquals
+org/fao/fi/fishstat/data/generated/jdbc/TsmDatasetDaoImpl.class	findWhereIdEquals
+org/fao/fi/fishstat/data/generated/jdbc/TsmDatasetDaoImpl.class	findWhereNameArEquals
+org/fao/fi/fishstat/data/generated/jdbc/TsmDatasetDaoImpl.class	findWhereNameEnEquals
+org/fao/fi/fishstat/data/generated/jdbc/TsmDatasetDaoImpl.class	findWhereNameEsEquals
+org/fao/fi/fishstat/data/generated/jdbc/TsmDatasetDaoImpl.class	findWhereNameFrEquals
+org/fao/fi/fishstat/data/generated/jdbc/TsmDatasetDaoImpl.class	findWhereNameRuEquals
+org/fao/fi/fishstat/data/generated/jdbc/TsmDatasetDaoImpl.class	findWhereNameZhEquals
+org/fao/fi/fishstat/data/generated/jdbc/TsmDatasetDaoImpl.class	findWhereUrlEquals
+org/fao/fi/fishstat/data/generated/jdbc/TsmDatasetDaoImpl.class	findWhereVAuthorEquals
+org/fao/fi/fishstat/data/generated/jdbc/TsmDatasetDaoImpl.class	findWhereVDateEquals
+org/fao/fi/fishstat/data/generated/jdbc/TsmDatasetDaoImpl.class	findWhereVNumberEquals
+org/fao/fi/fishstat/data/generated/jdbc/TsmDatasetDaoImpl.class	getConnection
+org/fao/fi/fishstat/data/generated/jdbc/TsmDatasetDaoImpl.class	insert
+org/fao/fi/fishstat/data/generated/jdbc/TsmDatasetDaoImpl.class	j(Lorg/fao/fi/fishstat/data/generated/dto/TsmDataset;)Lorg/fao/fi/fishstat/data/generated/dto/TsmDatasetPk;
+org/fao/fi/fishstat/data/generated/jdbc/TsmDatasetDaoImpl.class	j(Lorg/fao/fi/fishstat/data/generated/dto/TsmDatasetPk;)Lorg/fao/fi/fishstat/data/generated/dto/TsmDataset;
+org/fao/fi/fishstat/data/generated/jdbc/TsmDatasetDaoImpl.class	java/sql/Connection
+org/fao/fi/fishstat/data/generated/jdbc/TsmDatasetDaoImpl.class	k(Lorg/fao/fi/fishstat/data/generated/dto/TsmDatasetPk;Lorg/fao/fi/fishstat/data/generated/dto/TsmDataset;)V
+org/fao/fi/fishstat/data/generated/jdbc/TsmDatasetDaoImpl.class	update
+org/fao/fi/fishstat/data/generated/jdbc/TsmDimensionDaoImpl.class	 ( ID, DATASET_ID, NAME_EN, NAME_FR, NAME_ES, NAME_AR, NAME_ZH, NAME_RU, ACRONYM, DESCRIPTION_EN, DESCRIPTION_FR, DESCRIPTION_ES, DESCRIPTION_AR, DESCRIPTION_ZH, DESCRIPTION_RU, IS_MEASURE, ATTRIBUTE, CONCEPT, HAS_NOTE ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? )
+org/fao/fi/fishstat/data/generated/jdbc/TsmDimensionDaoImpl.class	 SET ID = ?, DATASET_ID = ?, NAME_EN = ?, NAME_FR = ?, NAME_ES = ?, NAME_AR = ?, NAME_ZH = ?, NAME_RU = ?, ACRONYM = ?, DESCRIPTION_EN = ?, DESCRIPTION_FR = ?, DESCRIPTION_ES = ?, DESCRIPTION_AR = ?, DESCRIPTION_ZH = ?, DESCRIPTION_RU = ?, IS_MEASURE = ?, ATTRIBUTE = ?, CONCEPT = ?, HAS_NOTE = ? WHERE ID = ?
+org/fao/fi/fishstat/data/generated/jdbc/TsmDimensionDaoImpl.class	 WHERE 
+org/fao/fi/fishstat/data/generated/jdbc/TsmDimensionDaoImpl.class	 WHERE ACRONYM = ? ORDER BY ACRONYM
+org/fao/fi/fishstat/data/generated/jdbc/TsmDimensionDaoImpl.class	 WHERE ATTRIBUTE = ? ORDER BY ATTRIBUTE
+org/fao/fi/fishstat/data/generated/jdbc/TsmDimensionDaoImpl.class	 WHERE CONCEPT = ? ORDER BY CONCEPT
+org/fao/fi/fishstat/data/generated/jdbc/TsmDimensionDaoImpl.class	 WHERE DATASET_ID = ?
+org/fao/fi/fishstat/data/generated/jdbc/TsmDimensionDaoImpl.class	 WHERE DATASET_ID = ? ORDER BY DATASET_ID
+org/fao/fi/fishstat/data/generated/jdbc/TsmDimensionDaoImpl.class	 WHERE DESCRIPTION_AR = ? ORDER BY DESCRIPTION_AR
+org/fao/fi/fishstat/data/generated/jdbc/TsmDimensionDaoImpl.class	 WHERE DESCRIPTION_EN = ? ORDER BY DESCRIPTION_EN
+org/fao/fi/fishstat/data/generated/jdbc/TsmDimensionDaoImpl.class	 WHERE DESCRIPTION_ES = ? ORDER BY DESCRIPTION_ES
+org/fao/fi/fishstat/data/generated/jdbc/TsmDimensionDaoImpl.class	 WHERE DESCRIPTION_FR = ? ORDER BY DESCRIPTION_FR
+org/fao/fi/fishstat/data/generated/jdbc/TsmDimensionDaoImpl.class	 WHERE DESCRIPTION_RU = ? ORDER BY DESCRIPTION_RU
+org/fao/fi/fishstat/data/generated/jdbc/TsmDimensionDaoImpl.class	 WHERE DESCRIPTION_ZH = ? ORDER BY DESCRIPTION_ZH
+org/fao/fi/fishstat/data/generated/jdbc/TsmDimensionDaoImpl.class	 WHERE HAS_NOTE = ? ORDER BY HAS_NOTE
+org/fao/fi/fishstat/data/generated/jdbc/TsmDimensionDaoImpl.class	 WHERE ID = ?
+org/fao/fi/fishstat/data/generated/jdbc/TsmDimensionDaoImpl.class	 WHERE ID = ? ORDER BY ID
+org/fao/fi/fishstat/data/generated/jdbc/TsmDimensionDaoImpl.class	 WHERE IS_MEASURE = ? ORDER BY IS_MEASURE
+org/fao/fi/fishstat/data/generated/jdbc/TsmDimensionDaoImpl.class	 WHERE NAME_AR = ? ORDER BY NAME_AR
+org/fao/fi/fishstat/data/generated/jdbc/TsmDimensionDaoImpl.class	 WHERE NAME_EN = ? ORDER BY NAME_EN
+org/fao/fi/fishstat/data/generated/jdbc/TsmDimensionDaoImpl.class	 WHERE NAME_ES = ? ORDER BY NAME_ES
+org/fao/fi/fishstat/data/generated/jdbc/TsmDimensionDaoImpl.class	 WHERE NAME_FR = ? ORDER BY NAME_FR
+org/fao/fi/fishstat/data/generated/jdbc/TsmDimensionDaoImpl.class	 WHERE NAME_RU = ? ORDER BY NAME_RU
+org/fao/fi/fishstat/data/generated/jdbc/TsmDimensionDaoImpl.class	 WHERE NAME_ZH = ? ORDER BY NAME_ZH
+org/fao/fi/fishstat/data/generated/jdbc/TsmDimensionDaoImpl.class	()Ljava/sql/Connection;
+org/fao/fi/fishstat/data/generated/jdbc/TsmDimensionDaoImpl.class	(Ljava/sql/Connection;)V
+org/fao/fi/fishstat/data/generated/jdbc/TsmDimensionDaoImpl.class	,INSERT INTO 
+org/fao/fi/fishstat/data/generated/jdbc/TsmDimensionDaoImpl.class	3org/fao/fi/fishstat/data/generated/dto/TsmDimension
+org/fao/fi/fishstat/data/generated/jdbc/TsmDimensionDaoImpl.class	3org/fao/fi/fishstat/data/generated/jdbc/AbstractDAO
+org/fao/fi/fishstat/data/generated/jdbc/TsmDimensionDaoImpl.class	5org/fao/fi/fishstat/data/generated/dto/TsmDimensionPk
+org/fao/fi/fishstat/data/generated/jdbc/TsmDimensionDaoImpl.class	6[Lorg/fao/fi/fishstat/data/generated/dto/TsmDimension;
+org/fao/fi/fishstat/data/generated/jdbc/TsmDimensionDaoImpl.class	6org/fao/fi/fishstat/data/generated/dao/TsmDimensionDao
+org/fao/fi/fishstat/data/generated/jdbc/TsmDimensionDaoImpl.class	7org/fao/fi/fishstat/data/generated/jdbc/ResourceManager
+org/fao/fi/fishstat/data/generated/jdbc/TsmDimensionDaoImpl.class	8()[Lorg/fao/fi/fishstat/data/generated/dto/TsmDimension;
+org/fao/fi/fishstat/data/generated/jdbc/TsmDimensionDaoImpl.class	8(Lorg/fao/fi/fishstat/data/generated/dto/TsmDimension;)V
+org/fao/fi/fishstat/data/generated/jdbc/TsmDimensionDaoImpl.class	9()Lorg/fao/fi/fishstat/data/generated/dto/TsmDimensionPk;
+org/fao/fi/fishstat/data/generated/jdbc/TsmDimensionDaoImpl.class	:(Lorg/fao/fi/fishstat/data/generated/dto/TsmDimensionPk;)V
+org/fao/fi/fishstat/data/generated/jdbc/TsmDimensionDaoImpl.class	;org/fao/fi/fishstat/data/generated/jdbc/TsmDimensionDaoImpl
+org/fao/fi/fishstat/data/generated/jdbc/TsmDimensionDaoImpl.class	=UPDATE 
+org/fao/fi/fishstat/data/generated/jdbc/TsmDimensionDaoImpl.class	COLUMN_DATASET_ID
+org/fao/fi/fishstat/data/generated/jdbc/TsmDimensionDaoImpl.class	COLUMN_IS_MEASURE
+org/fao/fi/fishstat/data/generated/jdbc/TsmDimensionDaoImpl.class	ConstantValue
+org/fao/fi/fishstat/data/generated/jdbc/TsmDimensionDaoImpl.class	DELETE FROM 
+org/fao/fi/fishstat/data/generated/jdbc/TsmDimensionDaoImpl.class	Forg/fao/fi/fishstat/data/generated/exceptions/TsmDimensionDaoException
+org/fao/fi/fishstat/data/generated/jdbc/TsmDimensionDaoImpl.class	I(Ljava/lang/Short;)[Lorg/fao/fi/fishstat/data/generated/dto/TsmDimension;
+org/fao/fi/fishstat/data/generated/jdbc/TsmDimensionDaoImpl.class	I(Ljava/lang/String;)Lorg/fao/fi/fishstat/data/generated/dto/TsmDimension;
+org/fao/fi/fishstat/data/generated/jdbc/TsmDimensionDaoImpl.class	J(Ljava/lang/String;)[Lorg/fao/fi/fishstat/data/generated/dto/TsmDimension;
+org/fao/fi/fishstat/data/generated/jdbc/TsmDimensionDaoImpl.class	K(Ljava/sql/ResultSet;)Lorg/fao/fi/fishstat/data/generated/dto/TsmDimension;
+org/fao/fi/fishstat/data/generated/jdbc/TsmDimensionDaoImpl.class	L(Ljava/sql/ResultSet;)[Lorg/fao/fi/fishstat/data/generated/dto/TsmDimension;
+org/fao/fi/fishstat/data/generated/jdbc/TsmDimensionDaoImpl.class	L(Lorg/fao/fi/fishstat/data/generated/dto/TsmDimension;Ljava/sql/ResultSet;)V
+org/fao/fi/fishstat/data/generated/jdbc/TsmDimensionDaoImpl.class	Ljava/sql/Connection;
+org/fao/fi/fishstat/data/generated/jdbc/TsmDimensionDaoImpl.class	SELECT ID, DATASET_ID, NAME_EN, NAME_FR, NAME_ES, NAME_AR, NAME_ZH, NAME_RU, ACRONYM, DESCRIPTION_EN, DESCRIPTION_FR, DESCRIPTION_ES, DESCRIPTION_AR, DESCRIPTION_ZH, DESCRIPTION_RU, IS_MEASURE, ATTRIBUTE, CONCEPT, HAS_NOTE FROM 
+org/fao/fi/fishstat/data/generated/jdbc/TsmDimensionDaoImpl.class	SQL_DELETE
+org/fao/fi/fishstat/data/generated/jdbc/TsmDimensionDaoImpl.class	SQL_INSERT
+org/fao/fi/fishstat/data/generated/jdbc/TsmDimensionDaoImpl.class	SQL_SELECT
+org/fao/fi/fishstat/data/generated/jdbc/TsmDimensionDaoImpl.class	SQL_UPDATE
+org/fao/fi/fishstat/data/generated/jdbc/TsmDimensionDaoImpl.class	TSM_DIMENSION
+org/fao/fi/fishstat/data/generated/jdbc/TsmDimensionDaoImpl.class	TsmDimensionDaoImpl.java
+org/fao/fi/fishstat/data/generated/jdbc/TsmDimensionDaoImpl.class	](Ljava/lang/String;[Ljava/lang/Object;)[Lorg/fao/fi/fishstat/data/generated/dto/TsmDimension;
+org/fao/fi/fishstat/data/generated/jdbc/TsmDimensionDaoImpl.class	delete
+org/fao/fi/fishstat/data/generated/jdbc/TsmDimensionDaoImpl.class	executeUpdate
+org/fao/fi/fishstat/data/generated/jdbc/TsmDimensionDaoImpl.class	findByDynamicSelect
+org/fao/fi/fishstat/data/generated/jdbc/TsmDimensionDaoImpl.class	findByDynamicWhere
+org/fao/fi/fishstat/data/generated/jdbc/TsmDimensionDaoImpl.class	findByTsmDataset
+org/fao/fi/fishstat/data/generated/jdbc/TsmDimensionDaoImpl.class	findWhereAcronymEquals
+org/fao/fi/fishstat/data/generated/jdbc/TsmDimensionDaoImpl.class	findWhereAttributeEquals
+org/fao/fi/fishstat/data/generated/jdbc/TsmDimensionDaoImpl.class	findWhereConceptEquals
+org/fao/fi/fishstat/data/generated/jdbc/TsmDimensionDaoImpl.class	findWhereDatasetIdEquals
+org/fao/fi/fishstat/data/generated/jdbc/TsmDimensionDaoImpl.class	findWhereDescriptionArEquals
+org/fao/fi/fishstat/data/generated/jdbc/TsmDimensionDaoImpl.class	findWhereDescriptionEnEquals
+org/fao/fi/fishstat/data/generated/jdbc/TsmDimensionDaoImpl.class	findWhereDescriptionEsEquals
+org/fao/fi/fishstat/data/generated/jdbc/TsmDimensionDaoImpl.class	findWhereDescriptionFrEquals
+org/fao/fi/fishstat/data/generated/jdbc/TsmDimensionDaoImpl.class	findWhereDescriptionRuEquals
+org/fao/fi/fishstat/data/generated/jdbc/TsmDimensionDaoImpl.class	findWhereDescriptionZhEquals
+org/fao/fi/fishstat/data/generated/jdbc/TsmDimensionDaoImpl.class	findWhereHasNoteEquals
+org/fao/fi/fishstat/data/generated/jdbc/TsmDimensionDaoImpl.class	findWhereIdEquals
+org/fao/fi/fishstat/data/generated/jdbc/TsmDimensionDaoImpl.class	findWhereIsMeasureEquals
+org/fao/fi/fishstat/data/generated/jdbc/TsmDimensionDaoImpl.class	findWhereNameArEquals
+org/fao/fi/fishstat/data/generated/jdbc/TsmDimensionDaoImpl.class	findWhereNameEnEquals
+org/fao/fi/fishstat/data/generated/jdbc/TsmDimensionDaoImpl.class	findWhereNameEsEquals
+org/fao/fi/fishstat/data/generated/jdbc/TsmDimensionDaoImpl.class	findWhereNameFrEquals
+org/fao/fi/fishstat/data/generated/jdbc/TsmDimensionDaoImpl.class	findWhereNameRuEquals
+org/fao/fi/fishstat/data/generated/jdbc/TsmDimensionDaoImpl.class	findWhereNameZhEquals
+org/fao/fi/fishstat/data/generated/jdbc/TsmDimensionDaoImpl.class	getConnection
+org/fao/fi/fishstat/data/generated/jdbc/TsmDimensionDaoImpl.class	getDatasetId
+org/fao/fi/fishstat/data/generated/jdbc/TsmDimensionDaoImpl.class	getIsMeasure
+org/fao/fi/fishstat/data/generated/jdbc/TsmDimensionDaoImpl.class	insert
+org/fao/fi/fishstat/data/generated/jdbc/TsmDimensionDaoImpl.class	java/sql/Connection
+org/fao/fi/fishstat/data/generated/jdbc/TsmDimensionDaoImpl.class	n(Lorg/fao/fi/fishstat/data/generated/dto/TsmDimension;)Lorg/fao/fi/fishstat/data/generated/dto/TsmDimensionPk;
+org/fao/fi/fishstat/data/generated/jdbc/TsmDimensionDaoImpl.class	n(Lorg/fao/fi/fishstat/data/generated/dto/TsmDimensionPk;)Lorg/fao/fi/fishstat/data/generated/dto/TsmDimension;
+org/fao/fi/fishstat/data/generated/jdbc/TsmDimensionDaoImpl.class	o(Lorg/fao/fi/fishstat/data/generated/dto/TsmDimensionPk;Lorg/fao/fi/fishstat/data/generated/dto/TsmDimension;)V
+org/fao/fi/fishstat/data/generated/jdbc/TsmDimensionDaoImpl.class	setDatasetId
+org/fao/fi/fishstat/data/generated/jdbc/TsmDimensionDaoImpl.class	setIsMeasure
+org/fao/fi/fishstat/data/generated/jdbc/TsmDimensionDaoImpl.class	shortValue
+org/fao/fi/fishstat/data/generated/jdbc/TsmDimensionDaoImpl.class	update
+org/fao/fi/fishstat/data/generated/jdbc/TsmTimeseriesDaoImpl.class	 ( ID, DATASET_ID, ACRONYM, NAME_EN, NAME_FR, NAME_ES, NAME_AR, NAME_ZH, NAME_RU, DESCRIPTION_EN, DESCRIPTION_FR, DESCRIPTION_ES, DESCRIPTION_AR, DESCRIPTION_ZH, DESCRIPTION_RU, DATA_SOURCE, TIME_RESOLUTION, FIRST_PERIOD, LAST_PERIOD, V_DATE, V_AUTHOR, V_NUMBER ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? )
+org/fao/fi/fishstat/data/generated/jdbc/TsmTimeseriesDaoImpl.class	 SET ID = ?, DATASET_ID = ?, ACRONYM = ?, NAME_EN = ?, NAME_FR = ?, NAME_ES = ?, NAME_AR = ?, NAME_ZH = ?, NAME_RU = ?, DESCRIPTION_EN = ?, DESCRIPTION_FR = ?, DESCRIPTION_ES = ?, DESCRIPTION_AR = ?, DESCRIPTION_ZH = ?, DESCRIPTION_RU = ?, DATA_SOURCE = ?, TIME_RESOLUTION = ?, FIRST_PERIOD = ?, LAST_PERIOD = ?, V_DATE = ?, V_AUTHOR = ?, V_NUMBER = ? WHERE ID = ?
+org/fao/fi/fishstat/data/generated/jdbc/TsmTimeseriesDaoImpl.class	 WHERE 
+org/fao/fi/fishstat/data/generated/jdbc/TsmTimeseriesDaoImpl.class	 WHERE ACRONYM = ? ORDER BY ACRONYM
+org/fao/fi/fishstat/data/generated/jdbc/TsmTimeseriesDaoImpl.class	 WHERE DATASET_ID = ?
+org/fao/fi/fishstat/data/generated/jdbc/TsmTimeseriesDaoImpl.class	 WHERE DATASET_ID = ? ORDER BY DATASET_ID
+org/fao/fi/fishstat/data/generated/jdbc/TsmTimeseriesDaoImpl.class	 WHERE DATA_SOURCE = ? ORDER BY DATA_SOURCE
+org/fao/fi/fishstat/data/generated/jdbc/TsmTimeseriesDaoImpl.class	 WHERE DESCRIPTION_AR = ? ORDER BY DESCRIPTION_AR
+org/fao/fi/fishstat/data/generated/jdbc/TsmTimeseriesDaoImpl.class	 WHERE DESCRIPTION_EN = ? ORDER BY DESCRIPTION_EN
+org/fao/fi/fishstat/data/generated/jdbc/TsmTimeseriesDaoImpl.class	 WHERE DESCRIPTION_ES = ? ORDER BY DESCRIPTION_ES
+org/fao/fi/fishstat/data/generated/jdbc/TsmTimeseriesDaoImpl.class	 WHERE DESCRIPTION_FR = ? ORDER BY DESCRIPTION_FR
+org/fao/fi/fishstat/data/generated/jdbc/TsmTimeseriesDaoImpl.class	 WHERE DESCRIPTION_RU = ? ORDER BY DESCRIPTION_RU
+org/fao/fi/fishstat/data/generated/jdbc/TsmTimeseriesDaoImpl.class	 WHERE DESCRIPTION_ZH = ? ORDER BY DESCRIPTION_ZH
+org/fao/fi/fishstat/data/generated/jdbc/TsmTimeseriesDaoImpl.class	 WHERE FIRST_PERIOD = ? ORDER BY FIRST_PERIOD
+org/fao/fi/fishstat/data/generated/jdbc/TsmTimeseriesDaoImpl.class	 WHERE ID = ?
+org/fao/fi/fishstat/data/generated/jdbc/TsmTimeseriesDaoImpl.class	 WHERE ID = ? ORDER BY ID
+org/fao/fi/fishstat/data/generated/jdbc/TsmTimeseriesDaoImpl.class	 WHERE LAST_PERIOD = ? ORDER BY LAST_PERIOD
+org/fao/fi/fishstat/data/generated/jdbc/TsmTimeseriesDaoImpl.class	 WHERE NAME_AR = ? ORDER BY NAME_AR
+org/fao/fi/fishstat/data/generated/jdbc/TsmTimeseriesDaoImpl.class	 WHERE NAME_EN = ? ORDER BY NAME_EN
+org/fao/fi/fishstat/data/generated/jdbc/TsmTimeseriesDaoImpl.class	 WHERE NAME_ES = ? ORDER BY NAME_ES
+org/fao/fi/fishstat/data/generated/jdbc/TsmTimeseriesDaoImpl.class	 WHERE NAME_FR = ? ORDER BY NAME_FR
+org/fao/fi/fishstat/data/generated/jdbc/TsmTimeseriesDaoImpl.class	 WHERE NAME_RU = ? ORDER BY NAME_RU
+org/fao/fi/fishstat/data/generated/jdbc/TsmTimeseriesDaoImpl.class	 WHERE NAME_ZH = ? ORDER BY NAME_ZH
+org/fao/fi/fishstat/data/generated/jdbc/TsmTimeseriesDaoImpl.class	 WHERE TIME_RESOLUTION = ? ORDER BY TIME_RESOLUTION
+org/fao/fi/fishstat/data/generated/jdbc/TsmTimeseriesDaoImpl.class	 WHERE V_AUTHOR = ? ORDER BY V_AUTHOR
+org/fao/fi/fishstat/data/generated/jdbc/TsmTimeseriesDaoImpl.class	 WHERE V_DATE = ? ORDER BY V_DATE
+org/fao/fi/fishstat/data/generated/jdbc/TsmTimeseriesDaoImpl.class	 WHERE V_NUMBER = ? ORDER BY V_NUMBER
+org/fao/fi/fishstat/data/generated/jdbc/TsmTimeseriesDaoImpl.class	()Ljava/sql/Connection;
+org/fao/fi/fishstat/data/generated/jdbc/TsmTimeseriesDaoImpl.class	(Ljava/sql/Connection;)V
+org/fao/fi/fishstat/data/generated/jdbc/TsmTimeseriesDaoImpl.class	3org/fao/fi/fishstat/data/generated/jdbc/AbstractDAO
+org/fao/fi/fishstat/data/generated/jdbc/TsmTimeseriesDaoImpl.class	4org/fao/fi/fishstat/data/generated/dto/TsmTimeseries
+org/fao/fi/fishstat/data/generated/jdbc/TsmTimeseriesDaoImpl.class	6org/fao/fi/fishstat/data/generated/dto/TsmTimeseriesPk
+org/fao/fi/fishstat/data/generated/jdbc/TsmTimeseriesDaoImpl.class	7[Lorg/fao/fi/fishstat/data/generated/dto/TsmTimeseries;
+org/fao/fi/fishstat/data/generated/jdbc/TsmTimeseriesDaoImpl.class	7org/fao/fi/fishstat/data/generated/dao/TsmTimeseriesDao
+org/fao/fi/fishstat/data/generated/jdbc/TsmTimeseriesDaoImpl.class	7org/fao/fi/fishstat/data/generated/jdbc/ResourceManager
+org/fao/fi/fishstat/data/generated/jdbc/TsmTimeseriesDaoImpl.class	9()[Lorg/fao/fi/fishstat/data/generated/dto/TsmTimeseries;
+org/fao/fi/fishstat/data/generated/jdbc/TsmTimeseriesDaoImpl.class	9(Lorg/fao/fi/fishstat/data/generated/dto/TsmTimeseries;)V
+org/fao/fi/fishstat/data/generated/jdbc/TsmTimeseriesDaoImpl.class	:()Lorg/fao/fi/fishstat/data/generated/dto/TsmTimeseriesPk;
+org/fao/fi/fishstat/data/generated/jdbc/TsmTimeseriesDaoImpl.class	;(Lorg/fao/fi/fishstat/data/generated/dto/TsmTimeseriesPk;)V
+org/fao/fi/fishstat/data/generated/jdbc/TsmTimeseriesDaoImpl.class	<org/fao/fi/fishstat/data/generated/jdbc/TsmTimeseriesDaoImpl
+org/fao/fi/fishstat/data/generated/jdbc/TsmTimeseriesDaoImpl.class	COLUMN_DATASET_ID
+org/fao/fi/fishstat/data/generated/jdbc/TsmTimeseriesDaoImpl.class	ConstantValue
+org/fao/fi/fishstat/data/generated/jdbc/TsmTimeseriesDaoImpl.class	DELETE FROM 
+org/fao/fi/fishstat/data/generated/jdbc/TsmTimeseriesDaoImpl.class	Gorg/fao/fi/fishstat/data/generated/exceptions/TsmTimeseriesDaoException
+org/fao/fi/fishstat/data/generated/jdbc/TsmTimeseriesDaoImpl.class	I(Ljava/util/Date;)[Lorg/fao/fi/fishstat/data/generated/dto/TsmTimeseries;
+org/fao/fi/fishstat/data/generated/jdbc/TsmTimeseriesDaoImpl.class	J(Ljava/lang/String;)Lorg/fao/fi/fishstat/data/generated/dto/TsmTimeseries;
+org/fao/fi/fishstat/data/generated/jdbc/TsmTimeseriesDaoImpl.class	K(Ljava/lang/String;)[Lorg/fao/fi/fishstat/data/generated/dto/TsmTimeseries;
+org/fao/fi/fishstat/data/generated/jdbc/TsmTimeseriesDaoImpl.class	L(Ljava/sql/ResultSet;)Lorg/fao/fi/fishstat/data/generated/dto/TsmTimeseries;
+org/fao/fi/fishstat/data/generated/jdbc/TsmTimeseriesDaoImpl.class	Ljava/sql/Connection;
+org/fao/fi/fishstat/data/generated/jdbc/TsmTimeseriesDaoImpl.class	M(Ljava/sql/ResultSet;)[Lorg/fao/fi/fishstat/data/generated/dto/TsmTimeseries;
+org/fao/fi/fishstat/data/generated/jdbc/TsmTimeseriesDaoImpl.class	M(Lorg/fao/fi/fishstat/data/generated/dto/TsmTimeseries;Ljava/sql/ResultSet;)V
+org/fao/fi/fishstat/data/generated/jdbc/TsmTimeseriesDaoImpl.class	SELECT ID, DATASET_ID, ACRONYM, NAME_EN, NAME_FR, NAME_ES, NAME_AR, NAME_ZH, NAME_RU, DESCRIPTION_EN, DESCRIPTION_FR, DESCRIPTION_ES, DESCRIPTION_AR, DESCRIPTION_ZH, DESCRIPTION_RU, DATA_SOURCE, TIME_RESOLUTION, FIRST_PERIOD, LAST_PERIOD, V_DATE, V_AUTHOR, V_NUMBER FROM 
+org/fao/fi/fishstat/data/generated/jdbc/TsmTimeseriesDaoImpl.class	SQL_DELETE
+org/fao/fi/fishstat/data/generated/jdbc/TsmTimeseriesDaoImpl.class	SQL_INSERT
+org/fao/fi/fishstat/data/generated/jdbc/TsmTimeseriesDaoImpl.class	SQL_SELECT
+org/fao/fi/fishstat/data/generated/jdbc/TsmTimeseriesDaoImpl.class	SQL_UPDATE
+org/fao/fi/fishstat/data/generated/jdbc/TsmTimeseriesDaoImpl.class	TSM_TIMESERIES
+org/fao/fi/fishstat/data/generated/jdbc/TsmTimeseriesDaoImpl.class	TsmTimeseriesDaoImpl.java
+org/fao/fi/fishstat/data/generated/jdbc/TsmTimeseriesDaoImpl.class	^(Ljava/lang/String;[Ljava/lang/Object;)[Lorg/fao/fi/fishstat/data/generated/dto/TsmTimeseries;
+org/fao/fi/fishstat/data/generated/jdbc/TsmTimeseriesDaoImpl.class	`INSERT INTO 
+org/fao/fi/fishstat/data/generated/jdbc/TsmTimeseriesDaoImpl.class	delete
+org/fao/fi/fishstat/data/generated/jdbc/TsmTimeseriesDaoImpl.class	executeUpdate
+org/fao/fi/fishstat/data/generated/jdbc/TsmTimeseriesDaoImpl.class	findByDynamicSelect
+org/fao/fi/fishstat/data/generated/jdbc/TsmTimeseriesDaoImpl.class	findByDynamicWhere
+org/fao/fi/fishstat/data/generated/jdbc/TsmTimeseriesDaoImpl.class	findByTsmDataset
+org/fao/fi/fishstat/data/generated/jdbc/TsmTimeseriesDaoImpl.class	findWhereAcronymEquals
+org/fao/fi/fishstat/data/generated/jdbc/TsmTimeseriesDaoImpl.class	findWhereDataSourceEquals
+org/fao/fi/fishstat/data/generated/jdbc/TsmTimeseriesDaoImpl.class	findWhereDatasetIdEquals
+org/fao/fi/fishstat/data/generated/jdbc/TsmTimeseriesDaoImpl.class	findWhereDescriptionArEquals
+org/fao/fi/fishstat/data/generated/jdbc/TsmTimeseriesDaoImpl.class	findWhereDescriptionEnEquals
+org/fao/fi/fishstat/data/generated/jdbc/TsmTimeseriesDaoImpl.class	findWhereDescriptionEsEquals
+org/fao/fi/fishstat/data/generated/jdbc/TsmTimeseriesDaoImpl.class	findWhereDescriptionFrEquals
+org/fao/fi/fishstat/data/generated/jdbc/TsmTimeseriesDaoImpl.class	findWhereDescriptionRuEquals
+org/fao/fi/fishstat/data/generated/jdbc/TsmTimeseriesDaoImpl.class	findWhereDescriptionZhEquals
+org/fao/fi/fishstat/data/generated/jdbc/TsmTimeseriesDaoImpl.class	findWhereFirstPeriodEquals
+org/fao/fi/fishstat/data/generated/jdbc/TsmTimeseriesDaoImpl.class	findWhereIdEquals
+org/fao/fi/fishstat/data/generated/jdbc/TsmTimeseriesDaoImpl.class	findWhereLastPeriodEquals
+org/fao/fi/fishstat/data/generated/jdbc/TsmTimeseriesDaoImpl.class	findWhereNameArEquals
+org/fao/fi/fishstat/data/generated/jdbc/TsmTimeseriesDaoImpl.class	findWhereNameEnEquals
+org/fao/fi/fishstat/data/generated/jdbc/TsmTimeseriesDaoImpl.class	findWhereNameEsEquals
+org/fao/fi/fishstat/data/generated/jdbc/TsmTimeseriesDaoImpl.class	findWhereNameFrEquals
+org/fao/fi/fishstat/data/generated/jdbc/TsmTimeseriesDaoImpl.class	findWhereNameRuEquals
+org/fao/fi/fishstat/data/generated/jdbc/TsmTimeseriesDaoImpl.class	findWhereNameZhEquals
+org/fao/fi/fishstat/data/generated/jdbc/TsmTimeseriesDaoImpl.class	findWhereTimeResolutionEquals
+org/fao/fi/fishstat/data/generated/jdbc/TsmTimeseriesDaoImpl.class	findWhereVAuthorEquals
+org/fao/fi/fishstat/data/generated/jdbc/TsmTimeseriesDaoImpl.class	findWhereVDateEquals
+org/fao/fi/fishstat/data/generated/jdbc/TsmTimeseriesDaoImpl.class	findWhereVNumberEquals
+org/fao/fi/fishstat/data/generated/jdbc/TsmTimeseriesDaoImpl.class	getConnection
+org/fao/fi/fishstat/data/generated/jdbc/TsmTimeseriesDaoImpl.class	getDatasetId
+org/fao/fi/fishstat/data/generated/jdbc/TsmTimeseriesDaoImpl.class	insert
+org/fao/fi/fishstat/data/generated/jdbc/TsmTimeseriesDaoImpl.class	java/sql/Connection
+org/fao/fi/fishstat/data/generated/jdbc/TsmTimeseriesDaoImpl.class	p(Lorg/fao/fi/fishstat/data/generated/dto/TsmTimeseries;)Lorg/fao/fi/fishstat/data/generated/dto/TsmTimeseriesPk;
+org/fao/fi/fishstat/data/generated/jdbc/TsmTimeseriesDaoImpl.class	p(Lorg/fao/fi/fishstat/data/generated/dto/TsmTimeseriesPk;)Lorg/fao/fi/fishstat/data/generated/dto/TsmTimeseries;
+org/fao/fi/fishstat/data/generated/jdbc/TsmTimeseriesDaoImpl.class	q(Lorg/fao/fi/fishstat/data/generated/dto/TsmTimeseriesPk;Lorg/fao/fi/fishstat/data/generated/dto/TsmTimeseries;)V
+org/fao/fi/fishstat/data/generated/jdbc/TsmTimeseriesDaoImpl.class	setDatasetId
+org/fao/fi/fishstat/data/generated/jdbc/TsmTimeseriesDaoImpl.class	tUPDATE 
+org/fao/fi/fishstat/data/generated/jdbc/TsmTimeseriesDaoImpl.class	update

@@ -1,0 +1,98 @@
+{
+  "schema_version": "aqualife-real-benchmark-readiness-v1",
+  "cycles": 6,
+  "production_target": "production_kg",
+  "model_features": [
+    "pond_area_m2",
+    "pond_depth_m",
+    "stocking_density_per_m2",
+    "stocking_count",
+    "initial_average_weight_g",
+    "initial_biomass_kg",
+    "culture_days",
+    "survival_rate",
+    "growth_rate_g_week",
+    "density_growth_multiplier",
+    "effective_growth_rate_g_week"
+  ],
+  "feature_availability": {
+    "pond_area_m2": {
+      "status": "AVAILABLE",
+      "source": "FWI enrolled ponds",
+      "observed": true
+    },
+    "pond_depth_m": {
+      "status": "AVAILABLE_IF_RECORDED",
+      "source": "FWI enrolled ponds",
+      "observed": true
+    },
+    "stocking_density_per_m2": {
+      "status": "DERIVABLE",
+      "source": "FWI actual shrimp stocking density per acre",
+      "observed": false
+    },
+    "stocking_count": {
+      "status": "DERIVABLE",
+      "source": "stocking density per acre \u00d7 pond area",
+      "observed": false
+    },
+    "culture_days": {
+      "status": "AVAILABLE",
+      "source": "validated stocking \u2192 harvest chronology",
+      "observed": false
+    },
+    "initial_average_weight_g": {
+      "status": "UNAVAILABLE_IN_CURRENT_CYCLE_TABLE",
+      "source": "FWI shrimp event field",
+      "observed": false
+    },
+    "initial_biomass_kg": {
+      "status": "DERIVABLE_ONLY_IF_INITIAL_WEIGHT_EXISTS",
+      "source": "stocking count \u00d7 initial average weight",
+      "observed": false
+    },
+    "survival_rate": {
+      "status": "UNAVAILABLE_FOR_CURRENT_VALID_CYCLES",
+      "source": "requires defensible survival reconstruction",
+      "observed": false
+    },
+    "growth_rate_g_week": {
+      "status": "UNAVAILABLE",
+      "source": "requires longitudinal growth observations",
+      "observed": false
+    },
+    "density_growth_multiplier": {
+      "status": "NOT_OBSERVED",
+      "source": "AquaLife synthetic generator feature",
+      "observed": false
+    },
+    "effective_growth_rate_g_week": {
+      "status": "NOT_OBSERVED",
+      "source": "growth rate \u00d7 density multiplier",
+      "observed": false
+    }
+  },
+  "feature_status_counts": {
+    "AVAILABLE": 2,
+    "AVAILABLE_IF_RECORDED": 1,
+    "DERIVABLE": 2,
+    "UNAVAILABLE_IN_CURRENT_CYCLE_TABLE": 1,
+    "DERIVABLE_ONLY_IF_INITIAL_WEIGHT_EXISTS": 1,
+    "UNAVAILABLE_FOR_CURRENT_VALID_CYCLES": 1,
+    "UNAVAILABLE": 1,
+    "NOT_OBSERVED": 2
+  },
+  "water_quality": {
+    "cycle_count": 8,
+    "cycles_with_pre_harvest_measurements": 8,
+    "total_pre_harvest_measurements": 108
+  },
+  "scientific_boundary": {
+    "real_world": true,
+    "synthetic": false,
+    "training_performed": false,
+    "accuracy_claim": false,
+    "current_catboost_training": "NOT_APPROVED",
+    "reason": "Current valid FWI cycles do not contain all CatBoost features. A reduced-feature benchmark or additional feature reconstruction is required."
+  }
+}

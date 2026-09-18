@@ -1,0 +1,17 @@
+country,country_un_code,species,species_alpha3_code,year,environment_code,environment,measure_code,production_tonnes,production_kg,status
+India,356,Litopenaeus vannamei,PNV,2009,BW,Brackishwater,Q_tlw,1730.0,1730000.0,A
+India,356,Litopenaeus vannamei,PNV,2011,BW,Brackishwater,Q_tlw,125000.0,125000000.0,I
+India,356,Litopenaeus vannamei,PNV,2012,BW,Brackishwater,Q_tlw,136300.0,136300000.0,A
+India,356,Litopenaeus vannamei,PNV,2013,BW,Brackishwater,Q_tlw,211200.0,211200000.0,A
+India,356,Litopenaeus vannamei,PNV,2014,BW,Brackishwater,Q_tlw,305251.0,305251000.0,A
+India,356,Litopenaeus vannamei,PNV,2015,BW,Brackishwater,Q_tlw,416347.0,416347000.0,A
+India,356,Litopenaeus vannamei,PNV,2016,BW,Brackishwater,Q_tlw,461302.0,461302000.0,A
+India,356,Litopenaeus vannamei,PNV,2017,BW,Brackishwater,Q_tlw,583400.0,583400000.0,A
+India,356,Litopenaeus vannamei,PNV,2018,BW,Brackishwater,Q_tlw,622000.0,622000000.0,I
+India,356,Litopenaeus vannamei,PNV,2019,BW,Brackishwater,Q_tlw,724267.0,724267000.0,A
+India,356,Litopenaeus vannamei,PNV,2020,BW,Brackishwater,Q_tlw,894772.0,894772000.0,A
+India,356,Litopenaeus vannamei,PNV,2021,BW,Brackishwater,Q_tlw,997263.0,997263000.0,A
+India,356,Litopenaeus vannamei,PNV,2022,BW,Brackishwater,Q_tlw,973540.0,973540000.0,A
+India,356,Litopenaeus vannamei,PNV,2023,BW,Brackishwater,Q_tlw,1153339.0,1153339000.0,A
+India,356,Litopenaeus vannamei,PNV,2024,BW,Brackishwater,Q_tlw,1140561.0,1140561000.0,A
+India,356,Litopenaeus vannamei,PNV,2024,IN,Freshwater,Q_tlw,42892.0,42892000.0,I
